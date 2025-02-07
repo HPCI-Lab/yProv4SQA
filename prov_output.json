@@ -1,0 +1,152 @@
+{
+    "prefix": {
+        "ex": "https://sqaaas.eosc-synergy.eu/",
+        "w3": "http://www.w3.org/",
+        "tr": "http://www.w3.org/TR/2011/"
+    },
+    "agent": {
+        "ex:SQAaaS": {
+            "prov:type": "prov:SoftwareAgent",
+            "xsd:type": "xsd:QName"
+        }
+    },
+    "entity": {
+        "ex:repository1": {
+            "prov:type": "document",
+            "ex:url": "https://github.com/HPCI-Lab/yProv",
+            "ex:name": "HPCI-Lab/yProv",
+            "ex:commit_id": "d02aa00396fd15bed2e8eede53f2123dc08e0717",
+            "ex:tag": "main",
+            "ex:is_main_repo": true,
+            "ex:avatar_url": "https://avatars.githubusercontent.com/u/134686857?v=4",
+            "ex:description": null,
+            "ex:languages": null,
+            "ex:badge_status": "no_badge"
+        },
+        "ex:output1": {
+            "prov:type": "document",
+            "ex:badge_won": "no_badge"
+        },
+        "ex:assessment1": {
+            "prov:type": "document",
+            "ex:version": "3.2.1",
+            "ex:report_json_url": "https://raw.githubusercontent.com/eosc-synergy/yProv.assess.sqaaas/main/.report/assessment_output.json"
+        }
+    },
+    "activity": {
+        "ex:qc_QC.Acc": {
+            "prov:type": "activity",
+            "ex:description": "Description for QC.Acc",
+            "ex:output": true,
+            "ex:percentage": "100%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 1
+        },
+        "ex:qc_QC.Doc": {
+            "prov:type": "activity",
+            "ex:description": "Description for QC.Doc",
+            "ex:output": false,
+            "ex:percentage": "50%",
+            "ex:total_subcriteria": 4,
+            "ex:success_subcriteria": 2
+        },
+        "ex:qc_QC.Lic": {
+            "prov:type": "activity",
+            "ex:description": "Description for QC.Lic",
+            "ex:output": false,
+            "ex:percentage": "0%",
+            "ex:total_subcriteria": 4,
+            "ex:success_subcriteria": 0
+        },
+        "ex:qc_QC.Ver": {
+            "prov:type": "activity",
+            "ex:description": "Description for QC.Ver",
+            "ex:output": false,
+            "ex:percentage": "33%",
+            "ex:total_subcriteria": 3,
+            "ex:success_subcriteria": 1
+        },
+        "ex:qc_QC.Met": {
+            "prov:type": "activity",
+            "ex:description": "Description for QC.Met",
+            "ex:output": false,
+            "ex:percentage": "0%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 0
+        },
+        "ex:qc_QC.Sec": {
+            "prov:type": "activity",
+            "ex:description": "Description for QC.Sec",
+            "ex:output": false,
+            "ex:percentage": "0%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 0
+        },
+        "ex:qc_QC.Sty": {
+            "prov:type": "activity",
+            "ex:description": "Description for QC.Sty",
+            "ex:output": false,
+            "ex:percentage": "0%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 0
+        },
+        "ex:qc_QC.Uni": {
+            "prov:type": "activity",
+            "ex:description": "Description for QC.Uni",
+            "ex:output": false,
+            "ex:percentage": "0%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 0
+        }
+    },
+    "wasGeneratedBy": {
+        "_:wGB_qc_QC.Acc_assessment1": {
+            "prov:activity": "ex:qc_QC.Acc",
+            "prov:entity": "ex:assessment1"
+        },
+        "_:wGB_qc_QC.Doc_assessment1": {
+            "prov:activity": "ex:qc_QC.Doc",
+            "prov:entity": "ex:assessment1"
+        },
+        "_:wGB_qc_QC.Lic_assessment1": {
+            "prov:activity": "ex:qc_QC.Lic",
+            "prov:entity": "ex:assessment1"
+        },
+        "_:wGB_qc_QC.Ver_assessment1": {
+            "prov:activity": "ex:qc_QC.Ver",
+            "prov:entity": "ex:assessment1"
+        },
+        "_:wGB_qc_QC.Met_assessment1": {
+            "prov:activity": "ex:qc_QC.Met",
+            "prov:entity": "ex:assessment1"
+        },
+        "_:wGB_qc_QC.Sec_assessment1": {
+            "prov:activity": "ex:qc_QC.Sec",
+            "prov:entity": "ex:assessment1"
+        },
+        "_:wGB_qc_QC.Sty_assessment1": {
+            "prov:activity": "ex:qc_QC.Sty",
+            "prov:entity": "ex:assessment1"
+        },
+        "_:wGB_qc_QC.Uni_assessment1": {
+            "prov:activity": "ex:qc_QC.Uni",
+            "prov:entity": "ex:assessment1"
+        }
+    },
+    "wasAttributedTo": {
+        "_:wat_SQAaaS_repository1": {
+            "prov:agent": "ex:SQAaaS",
+            "prov:entity": "ex:repository1"
+        }
+    },
+    "wasDerivedFrom": {
+        "_:id_repository1_assessment1": {
+            "prov:generatedEntity": "ex:assessment1",
+            "prov:usedEntity": "ex:repository1"
+        },
+        "_:id_assessment1_output1": {
+            "prov:generatedEntity": "ex:output1",
+            "prov:usedEntity": "ex:assessment1"
+        }
+    }
+}
