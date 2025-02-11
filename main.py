@@ -18,22 +18,21 @@ def load_json(file_path):
     except json.JSONDecodeError:
         print(f"Error: File '{file_path}' is not a valid JSON.")
         return {}
+    
+def process_file(file_path, prov_model, gindex):
+    input_data = load_json(file_path)
 
+    if not input_data:
+        return
+    print(gindex)
+ # Load input data
+    input_data = load_json(file_path)
 
-def main():
-    prov_model = ProvenanceModel()
-
-# Add agents
-    agent1 = Agent(id="SQAaaS", name="SQAaaS", agent_type="prov:SoftwareAgent")
-    prov_model.add_agent(agent1)
-
-# Load input data
-    input_data = load_json("pipeline_output.json")
-
-# Process repositories
+    # Process repositories
     repo_list = input_data.get("repository", [])
     repo = Repository(
-        id="repository1",
+        #id="repository1",
+        id=f"repository{gindex}",
         name=repo_list[0].get("name", "Unknown Name"),
         url=repo_list[0].get("url", ""),
         tag=repo_list[0].get("tag", ""),
@@ -46,24 +45,25 @@ def main():
     )
     prov_model.add_entity(repo)
 
-# Add output
+    # Add output
     badge_status = repo_list[0].get("badge_status", "No Badge") if repo_list else "No Badge"
-    output = Output(id="output1", badge_won=badge_status)
+    output = Output(id=f"output{gindex}", badge_won=badge_status)
     prov_model.add_entity(output)
 
-# Add assessment
+    # Add assessment
     assessment = Assessment(
-        id="assessment1",
+        #id="assessment1",
+        id=f"assessment{gindex}",
         report_json_url=input_data.get("meta", {}).get("report_json_url", "Unknown URL"),
         version=input_data.get("meta", {}).get("version", "Unknown Version")
     )
     prov_model.add_entity(assessment)
 
-# Process activities and relationships
+    # Process activities and relationships
     report_data = input_data.get("report", {})
     for activity_name, activity_data in report_data.items():
         qc = QualityCheck(
-            id=f"qc_{activity_name}",
+            id=f"qc_{activity_name}{gindex}",
             description=activity_data.get("description", f"Description for {activity_name}"),
             is_output=activity_data.get("valid", False),
             percentage=f"{activity_data.get('coverage', {}).get('percentage', 0)}%",
@@ -72,43 +72,54 @@ def main():
         )
         prov_model.add_activity(qc)
 
+        # Add wasGeneratedBy relationship
         relationship = ProvenanceRelationship(
-            RelFrom=f"qc_{activity_name}",
-            RelTo="assessment1",
+            RelFrom=f"qc_{activity_name}{gindex}",
+            RelTo=f"assessment{gindex}",
             relationship_type="wasGeneratedBy"
         )
         prov_model.add_relationship(relationship, "wasGeneratedBy")
         
-        relationship = ProvenanceRelationship(
-            RelFrom=f"qc_{activity_name}",
-            RelTo="assessment1",
-            relationship_type="wasAssociatedWith"
-        )
-        prov_model.add_relationship(relationship, "wasGeneratedBy")
 
-    #OKKK
-    relationship = ProvenanceRelationship(
-        RelFrom="repository1",
-        RelTo="assessment1",
-        relationship_type="wasDerivedFrom"
-    )
-    prov_model.add_relationship(relationship, "wasDerivedFrom")
 
-    #OKKK
     relationship = ProvenanceRelationship(
-        RelFrom="assessment1",
-        RelTo="output1",
+        RelFrom=f"repository{gindex}",
+        RelTo=f"assessment{gindex}",
         relationship_type="wasDerivedFrom"
     )
     prov_model.add_relationship(relationship, "wasDerivedFrom")
     
-    #okkkk
+    relationship = ProvenanceRelationship(
+        RelFrom=f"assessment{gindex}",
+        RelTo=f"output{gindex}",
+        relationship_type="wasDerivedFrom"
+    )
+    prov_model.add_relationship(relationship, "wasDerivedFrom")
+
     relationship = ProvenanceRelationship(
         RelFrom="SQAaaS",
-        RelTo="repository1",
+        RelTo=f"repository{gindex}",
         relationship_type="wasAttributedTo"
     )
     prov_model.add_relationship(relationship, "wasAttributedTo")
+
+
+
+def main():
+    prov_model = ProvenanceModel()
+
+    # Add agent
+    agent1 = Agent(id="SQAaaS", name="SQAaaS", agent_type="prov:SoftwareAgent")
+    prov_model.add_agent(agent1)
+
+    input_files = ["pipeline_output.json"]  # List your files here
+    
+    gindex=0
+    # Loop for all files processing 
+    for file_path in input_files:
+        gindex+=1
+        process_file(file_path, prov_model, gindex)
+
 
     # Save output to JSON
     prov_json = prov_model.to_json()
