@@ -3,19 +3,16 @@
 
 ## Installation
 1. **Clone the Repository:**
-
    ```bash
    git clone https://github.com/yourusername/yProv4SQA.git
    cd yProv4SQA
 
 2. **Install the library:**
-
    ```bash
    pip install -e .
 
 
 3. **Install dependencies**
-  
    ```bash
    pip install requests
 
@@ -25,10 +22,9 @@
    ```bash
    fetch-sqa-reports yprov.git
 
-   This will download all the assessment reports and save them in the <RepoName>_reports folder.
+This will download all the assessment reports and save them in the <RepoName>_reports folder.
 
 2. ""Generate Provenance""
-
    ```bash
    process-provenance [folder path]
   
@@ -37,4 +33,4 @@
    ```bash
    compare [Prov file path]  AssessmentNo1 AssessmentNo2
 
-   To compare two Code changes between two Assesments and generate provenance data:
+To compare two Code changes between two Assesments and generate provenance data:
