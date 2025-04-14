@@ -4,20 +4,20 @@
 
 ## Installation
 
-1. **Clone the Repository**:
+1. **Clone the Repository:**
 
    ```bash
    git clone https://github.com/yourusername/yProv4SQA.git
    cd yProv4SQA
 
-2. **Install the library**:
+2. **Install the library:**
  ```bash
-pip install -e .
+   pip install -e .
 
 
-3. **Install dependencies**:
+3. **Install dependencies**
  ```bash
-pip install requests
+   pip install requests
 
 
 
