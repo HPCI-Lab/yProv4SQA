@@ -11,14 +11,14 @@
    cd yProv4SQA
 
 2. **Install the library:**
-   
- ```bash
+
+   ```bash
    pip install -e .
 
 
-3. **Install dependencies**
-
- ```bash
+4. **Install dependencies**
+  
+   ```bash
    pip install requests
 
 
