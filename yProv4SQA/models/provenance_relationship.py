@@ -7,7 +7,7 @@ class ProvenanceRelationship:
         self.relationship_type = relationship_type  
 
     def to_dict(self):
-# Handle relationships dynamically based on relationship type
+        # Handle relationships dynamically based on relationship type
         if self.relationship_type == "wasAttributedTo":
             return self._was_attributed_to()
         elif self.relationship_type == "wasGeneratedBy":
@@ -18,7 +18,7 @@ class ProvenanceRelationship:
             return self._Used_()
         elif self.relationship_type == "wasAssociatedWith":
             return self._was_assosiated_by()
-# Additional relationship----above
+        # Additional relationship types can be handled here
 
     def _Used_(self):
         return {

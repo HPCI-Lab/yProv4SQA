@@ -32,7 +32,7 @@ class ProvenanceModel:
     def add_entity(self, entity):
         self.entities.update(entity.to_dict())
 
-    def add_activity(self, activity: QualityCheck):
+    def add_QualityCheck(self, activity: QualityCheck):
         self.activities.update(activity.to_dict())
 
     def add_relationship(self, relationship: ProvenanceRelationship, relationship_type: str):
@@ -40,7 +40,7 @@ class ProvenanceModel:
             self.relationships[relationship_type].update(relationship.to_dict())
 
     def to_json(self):
-# Build the final dictionary
+        # Build the final dictionary
         prov_dict = {
             "prefix": self.prefix,
             "agent": self.agents,
@@ -48,10 +48,10 @@ class ProvenanceModel:
             "activity": self.activities,
         }
 
-# Add relationships only if they are not empty
+        # Add relationships only if they are not empty
         for relationship_type, relationship_data in self.relationships.items():
             if relationship_data:  # Add only if there is data
                 prov_dict[relationship_type] = relationship_data
 
-# Return JSON representation
+        # Return JSON representation
         return json.dumps(prov_dict, indent=4)

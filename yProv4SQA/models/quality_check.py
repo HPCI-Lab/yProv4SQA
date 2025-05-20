@@ -11,7 +11,7 @@ class QualityCheck:
 
     def to_dict(self):
         return {
-            f"ex:{self.id}": {  
+            f"ex:{self.id}": {  # Directly map the unique ID without wrapping
                 "prov:type": "activity",
                 "ex:description": self.description,
                 "ex:output": self.is_output,
