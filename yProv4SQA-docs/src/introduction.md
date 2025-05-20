@@ -1,2 +1,0 @@
-# yProv4SQA introduction
-
