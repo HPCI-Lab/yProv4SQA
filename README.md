@@ -18,11 +18,11 @@
    fetch-sqa-reports yprov.git
 This will download all the assessment reports and save them in the <RepoName>_reports folder.
 
-2. ""Generate Provenance""
+2. **Generate Provenance**
    ```bash
    process-provenance [folder path]
 
-3. ""Compare Commits""
+3. **Compare Commits**
    ```bash
    compare [Prov file path]  AssessmentNo1 AssessmentNo2
 To compare two Code changes between two Assesments and generate provenance data:
