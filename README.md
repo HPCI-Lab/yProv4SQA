@@ -15,7 +15,11 @@
 1. **Fetch SQA Reports**
    To fetch SQA reports for a specific repository:
    ```bash
+<<<<<<< HEAD
    fetch-sqa-reports [RepoName].git
+=======
+   fetch-sqa-reports yprov.git
+>>>>>>> origin/main
 This will download all the assessment reports and save them in the <RepoName>_reports folder.
 
 2. ""Generate Provenance""
@@ -26,6 +30,9 @@ This will download all the assessment reports and save them in the <RepoName>_re
    ```bash
    compare [Prov file path]  AssessmentNo1 AssessmentNo2
 To compare two Code changes between two Assesments and generate provenance data:
+<<<<<<< HEAD
 
 #Cmmit data in Assesment
 #also add the 
+=======
+>>>>>>> origin/main
