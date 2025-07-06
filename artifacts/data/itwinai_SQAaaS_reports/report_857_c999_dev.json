@@ -1,0 +1,108 @@
+{
+    "meta": {
+        "version": "3.1.0",
+        "report_json_url": "https://raw.githubusercontent.com/eosc-synergy/itwinai.assess.sqaaas/dev/.report/assessment_output.json"
+    },
+    "repository": [
+        {
+            "url": "https://github.com/interTwin-eu/itwinai",
+            "name": "interTwin-eu/itwinai",
+            "tag": "dev",
+            "commit_id": "bb84d13080b8c25574f4fb78ae554d33c7ab3168",
+            "is_main_repo": true,
+            "avatar_url": "https://avatars.githubusercontent.com/u/123980631?v=4",
+            "description": null,
+            "languages": null,
+            "topics": null,
+            "stargazers_count": null,
+            "watchers_count": null,
+            "contributors_count": null,
+            "forks_count": null,
+            "badge_status": "no_badge"
+        }
+    ],
+    "report": {
+        "QC.Met": {
+            "valid": false,
+            "subcriteria": {
+                "QC.Met01": {
+                    "description": "Is the software citable?",
+                    "valid": false,
+                    "hint": "The two formats for software citation supported by SQAaaS are: 1) <a href=\"https://codemeta.github.io/\" target=\"_blank\">CodeMeta</a> and 2) <a href=\"https://citation-file-format.github.io/\" target=\"_blank\">Citation File Format (CFF)</a>. While CodeMeta provides you with a more comprehensive description, CFF is a more lightweight, good-enough approach to software (with built-in support by GitHub) citation. Both provide tools (<a href=\"https://codemeta.github.io/codemeta-generator/\" target=\"_blank\">CodeMeta generator</a>, <a href=\"https://citation-file-format.github.io/cff-initializer-javascript/#/\" target=\"_blank\">CFFINIT</a>)to easily generate a working citation file. Once having the file, be sure to add it to the root path of your code repo.",
+                    "evidence": [
+                        {
+                            "valid": false,
+                            "message": "No matching files found for language <CodeMeta> in repository searching by extensions or filenames\nNo matching files found for language <Citation File Format> in repository searching by extensions or filenames"
+                        }
+                    ],
+                    "required_for_next_level_badge": false
+                }
+            },
+            "coverage": {
+                "percentage": 0,
+                "total_subcriteria": 1,
+                "success_subcriteria": 0
+            }
+        }
+    },
+    "badge": {
+        "software": {
+            "criteria": {
+                "bronze": {
+                    "to_fulfill": [
+                        "QC.Acc",
+                        "QC.Doc",
+                        "QC.Lic"
+                    ],
+                    "missing": [
+                        "QC.Acc",
+                        "QC.Doc",
+                        "QC.Lic"
+                    ],
+                    "fulfilled": []
+                },
+                "silver": {
+                    "to_fulfill": [
+                        "QC.Acc",
+                        "QC.Lic",
+                        "QC.Ver",
+                        "QC.Doc",
+                        "QC.Met"
+                    ],
+                    "missing": [
+                        "QC.Acc",
+                        "QC.Doc",
+                        "QC.Lic",
+                        "QC.Met",
+                        "QC.Ver"
+                    ],
+                    "fulfilled": []
+                },
+                "gold": {
+                    "to_fulfill": [
+                        "QC.Acc",
+                        "QC.Sty",
+                        "QC.Lic",
+                        "QC.Ver",
+                        "QC.Doc",
+                        "QC.Met",
+                        "QC.Sec",
+                        "QC.Uni"
+                    ],
+                    "missing": [
+                        "QC.Acc",
+                        "QC.Sty",
+                        "QC.Lic",
+                        "QC.Ver",
+                        "QC.Doc",
+                        "QC.Met",
+                        "QC.Sec",
+                        "QC.Uni"
+                    ],
+                    "fulfilled": []
+                }
+            },
+            "data": {}
+        }
+    }
+}

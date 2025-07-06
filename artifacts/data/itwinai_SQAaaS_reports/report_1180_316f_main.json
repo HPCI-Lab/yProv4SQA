@@ -1,0 +1,140 @@
+{
+    "meta": {
+        "version": "3.5.0",
+        "report_json_url": "https://raw.githubusercontent.com/eosc-synergy/itwinai.assess.sqaaas/main/.report/assessment_output.json",
+        "report_permalink": "https://sqaaas.eosc-synergy.eu/full-assessment/report/https://raw.githubusercontent.com/eosc-synergy/itwinai.assess.sqaaas/main/.report/assessment_output.json",
+        "timestamp": 1732012458.4346955
+    },
+    "repository": [
+        {
+            "url": "https://github.com/interTwin-eu/itwinai",
+            "name": "interTwin-eu/itwinai",
+            "tag": "main",
+            "commit_id": "fc4b688ec0368269e75114649fe52233ae1e853e",
+            "is_main_repo": true,
+            "avatar_url": "https://avatars.githubusercontent.com/u/123980631?v=4",
+            "description": null,
+            "languages": null,
+            "topics": null,
+            "stargazers_count": null,
+            "watchers_count": null,
+            "contributors_count": null,
+            "forks_count": null,
+            "badge_status": "no_badge"
+        }
+    ],
+    "report": {
+        "QC.Sty": {
+            "valid": true,
+            "subcriteria": {
+                "QC.Sty01": {
+                    "description": "Is the software product following a style standard for Python files?",
+                    "requirement_level": "MUST",
+                    "hint": "Please check & solve the security weaknesses found by the linter tool",
+                    "evidence": [
+                        {
+                            "valid": true,
+                            "message": "Python files are compliant with flake8 (pycodestyle, pyflakes, mccabe) standard",
+                            "plugin": {
+                                "name": "report2sqaaas-plugin-flake8",
+                                "version": "2.1.0"
+                            },
+                            "tool": {
+                                "name": "flake8",
+                                "lang": "Python",
+                                "version": "not-provided",
+                                "docker": {
+                                    "image": "pipelinecomponents/flake8:0.9.0"
+                                },
+                                "ci": {
+                                    "name": "QC.Sty github.com/interTwin-eu/itwinai flake8",
+                                    "status": "FAILED",
+                                    "stdout_command": [
+                                        "flake8 . --exclude"
+                                    ],
+                                    "stdout_text": "usage: flake8 [options] file file ...\nflake8: error: argument --exclude: expected one argument",
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/itwinai.assess.sqaaas/job/main/585/execution/node/34/log?consoleFull"
+                                },
+                                "level": "REQUIRED",
+                                "build_repo": "https://github.com/eosc-synergy/itwinai.assess.sqaaas"
+                            },
+                            "standard": {
+                                "title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+                                "version": "v4.0",
+                                "url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0"
+                            },
+                            "data_unstructured": "usage: flake8 [options] file file ...\nflake8: error: argument --exclude: expected one argument"
+                        }
+                    ],
+                    "valid": true
+                }
+            },
+            "coverage": {
+                "percentage": 100,
+                "total_subcriteria": 1,
+                "success_subcriteria": 1
+            }
+        }
+    },
+    "badge": {
+        "software": {
+            "criteria": {
+                "bronze": {
+                    "to_fulfill": [
+                        "QC.Lic",
+                        "QC.Doc",
+                        "QC.Acc"
+                    ],
+                    "missing": [
+                        "QC.Lic",
+                        "QC.Doc",
+                        "QC.Acc"
+                    ],
+                    "fulfilled": []
+                },
+                "silver": {
+                    "to_fulfill": [
+                        "QC.Lic",
+                        "QC.Met",
+                        "QC.Doc",
+                        "QC.Ver",
+                        "QC.Acc"
+                    ],
+                    "missing": [
+                        "QC.Lic",
+                        "QC.Met",
+                        "QC.Acc",
+                        "QC.Doc",
+                        "QC.Ver"
+                    ],
+                    "fulfilled": []
+                },
+                "gold": {
+                    "to_fulfill": [
+                        "QC.Lic",
+                        "QC.Sty",
+                        "QC.Met",
+                        "QC.Doc",
+                        "QC.Ver",
+                        "QC.Sec",
+                        "QC.Acc",
+                        "QC.Uni"
+                    ],
+                    "missing": [
+                        "QC.Lic",
+                        "QC.Doc",
+                        "QC.Met",
+                        "QC.Ver",
+                        "QC.Sec",
+                        "QC.Acc",
+                        "QC.Uni"
+                    ],
+                    "fulfilled": [
+                        "QC.Sty"
+                    ]
+                }
+            },
+            "data": {}
+        }
+    }
+}

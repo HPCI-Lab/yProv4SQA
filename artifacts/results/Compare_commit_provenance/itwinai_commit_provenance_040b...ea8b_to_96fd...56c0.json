@@ -1,0 +1,1976 @@
+{
+  "prefix": {
+    "ex": "https://sqaaas.eosc-synergy.eu/",
+    "w3": "http://www.w3.org/",
+    "tr": "http://www.w3.org/TR/2011/"
+  },
+  "entity": {
+    "ex:commit_040b...ea8b": {
+      "prov:type": "document",
+      "ex:commit_id": "040bbfff399f861481c8ade9368106b87b54ea8b",
+      "ex:state": "before"
+    },
+    "ex:commit_96fd...56c0": {
+      "prov:type": "document",
+      "ex:commit_id": "96fd2f5659001703bf150adbd6d83f68b29456c0",
+      "ex:state": "after"
+    }
+  },
+  "activity": {
+    "ex:activity_": {
+      "prov:type": "activity",
+      "ex:filename": ".python-version",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 1,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/.python-version"
+    },
+    "ex:activity_githublint": {
+      "prov:type": "activity",
+      "ex:filename": ".github/linters/.jscpd.json",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 6,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/.github/linters/.jscpd.json"
+    },
+    "ex:activity_githubwork": {
+      "prov:type": "activity",
+      "ex:filename": ".github/workflows/workflows-dt.yml",
+      "ex:status": "removed",
+      "ex:number_of_lines_affected": 50,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/.github/workflows/workflows-dt.yml"
+    },
+    "ex:activity_readthedoc": {
+      "prov:type": "activity",
+      "ex:filename": ".readthedocs.yaml",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 38,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/.readthedocs.yaml"
+    },
+    "ex:activity_vscodeexte": {
+      "prov:type": "activity",
+      "ex:filename": ".vscode/extensions.json",
+      "ex:status": "modified",
+      "ex:number_of_lines_affected": 4,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/.vscode/extensions.json"
+    },
+    "ex:activity_vscodesett": {
+      "prov:type": "activity",
+      "ex:filename": ".vscode/settings.json",
+      "ex:status": "modified",
+      "ex:number_of_lines_affected": 24,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/.vscode/settings.json"
+    },
+    "ex:activity_AUTHORS": {
+      "prov:type": "activity",
+      "ex:filename": "AUTHORS.md",
+      "ex:status": "modified",
+      "ex:number_of_lines_affected": 7,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/AUTHORS.md"
+    },
+    "ex:activity_CODEOWNERS": {
+      "prov:type": "activity",
+      "ex:filename": "CODEOWNERS",
+      "ex:status": "modified",
+      "ex:number_of_lines_affected": 1,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/CODEOWNERS"
+    },
+    "ex:activity_Makefile": {
+      "prov:type": "activity",
+      "ex:filename": "Makefile",
+      "ex:status": "modified",
+      "ex:number_of_lines_affected": 169,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/Makefile"
+    },
+    "ex:activity_README": {
+      "prov:type": "activity",
+      "ex:filename": "README.md",
+      "ex:status": "modified",
+      "ex:number_of_lines_affected": 212,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/README.md"
+    },
+    "ex:activity_aiREADME": {
+      "prov:type": "activity",
+      "ex:filename": "ai/README.md",
+      "ex:status": "removed",
+      "ex:number_of_lines_affected": 6,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/ai/README.md"
+    },
+    "ex:activity_aienvfiles": {
+      "prov:type": "activity",
+      "ex:filename": "ai/env-files/pytorch-lock.yml",
+      "ex:status": "removed",
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/ai/env-files/pytorch-lock.yml"
+    },
+    "ex:activity_aisetup": {
+      "prov:type": "activity",
+      "ex:filename": "ai/setup.py",
+      "ex:status": "removed",
+      "ex:number_of_lines_affected": 20,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/ai/setup.py"
+    },
+    "ex:activity_aisrcitwin": {
+      "prov:type": "activity",
+      "ex:filename": "ai/src/itwinai/plmodels/mnist.py",
+      "ex:status": "removed",
+      "ex:number_of_lines_affected": 246,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/ai/src/itwinai/plmodels/mnist.py"
+    },
+    "ex:activity_aiteststes": {
+      "prov:type": "activity",
+      "ex:filename": "ai/tests/test_utils.py",
+      "ex:status": "removed",
+      "ex:number_of_lines_affected": 24,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/ai/tests/test_utils.py"
+    },
+    "ex:activity_aitraining": {
+      "prov:type": "activity",
+      "ex:filename": "ai/training.cwl",
+      "ex:status": "removed",
+      "ex:number_of_lines_affected": 68,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/ai/training.cwl"
+    },
+    "ex:activity_devenv": {
+      "prov:type": "activity",
+      "ex:filename": "dev-env.yml",
+      "ex:status": "removed",
+      "ex:number_of_lines_affected": 39,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/dev-env.yml"
+    },
+    "ex:activity_docs": {
+      "prov:type": "activity",
+      "ex:filename": "docs/.gitignore",
+      "ex:status": "removed",
+      "ex:number_of_lines_affected": 10,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/docs/.gitignore"
+    },
+    "ex:activity_docs3dgan_": {
+      "prov:type": "activity",
+      "ex:filename": "docs/3dgan_doc.rst",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 388,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/docs/3dgan_doc.rst"
+    },
+    "ex:activity_docs404": {
+      "prov:type": "activity",
+      "ex:filename": "docs/404.html",
+      "ex:status": "removed",
+      "ex:number_of_lines_affected": 10,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/docs/404.html"
+    },
+    "ex:activity_docsGemfil": {
+      "prov:type": "activity",
+      "ex:filename": "docs/Gemfile.lock",
+      "ex:status": "removed",
+      "ex:number_of_lines_affected": 79,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/docs/Gemfile.lock"
+    },
+    "ex:activity_docsLICENS": {
+      "prov:type": "activity",
+      "ex:filename": "docs/LICENSE",
+      "ex:status": "removed",
+      "ex:number_of_lines_affected": 21,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/docs/LICENSE"
+    },
+    "ex:activity_docsMakefi": {
+      "prov:type": "activity",
+      "ex:filename": "docs/Makefile",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 20,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/docs/Makefile"
+    },
+    "ex:activity_docsREADME": {
+      "prov:type": "activity",
+      "ex:filename": "docs/README.md",
+      "ex:status": "removed",
+      "ex:number_of_lines_affected": 180,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/docs/README.md"
+    },
+    "ex:activity_docs_confi": {
+      "prov:type": "activity",
+      "ex:filename": "docs/_config.yml",
+      "ex:status": "removed",
+      "ex:number_of_lines_affected": 26,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/docs/_config.yml"
+    },
+    "ex:activity_docsadvanc": {
+      "prov:type": "activity",
+      "ex:filename": "docs/advanced_workflow.rst",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 15,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/docs/advanced_workflow.rst"
+    },
+    "ex:activity_docsbasic_": {
+      "prov:type": "activity",
+      "ex:filename": "docs/basic_workflow.rst",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 15,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/docs/basic_workflow.rst"
+    },
+    "ex:activity_docsconf": {
+      "prov:type": "activity",
+      "ex:filename": "docs/conf.py",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 88,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/docs/conf.py"
+    },
+    "ex:activity_docscyclon": {
+      "prov:type": "activity",
+      "ex:filename": "docs/cyclones_doc.rst",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 85,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/docs/cyclones_doc.rst"
+    },
+    "ex:activity_docsddp_wh": {
+      "prov:type": "activity",
+      "ex:filename": "docs/ddp_why.rst",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 30,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/docs/ddp_why.rst"
+    },
+    "ex:activity_docsdocsCL": {
+      "prov:type": "activity",
+      "ex:filename": "docs/docs/CLI.md",
+      "ex:status": "removed",
+      "ex:number_of_lines_affected": 49,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/docs/docs/CLI.md"
+    },
+    "ex:activity_docsdocsCo": {
+      "prov:type": "activity",
+      "ex:filename": "docs/docs/Concepts.md",
+      "ex:status": "removed",
+      "ex:number_of_lines_affected": 31,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/docs/docs/Concepts.md"
+    },
+    "ex:activity_docsdocsHo": {
+      "prov:type": "activity",
+      "ex:filename": "docs/docs/How-to-use-this-software.md",
+      "ex:status": "removed",
+      "ex:number_of_lines_affected": 537,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/docs/docs/How-to-use-this-software.md"
+    },
+    "ex:activity_docsdocsim": {
+      "prov:type": "activity",
+      "ex:filename": "docs/docs/img/user-platform interaction.png",
+      "ex:status": "removed",
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/docs/docs/img/user-platform interaction.png"
+    },
+    "ex:activity_docsdocsus": {
+      "prov:type": "activity",
+      "ex:filename": "docs/docs/use-cases/mnist.md",
+      "ex:status": "removed",
+      "ex:number_of_lines_affected": 182,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/docs/docs/use-cases/mnist.md"
+    },
+    "ex:activity_docsfavico": {
+      "prov:type": "activity",
+      "ex:filename": "docs/favicon.ico",
+      "ex:status": "removed",
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/docs/favicon.ico"
+    },
+    "ex:activity_docsgettin": {
+      "prov:type": "activity",
+      "ex:filename": "docs/getting_started_with_itwinai.rst",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 373,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/docs/getting_started_with_itwinai.rst"
+    },
+    "ex:activity_docsindex": {
+      "prov:type": "activity",
+      "ex:filename": "docs/index.rst",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 119,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/docs/index.rst"
+    },
+    "ex:activity_docsinterm": {
+      "prov:type": "activity",
+      "ex:filename": "docs/intermediate_workflow.rst",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 17,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/docs/intermediate_workflow.rst"
+    },
+    "ex:activity_docsitwina": {
+      "prov:type": "activity",
+      "ex:filename": "docs/itwinai.utils.rst",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 9,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/docs/itwinai.utils.rst"
+    },
+    "ex:activity_docsmake": {
+      "prov:type": "activity",
+      "ex:filename": "docs/make.bat",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 35,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/docs/make.bat"
+    },
+    "ex:activity_docsmnist_": {
+      "prov:type": "activity",
+      "ex:filename": "docs/mnist_doc.rst",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 281,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/docs/mnist_doc.rst"
+    },
+    "ex:activity_docsmodule": {
+      "prov:type": "activity",
+      "ex:filename": "docs/modules.rst",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 21,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/docs/modules.rst"
+    },
+    "ex:activity_docsnotebo": {
+      "prov:type": "activity",
+      "ex:filename": "docs/notebooks/example.ipynb",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 92,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/docs/notebooks/example.ipynb"
+    },
+    "ex:activity_docsrequir": {
+      "prov:type": "activity",
+      "ex:filename": "docs/requirements.txt",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 15,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/docs/requirements.txt"
+    },
+    "ex:activity_docstf_sca": {
+      "prov:type": "activity",
+      "ex:filename": "docs/tf_scaling_test.rst",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 71,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/docs/tf_scaling_test.rst"
+    },
+    "ex:activity_docstf_tut": {
+      "prov:type": "activity",
+      "ex:filename": "docs/tf_tutorial_1_imagenet.rst",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 37,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/docs/tf_tutorial_1_imagenet.rst"
+    },
+    "ex:activity_docstorch_": {
+      "prov:type": "activity",
+      "ex:filename": "docs/torch_tutorial_1_mnist.rst",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 113,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/docs/torch_tutorial_1_mnist.rst"
+    },
+    "ex:activity_docstutori": {
+      "prov:type": "activity",
+      "ex:filename": "docs/tutorials.rst",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 52,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/docs/tutorials.rst"
+    },
+    "ex:activity_docsuse_ca": {
+      "prov:type": "activity",
+      "ex:filename": "docs/use_cases.rst",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 97,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/docs/use_cases.rst"
+    },
+    "ex:activity_docsvirgo_": {
+      "prov:type": "activity",
+      "ex:filename": "docs/virgo_doc.rst",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 100,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/docs/virgo_doc.rst"
+    },
+    "ex:activity_envfilesit": {
+      "prov:type": "activity",
+      "ex:filename": "env-files/itwinai-installer.sh",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 41,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/env-files/itwinai-installer.sh"
+    },
+    "ex:activity_envfileste": {
+      "prov:type": "activity",
+      "ex:filename": "env-files/tensorflow/tensorflow-2.13.yml",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 17,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/env-files/tensorflow/tensorflow-2.13.yml"
+    },
+    "ex:activity_envfilesto": {
+      "prov:type": "activity",
+      "ex:filename": "env-files/torch/pytorch-env-gpu.yml",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 19,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/env-files/torch/pytorch-env-gpu.yml"
+    },
+    "ex:activity_environmen": {
+      "prov:type": "activity",
+      "ex:filename": "environment-cern.yml",
+      "ex:status": "removed",
+      "ex:number_of_lines_affected": 12,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/environment-cern.yml"
+    },
+    "ex:activity_examples": {
+      "prov:type": "activity",
+      "ex:filename": "examples.sh",
+      "ex:status": "removed",
+      "ex:number_of_lines_affected": 72,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/examples.sh"
+    },
+    "ex:activity_otherargpa": {
+      "prov:type": "activity",
+      "ex:filename": "other/argparse/config.yml",
+      "ex:status": "removed",
+      "ex:number_of_lines_affected": 10,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/other/argparse/config.yml"
+    },
+    "ex:activity_pyproject": {
+      "prov:type": "activity",
+      "ex:filename": "pyproject.toml",
+      "ex:status": "modified",
+      "ex:number_of_lines_affected": 88,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/pyproject.toml"
+    },
+    "ex:activity_runworkflo": {
+      "prov:type": "activity",
+      "ex:filename": "run-workflow.py",
+      "ex:status": "removed",
+      "ex:number_of_lines_affected": 154,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/run-workflow.py"
+    },
+    "ex:activity_srcitwinai": {
+      "prov:type": "activity",
+      "ex:filename": "src/itwinai/utils.py",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 193,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/src/itwinai/utils.py"
+    },
+    "ex:activity_testscompo": {
+      "prov:type": "activity",
+      "ex:filename": "tests/components/test_pipeline.py",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 83,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/tests/components/test_pipeline.py"
+    },
+    "ex:activity_testsconft": {
+      "prov:type": "activity",
+      "ex:filename": "tests/conftest.py",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 34,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/tests/conftest.py"
+    },
+    "ex:activity_testsrun_o": {
+      "prov:type": "activity",
+      "ex:filename": "tests/run_on_jsc.sh",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 28,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/tests/run_on_jsc.sh"
+    },
+    "ex:activity_teststest_": {
+      "prov:type": "activity",
+      "ex:filename": "tests/test_utils.py",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 99,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/tests/test_utils.py"
+    },
+    "ex:activity_teststorch": {
+      "prov:type": "activity",
+      "ex:filename": "tests/torch/torch_dist_trainer.py",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 62,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/tests/torch/torch_dist_trainer.py"
+    },
+    "ex:activity_testsuseca": {
+      "prov:type": "activity",
+      "ex:filename": "tests/use-cases/test_mnist.py",
+      "ex:status": "modified",
+      "ex:number_of_lines_affected": 121,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/tests/use-cases/test_mnist.py"
+    },
+    "ex:activity_tutorialsd": {
+      "prov:type": "activity",
+      "ex:filename": "tutorials/distributed-ml/torch-tutorial-1-mnist/train.py",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 426,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/tutorials/distributed-ml/torch-tutorial-1-mnist/train.py"
+    },
+    "ex:activity_tutorialsm": {
+      "prov:type": "activity",
+      "ex:filename": "tutorials/ml-workflows/tutorial_2_advanced_workflow.py",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 87,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/tutorials/ml-workflows/tutorial_2_advanced_workflow.py"
+    },
+    "ex:activity_usecases3d": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/3dgan/trainer.py",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 157,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/use-cases/3dgan/trainer.py"
+    },
+    "ex:activity_usecasesRE": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/README.md",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 33,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/use-cases/README.md"
+    },
+    "ex:activity_usecasescy": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/cyclones/trainer.py",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/use-cases/cyclones/trainer.py"
+    },
+    "ex:activity_usecasesmn": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/mnist/workflow.cwl",
+      "ex:status": "removed",
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/use-cases/mnist/workflow.cwl"
+    },
+    "ex:activity_usecasesvi": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/virgo/trainer.py",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/use-cases/virgo/trainer.py"
+    },
+    "ex:activity_usecasesxt": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/xtclim/train.py",
+      "ex:status": "added",
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/96fd2f5659001703bf150adbd6d83f68b29456c0/use-cases/xtclim/train.py"
+    }
+  },
+  "wasDerivedFrom": {
+    "_:id_.dockerignore_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_"
+    },
+    "_:id_.github_linters_.jscpd.json_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_githublint"
+    },
+    "_:id_.github_workflows_lint.yml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_githubwork"
+    },
+    "_:id_.github_workflows_pages.yml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_githubwork"
+    },
+    "_:id_.github_workflows_pypi.yml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_githubwork"
+    },
+    "_:id_.github_workflows_pytest.yml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_githubwork"
+    },
+    "_:id_.github_workflows_sqaaas.yml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_githubwork"
+    },
+    "_:id_.github_workflows_workflows-dt.yml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_githubwork"
+    },
+    "_:id_.gitignore_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_"
+    },
+    "_:id_.python-version_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_"
+    },
+    "_:id_.readthedocs.yaml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_readthedoc"
+    },
+    "_:id_.vscode_extensions.json_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_vscodeexte"
+    },
+    "_:id_.vscode_settings.json_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_vscodesett"
+    },
+    "_:id_AUTHORS.md_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_AUTHORS"
+    },
+    "_:id_CODEOWNERS_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_CODEOWNERS"
+    },
+    "_:id_Makefile_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_Makefile"
+    },
+    "_:id_README.md_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_README"
+    },
+    "_:id_ai_README.md_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_aiREADME"
+    },
+    "_:id_ai_env-files_pytorch-env-gpu.yml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_aienvfiles"
+    },
+    "_:id_ai_env-files_pytorch-env.yml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_aienvfiles"
+    },
+    "_:id_ai_env-files_pytorch-gpu-lock.yml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_aienvfiles"
+    },
+    "_:id_ai_env-files_pytorch-lock.yml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_aienvfiles"
+    },
+    "_:id_ai_setup.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_aisetup"
+    },
+    "_:id_ai_src_itwinai_cli.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_aisrcitwin"
+    },
+    "_:id_ai_src_itwinai_models_cnn.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_aisrcitwin"
+    },
+    "_:id_ai_src_itwinai_plmodels_base.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_aisrcitwin"
+    },
+    "_:id_ai_src_itwinai_plmodels_mnist.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_aisrcitwin"
+    },
+    "_:id_ai_tests_test_cli.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_aiteststes"
+    },
+    "_:id_ai_tests_test_utils.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_aiteststes"
+    },
+    "_:id_ai_training.cwl_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_aitraining"
+    },
+    "_:id_dev-env.yml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_devenv"
+    },
+    "_:id_docs_.gitignore_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docs"
+    },
+    "_:id_docs_3dgan_doc.rst_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docs3dgan_"
+    },
+    "_:id_docs_404.html_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docs404"
+    },
+    "_:id_docs_Gemfile_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsGemfil"
+    },
+    "_:id_docs_Gemfile.lock_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsGemfil"
+    },
+    "_:id_docs_LICENSE_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsLICENS"
+    },
+    "_:id_docs_Makefile_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsMakefi"
+    },
+    "_:id_docs_README.md_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsREADME"
+    },
+    "_:id_docs__config.yml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docs_confi"
+    },
+    "_:id_docs_advanced_workflow.rst_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsadvanc"
+    },
+    "_:id_docs_basic_comp.rst_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsbasic_"
+    },
+    "_:id_docs_basic_workflow.rst_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsbasic_"
+    },
+    "_:id_docs_conf.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsconf"
+    },
+    "_:id_docs_cyclones_doc.rst_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docscyclon"
+    },
+    "_:id_docs_ddp_why.rst_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsddp_wh"
+    },
+    "_:id_docs_docs_CLI.md_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsdocsCL"
+    },
+    "_:id_docs_docs_Concepts.md_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsdocsCo"
+    },
+    "_:id_docs_docs_How-to-use-this-software.md_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsdocsHo"
+    },
+    "_:id_docs_docs_img_Workflow DAG concept.png_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsdocsim"
+    },
+    "_:id_docs_docs_img_cwl-workflow.png_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsdocsim"
+    },
+    "_:id_docs_docs_img_user-platform interaction full.png_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsdocsim"
+    },
+    "_:id_docs_docs_img_user-platform interaction.png_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsdocsim"
+    },
+    "_:id_docs_docs_use-cases_index.md_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsdocsus"
+    },
+    "_:id_docs_docs_use-cases_mnist.md_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsdocsus"
+    },
+    "_:id_docs_favicon.ico_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsfavico"
+    },
+    "_:id_docs_getting_started_with_itwinai.rst_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsgettin"
+    },
+    "_:id_docs_index.md_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsindex"
+    },
+    "_:id_docs_index.rst_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsindex"
+    },
+    "_:id_docs_intermediate_workflow.rst_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsinterm"
+    },
+    "_:id_docs_itwinai.cli.rst_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsitwina"
+    },
+    "_:id_docs_itwinai.components.rst_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsitwina"
+    },
+    "_:id_docs_itwinai.distributed.rst_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsitwina"
+    },
+    "_:id_docs_itwinai.loggers.rst_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsitwina"
+    },
+    "_:id_docs_itwinai.parser.rst_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsitwina"
+    },
+    "_:id_docs_itwinai.pipeline.rst_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsitwina"
+    },
+    "_:id_docs_itwinai.serialization.rst_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsitwina"
+    },
+    "_:id_docs_itwinai.tf.modules.rst_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsitwina"
+    },
+    "_:id_docs_itwinai.torch.modules.rst_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsitwina"
+    },
+    "_:id_docs_itwinai.type.rst_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsitwina"
+    },
+    "_:id_docs_itwinai.utils.rst_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsitwina"
+    },
+    "_:id_docs_make.bat_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsmake"
+    },
+    "_:id_docs_mnist_doc.rst_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsmnist_"
+    },
+    "_:id_docs_modules.rst_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsmodule"
+    },
+    "_:id_docs_notebooks_example.ipynb_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsnotebo"
+    },
+    "_:id_docs_requirements.txt_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsrequir"
+    },
+    "_:id_docs_tf_scaling_test.rst_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docstf_sca"
+    },
+    "_:id_docs_tf_tutorial_0_basics.rst_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docstf_tut"
+    },
+    "_:id_docs_tf_tutorial_1_imagenet.rst_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docstf_tut"
+    },
+    "_:id_docs_torch_scaling_test.rst_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docstorch_"
+    },
+    "_:id_docs_torch_tutorial_0_basics.rst_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docstorch_"
+    },
+    "_:id_docs_torch_tutorial_1_mnist.rst_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docstorch_"
+    },
+    "_:id_docs_tutorials.rst_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docstutori"
+    },
+    "_:id_docs_use_cases.rst_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsuse_ca"
+    },
+    "_:id_docs_virgo_doc.rst_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_docsvirgo_"
+    },
+    "_:id_env-files_itwinai-installer.sh_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_envfilesit"
+    },
+    "_:id_env-files_tensorflow_createEnvJSCTF.sh_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_envfileste"
+    },
+    "_:id_env-files_tensorflow_generic_tf.sh_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_envfileste"
+    },
+    "_:id_env-files_tensorflow_tensorflow-2.10.yml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_envfileste"
+    },
+    "_:id_env-files_tensorflow_tensorflow-2.11.yml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_envfileste"
+    },
+    "_:id_env-files_tensorflow_tensorflow-2.13-cpu.yml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_envfileste"
+    },
+    "_:id_env-files_tensorflow_tensorflow-2.13.yml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_envfileste"
+    },
+    "_:id_env-files_torch_createEnvJSC.sh_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_envfilesto"
+    },
+    "_:id_env-files_torch_generic_torch.sh_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_envfilesto"
+    },
+    "_:id_env-files_torch_pytorch-env-cpu.yml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_envfilesto"
+    },
+    "_:id_env-files_torch_pytorch-env-gpu.yml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_envfilesto"
+    },
+    "_:id_environment-cern.yml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_environmen"
+    },
+    "_:id_examples.sh_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_examples"
+    },
+    "_:id_other_argparse_argparsee.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_otherargpa"
+    },
+    "_:id_other_argparse_config.yml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_otherargpa"
+    },
+    "_:id_pyproject.toml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_pyproject"
+    },
+    "_:id_run-workflow.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_runworkflo"
+    },
+    "_:id_src_itwinai___init__.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_srcitwinai"
+    },
+    "_:id_src_itwinai_cli.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_srcitwinai"
+    },
+    "_:id_src_itwinai_components.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_srcitwinai"
+    },
+    "_:id_src_itwinai_distributed.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_srcitwinai"
+    },
+    "_:id_src_itwinai_loggers.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_srcitwinai"
+    },
+    "_:id_src_itwinai_parser.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_srcitwinai"
+    },
+    "_:id_src_itwinai_pipeline.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_srcitwinai"
+    },
+    "_:id_src_itwinai_serialization.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_srcitwinai"
+    },
+    "_:id_src_itwinai_tensorflow___init__.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_srcitwinai"
+    },
+    "_:id_src_itwinai_tensorflow_data___init__.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_srcitwinai"
+    },
+    "_:id_src_itwinai_tensorflow_distributed.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_srcitwinai"
+    },
+    "_:id_src_itwinai_tensorflow_models___init__.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_srcitwinai"
+    },
+    "_:id_src_itwinai_tensorflow_models_mnist.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_srcitwinai"
+    },
+    "_:id_src_itwinai_tensorflow_trainer.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_srcitwinai"
+    },
+    "_:id_src_itwinai_tensorflow_utils.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_srcitwinai"
+    },
+    "_:id_src_itwinai_tests___init__.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_srcitwinai"
+    },
+    "_:id_src_itwinai_tests_dummy_components.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_srcitwinai"
+    },
+    "_:id_src_itwinai_torch___init__.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_srcitwinai"
+    },
+    "_:id_src_itwinai_torch_config.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_srcitwinai"
+    },
+    "_:id_src_itwinai_torch_data___init__.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_srcitwinai"
+    },
+    "_:id_src_itwinai_torch_distributed.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_srcitwinai"
+    },
+    "_:id_src_itwinai_torch_inference.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_srcitwinai"
+    },
+    "_:id_src_itwinai_torch_mlflow.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_srcitwinai"
+    },
+    "_:id_src_itwinai_torch_models___init__.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_srcitwinai"
+    },
+    "_:id_src_itwinai_torch_models_mnist.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_srcitwinai"
+    },
+    "_:id_src_itwinai_torch_reproducibility.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_srcitwinai"
+    },
+    "_:id_src_itwinai_torch_trainer.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_srcitwinai"
+    },
+    "_:id_src_itwinai_torch_type.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_srcitwinai"
+    },
+    "_:id_src_itwinai_type.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_srcitwinai"
+    },
+    "_:id_src_itwinai_utils.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_srcitwinai"
+    },
+    "_:id_tests_components_conftest.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_testscompo"
+    },
+    "_:id_tests_components_test_components.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_testscompo"
+    },
+    "_:id_tests_components_test_pipe_parser.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_testscompo"
+    },
+    "_:id_tests_components_test_pipeline.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_testscompo"
+    },
+    "_:id_tests_conftest.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_testsconft"
+    },
+    "_:id_tests_run_on_jsc.sh_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_testsrun_o"
+    },
+    "_:id_tests_test_loggers.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_teststest_"
+    },
+    "_:id_tests_test_utils.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_teststest_"
+    },
+    "_:id_tests_torch_distribtued_decorator.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_teststorch"
+    },
+    "_:id_tests_torch_test_config.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_teststorch"
+    },
+    "_:id_tests_torch_test_distribtued_training.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_teststorch"
+    },
+    "_:id_tests_torch_torch_dist_trainer.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_teststorch"
+    },
+    "_:id_tests_use-cases_conftest.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_testsuseca"
+    },
+    "_:id_tests_use-cases_test_3dgan.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_testsuseca"
+    },
+    "_:id_tests_use-cases_test_cyclones.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_testsuseca"
+    },
+    "_:id_tests_use-cases_test_mnist.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_testsuseca"
+    },
+    "_:id_tutorials_distributed-ml_tf-scaling-test-jube_README.md_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_tutorialsd"
+    },
+    "_:id_tutorials_distributed-ml_tf-scaling-test-jube_bench_plot.ipynb_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_tutorialsd"
+    },
+    "_:id_tutorials_distributed-ml_tf-scaling-test-jube_general_jobsys.xml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_tutorialsd"
+    },
+    "_:id_tutorials_distributed-ml_tf-scaling-test-jube_jube_ddp.sh_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_tutorialsd"
+    },
+    "_:id_tutorials_distributed-ml_tf-scaling-test-jube_train.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_tutorialsd"
+    },
+    "_:id_tutorials_distributed-ml_tf-tutorial-0-basics_README.md_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_tutorialsd"
+    },
+    "_:id_tutorials_distributed-ml_tf-tutorial-0-basics_tfmirrored_slurm.sh_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_tutorialsd"
+    },
+    "_:id_tutorials_distributed-ml_tf-tutorial-0-basics_train.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_tutorialsd"
+    },
+    "_:id_tutorials_distributed-ml_tf-tutorial-1-imagenet_README.md_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_tutorialsd"
+    },
+    "_:id_tutorials_distributed-ml_tf-tutorial-1-imagenet_tfmirrored_slurm.sh_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_tutorialsd"
+    },
+    "_:id_tutorials_distributed-ml_tf-tutorial-1-imagenet_train.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_tutorialsd"
+    },
+    "_:id_tutorials_distributed-ml_torch-scaling-test_README.md_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_tutorialsd"
+    },
+    "_:id_tutorials_distributed-ml_torch-scaling-test_config_base.yaml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_tutorialsd"
+    },
+    "_:id_tutorials_distributed-ml_torch-scaling-test_config_ddp.yaml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_tutorialsd"
+    },
+    "_:id_tutorials_distributed-ml_torch-scaling-test_config_deepspeed.yaml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_tutorialsd"
+    },
+    "_:id_tutorials_distributed-ml_torch-scaling-test_config_horovod.yaml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_tutorialsd"
+    },
+    "_:id_tutorials_distributed-ml_torch-scaling-test_ddp_trainer.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_tutorialsd"
+    },
+    "_:id_tutorials_distributed-ml_torch-scaling-test_deepspeed_trainer.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_tutorialsd"
+    },
+    "_:id_tutorials_distributed-ml_torch-scaling-test_horovod_trainer.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_tutorialsd"
+    },
+    "_:id_tutorials_distributed-ml_torch-scaling-test_img_report.png_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_tutorialsd"
+    },
+    "_:id_tutorials_distributed-ml_torch-scaling-test_itwinai_trainer.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_tutorialsd"
+    },
+    "_:id_tutorials_distributed-ml_torch-scaling-test_runall.sh_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_tutorialsd"
+    },
+    "_:id_tutorials_distributed-ml_torch-scaling-test_scaling-test.sh_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_tutorialsd"
+    },
+    "_:id_tutorials_distributed-ml_torch-scaling-test_slurm.sh_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_tutorialsd"
+    },
+    "_:id_tutorials_distributed-ml_torch-scaling-test_utils.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_tutorialsd"
+    },
+    "_:id_tutorials_distributed-ml_torch-tutorial-0-basics_README.md_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_tutorialsd"
+    },
+    "_:id_tutorials_distributed-ml_torch-tutorial-0-basics_runall.sh_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_tutorialsd"
+    },
+    "_:id_tutorials_distributed-ml_torch-tutorial-0-basics_slurm.sh_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_tutorialsd"
+    },
+    "_:id_tutorials_distributed-ml_torch-tutorial-0-basics_train.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_tutorialsd"
+    },
+    "_:id_tutorials_distributed-ml_torch-tutorial-1-mnist_README.md_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_tutorialsd"
+    },
+    "_:id_tutorials_distributed-ml_torch-tutorial-1-mnist_config.yaml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_tutorialsd"
+    },
+    "_:id_tutorials_distributed-ml_torch-tutorial-1-mnist_runall.sh_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_tutorialsd"
+    },
+    "_:id_tutorials_distributed-ml_torch-tutorial-1-mnist_slurm.sh_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_tutorialsd"
+    },
+    "_:id_tutorials_distributed-ml_torch-tutorial-1-mnist_train.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_tutorialsd"
+    },
+    "_:id_tutorials_ml-workflows_basic_components.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_tutorialsm"
+    },
+    "_:id_tutorials_ml-workflows_tutorial_0_basic_workflow.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_tutorialsm"
+    },
+    "_:id_tutorials_ml-workflows_tutorial_1_intermediate_workflow.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_tutorialsm"
+    },
+    "_:id_tutorials_ml-workflows_tutorial_2_advanced_workflow.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_tutorialsm"
+    },
+    "_:id_use-cases_3dgan_Dockerfile_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecases3d"
+    },
+    "_:id_use-cases_3dgan_README.md_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecases3d"
+    },
+    "_:id_use-cases_3dgan___init__.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecases3d"
+    },
+    "_:id_use-cases_3dgan_config.yaml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecases3d"
+    },
+    "_:id_use-cases_3dgan_create_inference_sample.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecases3d"
+    },
+    "_:id_use-cases_3dgan_dataloader.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecases3d"
+    },
+    "_:id_use-cases_3dgan_interLink_3dgan-inference-cpu.yaml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecases3d"
+    },
+    "_:id_use-cases_3dgan_interLink_3dgan-inference.yaml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecases3d"
+    },
+    "_:id_use-cases_3dgan_interLink_3dgan-train.yaml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecases3d"
+    },
+    "_:id_use-cases_3dgan_interLink_README.md_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecases3d"
+    },
+    "_:id_use-cases_3dgan_model.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecases3d"
+    },
+    "_:id_use-cases_3dgan_requirements.txt_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecases3d"
+    },
+    "_:id_use-cases_3dgan_saver.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecases3d"
+    },
+    "_:id_use-cases_3dgan_startscript_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecases3d"
+    },
+    "_:id_use-cases_3dgan_trainer.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecases3d"
+    },
+    "_:id_use-cases_README.md_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesRE"
+    },
+    "_:id_use-cases_cyclones_.gitignore_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasescy"
+    },
+    "_:id_use-cases_cyclones_README.md_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasescy"
+    },
+    "_:id_use-cases_cyclones_cyclones_vgg.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasescy"
+    },
+    "_:id_use-cases_cyclones_dataloader.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasescy"
+    },
+    "_:id_use-cases_cyclones_pipeline.yaml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasescy"
+    },
+    "_:id_use-cases_cyclones_requirements.txt_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasescy"
+    },
+    "_:id_use-cases_cyclones_src_callbacks.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasescy"
+    },
+    "_:id_use-cases_cyclones_src_macros.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasescy"
+    },
+    "_:id_use-cases_cyclones_src_scaling.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasescy"
+    },
+    "_:id_use-cases_cyclones_src_strategy.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasescy"
+    },
+    "_:id_use-cases_cyclones_src_tfrecords_dataset.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasescy"
+    },
+    "_:id_use-cases_cyclones_src_tfrecords_functions.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasescy"
+    },
+    "_:id_use-cases_cyclones_src_transform.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasescy"
+    },
+    "_:id_use-cases_cyclones_src_utils.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasescy"
+    },
+    "_:id_use-cases_cyclones_startscript.sh_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasescy"
+    },
+    "_:id_use-cases_cyclones_train.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasescy"
+    },
+    "_:id_use-cases_cyclones_trainer.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasescy"
+    },
+    "_:id_use-cases_mnist_README.md_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesmn"
+    },
+    "_:id_use-cases_mnist_env-files_preproc-env.yml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesmn"
+    },
+    "_:id_use-cases_mnist_inference-workflow.yml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesmn"
+    },
+    "_:id_use-cases_mnist_meta.yml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesmn"
+    },
+    "_:id_use-cases_mnist_mlflow-server.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesmn"
+    },
+    "_:id_use-cases_mnist_mnist-ai-inference.yml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesmn"
+    },
+    "_:id_use-cases_mnist_mnist-ai-train.yml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesmn"
+    },
+    "_:id_use-cases_mnist_mnist-preproc.cwl_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesmn"
+    },
+    "_:id_use-cases_mnist_mnist-preproc.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesmn"
+    },
+    "_:id_use-cases_mnist_tensorflow_dataloader.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesmn"
+    },
+    "_:id_use-cases_mnist_tensorflow_pipeline.yaml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesmn"
+    },
+    "_:id_use-cases_mnist_tensorflow_startscript.sh_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesmn"
+    },
+    "_:id_use-cases_mnist_torch-lightning_README.md_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesmn"
+    },
+    "_:id_use-cases_mnist_torch-lightning_config.yaml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesmn"
+    },
+    "_:id_use-cases_mnist_torch-lightning_dataloader.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesmn"
+    },
+    "_:id_use-cases_mnist_torch-lightning_startscript_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesmn"
+    },
+    "_:id_use-cases_mnist_torch-lightning_utils.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesmn"
+    },
+    "_:id_use-cases_mnist_torch_Dockerfile_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesmn"
+    },
+    "_:id_use-cases_mnist_torch_README.md_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesmn"
+    },
+    "_:id_use-cases_mnist_torch_config.yaml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesmn"
+    },
+    "_:id_use-cases_mnist_torch_create_inference_sample.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesmn"
+    },
+    "_:id_use-cases_mnist_torch_dataloader.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesmn"
+    },
+    "_:id_use-cases_mnist_torch_model.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesmn"
+    },
+    "_:id_use-cases_mnist_torch_runall.sh_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesmn"
+    },
+    "_:id_use-cases_mnist_torch_saver.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesmn"
+    },
+    "_:id_use-cases_mnist_torch_slurm.sh_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesmn"
+    },
+    "_:id_use-cases_mnist_torch_startscript.sh_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesmn"
+    },
+    "_:id_use-cases_mnist_training-workflow.yml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesmn"
+    },
+    "_:id_use-cases_mnist_workflow.cwl_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesmn"
+    },
+    "_:id_use-cases_virgo_.gitignore_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesvi"
+    },
+    "_:id_use-cases_virgo_README.md_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesvi"
+    },
+    "_:id_use-cases_virgo_config.yaml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesvi"
+    },
+    "_:id_use-cases_virgo_data.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesvi"
+    },
+    "_:id_use-cases_virgo_requirements.txt_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesvi"
+    },
+    "_:id_use-cases_virgo_runall.sh_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesvi"
+    },
+    "_:id_use-cases_virgo_slurm.sh_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesvi"
+    },
+    "_:id_use-cases_virgo_src_dataset.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesvi"
+    },
+    "_:id_use-cases_virgo_src_model.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesvi"
+    },
+    "_:id_use-cases_virgo_src_utils.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesvi"
+    },
+    "_:id_use-cases_virgo_train.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesvi"
+    },
+    "_:id_use-cases_virgo_trainer.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesvi"
+    },
+    "_:id_use-cases_xtclim_LICENSE_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesxt"
+    },
+    "_:id_use-cases_xtclim_README.md_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesxt"
+    },
+    "_:id_use-cases_xtclim_Requirements.txt_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesxt"
+    },
+    "_:id_use-cases_xtclim_outputs_.DS_Store_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesxt"
+    },
+    "_:id_use-cases_xtclim_pipeline.yaml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesxt"
+    },
+    "_:id_use-cases_xtclim_preprocessing_.DS_Store_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesxt"
+    },
+    "_:id_use-cases_xtclim_preprocessing_preprocess_2d_seasons.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesxt"
+    },
+    "_:id_use-cases_xtclim_preprocessing_preprocess_3d_seasons.ipynb_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesxt"
+    },
+    "_:id_use-cases_xtclim_preprocessing_preprocess_3d_seasons.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesxt"
+    },
+    "_:id_use-cases_xtclim_preprocessing_preprocess_functions_1d_temp_members.ipynb_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesxt"
+    },
+    "_:id_use-cases_xtclim_preprocessing_preprocess_functions_2d_ssp.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesxt"
+    },
+    "_:id_use-cases_xtclim_src_.DS_Store_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesxt"
+    },
+    "_:id_use-cases_xtclim_src_anomaly.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesxt"
+    },
+    "_:id_use-cases_xtclim_src_engine.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesxt"
+    },
+    "_:id_use-cases_xtclim_src_initialization.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesxt"
+    },
+    "_:id_use-cases_xtclim_src_model.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesxt"
+    },
+    "_:id_use-cases_xtclim_src_pipeline.yaml_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesxt"
+    },
+    "_:id_use-cases_xtclim_src_scenario_season_comparison.ipynb_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesxt"
+    },
+    "_:id_use-cases_xtclim_src_trainer.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesxt"
+    },
+    "_:id_use-cases_xtclim_src_utils.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesxt"
+    },
+    "_:id_use-cases_xtclim_train.py_after": {
+      "prov:generatedEntity": "ex:commit_96fd...56c0",
+      "prov:usedEntity": "ex:commit_040b...ea8b",
+      "prov:activity": "ex:activity_usecasesxt"
+    }
+  },
+  "agent": {
+    "ex:agent_matbun_1": {
+      "prov:type": "prov:Agent",
+      "ex:username": "matbun",
+      "ex:name": "matbun",
+      "ex:email": "N/A",
+      "ex:avatar_url": "https://avatars.githubusercontent.com/u/48362942?v=4"
+    },
+    "ex:agent_web-flow_2": {
+      "prov:type": "prov:Agent",
+      "ex:username": "web-flow",
+      "ex:name": "web-flow",
+      "ex:email": "N/A",
+      "ex:avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4"
+    }
+  },
+  "wasAttributedTo": {
+    "_:id_committer_1_commit_040b...ea8b": {
+      "prov:activity": "ex:activity_commit_040b...ea8b",
+      "prov:agent": "ex:agent_matbun_1",
+      "prov:entity": "ex:commit_040b...ea8b",
+      "ex:github_diff_url": "https://github.com/interTwin-eu/itwinai/compare/040bbfff399f861481c8ade9368106b87b54ea8b...96fd2f5659001703bf150adbd6d83f68b29456c0"
+    },
+    "_:id_committer_2_commit_96fd...56c0": {
+      "prov:activity": "ex:activity_commit_96fd...56c0",
+      "prov:agent": "ex:agent_web-flow_2",
+      "prov:entity": "ex:commit_96fd...56c0",
+      "ex:github_diff_url": "https://github.com/interTwin-eu/itwinai/compare/040bbfff399f861481c8ade9368106b87b54ea8b...96fd2f5659001703bf150adbd6d83f68b29456c0"
+    }
+  }
+}
