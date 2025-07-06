@@ -5,4 +5,3 @@ from .repository import Repository
 from .quality_check import QualityCheck
 from .output import Output
 from .provenance_relationship import ProvenanceRelationship
-from .commit_provenance import CommitProvenance

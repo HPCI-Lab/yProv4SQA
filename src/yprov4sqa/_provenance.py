@@ -3,28 +3,45 @@ import os
 import requests
 import json
 import argparse
-from .provenance_model import ProvenanceModel
-from .repository import Repository
-from .assessment import Assessment
-from .agent import Agent
-from .quality_check import QualityCheck
-from .output import Output
-from .provenance_relationship import ProvenanceRelationship
+from .models.provenance_model import ProvenanceModel
+from .models.repository import Repository
+from .models.assessment import Assessment
+from .models.agent import Agent
+from .models.quality_check import QualityCheck
+from .models.output import Output
+from .models.provenance_relationship import ProvenanceRelationship
+import time, sys
+TOKEN = os.getenv("GITHUB_TOKEN")
 
-def get_commit_Date(name,commit_id):
-    url = f'https://api.github.com/repos/{name}/commits/{commit_id}'
-    response = requests.get(url)
+def github_get(url, params=None, *, max_wait=3600):
+    while True:
+        headers = {"Authorization": f"token {TOKEN}"} if TOKEN else {}
+        r = requests.get(url, params=params, headers=headers, timeout=30)
+        if r.status_code in (403, 429):
+            reset_ts = int(r.headers.get("X-RateLimit-Reset", 0))
+            remain   = int(r.headers.get("X-RateLimit-Remaining", 0))
+            if remain == 0 and reset_ts:
+                wait_sec = reset_ts - int(time.time()) + 2
+                if wait_sec <= max_wait:
+                    print(f"\nGitHub rate-limit hit (403). "
+                          f"Waiting {wait_sec} s until {time.strftime('%H:%M:%S', time.gmtime(reset_ts))} …")
+                    time.sleep(wait_sec)
+                    continue
+            print("\nGitHub returned 403 Forbidden – probably rate-limit exceeded. "
+                  "Try again later or authenticate (GITHUB_TOKEN).")
+            sys.exit(1)
+        if r.status_code == 404:
+            return r
+        r.raise_for_status()
+        return r
 
-    # Check if the request was successful
+
+def get_commit_Date(name, commit_id):
+    url = f"https://api.github.com/repos/{name}/commits/{commit_id}"
+    response = github_get(url)          
     if response.status_code == 200:
-        data = response.json()
-        # Extract commit date from the response JSON
-        commit_date = data['commit']['author']['date']
-        print(f"Commit Date: {commit_date}")
-        return commit_date
-    else:
-        print(f"Failed to retrieve commit data. Status code: {response.status_code}")
-
+        return response.json()['commit']['author']['date']
+    return None
 
 def load_json(file_path):
         try:
@@ -43,7 +60,7 @@ def process_file(file_path, prov_model, gindex, repo_dict):
     if not input_data:
         return
 
-    print(f"Processing file {file_path}, index {gindex}")
+    #print(f"Processing file {file_path}, index {gindex}")
 
     # Directly access the first repository (assuming only one repository per file)
     repo_list = input_data.get("repository", [])
@@ -59,13 +76,13 @@ def process_file(file_path, prov_model, gindex, repo_dict):
     # Check if the repository already exists in the dictionary
     if repo_name in repo_dict:
         repository_id = repo_dict[repo_name]["id"]
-        print(f"Repository '{repo_name}' already exists with ID: {repository_id}")
+        #print(f"Repository '{repo_name}' already exists with ID: {repository_id}")
     else:
         repository_id = f"repository{gindex}"
         # Add repository to dictionary to avoid duplication in future files
         repo_dict[repo_name] = {"id": repository_id, "name": repo_name}
 
-        # Process repository (create a new repository if it doesn't exist)
+        # Process repository (createrepo_dict = {} a new repository if it doesn't exist)
         repo = Repository(
             id=repository_id,
             name=repo_data.get("name", "Unknown Name"),
@@ -156,22 +173,32 @@ def process_all_files(folder_path):
     prov_model.add_agent(agent1)
 
     # Get all files from the folder
-    input_files = [os.path.join(folder_path, f) for f in os.listdir(folder_path) if f.endswith(".json")]
+   
+    input_files = sorted([os.path.join(folder_path, f)
+                      for f in os.listdir(folder_path) if f.endswith(".json")])   # newest ISO prefix first
 
+    total_files = len(input_files)  
     gindex = 0
     repo_dict = {}  # Dictionary to store existing repositories and their IDs
 
     # Loop through all files and process them
     for file_path in input_files:
         gindex += 1
+        pct = int(round(gindex / total_files * 100))  
+        print(f"\rProcessing {gindex}/{total_files} - {pct}%", end="", flush=True)
         process_file(file_path, prov_model, gindex, repo_dict)
+    print() 
 
-    # Save output to JSON
-    prov_json = prov_model.to_json()
-    with open("prov_output.json", "w") as f:
-        f.write(prov_json)
+    output_folder = "./Provenance_documents"
+    os.makedirs(output_folder, exist_ok=True)
 
-    print("Saved output to prov_output.json")
+    repo_names = [d["name"] for d in repo_dict.values()]
+    file_stub = repo_names[0].replace("/", "_") if repo_names else "provenance"
+    provenance_filename = os.path.join(output_folder, f"{file_stub}_prov_output.json")
+
+    with open(provenance_filename, "w") as f:
+        f.write(prov_model.to_json())
+    print(f"Saved provenance document to {provenance_filename}")
 
 
 def main():

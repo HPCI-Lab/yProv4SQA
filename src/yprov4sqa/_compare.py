@@ -4,6 +4,36 @@ import os
 import json
 import re
 from datetime import datetime
+import time, sys
+
+TOKEN = os.getenv("GITHUB_TOKEN")   # None if not set
+
+def github_get(url, params=None, *, max_wait=3600):
+    """
+    Wrapper around requests.get that handles GitHub rate-limiting
+    (403/429) automatically.  Returns the response only when 200 OK.
+    """
+    while True:
+        headers = {"Authorization": f"token {TOKEN}"} if TOKEN else {}
+        r = requests.get(url, params=params, headers=headers, timeout=30)
+        if r.status_code in (403, 429):
+            reset_ts = int(r.headers.get("X-RateLimit-Reset", 0))
+            remain   = int(r.headers.get("X-RateLimit-Remaining", 0))
+            if remain == 0 and reset_ts:
+                wait_sec = reset_ts - int(time.time()) + 2
+                if wait_sec <= max_wait:
+                    print(f"\nGitHub rate-limit hit (403). "
+                          f"Waiting {wait_sec} s until {time.strftime('%H:%M:%S', time.gmtime(reset_ts))} …")
+                    time.sleep(wait_sec)
+                    continue
+            print("\nGitHub returned 403 Forbidden – probably rate-limit exceeded. "
+                  "Try again later or authenticate (GITHUB_TOKEN).")
+            sys.exit(1)
+        if r.status_code == 404:
+            return r
+        r.raise_for_status()
+        return r
+
 
 class CommitProvenance:
     def __init__(self, repo_owner, repo_name, commit_id_1, commit_id_2):
@@ -23,12 +53,12 @@ class CommitProvenance:
             "agent": {},
             "wasAttributedTo": {}
         }
-        self.output_folder = './commit_provenance'
+        self.output_folder = './Compare_commit_provenance'
         os.makedirs(self.output_folder, exist_ok=True)
 
     def fetch_commit_data(self, commit_id):
         commit_url = f"https://api.github.com/repos/{self.repo_owner}/{self.repo_name}/commits/{commit_id}"
-        response = requests.get(commit_url)
+        response = github_get(commit_url)
         if response.status_code == 200:
             return response.json()
         else:
@@ -135,7 +165,7 @@ class CommitProvenance:
 
             # Process file changes (patch details)
             comparison_url = f"https://api.github.com/repos/{self.repo_owner}/{self.repo_name}/compare/{self.commit_id_1}...{self.commit_id_2}"
-            comparison_response = requests.get(comparison_url)
+            comparison_response = github_get(comparison_url)
 
             if comparison_response.status_code == 200:
                 comparison_data = comparison_response.json()
@@ -186,7 +216,7 @@ class CommitProvenance:
                 raise Exception(f"Error comparing commits. Status code: {comparison_response.status_code}")
 
             # Save the provenance data to a JSON file
-            provenance_filename = os.path.join(self.output_folder, f'commit_provenance_{reduced_commit_id_1}_to_{reduced_commit_id_2}.json')
+            provenance_filename = os.path.join(self.output_folder, f'{self.repo_name}_commit_provenance_{reduced_commit_id_1}_to_{reduced_commit_id_2}.json')
             with open(provenance_filename, 'w') as provenance_file:
                 json.dump(self.prov_data, provenance_file, indent=2)
 
@@ -215,6 +245,13 @@ def main():
     parser.add_argument('Assessment_number1', type=int, help="The first assessment number")
     parser.add_argument('Assessment_number2', type=int, help="The second assessment number")
     args = parser.parse_args()
+
+    if args.Assessment_number1 > args.Assessment_number2:
+        args.Assessment_number1, args.Assessment_number2 = (
+            args.Assessment_number2,
+            args.Assessment_number1,
+        )
+
 
         # Check if the file exists
     if not os.path.exists(args.File_path):

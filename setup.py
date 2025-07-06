@@ -2,28 +2,26 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='yProv4SQA',
-    version='0.1',
-    packages=find_packages(),
+    name='yprov4sqa',
+    version='0.2.0',
+    package_dir={"": "src"},              
+    packages=find_packages(where="src"),  
     install_requires=[
-        'requests', 
+        'requests',
+        'prov>=2.0.0',
+        'lxml',
+        'rdflib',
+        'click>=8',
     ],
     entry_points={
         'console_scripts': [
-            'fetch-sqa-reports=yProv4SQA.models.get_SQAaaS_AReports:main',
-            'process-provenance=yProv4SQA.models.processor:main',
-            'compare=yProv4SQA.models.commit_provenance:main', 
+            'fetch-sqa-reports  = yprov4sqa.cli.fetch_sqa_reports:main',
+            'process-provenance = yprov4sqa.cli.process_provenance:main',
+            'compare            = yprov4sqa.cli.compare:main',
+            'json2graph         = yprov4sqa.cli.json2graph:main',
         ],
     },
-    description="A library for processing provenance data and generating models.",
+    description="A library for processing provenance of software quality assurance pipelines",
     long_description=open('README.md').read(),
-    long_description_content_type='text/markdown',
-    author="Your Name",
-    author_email="your.email@example.com",
-    url="https://github.com/yourusername/yProv4SQA",  # Replace with actual URL
-    classifiers=[
-        'Programming Language :: Python :: 3',
-        'License :: OSI Approved :: MIT License',
-        'Operating System :: OS Independent',
-    ],
+    url="https://github.com/HPCI-Lab/yProv4SQA",
 )

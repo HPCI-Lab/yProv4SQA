@@ -1,4 +1,0 @@
-[console_scripts]
-compare = yProv4SQA.models.commit_provenance:main
-fetch-sqa-reports = yProv4SQA.models.get_SQAaaS_AReports:main
-process-provenance = yProv4SQA.models.processor:main
