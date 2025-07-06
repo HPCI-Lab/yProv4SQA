@@ -8,15 +8,8 @@ Before installing **yProv4SQA**, ensure that you have the following installed:
 - **Git** (for version control and integration with GitHub)
 - **pip** (Python package manager)
 
-### **Installation Steps**
 
-
-
-# yProv4SQA: Quick Start Guide
-
-`yProv4SQA` is a Python library used to generate provenance documents for software quality assurance (SQA) processes. This guide will help you quickly set up and start using the library.
-
-## Installation
+### Installation
 
 Follow these steps to install **yProv4SQA** and its dependencies.
 
