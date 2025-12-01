@@ -33,4 +33,4 @@ This will download all the assessment reports and save them in the <RepoName>_SQ
 ```bash
    compare 'Prov_file_path' AssessmentNo1 AssessmentNo2
 ``` 
-To compare two Code changes between two Assesments and generate provenance data:
+To compare two Code changes between two Assesments and generate provenance data.

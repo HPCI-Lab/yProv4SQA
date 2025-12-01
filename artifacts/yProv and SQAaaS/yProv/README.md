@@ -59,6 +59,36 @@ docker network create yprov_net
         hpci/yprov:latest
 ```
 
+### Neo4j for Provenance Visualization and Data Exploration
+After registering with the service, provenance documents can be uploaded and automatically synchronized with a Neo4j graph database for exploration.
+
+Once both containers are running, you can interact with the yProv REST API as shown below.
+
+Register to the yProv service and replace the "..." with your own username and password.
+   ```bash
+   curl -X POST http://localhost:3000/api/v0/auth/register -H 'Content-Type: application/json' -d '{"user": "...", "password": "..."}'
+   ```
+
+Log in to the service to get a valid token for performing all the other operations
+   ```bash
+   curl -X POST http://localhost:3000/api/v0/auth/login -H 'Content-Type: application/json' -d '{"user": "...", "password": "..."}'
+   ```
+
+Load the JSON document associated with itwinai use case
+   ```bash
+   curl -X PUT  http://localhost:3000/api/v0/documents/itwinai -H "Content-Type: application/json" -H 'Authorization: Bearer <token>' -d @./Provenance_documents/interTwin-eu_itwinai_prov_output.json
+   ```
+- This command will upload the `./Provenance_documents/interTwin-eu_itwinai_prov_output.json` to the yProv service.
+- Replace `<token>` with the actual token you obtained in the previous step.
+
+
+After uploading the provenance document, open Neo4j in your browser using the mapped ports, typically:
+http://localhost:7474/browser/
+
+**NOTE** – before running the queries below, select the database **"itwinai"** in the Neo4j browser and use the following credentials while login:  
+- **Username**: `neo4j`  
+- **Password**: `password` (default set in docker-compose)  
+
 ## Get started
 You can find some ready to use examples to get started with [yProv](https://github.com/HPCI-Lab/yProv)under the [examples](https://github.com/HPCI-Lab/yProv/tree/main/examples/pta) folder.
 

@@ -69,6 +69,7 @@ This command generates a level-2 provenance document that captures the file chan
 ## **Exploration of Provenance graph**
 We can use several tools to visualize and analyze the generated provenance documents.
 ### 1. PROV Library Visualization
+
 #### GraphViz prerequisite
 The `json2graph` command needs the **system-level GraphViz** renderer (`dot`) in addition to the Python package:
    ```bash
@@ -82,44 +83,23 @@ This PROV library can be used to check the PROV syntax, convert the provenance d
 This command converts the `.json` file into an `.svg` provenance graph and saves it to `./Graph_outputs`.
 The figure that appears as `Fig. 4` in the paper was generated using this command and  included as an example in `./results`.
 
-### 2. Using yProvExplorer
-You can either upload the `interTwin-eu_itwinai_prov_output.json` file into the explorer or drag and drop the file for  visualization.  
+### 2. Using yProv service and yProvExplorer
+yProvExplorer is a web-based tool for visualizing and interacting with provenance documents.
+
 Access the explorer here: [https://explorer.yprov.disi.unitn.it/](https://explorer.yprov.disi.unitn.it/)
+
+You can either upload the `interTwin-eu_itwinai_prov_output.json` file into the explorer or drag and drop the file for visualization.  
 
 For convenience, we have already uploaded the graphs that we used in our paper to the yProv server. You can directly open them without uploading the `.json` file:
 
 - **Full assessment history (Fig. 5):** [View Graph](https://explorer.yprov.disi.unitn.it/?file=http%3A%2F%2Fyprov.disi.unitn.it%3A3000%2Fapi%2Fv0%2Fdocuments%2Fitwinai)  
 - **file changes between the two assessments (Fig. 7):** [View Graph](https://explorer.yprov.disi.unitn.it/?file=http%3A%2F%2Fyprov.disi.unitn.it%3A3000%2Fapi%2Fv0%2Fdocuments%2Fgitdif)
 
+We have used the yProv service and a Neo4j database running on our internal service, which is not directly accessible externally.
 
-### 3. Using yProv and Neo4j for Provenance Visualization and Data Exploration
-We use the [yProv service](./Pre_requisites/yProv/README.md) to connect with a Neo4j database for exploring the provenance graph. After registering with the service, provenance documents can be uploaded and automatically synchronized with a Neo4j graph database for exploration.
-To set up the environment (yProv service + Neo4j database), please follow the instructions in: [Running yProv service](./Pre_requisites/yProv/README.md)
-Once both containers are running, you can interact with the yProv REST API as shown below.
+To run Cypher queries, you need to install the yProv service and Neo4j database locally. To set up the environment (yProv service + Neo4j database), please follow the instructions in: [Running yProv service](./yProv_and_SQAaaS/yProv/README.md)
 
-Register to the yProv service and replace the "..." with your own username and password.
-   ```bash
-   curl -X POST http://localhost:3000/api/v0/auth/register -H 'Content-Type: application/json' -d '{"user": "...", "password": "..."}'
-   ```
-
-Log in to the service to get a valid token for performing all the other operations
-   ```bash
-   curl -X POST http://localhost:3000/api/v0/auth/login -H 'Content-Type: application/json' -d '{"user": "...", "password": "..."}'
-   ```
-
-Load the JSON document associated with itwinai use case
-   ```bash
-   curl -X PUT  http://localhost:3000/api/v0/documents/itwinai -H "Content-Type: application/json" -H 'Authorization: Bearer <token>' -d @./Provenance_documents/interTwin-eu_itwinai_prov_output.json
-   ```
-- This command will upload the `./Provenance_documents/interTwin-eu_itwinai_prov_output.json` to the yProv service.
-- Replace `<token>` with the actual token you obtained in the previous step.
-
-After uploading the provenance document, open Neo4j in your browser using the mapped ports, typically:
-http://localhost:7474/browser/
-
-**NOTE** – before running the queries below, select the database **"itwinai"** in the Neo4j browser and use the following credentials while login:  
-- **Username**: `neo4j`  
-- **Password**: `password` (default set in docker-compose)  
+Once the service is running locally, you will be able to perform the Cypher queries localy.
 
 ## **Sample Neo4j Queries**
 Below are the Neo4j queries we ran to extract and analyze the results presented in the paper.
