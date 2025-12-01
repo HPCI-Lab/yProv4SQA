@@ -50,6 +50,7 @@ This installs the library and also installs the requests library, which is requi
    fetch-sqa-reports itwinai
    ```
 This command fetches all SQAaaS assessments for the `itwinai` repository from the [EOSC-Synergy GitHub space](https://github.com/EOSC-synergy). The library then removes duplicates and outdated assessments, and produces a final cleaned directory used to generate the provenance document. For this example, the output directory will be created as `./itwinai_SQAaaS_reports`.
+
 Note: It may take some time to fetch all reports from GitHub. You can skip this step and use the reports we have already downloaded, stored in the `./data/itwinai_SQAaaS_reports` directory.
 
 
