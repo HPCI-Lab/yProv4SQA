@@ -13,7 +13,7 @@ If you process many repositories for large histories you will quickly hit the 60
 
 **Export it in your shell (temporary)**
    ```bash
-   export GITHUB_TOKEN=ghp_xxxxxxxxxxxxxxxxxxxx #<replace with your GITHUB_TOKEN>
+   export GITHUB_TOKEN= <replace with your GITHUB_TOKEN>
    ```
 Verify quota
    ```bash
@@ -31,7 +31,7 @@ You should see "limit": 5000
 ### 1. Create and activate a virtual environment (recommended)
    ```bash
    # Create a virtual environment
-   python -m venv yProv4SQA_venv
+   python3 -m venv yProv4SQA_venv
 
    # Activate the virtual environment
    source yProv4SQA_venv/bin/activate
@@ -64,15 +64,20 @@ This command generates a level-1 provenance document of all assessments availabl
    ```bash
    compare ./Provenance_documents/interTwin-eu_itwinai_prov_output.json 59 87
    ```
-This command generates a level-2 provenance document that captures the file changes between assessments no. 59 and assessments no. 87, integrates directly with URLs to the corresponding GitHub diff and SQAaaS reports, and stores the graph as `./Compare_commit_provenance/itwinai_commit_provenance_040b…ea8b_to_96fd…56c0.json`
+This command generates a level-2 provenance document that captures the file changes between assessments no. 59 and assessments no. 87, integrates directly with URLs to the corresponding GitHub diff and SQAaaS reports, and stores the graph as `./Compare_commit_provenance/itwinai_commit_provenance_f7a0...3d6c_to_3076...4621.json`
 
 ## **Exploration of Provenance graph**
 We can use several tools to visualize and analyze the generated provenance documents.
 ### 1. PROV Library Visualization
+## GraphViz prerequisite
+The `json2graph` command needs the **system-level GraphViz** renderer (`dot`) in addition to the Python package:
+   ```bash
+   sudo apt install graphviz
+   ```
 This PROV library can be used to check the PROV syntax, convert the provenance document into an SVG graph for standard visualization, and to ensure the compliance with the W3C PROV standard.
    ```bash
    json2graph ./Provenance_documents/interTwin-eu_itwinai_prov_output.json
-   json2graph ./Compare_commit_provenance/itwinai_commit_provenance_040b…ea8b_to_96fd…56c0.json
+   json2graph ./Compare_commit_provenance/itwinai_commit_provenance_f7a0...3d6c_to_3076...4621.json
    ```
 This command converts the `.json` file into an `.svg` provenance graph and saves it to `./Graph_outputs`.
 The figure that appears as `Fig. 4` in the paper was generated using this command and  included as an example in `./results`.
@@ -111,6 +116,10 @@ Load the JSON document associated with itwinai use case
 
 After uploading the provenance document, open Neo4j in your browser using the mapped ports, typically:
 http://localhost:7474/browser/
+
+**NOTE** – before running the queries below, select the database **"itwinai"** in the Neo4j browser and use the following credentials while login:  
+- **Username**: `neo4j`  
+- **Password**: `password` (default set in docker-compose)  
 
 ## **Sample Neo4j Queries**
 Below are the Neo4j queries we ran to extract and analyze the results presented in the paper.
