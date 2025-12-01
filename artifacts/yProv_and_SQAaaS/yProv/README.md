@@ -89,6 +89,6 @@ http://localhost:7474/browser/
 - **Username**: `neo4j`  
 - **Password**: `password` (default set in docker-compose)  
 
-## Get started
-You can find some ready to use examples to get started with [yProv](https://github.com/HPCI-Lab/yProv)under the [examples](https://github.com/HPCI-Lab/yProv/tree/main/examples/pta) folder.
+
+You can find some ready to use examples to get started with [yProv](https://github.com/HPCI-Lab/yProv) under the [examples](https://github.com/HPCI-Lab/yProv/tree/main/examples/pta) folder.
 
