@@ -69,7 +69,7 @@ This command generates a level-2 provenance document that captures the file chan
 ## **Exploration of Provenance graph**
 We can use several tools to visualize and analyze the generated provenance documents.
 ### 1. PROV Library Visualization
-## GraphViz prerequisite
+#### GraphViz prerequisite
 The `json2graph` command needs the **system-level GraphViz** renderer (`dot`) in addition to the Python package:
    ```bash
    sudo apt install graphviz
