@@ -1,10 +1,10 @@
 # yProv4SQA: Quick Start Guide
-`yProv4SQA` is a Python library used to generate provenance documents for software quality assurance processes.
+`yProv4SQA` is a Python library used to generate provenance documents for software quality assurance pipelines.
 
 ## Installation
 1. **Clone the Repository:**
 ```bash
-   git clone https://github.com/HPCI-Lab/yProv4SQA.git
+   git clone <Repo_URL>
    cd yProv4SQA
 ```
 2. **Install the library:**
@@ -20,7 +20,7 @@
 1. **Fetch SQA Reports**
 To fetch SQA reports for a specific repository:
 ```bash
-   fetch-sqa-reports yprov.git
+   fetch-sqa-reports <RepoName>
 ``` 
 This will download all the assessment reports and save them in the <RepoName>_SQAaaS_reports folder.
 
@@ -28,9 +28,13 @@ This will download all the assessment reports and save them in the <RepoName>_SQ
 ```bash
    process-provenance 'folder_path'
 ``` 
+This command generates a level-1 provenance document of all assessments available in folder_path directory using W3C PROV-DM standard. 
 
 3. **Compare Commits**
 ```bash
    compare 'Prov_file_path' AssessmentNo1 AssessmentNo2
 ``` 
-To compare two Code changes between two Assesments and generate provenance data.
+This command generates a level-2 provenance document that captures the file changes between two Assessments.
+
+## Get started
+You can find detailed ready-to-use examples to get started with yProv4SQA under the [artifacts](./artifacts) folder.
