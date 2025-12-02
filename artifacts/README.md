@@ -23,7 +23,7 @@ You should see "limit": 5000
 
 ## **Clone the repository and navigate to the directory:**
    ```bash
-   git clone https://github.com/HPCI-Lab/yProv4SQA.git
+   git clone <Repo_URL>
    cd yProv4SQA
    ```
    
