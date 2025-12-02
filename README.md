@@ -4,7 +4,7 @@
 ## Installation
 1. **Clone the Repository:**
 ```bash
-   git clone <Repo_URL>
+   git clone <Repo_URL/yProv4SQA>
    cd yProv4SQA
 ```
 2. **Install the library:**
