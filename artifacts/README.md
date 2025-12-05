@@ -2,13 +2,11 @@
 
 To gain complete insights about software quality evaluation, we introduce the concept of provenance for Software Quality Assurance pipelines called yProv4SQA, which is used for tracking the evolution of software quality over time by generating detailed provenance documents during software development.
 
-## **Example: Using yProv4SQA with the itwinai Repository**
-
 In this example, we demonstrate how to use our library by analyzing the [itwinai GitHub repository](https://github.com/interTwin-eu/itwinai).  
 This repository already utilizes [SQAaaS](https://docs.sqaaas.eosc-synergy.eu/) and contains existing assessments. We will use it to showcase the capabilities of our library and extract insights related to software quality and provenance.
 
 
-## GitHub API rate-limit notice
+## 1.GitHub API rate-limit notice
 
 GitHub allows:
 
@@ -16,7 +14,7 @@ GitHub allows:
 - **5000 requests / hour** when you supply a **personal-access token**.
 If you process many repositories for large histories you will quickly hit the 60/h ceiling and the tool will **pause** (it auto-retries after the reset time). To avoid delays we **strongly recommend** that you authenticate.
 
-### Export it in your shell (temporary)
+### 1.1 Export it in your shell (temporary)
 
    ```bash
    export GITHUB_TOKEN= <replace with your GITHUB_TOKEN>
@@ -30,16 +28,16 @@ Verify quota
 
 You should see "limit": 5000
 
-## **Clone the repository and navigate to the directory:**
+## **2.Clone the repository and navigate to the directory:**
 
    ```bash
    git clone <yProv4SQA repo git URL>
    cd yProv4SQA
    ```
 
-## **Set up the environment and install dependencies:**
+## **3.Set up the environment and install dependencies:**
 
-### 1. Create and activate a virtual environment (recommended)
+### 3.1. Create and activate a virtual environment (recommended)
 
    ```bash
    # Create a virtual environment
@@ -51,7 +49,7 @@ You should see "limit": 5000
 
 This ensures that all dependencies are installed in an isolated environment, preventing conflicts with other Python packages on your system.
 
-### **2. Install the library and required dependencies:**
+### **3.2. Install the library and required dependencies:**
 
    ```bash
    pip install -e .
@@ -60,7 +58,7 @@ This ensures that all dependencies are installed in an isolated environment, pre
 
 This installs the library and also installs the requests library, which is required to run the examples.
 
-## **Fetch SQA reports:**
+## **4.Fetch SQA reports:**
 
    ```bash
    fetch-sqa-reports itwinai
@@ -70,7 +68,7 @@ This command fetches all SQAaaS assessments for the `itwinai` repository from th
 
 Note: It may take some time to fetch all reports from GitHub. You can skip this step and use the reports we have already downloaded, stored in the `./data/itwinai_SQAaaS_reports` directory.
 
-## **Generate provenance documents:**
+## **5.Generate provenance documents:**
 
    ```bash
    process-provenance ./itwinai_SQAaaS_reports
@@ -78,7 +76,7 @@ Note: It may take some time to fetch all reports from GitHub. You can skip this 
 
 This command generates a level-1 provenance document of all assessments available in `itwinai_SQAaaS_reports` directory. It will produce a `.json` file named `interTwin-eu_itwinai_prov_output.json` in `Provenance_documents` directory, which can be further used for exploration and analysis.
 
-## **Comparing Two quality Assessments with yProv4SQA**
+## **6.Comparing Two quality Assessments with yProv4SQA**
 
    ```bash
    compare ./Provenance_documents/interTwin-eu_itwinai_prov_output.json 59 87
@@ -86,11 +84,11 @@ This command generates a level-1 provenance document of all assessments availabl
 
 This command generates a level-2 provenance document that captures the file changes between assessments no. 59 and assessments no. 87, integrates directly with URLs to the corresponding GitHub diff and SQAaaS reports, and stores the graph as `./Compare_commit_provenance/itwinai_commit_provenance_f7a0...3d6c_to_3076...4621.json`
 
-## **Exploration of Provenance graph**
+## **7.Exploration of Provenance graph**
 
 We can use several tools to visualize and analyze the generated provenance documents.
 
-### 1. PROV Library Visualization
+### 7.1. PROV Library Visualization
 
 #### GraphViz prerequisite
 
@@ -110,7 +108,7 @@ This PROV library can be used to check the PROV syntax, convert the provenance d
 This command converts the `.json` file into an `.svg` provenance graph and saves it to `./Graph_outputs`.
 The figure that appears as `Fig. 4` in the paper was generated using this command and included as an examples in `./results`.
 
-### 2. Using yProv service and yProvExplorer
+### 7.2. Using yProv service and yProvExplorer
 
 yProvExplorer is a web-based tool for visualizing and interacting with provenance documents.
 
