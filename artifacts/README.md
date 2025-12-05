@@ -28,7 +28,7 @@ Verify quota
 
 You should see "limit": 5000
 
-## **2. Clone the repository and navigate to the directory:**
+## **2. Clone the repository and navigate to the directory**
 
    ```bash
    git clone https://github.com/HPCI-Lab/yProv4sqa
@@ -49,7 +49,7 @@ You should see "limit": 5000
 
 This ensures that all dependencies are installed in an isolated environment, preventing conflicts with other Python packages on your system.
 
-### **3.2. Install the library and required dependencies:**
+### **3.2. Install the library and required dependencies**
 
    ```bash
    pip install -e .
@@ -58,7 +58,7 @@ This ensures that all dependencies are installed in an isolated environment, pre
 
 This installs the library and also installs the requests library, which is required to run the examples.
 
-## **4. Fetch SQA reports:**
+## **4. Fetch SQA reports**
 
    ```bash
    fetch-sqa-reports itwinai
@@ -68,7 +68,7 @@ This command fetches all SQAaaS assessments for the `itwinai` repository from th
 
 Note: It may take some time to fetch all reports from GitHub. You can skip this step and use the reports we have already downloaded, stored in the `./data/itwinai_SQAaaS_reports` directory.
 
-## **5. Generate provenance documents:**
+## **5. Generate provenance documents**
 
    ```bash
    process-provenance ./itwinai_SQAaaS_reports
