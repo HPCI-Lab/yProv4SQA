@@ -1,4 +1,4 @@
-# **Provenance as a Service**
+# **Running yProv Service**
 
 yProv is a provenance service allows scientists to manage provenance information compliant with the [W3C PROV standard](https://www.w3.org/TR/prov-overview/).
 
