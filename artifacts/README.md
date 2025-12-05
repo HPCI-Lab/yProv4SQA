@@ -31,7 +31,7 @@ You should see "limit": 5000
 ## **2. Clone the repository and navigate to the directory:**
 
    ```bash
-   git clone <yProv4SQA repo git URL>
+   git clone https://github.com/HPCI-Lab/yProv4sqa
    cd yProv4SQA
    ```
 
