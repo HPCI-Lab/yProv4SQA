@@ -4,7 +4,7 @@
 ## Installation
 1. **Clone the Repository:**
 ```bash
-   git clone <Repo_URL/yProv4SQA>
+   git clone <yProv4SQA repo git URL>
    cd yProv4SQA
 ```
 2. **Install the library:**
@@ -22,7 +22,7 @@ To fetch SQA reports for a specific repository:
 ```bash
    fetch-sqa-reports <RepoName>
 ``` 
-This will download all the assessment reports and save them in the <RepoName>_SQAaaS_reports folder.
+This will download all the assessment reports from SQAaaS plateform and save them in the <RepoName>_SQAaaS_reports folder.
 
 2. **Generate Provenance**
 ```bash
