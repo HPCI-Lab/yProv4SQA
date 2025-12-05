@@ -102,10 +102,11 @@ Load the JSON document associated with itwinai use case
 - Replace `<token>` with the actual token you obtained in the previous step.
 
 After uploading the provenance document, open Neo4j in your browser using the mapped ports, typically:
-http://localhost:7474/browser/
+[http://localhost:7474/browser](http://localhost:7474/browser)
 
 **NOTE** – before running the queries below, select the database **"itwinai"** in the Neo4j browser and use the following credentials while login:  
-- **Username**: `neo4j`  
+
+- **Username**: `neo4j`
 - **Password**: `password` (default set in docker-compose)  
 
 You can find some ready to use examples to get started with [yProv](https://github.com/HPCI-Lab/yProv) under the [examples](https://github.com/HPCI-Lab/yProv/tree/main/examples/pta) folder.

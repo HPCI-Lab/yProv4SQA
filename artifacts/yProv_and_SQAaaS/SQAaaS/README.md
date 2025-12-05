@@ -1,4 +1,4 @@
-# SQAaaS 
+# SQAaaS
 
 SQAaaS is a cloud-based, open-science service that automatically checks your research software for quality best practices (testing, licensing, documentation, etc.) after every commit and awards an open-badge report you can download as JSON.
 
@@ -24,8 +24,10 @@ with:
 
 ### Quick GUI route
 
-1. Visit https://sqaaas.eosc-synergy.eu  (Use this URL to retrieve the repository’s current quality assessment)
+1. Visit [https://sqaaas.eosc-synergy.eu](https://sqaaas.eosc-synergy.eu) (Use this URL to retrieve the repository’s current quality assessment)
+
 2. Sign in with whichever account you prefer, open “Quality Assessment & Awarding,” and paste the repo link into the “Repository URL” box under the “Source Code” tab.
+
 3. After completion click “Start Source Code Assessment”
 
-For full input/output details, custom steps, status badges and advanced options  please visit the official site: https://docs.sqaaas.eosc-synergy.eu/
+For full input/output details, custom steps, status badges and advanced options  please visit the official site: [https://docs.sqaaas.eosc-synergy.eu/](https://docs.sqaaas.eosc-synergy.eu/).
