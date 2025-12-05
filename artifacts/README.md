@@ -2,9 +2,9 @@
 
 To gain complete insights about software quality evaluation, we introduce the concept of provenance for Software Quality Assurance pipelines called yProv4SQA, which is used for tracking the evolution of software quality over time by generating detailed provenance documents during software development.
 
-## **Example: Using yProv4SQA with the iTwinAI Repository**
+## **Example: Using yProv4SQA with the itwinai Repository**
 
-In this example, we demonstrate how to use our library by analyzing the [iTwinAI GitHub repository](https://github.com/interTwin-eu/itwinai).  
+In this example, we demonstrate how to use our library by analyzing the [itwinai GitHub repository](https://github.com/interTwin-eu/itwinai).  
 This repository already utilizes SQAaaS and contains existing assessments. We will use it to showcase the capabilities of our library and extract insights related to software quality and provenance.
 
 [See more about SQAaaS](./yProv_and_SQAaaS/SQAaaS/README.md).  
