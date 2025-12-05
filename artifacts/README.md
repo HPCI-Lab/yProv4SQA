@@ -35,7 +35,7 @@ You should see "limit": 5000
    cd yProv4SQA
    ```
 
-## **3. Set up the environment and install dependencies:**
+## **3. Set up the environment and install dependencies**
 
 ### 3.1. Create and activate a virtual environment (recommended)
 
