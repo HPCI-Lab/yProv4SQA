@@ -107,6 +107,5 @@ After uploading the provenance document, open Neo4j in your browser using the ma
 **NOTE** – before running the queries below, select the database **"itwinai"** in the Neo4j browser and use the following credentials while login:  
 
 - **Username**: `neo4j`
-- **Password**: `password` (default set in docker-compose)  
-
-You can find some ready to use examples to get started with [yProv](https://github.com/HPCI-Lab/yProv) under the [examples](https://github.com/HPCI-Lab/yProv/tree/main/examples/pta) folder.
+- **Password**: `password` (default set in docker-compose)
+- 
