@@ -131,7 +131,7 @@ We have used the yProv service and a Neo4j database running on our internal serv
 
 To run Cypher queries, you need to install the yProv service and Neo4j database locally. To set up the environment (yProv service + Neo4j database). Once the service is running locally, you will be able to perform the Cypher queries locally reported below.
 
-# **8. Running yProv Service**
+## **8. Running yProv Service**
 
 yProv is a provenance service allows scientists to manage provenance information compliant with the [W3C PROV standard](https://www.w3.org/TR/prov-overview/).
 
@@ -140,7 +140,7 @@ The deployment consists of two Docker containers:
 - **yProv** Web Service front-end
 - **Neo4J** graph database engine back-end
 
-## **8.1. Preliminary setup**
+### **8.1. Preliminary setup**
 
 - Create a named volume to make Neo4j data persistent
 
