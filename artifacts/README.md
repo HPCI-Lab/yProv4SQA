@@ -121,9 +121,9 @@ You can either upload the `interTwin-eu_itwinai_prov_output.json` file into the 
 
 For convenience, we have already uploaded the graphs that we used in our paper to the yProv server. You can use these URLs as input to yProvExplorer.
 
-For the Level-1 Provenance document (Fig. 5):[http://yprov.disi.unitn.it:3000/api/v0/documents/itwinai](http://yprov.disi.unitn.it:3000/api/v0/documents/itwinai/)
+For the Level-1 Provenance document (Fig. 5):[http://yprov.disi.unitn.it:3000/api/v0/documents/itwinai](http://yprov.disi.unitn.it:3000/api/v0/documents/itwinai)
 
-For the comparison of two assessments (Fig. 7): [http://yprov.disi.unitn.it:3000/api/v0/documents/gitdif](http://yprov.disi.unitn.it:3000/api/v0/documents/gitdif/)
+For the comparison of two assessments (Fig. 7): [http://yprov.disi.unitn.it:3000/api/v0/documents/gitdif](http://yprov.disi.unitn.it:3000/api/v0/documents/gitdif)
 
 or you can open them without uploading or using the URLs as input:
 
