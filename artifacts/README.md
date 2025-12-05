@@ -129,9 +129,7 @@ or you can open them without uploading or using the URLs as input:
 
 We have used the yProv service and a Neo4j database running on our internal service, which is not directly accessible externally.
 
-To run Cypher queries, you need to install the yProv service and Neo4j database locally. To set up the environment (yProv service + Neo4j database), please follow the instructions in: [Running yProv service](./yProv_and_SQAaaS/yProv/README.md)
-
-Once the service is running locally, you will be able to perform the Cypher queries locally reported below.
+To run Cypher queries, you need to install the yProv service and Neo4j database locally. To set up the environment (yProv service + Neo4j database). Once the service is running locally, you will be able to perform the Cypher queries locally reported below.
 
 # **8. Running yProv Service**
 
