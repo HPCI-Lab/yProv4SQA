@@ -133,11 +133,11 @@ To run Cypher queries, you need to install the yProv service and Neo4j database 
 
 Once the service is running locally, you will be able to perform the Cypher queries locally reported below.
 
-## **Sample Neo4j Queries**
+## **8. Sample Neo4j Queries**
 
 Below are the Neo4j sample queries we run to extract and analyze the results presented in the paper.
 
-### **Cypher Neo4j Query (Listing 1)**
+### **8.1. Cypher Neo4j Query (Listing 1)**
 
    ```cypher
    MATCH (e:Entity)-[:wasGeneratedBy]->(a:Activity)
@@ -152,7 +152,7 @@ Below are the Neo4j sample queries we run to extract and analyze the results pre
 
 The query exports the raw data behind Fig. 6; the CSV file and the Excel line-chart we plotted are archived in [Results](./results/Cypher_query_results)
 
-### **Cypher Neo4j Query (Listing 2)**
+### **8.2. Cypher Neo4j Query (Listing 2)**
 
    ```cypher
    // Earliest Bronze badge
