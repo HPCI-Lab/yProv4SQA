@@ -5,7 +5,7 @@ To gain complete insights about software quality evaluation, we introduce the co
 ## **Example: Using yProv4SQA with the itwinai Repository**
 
 In this example, we demonstrate how to use our library by analyzing the [itwinai GitHub repository](https://github.com/interTwin-eu/itwinai).  
-This repository already utilizes SQAaaS and contains existing assessments. We will use it to showcase the capabilities of our library and extract insights related to software quality and provenance.
+This repository already utilizes [SQAaaS](https://docs.sqaaas.eosc-synergy.eu/) and contains existing assessments. We will use it to showcase the capabilities of our library and extract insights related to software quality and provenance.
 
 [See more about SQAaaS](https://docs.sqaaas.eosc-synergy.eu/).  
 
