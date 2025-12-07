@@ -22,6 +22,6 @@ setup(
         ],
     },
     description="A library for processing provenance of software quality assurance pipelines",
-    long_description=open('README.md').read(),
+    long_description=open('./artifacts/README.md').read(),
     url="https://github.com/HPCI-Lab/yProv4SQA",
 )
