@@ -1,0 +1,8 @@
+# Chat agent dependencies — install on top of existing yProv4SQA requirements
+# NOTE: keep these in sync with install_requires in setup.py
+langchain>=1.0.0
+langchain-ollama>=1.0.0
+langchain-community>=0.3.0
+flask>=3.0.0
+rich>=13.0.0
+python-dotenv>=1.0.0

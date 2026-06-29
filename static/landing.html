@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>yProv4SQA — Get Started</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#ffffff;--s1:#f6f8fa;--s2:#eaeef2;--bd:#d0d7de;
+  --green:#1a7f37;--g2:#238636;--text:#24292f;--t2:#57606a;--t3:#8c959f;
+  --amber:#9e6a03;--red:#d1242f;--blue:#0969da;
+  --mono:'JetBrains Mono','Fira Code','Cascadia Code',monospace;
+  --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --sh:0 2px 8px rgba(0,0,0,.07);
+}
+body.dark-mode{
+  --bg:#0d1117;--s1:#161b22;--s2:#21262d;--bd:#30363d;
+  --text:#e6edf3;--t2:#8b949e;--t3:#6e7681;
+  --green:#3fb950;--g2:#2ea043;
+}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);
+     min-height:100vh;display:flex;flex-direction:column;font-size:16px;line-height:1.65}
+
+/* ── Header ─────────────────────────────────────────────────────────── */
+#hdr{background:#ffffff;
+     border-bottom:1px solid #e1e8ed;padding:11px 24px;
+     display:flex;align-items:center;gap:14px;flex-shrink:0;
+     box-shadow:0 2px 10px rgba(0,0,0,.06);
+     position:sticky;top:0;z-index:100}
+#hdr::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,transparent 0%,var(--green) 35%,#0969da 70%,transparent 100%);opacity:.55}
+.dark-mode #hdr{background:linear-gradient(135deg,#161b22 0%,#0d1117 100%);border-bottom-color:var(--bd)}
+.dark-mode #hdr::after{opacity:.35}
+.hsub{font-size:12px;color:var(--t3);font-family:var(--mono);font-weight:500;white-space:nowrap}
+#theme-btn{background:none;border:1.5px solid var(--bd);border-radius:8px;padding:6px 10px;
+    cursor:pointer;font-size:16px;color:var(--text);transition:all .2s;
+    display:flex;align-items:center;margin-left:8px}
+#theme-btn:hover{background:var(--s2);border-color:var(--green);transform:rotate(15deg)}
+
+/* ── Main content ────────────────────────────────────────────────────── */
+main{flex:1;display:flex;flex-direction:column;align-items:center;
+     padding:28px 24px 40px;gap:20px}
+
+/* ── Hero ────────────────────────────────────────────────────────────── */
+.hero{display:flex;align-items:center;gap:20px;
+      width:100%;max-width:880px;
+      background:#fff;border:2px solid #e1e8ed;border-radius:14px;
+      padding:20px 26px;box-shadow:0 2px 8px rgba(0,0,0,.05)}
+.dark-mode .hero{background:var(--s1);border-color:var(--bd);box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.hero-text{flex:1;min-width:0}
+.hero-icon{width:64px;height:64px;border-radius:16px;flex-shrink:0;
+  background:linear-gradient(135deg,#238636,#1a7f37);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--mono);font-size:24px;font-weight:900;color:#fff;
+  box-shadow:0 8px 24px rgba(26,127,55,.25),0 2px 6px rgba(26,127,55,.15);
+  letter-spacing:-.02em;order:2}
+.dark-mode .hero-icon{box-shadow:0 8px 24px rgba(63,185,80,.2),0 2px 6px rgba(63,185,80,.1)}
+.hero h1{font-family:var(--mono);font-size:20px;font-weight:800;letter-spacing:.03em;margin-bottom:6px}
+.hero p{font-size:13.5px;color:var(--t2);line-height:1.75;max-width:600px;margin:0}
+
+/* ── Continue banner (shown when agent already loaded) ───────────────── */
+#continue-banner{display:none;background:rgba(26,127,55,.07);
+  border:1.5px solid rgba(26,127,55,.25);border-radius:10px;
+  padding:14px 20px;align-items:center;justify-content:space-between;
+  gap:16px;width:100%;max-width:880px;flex-wrap:wrap}
+#continue-banner.visible{display:flex}
+.dark-mode #continue-banner{background:rgba(63,185,80,.07);border-color:rgba(63,185,80,.25)}
+
+/* ── Cards ───────────────────────────────────────────────────────────── */
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;width:100%;max-width:880px}
+@media(max-width:660px){.cards{grid-template-columns:1fr}}
+
+.card{background:#fff;border:2px solid #e1e8ed;border-radius:14px;padding:20px 20px;
+      display:flex;flex-direction:column;gap:13px;transition:all .22s;
+      box-shadow:0 2px 8px rgba(0,0,0,.05)}
+.dark-mode .card{background:var(--s1);border-color:var(--bd);box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.card:hover{border-color:var(--green);box-shadow:0 8px 24px rgba(26,127,55,.12);transform:translateY(-2px)}
+.dark-mode .card:hover{box-shadow:0 8px 24px rgba(63,185,80,.1)}
+.card-header{display:flex;align-items:center;gap:12px}
+.card-icon{width:44px;height:44px;border-radius:10px;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;border:1.5px solid transparent}
+.card-icon.upload{background:rgba(9,105,218,.08);color:#0969da;border-color:rgba(9,105,218,.25)}
+.card-icon.generate{background:rgba(26,127,55,.08);color:#1a7f37;border-color:rgba(26,127,55,.25)}
+.card-icon.saved{background:rgba(158,106,3,.08);color:#9e6a03;border-color:rgba(158,106,3,.25)}
+.dark-mode .card-icon.upload{color:#79c0ff;background:rgba(121,192,255,.08);border-color:rgba(121,192,255,.25)}
+.dark-mode .card-icon.generate{color:#3fb950;background:rgba(63,185,80,.08);border-color:rgba(63,185,80,.25)}
+.dark-mode .card-icon.saved{color:#d29922;background:rgba(210,153,34,.08);border-color:rgba(210,153,34,.25)}
+.card h2{font-family:var(--mono);font-size:14px;font-weight:800;letter-spacing:.02em}
+.card > p{font-size:12.5px;color:var(--t2);line-height:1.75;margin-top:-4px}
+
+/* ── Drop zone ───────────────────────────────────────────────────────── */
+.drop-zone{border:2px dashed var(--bd);border-radius:10px;padding:18px 16px;text-align:center;
+  cursor:pointer;transition:all .2s;background:var(--s1);position:relative;overflow:hidden}
+.drop-zone:hover,.drop-zone.drag-over{border-color:var(--green);background:rgba(26,127,55,.04)}
+.dark-mode .drop-zone:hover,.dark-mode .drop-zone.drag-over{background:rgba(63,185,80,.05)}
+.drop-zone input[type=file]{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%}
+.drop-icon{font-size:26px;margin-bottom:8px;pointer-events:none}
+.drop-label{font-size:12px;color:var(--t2);font-family:var(--mono);pointer-events:none}
+.drop-label strong{color:var(--green);font-weight:700}
+.drop-hint{font-size:11px;color:var(--t3);margin-top:4px;pointer-events:none}
+.drop-filename{font-size:11px;color:var(--green);font-family:var(--mono);
+  font-weight:700;margin-top:8px;display:none;pointer-events:none}
+
+/* ── Fields ──────────────────────────────────────────────────────────── */
+.field{display:flex;flex-direction:column;gap:5px}
+.field label{font-size:11px;font-weight:700;color:var(--t2);font-family:var(--mono);
+  text-transform:uppercase;letter-spacing:.1em}
+.field input,.field select{width:100%;padding:9px 12px;border:1.5px solid var(--bd);
+  border-radius:8px;font-size:13px;background:#fff;color:var(--text);
+  font-family:var(--sans);transition:all .18s}
+.dark-mode .field input,.dark-mode .field select{background:var(--s2);border-color:var(--bd);color:var(--text)}
+.field input:focus,.field select:focus{outline:none;border-color:var(--green);
+  box-shadow:0 0 0 3px rgba(26,127,55,.1)}
+.field input::placeholder{color:#adb5bd}
+.dark-mode .field input::placeholder{color:var(--t3)}
+.field-hint{font-size:11px;color:var(--t3);line-height:1.5}
+
+/* ── Error banner ────────────────────────────────────────────────────── */
+.err{display:none;background:#fff0f0;border:1.5px solid rgba(209,36,47,.25);border-radius:8px;
+  padding:10px 14px;font-size:12px;color:var(--red);line-height:1.6}
+.dark-mode .err{background:#2d1111;border-color:rgba(248,81,73,.3)}
+.err.on{display:block}
+
+/* ── Buttons ─────────────────────────────────────────────────────────── */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:11px 22px;border-radius:9px;font-size:13px;font-weight:700;
+  font-family:var(--mono);cursor:pointer;transition:all .2s;border:none;
+  letter-spacing:.02em;white-space:nowrap;text-decoration:none}
+.btn-primary{background:linear-gradient(135deg,var(--g2),#1a7f37);color:#fff;
+  box-shadow:0 2px 8px rgba(26,127,55,.2)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(26,127,55,.3)}
+.btn-primary:active{transform:none;box-shadow:none}
+.btn-primary:disabled{background:#d0d7de;color:#6e7681;cursor:not-allowed;transform:none;box-shadow:none}
+.dark-mode .btn-primary:disabled{background:var(--bd);color:var(--t3)}
+
+
+/* ── Recent repo chips ───────────────────────────────────────────────── */
+.recent-chips{display:none;flex-wrap:wrap;gap:5px;margin-top:4px}
+.recent-chip{font-family:var(--mono);font-size:10px;padding:3px 9px;border-radius:12px;
+  border:1.5px solid var(--bd);background:var(--bg);color:var(--t2);cursor:pointer;
+  transition:all .15s;font-weight:600;white-space:nowrap}
+.recent-chip:hover{border-color:var(--green);color:var(--green);background:rgba(26,127,55,.05)}
+.dark-mode .recent-chip{background:var(--s2)}
+.dark-mode .recent-chip:hover{background:rgba(63,185,80,.07)}
+
+/* ── LLM status pill ─────────────────────────────────────────────────── */
+.llm-pill{font-size:10px;padding:2px 9px;border-radius:10px;font-weight:700;
+  font-family:var(--mono);white-space:nowrap;transition:all .3s;
+  border:1px solid transparent;margin-left:4px;display:inline-block}
+.llm-pill.checking{background:var(--s2);color:var(--t3);border-color:var(--bd)}
+.llm-pill.ok{background:rgba(26,127,55,.1);color:#1a7f37;border-color:rgba(26,127,55,.3)}
+.llm-pill.warn{background:rgba(158,106,3,.1);color:#9e6a03;border-color:rgba(158,106,3,.3)}
+.llm-pill.err{background:rgba(209,36,47,.08);color:#d1242f;border-color:rgba(209,36,47,.25)}
+.dark-mode .llm-pill.ok{color:#3fb950;border-color:rgba(63,185,80,.35)}
+.dark-mode .llm-pill.warn{color:#d29922;border-color:rgba(210,153,34,.35)}
+.dark-mode .llm-pill.err{color:#f85149;border-color:rgba(248,81,73,.3)}
+
+/* ── LLM FAB ─────────────────────────────────────────────────────────── */
+#llm-fab{position:fixed;bottom:26px;right:26px;z-index:150;
+  display:flex;align-items:center;gap:0;overflow:hidden;
+  background:linear-gradient(135deg,var(--g2),#1a7f37);color:#fff;
+  border:none;border-radius:50%;padding:11px;width:42px;height:42px;
+  cursor:pointer;font-family:var(--mono);font-size:12px;font-weight:700;
+  box-shadow:0 4px 18px rgba(26,127,55,.35);
+  transition:width .3s ease,border-radius .3s ease,padding .3s ease,
+             gap .3s ease,box-shadow .25s,transform .25s;
+  letter-spacing:.02em;white-space:nowrap}
+#llm-fab:hover{width:auto;border-radius:28px;padding:10px 16px 10px 12px;gap:8px;
+  box-shadow:0 8px 26px rgba(26,127,55,.5);transform:translateY(-2px)}
+#llm-fab-icon{font-size:22px;line-height:1;flex-shrink:0}
+#llm-fab-txt,#llm-fab .llm-pill{opacity:0;transition:opacity .2s ease .1s;pointer-events:none}
+#llm-fab:hover #llm-fab-txt,#llm-fab:hover .llm-pill{opacity:1;pointer-events:auto}
+@media(max-width:600px){
+  #llm-fab{padding:12px;border-radius:50%;bottom:18px;right:18px;
+    box-shadow:0 3px 14px rgba(26,127,55,.4)}
+  #llm-fab-txt,#llm-fab .llm-pill{display:none}
+  #llm-fab-icon{font-size:18px}
+  #llm-popup{right:14px;bottom:70px;width:calc(100vw - 28px)}
+}
+
+/* ── LLM Popup ────────────────────────────────────────────────────────── */
+#llm-popup{position:fixed;bottom:76px;right:26px;z-index:149;
+  width:310px;background:#fff;border:1.5px solid var(--bd);
+  border-radius:14px;box-shadow:0 8px 32px rgba(0,0,0,.15);
+  overflow:hidden;
+  transform:translateY(10px) scale(.97);opacity:0;
+  transition:transform .2s ease,opacity .2s ease;pointer-events:none}
+#llm-popup.open{transform:translateY(0) scale(1);opacity:1;pointer-events:all}
+.dark-mode #llm-popup{background:var(--s1);border-color:var(--bd);box-shadow:0 8px 32px rgba(0,0,0,.45)}
+.llm-popup-hdr{display:flex;align-items:center;justify-content:space-between;
+  padding:11px 15px;border-bottom:1px solid var(--bd);
+  background:linear-gradient(90deg,rgba(26,127,55,.04),transparent)}
+.dark-mode .llm-popup-hdr{background:linear-gradient(90deg,rgba(63,185,80,.05),transparent)}
+.llm-popup-title{font-family:var(--mono);font-size:11px;font-weight:800;
+  text-transform:uppercase;letter-spacing:.1em;color:var(--t2)}
+.llm-popup-close{background:none;border:none;cursor:pointer;font-size:16px;
+  color:var(--t3);padding:0 2px;line-height:1;transition:color .15s}
+.llm-popup-close:hover{color:var(--text)}
+.llm-popup-body{padding:14px 15px 16px;display:flex;flex-direction:column;gap:11px}
+
+/* ── Saved docs section ──────────────────────────────────────────────── */
+.saved-section{background:#fff;border:2px solid #e1e8ed;border-radius:14px;overflow:hidden;
+  box-shadow:0 2px 8px rgba(0,0,0,.05);transition:border-color .22s,box-shadow .22s}
+.dark-mode .saved-section{background:var(--s1);border-color:var(--bd);box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.saved-section:hover{border-color:#9e6a03;box-shadow:0 8px 24px rgba(158,106,3,.1)}
+.dark-mode .saved-section:hover{border-color:#d29922;box-shadow:0 8px 24px rgba(210,153,34,.1)}
+.saved-hdr{display:flex;align-items:center;gap:14px;padding:16px 22px;
+  background:linear-gradient(90deg,rgba(158,106,3,.04) 0%,transparent 60%);
+  border-bottom:1px solid var(--bd)}
+.dark-mode .saved-hdr{background:linear-gradient(90deg,rgba(210,153,34,.05) 0%,transparent 60%)}
+.saved-hdr-title{font-family:var(--mono);font-size:13px;font-weight:800;letter-spacing:.02em}
+.saved-hdr-sub{font-size:11px;color:var(--t3);margin-top:2px}
+.saved-item{display:flex;align-items:center;gap:14px;padding:13px 22px;
+  border-bottom:1px solid var(--bd);transition:background .15s}
+.saved-item:last-child{border-bottom:none}
+.saved-item:hover{background:rgba(158,106,3,.03)}
+.dark-mode .saved-item:hover{background:rgba(210,153,34,.04)}
+.saved-item-icon{width:34px;height:34px;border-radius:8px;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  background:rgba(158,106,3,.08);color:#9e6a03;border:1.5px solid rgba(158,106,3,.2)}
+.dark-mode .saved-item-icon{background:rgba(210,153,34,.08);color:#d29922;border-color:rgba(210,153,34,.2)}
+.saved-item-info{flex:1;min-width:0}
+.saved-item-repo{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--text);
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.saved-item-meta{font-size:11px;color:var(--t3);margin-top:2px}
+.saved-empty{padding:28px 22px;text-align:center;font-size:12.5px;color:var(--t3);
+  display:flex;flex-direction:column;align-items:center;gap:8px}
+.refresh-btn{background:none;border:1.5px solid var(--bd);border-radius:7px;padding:6px 12px;
+  font-size:11px;color:var(--t2);cursor:pointer;font-family:var(--mono);font-weight:600;
+  transition:border-color .15s,color .15s;flex-shrink:0}
+.refresh-btn:hover{border-color:var(--green);color:var(--green)}
+
+/* ── Progress overlay ────────────────────────────────────────────────── */
+#overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);
+  z-index:200;align-items:center;justify-content:center;backdrop-filter:blur(3px)}
+#overlay.on{display:flex}
+.prog-card{background:#fff;border-radius:16px;padding:36px 40px;text-align:center;
+  max-width:420px;width:90%;box-shadow:0 24px 64px rgba(0,0,0,.22)}
+.dark-mode .prog-card{background:var(--s2)}
+.prog-spin{width:48px;height:48px;border:4px solid #e1e8ed;border-top-color:var(--green);
+  border-radius:50%;animation:spin .85s linear infinite;margin:0 auto 20px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.prog-title{font-family:var(--mono);font-size:15px;font-weight:800;margin-bottom:10px}
+.prog-msg{font-size:12.5px;color:var(--t2);line-height:1.75;min-height:38px}
+.prog-steps{display:flex;flex-direction:column;gap:6px;margin-top:18px;text-align:left}
+.step{font-size:11.5px;font-family:var(--mono);padding:7px 11px;border-radius:7px;
+  display:flex;align-items:center;gap:8px;color:var(--t3);transition:all .25s}
+.step.active{color:var(--text);background:var(--s1);font-weight:700}
+.step.done{color:var(--green);background:rgba(26,127,55,.06);font-weight:600}
+.dark-mode .step.active{background:var(--s2)}
+.dark-mode .step.done{color:#3fb950;background:rgba(63,185,80,.08)}
+.step-icon{width:16px;flex-shrink:0;text-align:center}
+/* progress bar */
+.prog-bar-wrap{width:100%;height:8px;background:var(--s2);border-radius:4px;overflow:hidden;margin:14px 0 5px}
+.prog-bar-fill{height:100%;border-radius:4px;
+  background:linear-gradient(90deg,#1a7f37,#3fb950);
+  transition:width .4s ease-out;width:0%}
+.dark-mode .prog-bar-fill{background:linear-gradient(90deg,#2ea043,#56d364)}
+.prog-pct{font-family:var(--mono);font-size:22px;font-weight:900;
+  color:var(--green);text-align:center;min-height:28px;line-height:1}
+
+/* ── Auth badge (header) ─────────────────────────────────────────────────── */
+.auth-badge{display:flex;align-items:center;gap:7px;border:1.5px solid var(--bd);
+  border-radius:8px;padding:5px 12px;cursor:pointer;transition:all .2s;
+  font-size:11.5px;font-family:var(--mono);font-weight:700;color:var(--t2);
+  background:none;margin-left:auto;white-space:nowrap}
+.auth-badge:hover{border-color:var(--green);color:var(--green);background:rgba(26,127,55,.04)}
+.auth-badge.logged-in{border-color:rgba(26,127,55,.4);color:var(--green);background:rgba(26,127,55,.06)}
+.dark-mode .auth-badge.logged-in{border-color:rgba(63,185,80,.3);color:#3fb950;background:rgba(63,185,80,.08)}
+.auth-dot{width:7px;height:7px;border-radius:50%;background:var(--bd);flex-shrink:0;transition:background .2s}
+.auth-dot.on{background:#1a7f37}
+.dark-mode .auth-dot.on{background:#3fb950}
+
+/* ── Auth modal ──────────────────────────────────────────────────────────── */
+#auth-modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);
+  z-index:300;align-items:center;justify-content:center;backdrop-filter:blur(3px)}
+#auth-modal.on{display:flex}
+.auth-card{background:#fff;border-radius:16px;padding:32px 30px;max-width:400px;width:90%;
+  box-shadow:0 24px 64px rgba(0,0,0,.22)}
+.dark-mode .auth-card{background:var(--s2)}
+.auth-card-title{font-family:var(--mono);font-size:16px;font-weight:800;margin-bottom:18px;
+  display:flex;align-items:center;justify-content:space-between}
+.auth-close{background:none;border:none;cursor:pointer;font-size:18px;color:var(--t3);
+  padding:0 2px;line-height:1;transition:color .15s}
+.auth-close:hover{color:var(--text)}
+.auth-tabs-row{display:flex;border-bottom:1.5px solid var(--bd);margin-bottom:20px}
+.auth-tab-btn{flex:1;text-align:center;padding:8px 0;font-family:var(--mono);font-size:11px;
+  font-weight:700;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;
+  border:none;border-bottom:2.5px solid transparent;color:var(--t3);
+  background:none;transition:all .18s;margin-bottom:-1.5px}
+.auth-tab-btn.active{color:var(--green);border-bottom-color:var(--green)}
+.auth-tab-btn:hover{color:var(--text)}
+.auth-form{display:flex;flex-direction:column;gap:12px}
+.auth-err{display:none;font-size:12px;color:var(--red);padding:9px 12px;margin-top:2px;
+  background:rgba(209,36,47,.06);border:1.5px solid rgba(209,36,47,.2);border-radius:7px;line-height:1.5}
+.dark-mode .auth-err{background:rgba(248,81,73,.05);border-color:rgba(248,81,73,.2)}
+.auth-err.on{display:block}
+.auth-sep{font-size:11px;color:var(--t3);margin:14px 0;
+  display:flex;align-items:center;gap:10px}
+.auth-sep::before,.auth-sep::after{content:'';flex:1;height:1px;background:var(--bd)}
+.btn-outline{background:none;border:1.5px solid var(--bd);color:var(--t2);width:100%;
+  padding:9px;border-radius:9px;font-size:12px;font-weight:700;font-family:var(--mono);
+  cursor:pointer;transition:all .18s}
+.btn-outline:hover{border-color:var(--text);color:var(--text);background:var(--s1)}
+
+/* ── Saved section tabs ──────────────────────────────────────────────────── */
+.saved-tabs{display:flex;border-bottom:1px solid var(--bd)}
+.saved-tab-btn{flex:1;padding:10px 14px;font-family:var(--mono);font-size:11px;font-weight:700;
+  letter-spacing:.07em;text-transform:uppercase;cursor:pointer;text-align:center;
+  border:none;border-bottom:2.5px solid transparent;color:var(--t3);
+  background:var(--s1);transition:all .18s;margin-bottom:-1px}
+.dark-mode .saved-tab-btn{background:var(--s2)}
+.saved-tab-btn.active{color:var(--text);border-bottom-color:var(--amber);background:var(--bg)}
+.dark-mode .saved-tab-btn.active{background:var(--s1)}
+.saved-tab-btn:hover:not(.active){color:var(--text);background:var(--bg)}
+.dark-mode .saved-tab-btn:hover:not(.active){background:var(--s1)}
+</style>
+</head>
+<body>
+
+<div id="hdr">
+  <img src="/yProv4SQA.png" alt="yProv4SQA" style="height:52px;width:auto;object-fit:contain" onerror="this.style.display='none'">
+  <div class="hsub">Conversational Analyzer</div>
+  <button class="auth-badge" id="auth-badge" onclick="onAuthBadgeClick()">
+    <span class="auth-dot" id="auth-dot"></span>
+    <span id="auth-label">Sign In</span>
+  </button>
+  <button id="theme-btn" onclick="toggleTheme()" title="Toggle theme">🌙</button>
+</div>
+
+<main>
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Get Started</h1>
+      <p>Explore software quality assurance provenance through conversational AI.
+         Upload an existing document or generate one directly from a GitHub repository.</p>
+    </div>
+    <div class="hero-icon">yP</div>
+  </div>
+
+  <!-- Already-loaded banner -->
+  <div id="continue-banner">
+    <div>
+      <span style="font-family:var(--mono);font-size:12px;font-weight:800;color:var(--green)">✓ Provenance already loaded</span><br>
+      <span style="font-size:12px;color:var(--t2)">Repo: <strong id="loaded-repo" style="font-family:var(--mono)"></strong> · <span id="loaded-count"></span> assessments</span>
+    </div>
+    <a href="/app" class="btn btn-primary" style="font-size:12px;padding:8px 18px">Continue to Chat →</a>
+  </div>
+
+  <!-- Two cards -->
+  <div class="cards">
+
+    <!-- Card 1: Upload -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon upload">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <line x1="12" y1="18" x2="12" y2="12"/>
+            <polyline points="9 15 12 12 15 15"/>
+          </svg>
+        </div>
+        <h2>Upload Provenance Document</h2>
+      </div>
+      <p>Already have a <code style="font-family:var(--mono);font-size:11px;background:var(--s2);padding:1px 5px;border-radius:3px">prov_output.json</code> file? Upload it and start chatting immediately.</p>
+
+      <div class="drop-zone" id="dz">
+        <input type="file" id="upload-file" accept=".json,application/json" onchange="onFileSelect(this)">
+        <div class="drop-icon">📂</div>
+        <div class="drop-label"><strong>Click to browse</strong> or drag &amp; drop</div>
+        <div class="drop-hint">Accepts <code style="font-family:var(--mono);font-size:10px;background:var(--s2);padding:1px 4px;border-radius:3px">.json</code> provenance files</div>
+        <div class="drop-filename" id="fname"></div>
+      </div>
+
+      <div class="err" id="upload-err"></div>
+
+      <button class="btn btn-primary" id="upload-btn" onclick="doUpload()" disabled>
+        Open Chat →
+      </button>
+    </div>
+
+    <!-- Card 2: Generate -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon generate">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+          </svg>
+        </div>
+        <h2>Generate from GitHub Repo</h2>
+      </div>
+      <p>Enter a GitHub repository — we'll fetch SQAaaS reports and build the provenance document automatically.</p>
+
+      <div class="field">
+        <label>Project / Repository Name</label>
+        <input type="text" id="repo-inp" placeholder="e.g. itwinai  or  interTwin-eu/itwinai"
+               oninput="onRepoInput()" onkeydown="if(event.key==='Enter')doGenerate()">
+        <span class="field-hint">
+          The project must be registered with SQAaaS. Only the repository name is used —
+          the tool looks for <code style="font-family:var(--mono)">eosc-synergy/{name}.assess.sqaaas</code> on GitHub.
+        </span>
+        <div class="recent-chips" id="recent-repos"></div>
+      </div>
+
+      <div class="field">
+        <label>GitHub Token <span style="color:var(--t3);font-weight:400;text-transform:none">(optional)</span></label>
+        <input type="password" id="gh-token" placeholder="ghp_… for private repos or higher rate limits">
+      </div>
+
+      <div class="err" id="generate-err"></div>
+
+      <button class="btn btn-primary" id="generate-btn" onclick="doGenerate()" disabled>
+        Generate &amp; Chat →
+      </button>
+    </div>
+  </div>
+
+  <!-- Saved Provenance Documents -->
+  <div class="saved-section" id="saved-section" style="display:none;width:100%;max-width:880px">
+    <div class="saved-hdr">
+      <div class="card-icon saved" style="width:38px;height:38px;border-radius:8px;flex-shrink:0">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+          <polyline points="9 12 11 14 15 10"/>
+        </svg>
+      </div>
+      <div style="flex:1;min-width:0">
+        <div class="saved-hdr-title">Saved Provenance Documents</div>
+        <div class="saved-hdr-sub" id="saved-dir-hint">Found in ./Provenance_documents</div>
+      </div>
+      <button class="refresh-btn" onclick="fetchSaved()">↻ Refresh</button>
+    </div>
+    <div class="saved-tabs">
+      <button class="saved-tab-btn active" id="saved-tab-local" onclick="switchSavedTab('local')">Local Files</button>
+      <button class="saved-tab-btn" id="saved-tab-cloud" onclick="switchSavedTab('cloud')">☁ yProvStore</button>
+    </div>
+    <div class="err" id="saved-err" style="margin:10px 22px 0"></div>
+    <div id="saved-list">
+      <div class="saved-empty">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="opacity:.35">
+          <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+        </svg>
+        <span>Scanning for saved documents…</span>
+      </div>
+    </div>
+    <div id="yprov-list" style="display:none">
+      <div class="saved-empty">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="opacity:.35">
+          <rect x="3" y="11" width="18" height="11" rx="2"/>
+          <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+        </svg>
+        <span>Sign in to access your yProvStore documents</span>
+        <button class="btn btn-primary" onclick="openAuthModal('login')"
+                style="font-size:11px;padding:8px 18px;margin-top:4px">Sign In →</button>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!-- LLM FAB + Popup -->
+<button id="llm-fab" onclick="toggleLLMPopup()">
+  <span id="llm-fab-icon">⚙</span>
+  <span id="llm-fab-txt">ollama / llama3.2</span>
+  <span class="llm-pill checking" id="llm-pill" style="margin-left:2px">…</span>
+</button>
+
+<div id="llm-popup">
+  <div class="llm-popup-hdr">
+    <span class="llm-popup-title">⚙ LLM Settings</span>
+    <button class="llm-popup-close" onclick="toggleLLMPopup()">✕</button>
+  </div>
+  <div class="llm-popup-body">
+    <div class="field">
+      <label>Provider</label>
+      <select id="llm-provider" onchange="onProviderChange()">
+        <option value="ollama">Ollama (local)</option>
+        <option value="google">Google Gemini</option>
+      </select>
+    </div>
+    <div class="field">
+      <label>Model <span style="color:var(--t3);font-weight:400;text-transform:none">(optional)</span></label>
+      <input type="text" id="llm-model" placeholder="auto" oninput="updateLLMSummary()">
+      <span class="field-hint" id="model-hint">Default: llama3.2</span>
+    </div>
+    <div class="field" id="apikey-field" style="display:none">
+      <label>Google API Key</label>
+      <input type="password" id="llm-apikey" placeholder="AIza…" oninput="scheduleLLMCheck()">
+      <span class="field-hint">Or set GOOGLE_API_KEY env var</span>
+    </div>
+    <div class="field" id="ollama-field">
+      <label>Ollama URL</label>
+      <input type="text" id="llm-ollama" value="http://localhost:11434" oninput="scheduleLLMCheck()">
+    </div>
+  </div>
+</div>
+
+<!-- Progress overlay -->
+<div id="overlay">
+  <div class="prog-card">
+    <div class="prog-spin"></div>
+    <div class="prog-title">Generating Provenance</div>
+    <div class="prog-msg" id="prog-msg">Connecting to GitHub…</div>
+    <div class="prog-bar-wrap">
+      <div class="prog-bar-fill" id="prog-bar"></div>
+    </div>
+    <div class="prog-pct" id="prog-pct"></div>
+    <div class="prog-steps">
+      <div class="step active" id="s-fetch">
+        <span class="step-icon">⟳</span>Fetching SQAaaS assessment reports
+      </div>
+      <div class="step" id="s-process">
+        <span class="step-icon">◦</span>Building provenance document
+      </div>
+      <div class="step" id="s-load">
+        <span class="step-icon">◦</span>Loading AI agent
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Auth modal -->
+<div id="auth-modal">
+  <div class="auth-card">
+    <div class="auth-card-title">
+      yProvStore
+      <button class="auth-close" onclick="closeAuthModal()">✕</button>
+    </div>
+    <div class="auth-tabs-row">
+      <button class="auth-tab-btn active" id="atab-login" onclick="switchAuthTab('login')">Sign In</button>
+      <button class="auth-tab-btn" id="atab-register" onclick="switchAuthTab('register')">Register</button>
+    </div>
+    <div class="auth-err" id="auth-err"></div>
+
+    <!-- Login form -->
+    <div class="auth-form" id="auth-login-form">
+      <div class="field">
+        <label>Email</label>
+        <input type="email" id="login-email" placeholder="you@example.com" autocomplete="email"
+               onkeydown="if(event.key==='Enter')doLogin()">
+      </div>
+      <div class="field">
+        <label>Password</label>
+        <input type="password" id="login-password" placeholder="••••••••" autocomplete="current-password"
+               onkeydown="if(event.key==='Enter')doLogin()">
+      </div>
+      <button class="btn btn-primary" id="login-btn" onclick="doLogin()" style="width:100%">Sign In →</button>
+    </div>
+
+    <!-- Register form -->
+    <div class="auth-form" id="auth-register-form" style="display:none">
+      <div class="field">
+        <label>Email</label>
+        <input type="email" id="reg-email" placeholder="you@example.com" autocomplete="email">
+      </div>
+      <div class="field">
+        <label>Password</label>
+        <input type="password" id="reg-password" placeholder="••••••••" autocomplete="new-password"
+               onkeydown="if(event.key==='Enter')doSignup()">
+      </div>
+      <button class="btn btn-primary" id="register-btn" onclick="doSignup()" style="width:100%">Create Account →</button>
+    </div>
+
+    <div class="auth-sep"><span>or</span></div>
+    <button class="btn-outline" onclick="closeAuthModal()">Continue as Guest</button>
+  </div>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+
+// ── Theme ────────────────────────────────────────────────────────────────
+if (localStorage.getItem('theme') === 'dark') document.body.classList.add('dark-mode');
+function toggleTheme() {
+  const dark = document.body.classList.toggle('dark-mode');
+  localStorage.setItem('theme', dark ? 'dark' : 'light');
+  $('theme-btn').textContent = dark ? '☀️' : '🌙';
+}
+if (document.body.classList.contains('dark-mode')) $('theme-btn').textContent = '☀️';
+
+// ── LLM FAB popup ─────────────────────────────────────────────────────────
+function toggleLLMPopup() {
+  $('llm-popup').classList.toggle('open');
+}
+document.addEventListener('click', e => {
+  const popup = $('llm-popup');
+  const fab   = $('llm-fab');
+  if (popup && popup.classList.contains('open') &&
+      !popup.contains(e.target) && !fab.contains(e.target)) {
+    popup.classList.remove('open');
+  }
+});
+function onProviderChange() {
+  const p = $('llm-provider').value;
+  $('apikey-field').style.display = p === 'google' ? 'flex' : 'none';
+  $('ollama-field').style.display = p === 'ollama' ? 'flex' : 'none';
+  $('model-hint').textContent = 'Default: ' + (p === 'google' ? 'gemini-2.0-flash' : 'llama3.2');
+  updateLLMSummary();
+  scheduleLLMCheck();
+}
+function updateLLMSummary() {
+  const p   = $('llm-provider').value;
+  const m   = $('llm-model').value.trim();
+  const def = p === 'google' ? 'gemini-2.0-flash' : 'llama3.2';
+  const txt = $('llm-fab-txt');
+  if (txt) txt.textContent = p + ' / ' + (m || def);
+  scheduleLLMCheck();
+}
+function getLLM() {
+  return {
+    provider:   $('llm-provider').value,
+    model:      $('llm-model').value.trim() || null,
+    api_key:    $('llm-apikey').value.trim() || null,
+    ollama_url: $('llm-ollama').value.trim() || 'http://localhost:11434',
+  };
+}
+
+// ── Drop zone ────────────────────────────────────────────────────────────
+const dz = $('dz');
+dz.addEventListener('dragover',  e => { e.preventDefault(); dz.classList.add('drag-over'); });
+dz.addEventListener('dragleave', () => dz.classList.remove('drag-over'));
+dz.addEventListener('drop', e => {
+  e.preventDefault(); dz.classList.remove('drag-over');
+  const f = e.dataTransfer.files[0];
+  if (f) setFile(f);
+});
+
+let _file = null;
+function onFileSelect(inp) { if (inp.files[0]) setFile(inp.files[0]); }
+
+// Client-side structural validation — mirrors the server-side check
+function validateProvJson(data) {
+  if (typeof data !== 'object' || Array.isArray(data) || data === null)
+    return { ok: false, error: 'File is not a JSON object.' };
+
+  const entities   = data.entity   || null;
+  const activities = data.activity || null;
+
+  if (!entities || typeof entities !== 'object' ||
+      !activities || typeof activities !== 'object')
+    return {
+      ok: false,
+      error: 'Missing "entity" or "activity" keys — this does not look like a yProv4SQA provenance document.',
+    };
+
+  const assessKeys = Object.keys(entities).filter(k => /^ex:assessment\d+$/.test(k));
+  const outputKeys = new Set(Object.keys(entities).filter(k => /^ex:output\d+$/.test(k)));
+  const valid      = assessKeys.filter(k => outputKeys.has(k.replace('assessment', 'output')));
+
+  if (valid.length === 0)
+    return {
+      ok: false,
+      error: 'No SQAaaS assessment records found (expected "ex:assessment1", "ex:output1", …). ' +
+             'This file does not appear to be a yProv4SQA provenance document.',
+    };
+
+  const repo = (entities['ex:repository1'] || {})['ex:name'] || '';
+  return { ok: true, count: valid.length, repo };
+}
+
+function setFile(f) {
+  if (!f.name.toLowerCase().endsWith('.json')) {
+    showErr('upload-err', 'Only .json files are supported.');
+    return;
+  }
+
+  // Show a "reading…" state while parsing
+  $('fname').style.display = 'block';
+  $('fname').textContent   = '⏳ Reading ' + f.name + '…';
+  $('upload-btn').disabled = true;
+  _file = null;
+
+  const reader = new FileReader();
+  reader.onload = e => {
+    let data;
+    try {
+      data = JSON.parse(e.target.result);
+    } catch(err) {
+      showErr('upload-err', 'Invalid JSON file: ' + err.message);
+      $('fname').style.display = 'none';
+      return;
+    }
+
+    const result = validateProvJson(data);
+    if (!result.ok) {
+      showErr('upload-err', result.error);
+      $('fname').style.display = 'none';
+      return;
+    }
+
+    // All good
+    hideErr('upload-err');
+    _file = f;
+    $('fname').textContent   = `✓ ${f.name}  ·  ${result.count} assessments` +
+                               (result.repo ? `  ·  ${result.repo}` : '');
+    $('upload-btn').disabled = false;
+  };
+  reader.onerror = () => {
+    showErr('upload-err', 'Could not read the file.');
+    $('fname').style.display = 'none';
+  };
+  reader.readAsText(f);
+}
+
+// ── Repo validation ──────────────────────────────────────────────────────
+function onRepoInput() {
+  const v  = $('repo-inp').value.trim();
+  // Accept "itwinai" OR "interTwin-eu/itwinai" — anything non-empty without spaces
+  const ok = v.length > 0 && !/\s/.test(v);
+  $('generate-btn').disabled = !ok;
+  hideErr('generate-err');
+}
+
+// ── Upload ───────────────────────────────────────────────────────────────
+async function doUpload() {
+  if (!_file) return;
+  hideErr('upload-err');
+  const btn = $('upload-btn');
+  btn.disabled = true;
+  btn.textContent = 'Uploading…';
+
+  const fd  = new FormData();
+  const llm = getLLM();
+  fd.append('file', _file);
+  fd.append('provider',   llm.provider);
+  if (llm.model)      fd.append('model',      llm.model);
+  if (llm.api_key)    fd.append('api_key',    llm.api_key);
+  fd.append('ollama_url', llm.ollama_url);
+
+  try {
+    const r = await fetch('/api/upload-prov', { method: 'POST', body: fd });
+    const j = await r.json();
+    if (!r.ok) throw new Error(j.error || 'Upload failed');
+    // Show a brief success message before redirect
+    btn.textContent = `✓ ${j.assessments} assessments loaded — opening chat…`;
+    setTimeout(() => window.location.href = '/app', 900);
+  } catch(e) {
+    showErr('upload-err', e.message);
+    btn.disabled    = false;
+    btn.textContent = 'Open Chat →';
+  }
+}
+
+// ── Generate ─────────────────────────────────────────────────────────────
+async function doGenerate() {
+  const repo = $('repo-inp').value.trim();
+  if (!repo) return;
+  hideErr('generate-err');
+  $('generate-btn').disabled = true;
+
+  const llm  = getLLM();
+  const body = {
+    repo,
+    github_token: $('gh-token').value.trim() || null,
+    ...llm,
+  };
+
+  try {
+    const r = await fetch('/api/generate-prov', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+    });
+    const j = await r.json();
+    if (!r.ok) throw new Error(j.error || 'Failed to start generation');
+    addRecentRepo(repo);
+    showOverlay();
+    pollJob(j.job_id);
+  } catch(e) {
+    showErr('generate-err', e.message);
+    $('generate-btn').disabled = false;
+  }
+}
+
+// ── Job polling ──────────────────────────────────────────────────────────
+let _poll = null;
+function pollJob(id) {
+  _poll = setInterval(async () => {
+    try {
+      const r = await fetch('/api/generate-status/' + id);
+      const j = await r.json();
+
+      // Message
+      $('prog-msg').textContent = j.message || 'Working…';
+
+      // Progress bar + percentage
+      if (typeof j.percent === 'number') {
+        $('prog-bar').style.width = j.percent + '%';
+        $('prog-pct').textContent  = j.percent > 0 ? j.percent + '%' : '';
+      }
+
+      // Step indicators
+      if      (j.step === 'process') { setStep('s-fetch',   'done');   setStep('s-process', 'active'); }
+      else if (j.step === 'load')    { setStep('s-fetch',   'done');   setStep('s-process', 'done');
+                                       setStep('s-load',    'active'); }
+
+      if (j.status === 'done') {
+        clearInterval(_poll);
+        setStep('s-fetch', 'done'); setStep('s-process', 'done'); setStep('s-load', 'done');
+        $('prog-bar').style.width = '100%';
+        $('prog-pct').textContent  = '100%';
+        $('prog-msg').textContent  = 'All done — opening chat…';
+        setTimeout(() => window.location.href = '/app', 700);
+      } else if (j.status === 'error') {
+        clearInterval(_poll);
+        hideOverlay();
+        showErr('generate-err', j.message || 'Generation failed');
+        $('generate-btn').disabled = false;
+      }
+    } catch(_) { /* network blip — keep polling */ }
+  }, 1500);
+}
+
+// ── Overlay helpers ──────────────────────────────────────────────────────
+function showOverlay() {
+  setStep('s-fetch',   'active');
+  setStep('s-process', '');
+  setStep('s-load',    '');
+  $('prog-msg').textContent  = 'Connecting to GitHub…';
+  $('prog-bar').style.width  = '0%';
+  $('prog-pct').textContent  = '';
+  $('overlay').classList.add('on');
+}
+function hideOverlay() { $('overlay').classList.remove('on'); }
+
+function setStep(id, state) {
+  const el = $(id);
+  el.className = 'step' + (state ? ' ' + state : '');
+  const icons = { active: '⟳', done: '✓', '': '◦' };
+  el.querySelector('.step-icon').textContent = icons[state] ?? '◦';
+}
+
+// ── Error helpers ────────────────────────────────────────────────────────
+function showErr(id, msg) { const e=$(id); e.textContent=msg; e.classList.add('on'); }
+function hideErr(id)       { const e=$(id); e.textContent='';  e.classList.remove('on'); }
+
+// ── Check if agent already loaded ────────────────────────────────────────
+fetch('/api/app-status').then(r => r.json()).then(j => {
+  if (j.loaded) {
+    $('loaded-repo').textContent  = j.repo?.name || 'unknown';
+    $('loaded-count').textContent = j.assessments;
+    $('continue-banner').classList.add('visible');
+  }
+}).catch(() => {});
+
+// ── LLM connectivity check ────────────────────────────────────────────────
+let _llmTimer = null;
+function scheduleLLMCheck() {
+  clearTimeout(_llmTimer);
+  _llmTimer = setTimeout(checkLLM, 700);
+}
+
+async function checkLLM() {
+  const pill = $('llm-pill');
+  if (!pill) return;
+  pill.className   = 'llm-pill checking';
+  pill.textContent = '…';
+
+  const p   = $('llm-provider').value;
+  const m   = ($('llm-model').value || '').trim();
+  const key = ($('llm-apikey').value || '').trim();
+  const url = ($('llm-ollama').value || 'http://localhost:11434').trim();
+
+  const params = new URLSearchParams({ provider: p, ollama_url: url });
+  if (m)   params.set('model',   m);
+  if (key) params.set('api_key', key);
+
+  try {
+    const r = await fetch('/api/llm-check?' + params);
+    const j = await r.json();
+    pill.textContent = j.message;
+    if      (j.ok && j.ready !== false) pill.className = 'llm-pill ok';
+    else if (j.ok)                      pill.className = 'llm-pill warn';
+    else                                pill.className = 'llm-pill err';
+  } catch(_) {
+    pill.textContent = 'check failed';
+    pill.className   = 'llm-pill err';
+  }
+}
+
+// ── Recent repos (localStorage) ───────────────────────────────────────────
+function getRecentRepos() {
+  try { return JSON.parse(localStorage.getItem('yprov_recent_repos') || '[]'); }
+  catch(_) { return []; }
+}
+function addRecentRepo(repo) {
+  const v = repo.trim();
+  if (!v) return;
+  const list = [v, ...getRecentRepos().filter(r => r !== v)].slice(0, 5);
+  localStorage.setItem('yprov_recent_repos', JSON.stringify(list));
+  renderRecentRepos();
+}
+function renderRecentRepos() {
+  const repos = getRecentRepos();
+  const el    = $('recent-repos');
+  if (!el) return;
+  if (!repos.length) { el.style.display = 'none'; return; }
+  el.innerHTML = repos.map(r =>
+    `<button class="recent-chip" data-repo="${_esc(r)}"
+             onclick="useRecentRepo(this.dataset.repo)">${_esc(r)}</button>`
+  ).join('');
+  el.style.display = 'flex';
+}
+function useRecentRepo(repo) {
+  $('repo-inp').value = repo;
+  onRepoInput();
+  $('repo-inp').focus();
+}
+
+// ── Saved provenance documents ────────────────────────────────────────────
+function _esc(s) {
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+async function fetchSaved() {
+  try {
+    const r = await fetch('/api/saved-prov');
+    const j = await r.json();
+    renderSaved(j.docs || []);
+  } catch(_) {}
+}
+
+function renderSaved(docs) {
+  const section = $('saved-section');
+  const list    = $('saved-list');
+
+  if (!docs.length && !isLoggedIn()) {
+    section.style.display = 'none';
+    return;
+  }
+
+  section.style.display = 'block';
+  const count = docs.length;
+  $('saved-dir-hint').textContent = count
+    ? count + ' document' + (count !== 1 ? 's' : '') + ' in ./Provenance_documents'
+    : 'No local files — check yProvStore tab';
+
+  if (!count) {
+    list.innerHTML = '<div class="saved-empty"><span>No local provenance documents found.</span></div>';
+    if (_savedTab !== 'cloud') switchSavedTab('cloud');
+    return;
+  }
+
+  list.innerHTML = docs.map((d, i) => `
+    <div class="saved-item">
+      <div class="saved-item-icon">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V8z"/>
+          <polyline points="14 2 14 8 20 8"/>
+          <line x1="16" y1="13" x2="8" y2="13"/>
+          <line x1="16" y1="17" x2="8" y2="17"/>
+        </svg>
+      </div>
+      <div class="saved-item-info">
+        <div class="saved-item-repo">${_esc(d.repo || d.filename)}</div>
+        <div class="saved-item-meta">${d.assessments} assessments &nbsp;·&nbsp; ${d.size_kb} KB &nbsp;·&nbsp; ${_esc(d.modified)}</div>
+      </div>
+      <button class="btn btn-primary" id="load-btn-${i}"
+              data-path="${_esc(d.path)}" data-idx="${i}"
+              onclick="loadSaved(this.dataset.path, this.dataset.idx)"
+              style="font-size:11px;padding:7px 16px;flex-shrink:0">
+        Load →
+      </button>
+    </div>`).join('');
+}
+
+async function loadSaved(path, idx) {
+  const btn = $('load-btn-' + idx);
+  btn.disabled    = true;
+  btn.textContent = 'Loading…';
+
+  const llm  = getLLM();
+  try {
+    const r = await fetch('/api/load-saved', {
+      method:  'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body:    JSON.stringify({ path, ...llm }),
+    });
+    const j = await r.json();
+    if (!r.ok) throw new Error(j.error || 'Failed to load');
+    btn.textContent = '✓ Loaded';
+    setTimeout(() => window.location.href = '/app', 500);
+  } catch(e) {
+    btn.disabled    = false;
+    btn.textContent = 'Load →';
+    showErr('saved-err', 'Could not load: ' + e.message);
+  }
+}
+
+// ── yProvStore Auth ────────────────────────────────────────────────────────
+function getAuthToken() { return localStorage.getItem('yprov_token') || ''; }
+function getAuthEmail() { return localStorage.getItem('yprov_email') || ''; }
+function isLoggedIn()   { return !!getAuthToken(); }
+function setAuth(token, email) {
+  localStorage.setItem('yprov_token', token);
+  localStorage.setItem('yprov_email', email);
+}
+function clearAuth() {
+  localStorage.removeItem('yprov_token');
+  localStorage.removeItem('yprov_email');
+}
+
+function updateAuthBadge() {
+  const badge = $('auth-badge'), dot = $('auth-dot'), label = $('auth-label');
+  if (!badge) return;
+  if (isLoggedIn()) {
+    badge.classList.add('logged-in');
+    dot.classList.add('on');
+    const email = getAuthEmail();
+    label.textContent = email.includes('@') ? email.split('@')[0] : email;
+    badge.title = email + ' — click to sign out';
+  } else {
+    badge.classList.remove('logged-in');
+    dot.classList.remove('on');
+    label.textContent = 'Sign In';
+    badge.title = 'Sign in to yProvStore';
+  }
+}
+
+function onAuthBadgeClick() {
+  if (isLoggedIn()) {
+    if (confirm('Sign out of yProvStore?\n' + getAuthEmail())) {
+      clearAuth();
+      updateAuthBadge();
+      renderYProvList([]);
+      if (!$('saved-list').querySelector('.saved-item')) $('saved-section').style.display = 'none';
+    }
+  } else {
+    openAuthModal('login');
+  }
+}
+
+// ── Auth modal ─────────────────────────────────────────────────────────────
+function openAuthModal(tab) {
+  $('auth-modal').classList.add('on');
+  switchAuthTab(tab || 'login');
+  clearAuthErr();
+}
+function closeAuthModal() { $('auth-modal').classList.remove('on'); }
+
+function switchAuthTab(tab) {
+  $('atab-login').classList.toggle('active', tab === 'login');
+  $('atab-register').classList.toggle('active', tab === 'register');
+  $('auth-login-form').style.display    = tab === 'login'    ? 'flex' : 'none';
+  $('auth-register-form').style.display = tab === 'register' ? 'flex' : 'none';
+  clearAuthErr();
+}
+
+function clearAuthErr() {
+  const e = $('auth-err');
+  if (e) { e.textContent = ''; e.classList.remove('on'); }
+}
+function showAuthErr(msg) {
+  const e = $('auth-err');
+  if (e) { e.textContent = msg; e.classList.add('on'); }
+}
+function _yProvErrMsg(j, fallback) {
+  const d = j.detail ?? j.description ?? j.error ?? j.message ?? j.msg;
+  if (!d) return j && Object.keys(j).length ? JSON.stringify(j) : fallback;
+  if (typeof d === 'string') return d;
+  if (Array.isArray(d)) return d.map(x => x.msg || JSON.stringify(x)).join('; ');
+  return JSON.stringify(d);
+}
+
+function _jwtEmail(token) {
+  try { return JSON.parse(atob(token.split('.')[1])).email || ''; }
+  catch(_) { return ''; }
+}
+
+async function doLogin() {
+  const email    = $('login-email').value.trim();
+  const password = $('login-password').value;
+  if (!email || !password) { showAuthErr('Please fill in all fields.'); return; }
+  const btn = $('login-btn');
+  btn.disabled = true; btn.textContent = 'Signing in…';
+  clearAuthErr();
+  try {
+    const r = await fetch('/api/yprov-login', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ username: email, password }),
+    });
+    const j = await r.json();
+    if (!r.ok) throw new Error(_yProvErrMsg(j, 'Login failed'));
+    const token = j.access_token;
+    if (!token) throw new Error('No token received from server');
+
+    // Decode email from JWT payload — no extra round-trip needed
+    const storedEmail = _jwtEmail(token) || email;
+    setAuth(token, storedEmail);
+    closeAuthModal();
+    updateAuthBadge();
+    $('saved-section').style.display = 'block';
+    switchSavedTab('cloud');
+    fetchYProvDocs();   // async — doesn't block login
+  } catch(e) {
+    showAuthErr(e.message);
+    clearAuth();
+  } finally {
+    btn.disabled = false; btn.textContent = 'Sign In →';
+  }
+}
+
+async function doSignup() {
+  const email    = $('reg-email').value.trim();
+  const password = $('reg-password').value;
+  if (!email || !password) { showAuthErr('Please fill in all fields.'); return; }
+  const username = email.split('@')[0];  // auto-derive username from email
+  const btn = $('register-btn');
+  btn.disabled = true; btn.textContent = 'Creating account…';
+  clearAuthErr();
+  try {
+    const r = await fetch('/api/yprov-signup', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ username, email, password }),
+    });
+    const j = await r.json();
+    if (r.status === 409) {
+      // Already registered — auto-login instead
+      $('login-email').value = email;
+      $('login-password').value = password;
+      switchAuthTab('login');
+      await doLogin();
+      return;
+    }
+    if (!r.ok) throw new Error(_yProvErrMsg(j, 'Registration failed'));
+    $('login-email').value = email;
+    $('login-password').value = password;
+    switchAuthTab('login');
+    await doLogin();
+  } catch(e) {
+    showAuthErr(e.message);
+    btn.disabled = false; btn.textContent = 'Create Account →';
+  }
+}
+
+// ── Saved section tabs ─────────────────────────────────────────────────────
+let _savedTab = 'local';
+
+function switchSavedTab(tab) {
+  _savedTab = tab;
+  $('saved-tab-local').classList.toggle('active', tab === 'local');
+  $('saved-tab-cloud').classList.toggle('active', tab === 'cloud');
+  $('saved-list').style.display  = tab === 'local' ? 'block' : 'none';
+  $('yprov-list').style.display  = tab === 'cloud' ? 'block' : 'none';
+  if (tab === 'cloud') {
+    if (isLoggedIn() && !$('yprov-list').querySelector('.saved-item')) fetchYProvDocs();
+    else if (!isLoggedIn()) renderYProvList([]);
+  }
+}
+
+// ── yProvStore document list ───────────────────────────────────────────────
+function renderYProvList(docs) {
+  const el = $('yprov-list');
+  if (!el) return;
+  if (!isLoggedIn()) {
+    el.innerHTML = `<div class="saved-empty">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+           stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="opacity:.35">
+        <rect x="3" y="11" width="18" height="11" rx="2"/>
+        <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+      </svg>
+      <span>Sign in to access your yProvStore documents</span>
+      <button class="btn btn-primary" onclick="openAuthModal('login')"
+              style="font-size:11px;padding:8px 18px;margin-top:4px">Sign In →</button>
+    </div>`;
+    return;
+  }
+  if (!docs.length) {
+    el.innerHTML = `<div class="saved-empty">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+           stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="opacity:.35">
+        <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+      </svg>
+      <span>No documents stored in yProvStore yet.</span>
+    </div>`;
+    return;
+  }
+  el.innerHTML = docs.map(d => `
+    <div class="saved-item">
+      <div class="saved-item-icon" style="background:rgba(9,105,218,.08);color:#0969da;border-color:rgba(9,105,218,.2)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <ellipse cx="12" cy="5" rx="9" ry="3"/>
+          <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+          <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+        </svg>
+      </div>
+      <div class="saved-item-info">
+        <div class="saved-item-repo">${_esc(d.title || d.pid)}</div>
+        <div class="saved-item-meta">${d.created_at ? _esc(d.created_at.slice(0,10)) + ' · ' : ''}yProvStore</div>
+      </div>
+      <a href="${_esc(d.explorer_url)}" target="_blank"
+         class="btn btn-primary" style="font-size:11px;padding:7px 14px;flex-shrink:0;text-decoration:none">
+        Open →
+      </a>
+    </div>`).join('');
+}
+
+async function fetchYProvDocs() {
+  const token = getAuthToken();
+  if (!token) { renderYProvList([]); return; }
+  const el = $('yprov-list');
+
+  // Show locally-cached published docs immediately (no server wait)
+  const cached = _loadMyDocs();
+  if (cached.length) renderYProvList(cached);
+  else if (el) el.innerHTML = '<div class="saved-empty"><span>Loading from yProvStore…</span></div>';
+
+  // Fetch page 0 from server to catch docs published on other devices
+  try {
+    const email = getAuthEmail();
+    const url   = '/api/yprov-docs' + (email ? '?email=' + encodeURIComponent(email) : '');
+    const r = await fetch(url, { headers: { 'Authorization': 'Bearer ' + token } });
+    if (r.status === 401) { clearAuth(); updateAuthBadge(); renderYProvList([]); return; }
+    const j = await r.json();
+    if (j.email && j.email !== getAuthEmail()) localStorage.setItem('yprov_email', j.email);
+    // Merge: server docs + cached docs, deduplicate by pid
+    const serverDocs = j.docs || [];
+    const merged = _mergeDocs(serverDocs, cached);
+    renderYProvList(merged);
+  } catch(_) {
+    // Server unavailable — keep showing cached docs if any
+    if (!cached.length && el)
+      el.innerHTML = '<div class="saved-empty"><span>Could not reach yProvStore.</span></div>';
+  }
+}
+
+function _loadMyDocs() {
+  try { return JSON.parse(localStorage.getItem('yprov_my_docs') || '[]'); } catch(_) { return []; }
+}
+
+function _mergeDocs(serverDocs, cached) {
+  const seen = new Set(serverDocs.map(d => d.pid));
+  const extra = cached.filter(d => !seen.has(d.pid));
+  return [...serverDocs, ...extra];
+}
+
+// ── Init auth state ────────────────────────────────────────────────────────
+updateAuthBadge();
+
+fetchSaved();
+renderRecentRepos();
+setTimeout(checkLLM, 400);  // initial LLM check after page settles
+</script>
+</body>
+</html>

@@ -18,12 +18,11 @@ class ProvenanceModel:
         self.entities = {}
         self.activities = {}
         self.relationships = {
-            "wasGeneratedBy": {},
-            "wasAssociatedWith": {},
-            "wasAttributedTo": {},
-            "wasDerivedFrom": {},
-            "wasAssociatedWith": {},
-            "Used": {}
+            "wasGeneratedBy":   {},
+            "wasAssociatedWith":{},
+            "wasAttributedTo":  {},
+            "wasDerivedFrom":   {},
+            "Used":             {},
         }
 
     def add_agent(self, agent: Agent):
