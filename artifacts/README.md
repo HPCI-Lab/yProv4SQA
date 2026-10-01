@@ -308,7 +308,7 @@ This script fetches SQAaaS reports, normalises them, and generates provenance do
 
 ### **10.2. Pre-generated provenance documents**
 
-All 10 provenance documents (one per external repository; the 11th is this repository itself) are pre-generated in `./multi_repo_evaluation/Provenance_documents/`. Each file is named `<org>_<repo>_prov_output.json`.
+10 of the 11 provenance documents are pre-generated in `./multi_repo_evaluation/Provenance_documents/`. Each file is named `<org>_<repo>_prov_output.json`. The 11th document (for this repository itself) is withheld for anonymity and will be made available in the camera-ready version.
 
 ### **10.3. Open a document in yProvExplorer**
 
