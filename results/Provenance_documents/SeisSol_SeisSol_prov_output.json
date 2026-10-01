@@ -1,0 +1,2423 @@
+{
+    "prefix": {
+        "ex": "https://sqaaas.eosc-synergy.eu/",
+        "w3": "http://www.w3.org/",
+        "tr": "http://www.w3.org/TR/2011/"
+    },
+    "agent": {
+        "ex:SQAaaS": {
+            "prov:type": "prov:SoftwareAgent",
+            "xsd:type": "xsd:QName"
+        }
+    },
+    "entity": {
+        "ex:repository1": {
+            "prov:type": "document",
+            "ex:url": "https://github.com/SeisSol/SeisSol",
+            "ex:name": "SeisSol/SeisSol",
+            "ex:avatar_url": "https://avatars.githubusercontent.com/u/8057643?v=4",
+            "ex:description": null,
+            "ex:languages": null
+        },
+        "ex:output1": {
+            "prov:type": "document",
+            "ex:badge_won": "No Badge",
+            "ex:Issued_On:str": "2024-01-18T12:44:45.089240650Z",
+            "ex:entityType:str": "Assertion",
+            "ex:openBadgeId:str": "https://api.eu.badgr.io/public/assertions/V1IRTJ4DSZessZ71umM-YQ",
+            "ex:createdAt:str": "2024-01-18T12:44:45.089203097Z",
+            "ex:badgeclassOpenBadgeId:str": "https://api.eu.badgr.io/public/badges/IDUsZJpNQPuiJpPwmJ8iJw",
+            "ex:image:str": "https://api.eu.badgr.io/public/assertions/V1IRTJ4DSZessZ71umM-YQ/image",
+            "ex:badge_path": "{\"bronze\": {\"fulfilled\": [\"QC.Doc\", \"QC.Acc\", \"QC.Lic\"], \"missing\": []}, \"silver\": {\"fulfilled\": [\"QC.Ver\", \"QC.Met\", \"QC.Lic\", \"QC.Doc\", \"QC.Acc\"], \"missing\": []}, \"gold\": {\"fulfilled\": [\"QC.Met\", \"QC.Doc\", \"QC.Ver\", \"QC.Lic\", \"QC.Acc\"], \"missing\": [\"QC.Sec\", \"QC.Sty\"]}}",
+            "ex:bronze_fulfilled": [
+                "QC.Doc",
+                "QC.Acc",
+                "QC.Lic"
+            ],
+            "ex:silver_fulfilled": [
+                "QC.Ver",
+                "QC.Met",
+                "QC.Lic",
+                "QC.Doc",
+                "QC.Acc"
+            ],
+            "ex:gold_missing": [
+                "QC.Sec",
+                "QC.Sty"
+            ],
+            "ex:gold_fulfilled": [
+                "QC.Met",
+                "QC.Doc",
+                "QC.Ver",
+                "QC.Lic",
+                "QC.Acc"
+            ],
+            "ex:verification_url": "https://badgecheck.io/?url=https%3A%2F%2Fapi.eu.badgr.io%2Fpublic%2Fassertions%2FV1IRTJ4DSZessZ71umM-YQ?identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2FSeisSol.assess.sqaaas%2Fcommit%2Ffd6970d67d32c26dca79b2c0313e1645914c5c7c&amp;identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2FSeisSol.assess.sqaaas%2Fcommit%2Ffd6970d67d32c26dca79b2c0313e1645914c5c7c"
+        },
+        "ex:assessment1": {
+            "prov:type": "document",
+            "ex:version": "2.10.0",
+            "ex:commit_id": "87adf15e655e22bcb5f71d678c55ab379e8b52ae",
+            "ex:commit_date": "2024-01-18T12:44:51Z",
+            "ex:branch_name": "master",
+            "ex:report_json_url": "https://raw.githubusercontent.com/eosc-synergy/SeisSol.assess.sqaaas/main/.report/assessment_output.json",
+            "ex:is_partial_run": false
+        },
+        "ex:output2": {
+            "prov:type": "document",
+            "ex:badge_won": "silver",
+            "ex:Issued_On:str": "2024-12-02T15:31:01.349474380Z",
+            "ex:entityType:str": "Assertion",
+            "ex:openBadgeId:str": "https://api.eu.badgr.io/public/assertions/RUZWcQzZRjmhrPeqYMQBkQ",
+            "ex:createdAt:str": "2024-12-02T15:31:01.349469944Z",
+            "ex:badgeclassOpenBadgeId:str": "https://api.eu.badgr.io/public/badges/IDUsZJpNQPuiJpPwmJ8iJw",
+            "ex:image:str": "https://api.eu.badgr.io/public/assertions/RUZWcQzZRjmhrPeqYMQBkQ/image",
+            "ex:badge_path": "{\"bronze\": {\"fulfilled\": [\"QC.Lic\", \"QC.Acc\", \"QC.Doc\"], \"missing\": []}, \"silver\": {\"fulfilled\": [\"QC.Ver\", \"QC.Lic\", \"QC.Acc\", \"QC.Doc\", \"QC.Met\"], \"missing\": []}, \"gold\": {\"fulfilled\": [\"QC.Ver\", \"QC.Acc\", \"QC.Lic\", \"QC.Doc\", \"QC.Met\"], \"missing\": [\"QC.Sty\", \"QC.Uni\", \"QC.Sec\"]}}",
+            "ex:bronze_fulfilled": [
+                "QC.Lic",
+                "QC.Acc",
+                "QC.Doc"
+            ],
+            "ex:silver_fulfilled": [
+                "QC.Ver",
+                "QC.Lic",
+                "QC.Acc",
+                "QC.Doc",
+                "QC.Met"
+            ],
+            "ex:gold_missing": [
+                "QC.Sty",
+                "QC.Uni",
+                "QC.Sec"
+            ],
+            "ex:gold_fulfilled": [
+                "QC.Ver",
+                "QC.Acc",
+                "QC.Lic",
+                "QC.Doc",
+                "QC.Met"
+            ],
+            "ex:verification_url": "https://badgecheck.io/?url=https%3A%2F%2Fapi.eu.badgr.io%2Fpublic%2Fassertions%2FRUZWcQzZRjmhrPeqYMQBkQ?identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2FSeisSol.assess.sqaaas%2Fcommit%2F2e333824c561063add3be56fb64b2b4462283fd9&amp;identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2FSeisSol.assess.sqaaas%2Fcommit%2F2e333824c561063add3be56fb64b2b4462283fd9"
+        },
+        "ex:assessment2": {
+            "prov:type": "document",
+            "ex:version": "3.2.1",
+            "ex:commit_id": "5d88567c8733937b99d47ea00b0f26b8bf467785",
+            "ex:commit_date": "2024-12-02T15:31:10Z",
+            "ex:branch_name": "master",
+            "ex:report_json_url": "https://raw.githubusercontent.com/eosc-synergy/seissol.assess.sqaaas/master/.report/assessment_output.json",
+            "ex:is_partial_run": false,
+            "ex:is_main_repo": true
+        },
+        "ex:output3": {
+            "prov:type": "document",
+            "ex:badge_won": "silver",
+            "ex:Issued_On:str": "2024-12-13T10:12:08.824070961Z",
+            "ex:entityType:str": "Assertion",
+            "ex:openBadgeId:str": "https://api.eu.badgr.io/public/assertions/F8T4qOSkTKOOIt_zx-bJZg",
+            "ex:createdAt:str": "2024-12-13T10:12:08.824070478Z",
+            "ex:badgeclassOpenBadgeId:str": "https://api.eu.badgr.io/public/badges/IDUsZJpNQPuiJpPwmJ8iJw",
+            "ex:image:str": "https://api.eu.badgr.io/public/assertions/F8T4qOSkTKOOIt_zx-bJZg/image",
+            "ex:badge_path": "{\"bronze\": {\"fulfilled\": [\"QC.Acc\", \"QC.Doc\", \"QC.Lic\"], \"missing\": []}, \"silver\": {\"fulfilled\": [\"QC.Acc\", \"QC.Lic\", \"QC.Ver\", \"QC.Met\", \"QC.Doc\"], \"missing\": []}, \"gold\": {\"fulfilled\": [\"QC.Lic\", \"QC.Ver\", \"QC.Acc\", \"QC.Met\", \"QC.Doc\", \"QC.Sec\"], \"missing\": [\"QC.Uni\", \"QC.Sty\"]}}",
+            "ex:bronze_fulfilled": [
+                "QC.Acc",
+                "QC.Doc",
+                "QC.Lic"
+            ],
+            "ex:silver_fulfilled": [
+                "QC.Acc",
+                "QC.Lic",
+                "QC.Ver",
+                "QC.Met",
+                "QC.Doc"
+            ],
+            "ex:gold_missing": [
+                "QC.Uni",
+                "QC.Sty"
+            ],
+            "ex:gold_fulfilled": [
+                "QC.Lic",
+                "QC.Ver",
+                "QC.Acc",
+                "QC.Met",
+                "QC.Doc",
+                "QC.Sec"
+            ],
+            "ex:verification_url": "https://badgecheck.io/?url=https%3A%2F%2Fapi.eu.badgr.io%2Fpublic%2Fassertions%2FF8T4qOSkTKOOIt_zx-bJZg?identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2FSeisSol.assess.sqaaas%2Fcommit%2F369b7268c368c76e25f80c47d502ee5cd885d108&amp;identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2FSeisSol.assess.sqaaas%2Fcommit%2F369b7268c368c76e25f80c47d502ee5cd885d108"
+        },
+        "ex:assessment3": {
+            "prov:type": "document",
+            "ex:version": "3.2.1",
+            "ex:commit_id": "6700c36b4aeed17c1ded9c76b5e924ec8608a3ed",
+            "ex:commit_date": "2024-12-13T10:12:17Z",
+            "ex:branch_name": "master",
+            "ex:report_json_url": "https://raw.githubusercontent.com/eosc-synergy/seissol.assess.sqaaas/master/.report/assessment_output.json",
+            "ex:is_partial_run": false,
+            "ex:is_main_repo": true
+        },
+        "ex:output4": {
+            "prov:type": "document",
+            "ex:badge_won": "silver",
+            "ex:Issued_On:str": "2025-01-03T12:37:16.552324405Z",
+            "ex:entityType:str": "Assertion",
+            "ex:openBadgeId:str": "https://api.eu.badgr.io/public/assertions/6rVwWdHVRa-yfqA1w61ZyQ",
+            "ex:createdAt:str": "2025-01-03T12:37:16.552323881Z",
+            "ex:badgeclassOpenBadgeId:str": "https://api.eu.badgr.io/public/badges/IDUsZJpNQPuiJpPwmJ8iJw",
+            "ex:image:str": "https://api.eu.badgr.io/public/assertions/6rVwWdHVRa-yfqA1w61ZyQ/image",
+            "ex:badge_path": "{\"bronze\": {\"fulfilled\": [\"QC.Acc\", \"QC.Lic\", \"QC.Doc\"], \"missing\": []}, \"silver\": {\"fulfilled\": [\"QC.Ver\", \"QC.Met\", \"QC.Acc\", \"QC.Lic\", \"QC.Doc\"], \"missing\": []}, \"gold\": {\"fulfilled\": [\"QC.Acc\", \"QC.Sec\", \"QC.Lic\", \"QC.Ver\", \"QC.Met\", \"QC.Doc\"], \"missing\": [\"QC.Uni\", \"QC.Sty\"]}}",
+            "ex:bronze_fulfilled": [
+                "QC.Acc",
+                "QC.Lic",
+                "QC.Doc"
+            ],
+            "ex:silver_fulfilled": [
+                "QC.Ver",
+                "QC.Met",
+                "QC.Acc",
+                "QC.Lic",
+                "QC.Doc"
+            ],
+            "ex:gold_missing": [
+                "QC.Uni",
+                "QC.Sty"
+            ],
+            "ex:gold_fulfilled": [
+                "QC.Acc",
+                "QC.Sec",
+                "QC.Lic",
+                "QC.Ver",
+                "QC.Met",
+                "QC.Doc"
+            ],
+            "ex:verification_url": "https://badgecheck.io/?url=https%3A%2F%2Fapi.eu.badgr.io%2Fpublic%2Fassertions%2F6rVwWdHVRa-yfqA1w61ZyQ?identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2FSeisSol.assess.sqaaas%2Fcommit%2Ff8b83dbe836c34052706663dd5daf4e00ec532fd&amp;identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2FSeisSol.assess.sqaaas%2Fcommit%2Ff8b83dbe836c34052706663dd5daf4e00ec532fd"
+        },
+        "ex:assessment4": {
+            "prov:type": "document",
+            "ex:version": "3.2.1",
+            "ex:commit_id": "81137ddf54f8a11d973000493e75c63e53d8ceb4",
+            "ex:commit_date": "2025-01-03T12:37:25Z",
+            "ex:branch_name": "master",
+            "ex:report_json_url": "https://raw.githubusercontent.com/eosc-synergy/seissol.assess.sqaaas/master/.report/assessment_output.json",
+            "ex:is_partial_run": false,
+            "ex:is_main_repo": true
+        },
+        "ex:output5": {
+            "prov:type": "document",
+            "ex:badge_won": "silver",
+            "ex:Issued_On:str": "2025-01-31T18:15:57.186111596Z",
+            "ex:entityType:str": "Assertion",
+            "ex:openBadgeId:str": "https://api.eu.badgr.io/public/assertions/SEwqkxLtR4qJ_Ol7My1E7A",
+            "ex:createdAt:str": "2025-01-31T18:15:57.186111039Z",
+            "ex:badgeclassOpenBadgeId:str": "https://api.eu.badgr.io/public/badges/IDUsZJpNQPuiJpPwmJ8iJw",
+            "ex:image:str": "https://api.eu.badgr.io/public/assertions/SEwqkxLtR4qJ_Ol7My1E7A/image",
+            "ex:badge_path": "{\"bronze\": {\"fulfilled\": [\"QC.Acc\", \"QC.Doc\", \"QC.Lic\"], \"missing\": []}, \"silver\": {\"fulfilled\": [\"QC.Met\", \"QC.Lic\", \"QC.Acc\", \"QC.Doc\", \"QC.Ver\"], \"missing\": []}, \"gold\": {\"fulfilled\": [\"QC.Met\", \"QC.Sec\", \"QC.Acc\", \"QC.Doc\", \"QC.Ver\", \"QC.Lic\"], \"missing\": [\"QC.Sty\", \"QC.Uni\"]}}",
+            "ex:bronze_fulfilled": [
+                "QC.Acc",
+                "QC.Doc",
+                "QC.Lic"
+            ],
+            "ex:silver_fulfilled": [
+                "QC.Met",
+                "QC.Lic",
+                "QC.Acc",
+                "QC.Doc",
+                "QC.Ver"
+            ],
+            "ex:gold_missing": [
+                "QC.Sty",
+                "QC.Uni"
+            ],
+            "ex:gold_fulfilled": [
+                "QC.Met",
+                "QC.Sec",
+                "QC.Acc",
+                "QC.Doc",
+                "QC.Ver",
+                "QC.Lic"
+            ],
+            "ex:verification_url": "https://badgecheck.io/?url=https%3A%2F%2Fapi.eu.badgr.io%2Fpublic%2Fassertions%2FSEwqkxLtR4qJ_Ol7My1E7A?identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2FSeisSol.assess.sqaaas%2Fcommit%2F2b7e1e095170a3cdeb8a5d4f4ade6723f7b87fd0&amp;identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2FSeisSol.assess.sqaaas%2Fcommit%2F2b7e1e095170a3cdeb8a5d4f4ade6723f7b87fd0"
+        },
+        "ex:assessment5": {
+            "prov:type": "document",
+            "ex:version": "3.2.1",
+            "ex:commit_id": "be0632942f0d54c303bc506be40e322fb9077394",
+            "ex:commit_date": "2025-01-31T18:16:05Z",
+            "ex:branch_name": "master",
+            "ex:report_json_url": "https://raw.githubusercontent.com/eosc-synergy/seissol.assess.sqaaas/master/.report/assessment_output.json",
+            "ex:is_partial_run": false,
+            "ex:is_main_repo": true
+        },
+        "ex:output6": {
+            "prov:type": "document",
+            "ex:badge_won": "silver",
+            "ex:Issued_On:str": "2025-07-01T15:37:37.806009555Z",
+            "ex:entityType:str": "Assertion",
+            "ex:openBadgeId:str": "https://api.eu.badgr.io/public/assertions/IHi20XW7Q-OhqWn2NtX1lQ",
+            "ex:createdAt:str": "2025-07-01T15:37:37.806004482Z",
+            "ex:badgeclassOpenBadgeId:str": "https://api.eu.badgr.io/public/badges/IDUsZJpNQPuiJpPwmJ8iJw",
+            "ex:image:str": "https://api.eu.badgr.io/public/assertions/IHi20XW7Q-OhqWn2NtX1lQ/image",
+            "ex:badge_path": "{\"bronze\": {\"fulfilled\": [\"QC.Doc\", \"QC.Acc\", \"QC.Lic\"], \"missing\": []}, \"silver\": {\"fulfilled\": [\"QC.Doc\", \"QC.Acc\", \"QC.Met\", \"QC.Lic\", \"QC.Ver\"], \"missing\": []}, \"gold\": {\"fulfilled\": [\"QC.Met\", \"QC.Sec\", \"QC.Ver\", \"QC.Doc\", \"QC.Acc\", \"QC.Lic\"], \"missing\": [\"QC.Sty\", \"QC.Uni\"]}}",
+            "ex:bronze_fulfilled": [
+                "QC.Doc",
+                "QC.Acc",
+                "QC.Lic"
+            ],
+            "ex:silver_fulfilled": [
+                "QC.Doc",
+                "QC.Acc",
+                "QC.Met",
+                "QC.Lic",
+                "QC.Ver"
+            ],
+            "ex:gold_missing": [
+                "QC.Sty",
+                "QC.Uni"
+            ],
+            "ex:gold_fulfilled": [
+                "QC.Met",
+                "QC.Sec",
+                "QC.Ver",
+                "QC.Doc",
+                "QC.Acc",
+                "QC.Lic"
+            ],
+            "ex:verification_url": "https://badgecheck.io/?url=https%3A%2F%2Fapi.eu.badgr.io%2Fpublic%2Fassertions%2FIHi20XW7Q-OhqWn2NtX1lQ?identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2FSeisSol.assess.sqaaas%2Fcommit%2F7defee040dee4cdf5ffc7584f3daed46fc0f1db1&amp;identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2FSeisSol.assess.sqaaas%2Fcommit%2F7defee040dee4cdf5ffc7584f3daed46fc0f1db1"
+        },
+        "ex:assessment6": {
+            "prov:type": "document",
+            "ex:version": "3.5.0",
+            "ex:commit_id": "2c0accf751a302d1d3fc46d6d00dfda9e1a40908",
+            "ex:commit_date": "2025-07-01T15:37:49Z",
+            "ex:branch_name": "master",
+            "ex:report_json_url": "https://raw.githubusercontent.com/eosc-synergy/SeisSol.assess.sqaaas/master/.report/assessment_output.json",
+            "ex:is_partial_run": false,
+            "ex:report_permalink": "https://sqaaas.eosc-synergy.eu/full-assessment/report/https://raw.githubusercontent.com/eosc-synergy/SeisSol.assess.sqaaas/master/.report/assessment_output.json",
+            "ex:is_main_repo": true
+        },
+        "ex:output7": {
+            "prov:type": "document",
+            "ex:badge_won": "silver",
+            "ex:Issued_On:str": "2025-08-14T13:28:25.463043885Z",
+            "ex:entityType:str": "Assertion",
+            "ex:openBadgeId:str": "https://api.eu.badgr.io/public/assertions/iKB0Ty6wRoa8v2GdL7At6w",
+            "ex:createdAt:str": "2025-08-14T13:28:25.463040338Z",
+            "ex:badgeclassOpenBadgeId:str": "https://api.eu.badgr.io/public/badges/IDUsZJpNQPuiJpPwmJ8iJw",
+            "ex:image:str": "https://api.eu.badgr.io/public/assertions/iKB0Ty6wRoa8v2GdL7At6w/image",
+            "ex:badge_path": "{\"bronze\": {\"fulfilled\": [\"QC.Acc\", \"QC.Lic\", \"QC.Doc\"], \"missing\": []}, \"silver\": {\"fulfilled\": [\"QC.Met\", \"QC.Ver\", \"QC.Acc\", \"QC.Lic\", \"QC.Doc\"], \"missing\": []}, \"gold\": {\"fulfilled\": [\"QC.Acc\", \"QC.Lic\", \"QC.Ver\", \"QC.Met\", \"QC.Sec\", \"QC.Doc\"], \"missing\": [\"QC.Uni\", \"QC.Sty\"]}}",
+            "ex:bronze_fulfilled": [
+                "QC.Acc",
+                "QC.Lic",
+                "QC.Doc"
+            ],
+            "ex:silver_fulfilled": [
+                "QC.Met",
+                "QC.Ver",
+                "QC.Acc",
+                "QC.Lic",
+                "QC.Doc"
+            ],
+            "ex:gold_missing": [
+                "QC.Uni",
+                "QC.Sty"
+            ],
+            "ex:gold_fulfilled": [
+                "QC.Acc",
+                "QC.Lic",
+                "QC.Ver",
+                "QC.Met",
+                "QC.Sec",
+                "QC.Doc"
+            ],
+            "ex:verification_url": "https://badgecheck.io/?url=https%3A%2F%2Fapi.eu.badgr.io%2Fpublic%2Fassertions%2FiKB0Ty6wRoa8v2GdL7At6w?identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2FSeisSol.assess.sqaaas%2Fcommit%2F43c8aa4d17d6fedcf9d5b61aac440b49eb1a9851&amp;identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2FSeisSol.assess.sqaaas%2Fcommit%2F43c8aa4d17d6fedcf9d5b61aac440b49eb1a9851"
+        },
+        "ex:assessment7": {
+            "prov:type": "document",
+            "ex:version": "3.5.0",
+            "ex:commit_id": "d52dcead99f66356721b9f167f4b72d9418e3bcc",
+            "ex:commit_date": "2025-08-14T13:28:30Z",
+            "ex:branch_name": "master",
+            "ex:report_json_url": "https://raw.githubusercontent.com/eosc-synergy/SeisSol.assess.sqaaas/master/.report/assessment_output.json",
+            "ex:is_partial_run": false,
+            "ex:report_permalink": "https://sqaaas.eosc-synergy.eu/full-assessment/report/https://raw.githubusercontent.com/eosc-synergy/SeisSol.assess.sqaaas/master/.report/assessment_output.json",
+            "ex:is_main_repo": true
+        },
+        "ex:output8": {
+            "prov:type": "document",
+            "ex:badge_won": "silver",
+            "ex:Issued_On:str": "2026-05-22T17:15:21.715136703Z",
+            "ex:entityType:str": "Assertion",
+            "ex:openBadgeId:str": "https://api.eu.badgr.io/public/assertions/M1wavD_OQUSItv8lP0fEvg",
+            "ex:createdAt:str": "2026-05-22T17:15:21.715136363Z",
+            "ex:badgeclassOpenBadgeId:str": "https://api.eu.badgr.io/public/badges/IDUsZJpNQPuiJpPwmJ8iJw",
+            "ex:image:str": "https://badges.parchment.eu/public/assertions/M1wavD_OQUSItv8lP0fEvg/image",
+            "ex:badge_path": "{\"bronze\": {\"fulfilled\": [\"QC.Acc\", \"QC.Lic\", \"QC.Doc\"], \"missing\": []}, \"silver\": {\"fulfilled\": [\"QC.Met\", \"QC.Ver\", \"QC.Doc\", \"QC.Acc\", \"QC.Lic\"], \"missing\": []}, \"gold\": {\"fulfilled\": [\"QC.Sec\", \"QC.Ver\", \"QC.Acc\", \"QC.Lic\", \"QC.Met\", \"QC.Doc\"], \"missing\": [\"QC.Sty\", \"QC.Uni\"]}}",
+            "ex:bronze_fulfilled": [
+                "QC.Acc",
+                "QC.Lic",
+                "QC.Doc"
+            ],
+            "ex:silver_fulfilled": [
+                "QC.Met",
+                "QC.Ver",
+                "QC.Doc",
+                "QC.Acc",
+                "QC.Lic"
+            ],
+            "ex:gold_missing": [
+                "QC.Sty",
+                "QC.Uni"
+            ],
+            "ex:gold_fulfilled": [
+                "QC.Sec",
+                "QC.Ver",
+                "QC.Acc",
+                "QC.Lic",
+                "QC.Met",
+                "QC.Doc"
+            ],
+            "ex:verification_url": "https://badgecheck.io/?url=https%3A%2F%2Fapi.eu.badgr.io%2Fpublic%2Fassertions%2FM1wavD_OQUSItv8lP0fEvg?identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2FSeisSol.assess.sqaaas%2Fcommit%2Fd0c9916a43d9a1dbc187b0177711f92f423be627&amp;identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2FSeisSol.assess.sqaaas%2Fcommit%2Fd0c9916a43d9a1dbc187b0177711f92f423be627"
+        },
+        "ex:assessment8": {
+            "prov:type": "document",
+            "ex:version": "3.5.0",
+            "ex:commit_id": "c5242146688827ea31faf4b5716031f2c7e3651e",
+            "ex:commit_date": "2026-05-22T17:15:30Z",
+            "ex:branch_name": "master",
+            "ex:report_json_url": "https://raw.githubusercontent.com/eosc-synergy/SeisSol.assess.sqaaas/master/.report/assessment_output.json",
+            "ex:is_partial_run": false,
+            "ex:report_permalink": "https://sqaaas.eosc-synergy.eu/full-assessment/report/https://raw.githubusercontent.com/eosc-synergy/SeisSol.assess.sqaaas/master/.report/assessment_output.json",
+            "ex:is_main_repo": true
+        }
+    },
+    "activity": {
+        "ex:qc_QC.Acc_1": {
+            "prov:type": "activity",
+            "ex:description": "Is the source code managed with a Version Control System?",
+            "ex:output": true,
+            "ex:percentage": "100%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 1,
+            "ex:requirement_level": "MUST",
+            "ex:tools_passed": [
+                "git"
+            ],
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Acc01\", \"description\": \"Is the source code managed with a Version Control System?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-boolean",
+            "ex:plugin_version": "1.2.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/SeisSol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/main/12/execution/node/34/log?consoleFull",
+            "ex:ci_stdout_command": "git rev-parse --is-inside-work-tree",
+            "ex:ci_stdout_text": "true"
+        },
+        "ex:qc_QC.Doc_1": {
+            "prov:type": "activity",
+            "ex:description": "Is the software scope outlined in the code repository?; Does the project establish a code of conduct for its participants?; Is there a clear path or guidelines on how to contribute to the code?; Are docs managed in the same repository as code?; Are docs following a style for the Markdown markup language?",
+            "ex:output": true,
+            "ex:percentage": "80%",
+            "ex:total_subcriteria": 5,
+            "ex:success_subcriteria": 4,
+            "ex:requirement_level": "MUST",
+            "ex:tools_failed": [
+                "markdownlint v0.11.0",
+                "restructuredtext-lint v1.3.2"
+            ],
+            "ex:tools_passed": [
+                "find_doc_files.py",
+                "git"
+            ],
+            "ex:failure_messages": [
+                "[QC.Doc02.X][markdownlint] Docs are not fully compliant with markdownlint standard",
+                "[QC.Doc02.X][restructuredtext-lint] Docs are not fully compliant with restructuredtext-lint standard"
+            ],
+            "ex:fix_hints": "[{\"subcriterion\": \"QC.Doc02.X\", \"description\": \"Are docs following a style for the Markdown markup language?\", \"requirement_level\": \"MAY\", \"hint\": \"When using a docs-as-code approach, the style of the markup language is being checked. SQAaaS relies on markdownlint for Markdown files and restructuredtext-lint for reStructuredText\", \"tools_failing\": [\"markdownlint\", \"restructuredtext-lint\"]}]",
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Doc06.1\", \"description\": \"Is the software scope outlined in the code repository?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Doc06.3\", \"description\": \"Does the project establish a code of conduct for its participants?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Doc06.2\", \"description\": \"Is there a clear path or guidelines on how to contribute to the code?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Doc01.1\", \"description\": \"Are docs managed in the same repository as code?\", \"valid\": true, \"requirement_level\": \"MAY\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Doc02.X\", \"description\": \"Are docs following a style for the Markdown markup language?\", \"valid\": false, \"requirement_level\": \"MAY\", \"required_for_next_level_badge\": false}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-find_doc_files",
+            "ex:plugin_version": "1.2.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/SeisSol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/main/12/execution/node/43/log?consoleFull",
+            "ex:ci_stdout_command": "find_doc_files.py --file_type all",
+            "ex:ci_stdout_text": "{\"README\": [{\"file_name\": \"README.md\", \"size\": 2101}], \"CODE_OF_CONDUCT\": [{\"file_name\": \"CODE_OF_CONDUCT.md\", \"size\": 5247}], \"CONTRIBUTING\": [{\"file_name\": \"CONTRIBUTING.md\", \"size\": 4246}]}",
+            "ex:required_for_next_level_badge": false
+        },
+        "ex:qc_QC.Lic_1": {
+            "prov:type": "activity",
+            "ex:description": "Is code licensed to be freely used, modified and distributed by others?; Is LICENSE file placed in the root path of the code repository?; Does the code use a license approved by Open Source Initiative?; Does the code use an Open Source Initiative's popular-recognized license?",
+            "ex:output": true,
+            "ex:percentage": "100%",
+            "ex:total_subcriteria": 4,
+            "ex:success_subcriteria": 4,
+            "ex:requirement_level": "MUST",
+            "ex:tools_passed": [
+                "licensee"
+            ],
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Lic01\", \"description\": \"Is code licensed to be freely used, modified and distributed by others?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Lic01.1\", \"description\": \"Is LICENSE file placed in the root path of the code repository?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Lic02\", \"description\": \"Does the code use a license approved by Open Source Initiative?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Lic02.1\", \"description\": \"Does the code use an Open Source Initiative's popular-recognized license?\", \"valid\": true, \"requirement_level\": \"MAY\", \"required_for_next_level_badge\": null}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-licensee",
+            "ex:plugin_version": "1.2.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/SeisSol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/main/12/execution/node/79/log?consoleFull",
+            "ex:ci_stdout_command": "licensee detect . --confidence 60 --json",
+            "ex:ci_stdout_text": "{\"licenses\":[{\"key\":\"bsd-3-clause\",\"spdx_id\":\"BSD-3-Clause\",\"meta\":{\"title\":\"BSD 3-Clause \\\"New\\\" or \\\"Revised\\\" License\",\"source\":\"https://spdx.org/licenses/BSD-3-Clause.html\",\"description\":\"A permissive license similar to the <a href=\\\"/licenses/bsd-2-clause/\\\">BSD 2-Clause License</a>, but with a 3rd clause that prohibits others from using the name of the copyright holder or its contributors to promote derived products without written consent.\",\"how\":\"Create a text file (typically named LICEN"
+        },
+        "ex:qc_QC.Met_1": {
+            "prov:type": "activity",
+            "ex:description": "Is the software citable?",
+            "ex:output": true,
+            "ex:percentage": "100%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 1,
+            "ex:requirement_level": "MUST",
+            "ex:tools_passed": [
+                "cff-converter-python"
+            ],
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Met01\", \"description\": \"Is the software citable?\", \"valid\": true, \"requirement_level\": \"SHOULD\", \"required_for_next_level_badge\": null}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-cff",
+            "ex:plugin_version": "1.0.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/SeisSol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/main/12/execution/node/88/log?consoleFull",
+            "ex:ci_stdout_command": "cffconvert --validate",
+            "ex:ci_stdout_text": "Citation metadata are valid according to schema version 1.2.0."
+        },
+        "ex:qc_QC.Sec_1": {
+            "prov:type": "activity",
+            "ex:description": "Is the source code passing Static Analysis Security Testing (SAST)?",
+            "ex:output": false,
+            "ex:percentage": "0%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 0,
+            "ex:requirement_level": "MUST",
+            "ex:tools_failed": [
+                "bandit v1.7.4"
+            ],
+            "ex:failure_messages": [
+                "[QC.Sec02][bandit] Found security weaknesses when performing SAST checks with bandit tool"
+            ],
+            "ex:fix_hints": "[{\"subcriterion\": \"QC.Sec02\", \"description\": \"Is the source code passing Static Analysis Security Testing (SAST)?\", \"requirement_level\": \"MUST\", \"hint\": \"Please check & solve the security weaknesses found by the SAST tool\", \"tools_failing\": [\"bandit\"]}]",
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Sec02\", \"description\": \"Is the source code passing Static Analysis Security Testing (SAST)?\", \"valid\": false, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": true}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-bandit",
+            "ex:plugin_version": "1.0.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/SeisSol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/main/12/execution/node/97/log?consoleFull",
+            "ex:ci_stdout_command": "bandit -f json --quiet  --confidence-level high --severity-level high --recursive .",
+            "ex:ci_stdout_text": "{\n  \"errors\": [\n    {\n      \"filename\": \"./auto_tuning/scripts/tune/Analysis.py\",\n      \"reason\": \"syntax error while parsing AST from file\"\n    },\n    {\n      \"filename\": \"./postprocessing/performance/scripts/count_flops.py\",\n      \"reason\": \"syntax error while parsing AST from file\"\n    },\n    {\n      \"filename\": \"./postprocessing/performance/scripts/count_flux_matrices.py\",\n      \"reason\": \"syntax error while parsing AST from file\"\n    },\n    {\n      \"filename\": \"./postprocessing/performance/",
+            "ex:required_for_next_level_badge": true
+        },
+        "ex:qc_QC.Sty_1": {
+            "prov:type": "activity",
+            "ex:description": "Is the software product following a style standard for Python files?",
+            "ex:output": false,
+            "ex:percentage": "0%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 0,
+            "ex:requirement_level": "MUST",
+            "ex:tools_failed": [
+                "flake8 v4.0.1 (mccabe: 0.6.1, pycodestyle: 2.8.0, pyflakes: 2.4.0)"
+            ],
+            "ex:tools_passed": [
+                "jsonlint"
+            ],
+            "ex:failure_messages": [
+                "[QC.Sty01][flake8] Python files are not fully compliant with flake8 (pycodestyle, pyflakes, mccabe) standard"
+            ],
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Sty01\", \"description\": \"Is the software product following a style standard for Python files?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": true}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-flake8",
+            "ex:plugin_version": "1.0.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/SeisSol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/main/12/execution/node/106/log?consoleFull",
+            "ex:ci_stdout_command": "flake8 .",
+            "ex:ci_stdout_text": "./preprocessing/meshing/cube/cubeGenerator.py:48:11: E999 SyntaxError: invalid syntax\n./preprocessing/meshing/cube/lib/gambit.py:6:80: E501 line too long (124 > 79 characters)\n./preprocessing/meshing/cube/lib/gambit.py:11:2: W291 trailing whitespace\n./preprocessing/meshing/cube/lib/gambit.py:14:2: W291 trailing whitespace\n./preprocessing/meshing/cube/lib/gambit.py:17:2: W291 trailing whitespace\n./preprocessing/meshing/cube/lib/gambit.py:21:2: W291 trailing whitespace\n./preprocessing/meshing/cube",
+            "ex:required_for_next_level_badge": true
+        },
+        "ex:qc_QC.Ver_1": {
+            "prov:type": "activity",
+            "ex:description": "Are tags being used for releasing software; Is the latest release compliant with Semantic Versioning (SemVer) specification?; Are all release tags with Semantic Versioning (SemVer) specification?",
+            "ex:output": true,
+            "ex:percentage": "33%",
+            "ex:total_subcriteria": 3,
+            "ex:success_subcriteria": 1,
+            "ex:requirement_level": "MUST",
+            "ex:tools_passed": [
+                "get_git_tags.py"
+            ],
+            "ex:failure_messages": [
+                "[QC.Ver01][get_git_tags.py] Latest release tag v1.1.2 found, but is not SemVer compliant",
+                "[QC.Ver02][get_git_tags.py] Not all release tags are SemVer compliant"
+            ],
+            "ex:fix_hints": "[{\"subcriterion\": \"QC.Ver01\", \"description\": \"Is the latest release compliant with Semantic Versioning (SemVer) specification?\", \"requirement_level\": \"SHOULD\", \"hint\": \"Latest tag must be compliant with SemVer specification\", \"tools_failing\": [\"file_check\"]}, {\"subcriterion\": \"QC.Ver02\", \"description\": \"Are all release tags with Semantic Versioning (SemVer) specification?\", \"requirement_level\": \"SHOULD\", \"hint\": \"Existent release tags shall be SemVer compliant for this subcriterion to be successful\", \"tools_failing\": [\"file_check\"]}]",
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Ver01.0\", \"description\": \"Are tags being used for releasing software\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Ver01\", \"description\": \"Is the latest release compliant with Semantic Versioning (SemVer) specification?\", \"valid\": false, \"requirement_level\": \"SHOULD\", \"required_for_next_level_badge\": false}, {\"id\": \"QC.Ver02\", \"description\": \"Are all release tags with Semantic Versioning (SemVer) specification?\", \"valid\": false, \"requirement_level\": \"SHOULD\", \"required_for_next_level_badge\": false}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-is_semver",
+            "ex:plugin_version": "1.0.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/SeisSol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/main/12/execution/node/124/log?consoleFull",
+            "ex:ci_stdout_command": "get_git_tags.py",
+            "ex:ci_stdout_text": "['v1.1.2', 'v1.1.1', 'v1.1.0', 'v1.0.1', 'v1.0.0', 'v1.0.0-rc2', 'v1.0.0-rc', 'v0.9.0', 'sc21revision', 'sc21', '202103_Sumatra', '201807_Kaikoura', '201703', 'sc17_baseline', '201511']",
+            "ex:required_for_next_level_badge": false
+        },
+        "ex:qc_QC.Acc_2": {
+            "prov:type": "activity",
+            "ex:description": "Is the source code managed with a Version Control System?",
+            "ex:output": true,
+            "ex:percentage": "100%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 1,
+            "ex:requirement_level": "MUST",
+            "ex:tools_passed": [
+                "git"
+            ],
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Acc01\", \"description\": \"Is the source code managed with a Version Control System?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-boolean",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/seissol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/2/execution/node/34/log?consoleFull",
+            "ex:ci_stdout_command": "git rev-parse --is-inside-work-tree ",
+            "ex:ci_stdout_text": "true"
+        },
+        "ex:qc_QC.Doc_2": {
+            "prov:type": "activity",
+            "ex:description": "Is the software scope outlined in the code repository?; Does the project establish a code of conduct for its participants?; Is there a clear path or guidelines on how to contribute to the code?; Are docs managed in the same repository as code?; Are docs following a style for the Markdown markup language?",
+            "ex:output": true,
+            "ex:percentage": "80%",
+            "ex:total_subcriteria": 5,
+            "ex:success_subcriteria": 4,
+            "ex:requirement_level": "MUST",
+            "ex:tools_failed": [
+                "markdownlint v0.11.0",
+                "restructuredtext-lint v1.3.2"
+            ],
+            "ex:tools_passed": [
+                "find_doc_files.py",
+                "git"
+            ],
+            "ex:failure_messages": [
+                "[QC.Doc02.X][markdownlint] Docs are not fully compliant with markdownlint standard",
+                "[QC.Doc02.X][restructuredtext-lint] Docs are not fully compliant with restructuredtext-lint standard"
+            ],
+            "ex:fix_hints": "[{\"subcriterion\": \"QC.Doc02.X\", \"description\": \"Are docs following a style for the Markdown markup language?\", \"requirement_level\": \"MAY\", \"hint\": \"When using a docs-as-code approach, the style of the markup language is being checked. SQAaaS relies on markdownlint for Markdown files and restructuredtext-lint for reStructuredText\", \"tools_failing\": [\"markdownlint\", \"restructuredtext-lint\"]}]",
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Doc06.1\", \"description\": \"Is the software scope outlined in the code repository?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Doc06.3\", \"description\": \"Does the project establish a code of conduct for its participants?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Doc06.2\", \"description\": \"Is there a clear path or guidelines on how to contribute to the code?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Doc01.1\", \"description\": \"Are docs managed in the same repository as code?\", \"valid\": true, \"requirement_level\": \"MAY\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Doc02.X\", \"description\": \"Are docs following a style for the Markdown markup language?\", \"valid\": false, \"requirement_level\": \"MAY\", \"required_for_next_level_badge\": false}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-find_doc_files",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/seissol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/2/execution/node/43/log?consoleFull",
+            "ex:ci_stdout_command": "find_doc_files.py --file_type all",
+            "ex:ci_stdout_text": "{\"README\": [{\"file_name\": \"README.md\", \"size\": 2436}], \"CODE_OF_CONDUCT\": [{\"file_name\": \"CODE_OF_CONDUCT.md\", \"size\": 5356}], \"CONTRIBUTING\": [{\"file_name\": \"CONTRIBUTING.md\", \"size\": 6597}]}",
+            "ex:required_for_next_level_badge": false
+        },
+        "ex:qc_QC.Lic_2": {
+            "prov:type": "activity",
+            "ex:description": "Is code licensed to be freely used, modified and distributed by others?; Is LICENSE file placed in the root path of the code repository?; Does the code use a license approved by Open Source Initiative?; Does the code use an Open Source Initiative's popular-recognized license?",
+            "ex:output": true,
+            "ex:percentage": "100%",
+            "ex:total_subcriteria": 4,
+            "ex:success_subcriteria": 4,
+            "ex:requirement_level": "MUST",
+            "ex:tools_passed": [
+                "licensee"
+            ],
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Lic01\", \"description\": \"Is code licensed to be freely used, modified and distributed by others?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Lic01.1\", \"description\": \"Is LICENSE file placed in the root path of the code repository?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Lic02\", \"description\": \"Does the code use a license approved by Open Source Initiative?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Lic02.1\", \"description\": \"Does the code use an Open Source Initiative's popular-recognized license?\", \"valid\": true, \"requirement_level\": \"MAY\", \"required_for_next_level_badge\": null}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-licensee",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/seissol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/2/execution/node/79/log?consoleFull",
+            "ex:ci_stdout_command": "licensee detect . --confidence 60 --json ",
+            "ex:ci_stdout_text": "{\"licenses\":[{\"key\":\"bsd-3-clause\",\"spdx_id\":\"BSD-3-Clause\",\"meta\":{\"title\":\"BSD 3-Clause \\\"New\\\" or \\\"Revised\\\" License\",\"source\":\"https://spdx.org/licenses/BSD-3-Clause.html\",\"description\":\"A permissive license similar to the <a href=\\\"/licenses/bsd-2-clause/\\\">BSD 2-Clause License</a>, but with a 3rd clause that prohibits others from using the name of the copyright holder or its contributors to promote derived products without written consent.\",\"how\":\"Create a text file (typically named LICEN"
+        },
+        "ex:qc_QC.Met_2": {
+            "prov:type": "activity",
+            "ex:description": "Is the software citable?",
+            "ex:output": true,
+            "ex:percentage": "100%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 1,
+            "ex:requirement_level": "MUST",
+            "ex:tools_passed": [
+                "cff-converter-python"
+            ],
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Met01\", \"description\": \"Is the software citable?\", \"valid\": true, \"requirement_level\": \"SHOULD\", \"required_for_next_level_badge\": null}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-cff",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/seissol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/2/execution/node/88/log?consoleFull",
+            "ex:ci_stdout_command": "cffconvert --validate ",
+            "ex:ci_stdout_text": "Citation metadata are valid according to schema version 1.2.0."
+        },
+        "ex:qc_QC.Sec_2": {
+            "prov:type": "activity",
+            "ex:description": "Is the source code passing Static Analysis Security Testing (SAST)?",
+            "ex:output": false,
+            "ex:percentage": "0%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 0,
+            "ex:requirement_level": "MUST",
+            "ex:tools_failed": [
+                "bandit v1.7.4"
+            ],
+            "ex:failure_messages": [
+                "[QC.Sec02][bandit] Found security weaknesses when performing SAST checks with bandit tool"
+            ],
+            "ex:fix_hints": "[{\"subcriterion\": \"QC.Sec02\", \"description\": \"Is the source code passing Static Analysis Security Testing (SAST)?\", \"requirement_level\": \"MUST\", \"hint\": \"Please check & solve the security weaknesses found by the SAST tool\", \"tools_failing\": [\"bandit\"]}]",
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Sec02\", \"description\": \"Is the source code passing Static Analysis Security Testing (SAST)?\", \"valid\": false, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": true}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-bandit",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/seissol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/2/execution/node/97/log?consoleFull",
+            "ex:ci_stdout_command": "bandit -f json --quiet  --confidence-level high --severity-level high --recursive  .",
+            "ex:ci_stdout_text": "{\n  \"errors\": [\n    {\n      \"filename\": \"./auto_tuning/scripts/tune/Analysis.py\",\n      \"reason\": \"syntax error while parsing AST from file\"\n    },\n    {\n      \"filename\": \"./postprocessing/visualization/tools/pickpoint2mseed.py\",\n      \"reason\": \"syntax error while parsing AST from file\"\n    },\n    {\n      \"filename\": \"./postprocessing/visualization/tools/tecp2vtk_merge.py\",\n      \"reason\": \"syntax error while parsing AST from file\"\n    },\n    {\n      \"filename\": \"./postprocessing/visualization",
+            "ex:required_for_next_level_badge": true
+        },
+        "ex:qc_QC.Sty_2": {
+            "prov:type": "activity",
+            "ex:description": "Is the software product following a style standard for Python files?",
+            "ex:output": false,
+            "ex:percentage": "0%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 0,
+            "ex:requirement_level": "MUST",
+            "ex:tools_failed": [
+                "flake8 v4.0.1 (mccabe: 0.6.1, pycodestyle: 2.8.0, pyflakes: 2.4.0)",
+                "oclint v20.11"
+            ],
+            "ex:tools_passed": [
+                "hadolint",
+                "jsonlint"
+            ],
+            "ex:failure_messages": [
+                "[QC.Sty01][flake8] Python files are not fully compliant with flake8 (pycodestyle, pyflakes, mccabe) standard",
+                "[QC.Sty01][oclint] C++ files are not fully compliant with oclint standard"
+            ],
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Sty01\", \"description\": \"Is the software product following a style standard for Python files?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": true}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-flake8",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/seissol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/2/execution/node/106/log?consoleFull",
+            "ex:ci_stdout_command": "flake8 .",
+            "ex:ci_stdout_text": "./postprocessing/science/estimateMinimumCohesiveZone.py:4:80: E501 line too long (98 > 79 characters)\n./postprocessing/science/estimateMinimumCohesiveZone.py:17:41: E225 missing whitespace around operator\n./postprocessing/science/estimateMinimumCohesiveZone.py:19:24: E225 missing whitespace around operator\n./postprocessing/science/estimateMinimumCohesiveZone.py:20:26: E225 missing whitespace around operator\n./postprocessing/science/estimateMinimumCohesiveZone.py:22:71: E225 missing whitespace ar",
+            "ex:required_for_next_level_badge": true
+        },
+        "ex:qc_QC.Uni_2": {
+            "prov:type": "activity",
+            "ex:description": "Are the tests passing through an automated means?",
+            "ex:output": false,
+            "ex:percentage": "0%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 0,
+            "ex:requirement_level": "MUST",
+            "ex:tools_failed": [
+                "pytest v7.1.3"
+            ],
+            "ex:failure_messages": [
+                "[QC.Uni01][pytest] Test cases are not passing using None testing framework"
+            ],
+            "ex:fix_hints": "[{\"subcriterion\": \"QC.Uni01\", \"description\": \"Are the tests passing through an automated means?\", \"requirement_level\": \"MUST\", \"hint\": \"Please check & solve the failing test cases found by the {tool_name} tool\", \"tools_failing\": [\"pytest\"]}]",
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Uni01\", \"description\": \"Are the tests passing through an automated means?\", \"valid\": false, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": true}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-jenkins_exit_status",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/seissol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/2/execution/node/142/log?consoleFull",
+            "ex:ci_stdout_command": "pytest  --json-report  --json-report-indent 4",
+            "ex:ci_stdout_text": "============================= test session starts ==============================\nplatform linux -- Python 3.9.17, pytest-7.1.3, pluggy-1.2.0\nrootdir: /sqaaas-build/github.com/seissol/seissol\nplugins: metadata-3.0.0, json-report-1.5.0\ncollected 0 items\n\n--------------------------------- JSON report ----------------------------------\nreport saved to: .report.json\n============================ no tests ran in 0.35s =============================",
+            "ex:required_for_next_level_badge": true
+        },
+        "ex:qc_QC.Ver_2": {
+            "prov:type": "activity",
+            "ex:description": "Are tags being used for releasing software; Is the latest release compliant with Semantic Versioning (SemVer) specification?; Are all release tags with Semantic Versioning (SemVer) specification?",
+            "ex:output": true,
+            "ex:percentage": "33%",
+            "ex:total_subcriteria": 3,
+            "ex:success_subcriteria": 1,
+            "ex:requirement_level": "MUST",
+            "ex:tools_passed": [
+                "get_git_tags.py"
+            ],
+            "ex:failure_messages": [
+                "[QC.Ver01][get_git_tags.py] Latest release tag v1.3.0 found, but is not SemVer compliant",
+                "[QC.Ver02][get_git_tags.py] Not all release tags are SemVer compliant"
+            ],
+            "ex:fix_hints": "[{\"subcriterion\": \"QC.Ver01\", \"description\": \"Is the latest release compliant with Semantic Versioning (SemVer) specification?\", \"requirement_level\": \"SHOULD\", \"hint\": \"Latest tag must be compliant with SemVer specification\", \"tools_failing\": [\"file_check\"]}, {\"subcriterion\": \"QC.Ver02\", \"description\": \"Are all release tags with Semantic Versioning (SemVer) specification?\", \"requirement_level\": \"SHOULD\", \"hint\": \"Existent release tags shall be SemVer compliant for this subcriterion to be successful\", \"tools_failing\": [\"file_check\"]}]",
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Ver01.0\", \"description\": \"Are tags being used for releasing software\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Ver01\", \"description\": \"Is the latest release compliant with Semantic Versioning (SemVer) specification?\", \"valid\": false, \"requirement_level\": \"SHOULD\", \"required_for_next_level_badge\": false}, {\"id\": \"QC.Ver02\", \"description\": \"Are all release tags with Semantic Versioning (SemVer) specification?\", \"valid\": false, \"requirement_level\": \"SHOULD\", \"required_for_next_level_badge\": false}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-is_semver",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/seissol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/2/execution/node/151/log?consoleFull",
+            "ex:ci_stdout_command": "get_git_tags.py",
+            "ex:ci_stdout_text": "['v1.3.0', 'v1.2.0', 'v1.1.4', 'v1.1.3', 'v1.1.2', 'v1.1.1', 'v1.1.0', 'v1.0.1', 'v1.0.0', 'v1.0.0-rc2', 'v1.0.0-rc', 'v0.9.0', 'sc21revision', 'sc21', '202103_Sumatra', '201807_Kaikoura', '201703', 'sc17_baseline', '201511']",
+            "ex:required_for_next_level_badge": false
+        },
+        "ex:qc_QC.Acc_3": {
+            "prov:type": "activity",
+            "ex:description": "Is the source code managed with a Version Control System?",
+            "ex:output": true,
+            "ex:percentage": "100%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 1,
+            "ex:requirement_level": "MUST",
+            "ex:tools_passed": [
+                "git"
+            ],
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Acc01\", \"description\": \"Is the source code managed with a Version Control System?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-boolean",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/seissol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/4/execution/node/34/log?consoleFull",
+            "ex:ci_stdout_command": "git rev-parse --is-inside-work-tree ",
+            "ex:ci_stdout_text": "true"
+        },
+        "ex:qc_QC.Doc_3": {
+            "prov:type": "activity",
+            "ex:description": "Is the software scope outlined in the code repository?; Does the project establish a code of conduct for its participants?; Is there a clear path or guidelines on how to contribute to the code?; Are docs managed in the same repository as code?; Are docs following a style for the Markdown markup language?",
+            "ex:output": true,
+            "ex:percentage": "80%",
+            "ex:total_subcriteria": 5,
+            "ex:success_subcriteria": 4,
+            "ex:requirement_level": "MUST",
+            "ex:tools_failed": [
+                "markdownlint v0.11.0",
+                "restructuredtext-lint v1.3.2"
+            ],
+            "ex:tools_passed": [
+                "find_doc_files.py",
+                "git"
+            ],
+            "ex:failure_messages": [
+                "[QC.Doc02.X][markdownlint] Docs are not fully compliant with markdownlint standard",
+                "[QC.Doc02.X][restructuredtext-lint] Docs are not fully compliant with restructuredtext-lint standard"
+            ],
+            "ex:fix_hints": "[{\"subcriterion\": \"QC.Doc02.X\", \"description\": \"Are docs following a style for the Markdown markup language?\", \"requirement_level\": \"MAY\", \"hint\": \"When using a docs-as-code approach, the style of the markup language is being checked. SQAaaS relies on markdownlint for Markdown files and restructuredtext-lint for reStructuredText\", \"tools_failing\": [\"markdownlint\", \"restructuredtext-lint\"]}]",
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Doc06.1\", \"description\": \"Is the software scope outlined in the code repository?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Doc06.3\", \"description\": \"Does the project establish a code of conduct for its participants?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Doc06.2\", \"description\": \"Is there a clear path or guidelines on how to contribute to the code?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Doc01.1\", \"description\": \"Are docs managed in the same repository as code?\", \"valid\": true, \"requirement_level\": \"MAY\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Doc02.X\", \"description\": \"Are docs following a style for the Markdown markup language?\", \"valid\": false, \"requirement_level\": \"MAY\", \"required_for_next_level_badge\": false}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-find_doc_files",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/seissol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/4/execution/node/43/log?consoleFull",
+            "ex:ci_stdout_command": "find_doc_files.py --file_type all",
+            "ex:ci_stdout_text": "{\"README\": [{\"file_name\": \"README.md\", \"size\": 2447}], \"CODE_OF_CONDUCT\": [{\"file_name\": \"CODE_OF_CONDUCT.md\", \"size\": 5361}], \"CONTRIBUTING\": [{\"file_name\": \"CONTRIBUTING.md\", \"size\": 6642}]}",
+            "ex:required_for_next_level_badge": false
+        },
+        "ex:qc_QC.Lic_3": {
+            "prov:type": "activity",
+            "ex:description": "Is code licensed to be freely used, modified and distributed by others?; Is LICENSE file placed in the root path of the code repository?; Does the code use a license approved by Open Source Initiative?; Does the code use an Open Source Initiative's popular-recognized license?",
+            "ex:output": true,
+            "ex:percentage": "100%",
+            "ex:total_subcriteria": 4,
+            "ex:success_subcriteria": 4,
+            "ex:requirement_level": "MUST",
+            "ex:tools_passed": [
+                "licensee"
+            ],
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Lic01\", \"description\": \"Is code licensed to be freely used, modified and distributed by others?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Lic01.1\", \"description\": \"Is LICENSE file placed in the root path of the code repository?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Lic02\", \"description\": \"Does the code use a license approved by Open Source Initiative?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Lic02.1\", \"description\": \"Does the code use an Open Source Initiative's popular-recognized license?\", \"valid\": true, \"requirement_level\": \"MAY\", \"required_for_next_level_badge\": null}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-licensee",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/seissol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/4/execution/node/79/log?consoleFull",
+            "ex:ci_stdout_command": "licensee detect . --confidence 60 --json ",
+            "ex:ci_stdout_text": "{\"licenses\":[{\"key\":\"bsd-3-clause\",\"spdx_id\":\"BSD-3-Clause\",\"meta\":{\"title\":\"BSD 3-Clause \\\"New\\\" or \\\"Revised\\\" License\",\"source\":\"https://spdx.org/licenses/BSD-3-Clause.html\",\"description\":\"A permissive license similar to the <a href=\\\"/licenses/bsd-2-clause/\\\">BSD 2-Clause License</a>, but with a 3rd clause that prohibits others from using the name of the copyright holder or its contributors to promote derived products without written consent.\",\"how\":\"Create a text file (typically named LICEN"
+        },
+        "ex:qc_QC.Met_3": {
+            "prov:type": "activity",
+            "ex:description": "Is the software citable?",
+            "ex:output": true,
+            "ex:percentage": "100%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 1,
+            "ex:requirement_level": "MUST",
+            "ex:tools_passed": [
+                "cff-converter-python"
+            ],
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Met01\", \"description\": \"Is the software citable?\", \"valid\": true, \"requirement_level\": \"SHOULD\", \"required_for_next_level_badge\": null}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-cff",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/seissol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/4/execution/node/88/log?consoleFull",
+            "ex:ci_stdout_command": "cffconvert --validate ",
+            "ex:ci_stdout_text": "Citation metadata are valid according to schema version 1.2.0."
+        },
+        "ex:qc_QC.Sec_3": {
+            "prov:type": "activity",
+            "ex:description": "Is the source code passing Static Analysis Security Testing (SAST)?",
+            "ex:output": true,
+            "ex:percentage": "100%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 1,
+            "ex:requirement_level": "MUST",
+            "ex:tools_passed": [
+                "bandit"
+            ],
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Sec02\", \"description\": \"Is the source code passing Static Analysis Security Testing (SAST)?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-bandit",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/seissol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/4/execution/node/97/log?consoleFull",
+            "ex:ci_stdout_command": "bandit -f json --quiet  --confidence-level high --severity-level high --recursive  .",
+            "ex:ci_stdout_text": "{\n  \"errors\": [\n    {\n      \"filename\": \"./postprocessing/visualization/tools/pickpoint2mseed.py\",\n      \"reason\": \"syntax error while parsing AST from file\"\n    },\n    {\n      \"filename\": \"./postprocessing/visualization/tools/tecp2vtk_merge.py\",\n      \"reason\": \"syntax error while parsing AST from file\"\n    },\n    {\n      \"filename\": \"./postprocessing/visualization/tools/tecp2vtk_merge_loop.py\",\n      \"reason\": \"syntax error while parsing AST from file\"\n    },\n    {\n      \"filename\": \"./postpro"
+        },
+        "ex:qc_QC.Sty_3": {
+            "prov:type": "activity",
+            "ex:description": "Is the software product following a style standard for Python files?",
+            "ex:output": false,
+            "ex:percentage": "0%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 0,
+            "ex:requirement_level": "MUST",
+            "ex:tools_failed": [
+                "flake8 v4.0.1 (mccabe: 0.6.1, pycodestyle: 2.8.0, pyflakes: 2.4.0)",
+                "oclint v20.11"
+            ],
+            "ex:tools_passed": [
+                "hadolint",
+                "jsonlint"
+            ],
+            "ex:failure_messages": [
+                "[QC.Sty01][flake8] Python files are not fully compliant with flake8 (pycodestyle, pyflakes, mccabe) standard",
+                "[QC.Sty01][oclint] C++ files are not fully compliant with oclint standard"
+            ],
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Sty01\", \"description\": \"Is the software product following a style standard for Python files?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": true}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-flake8",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/seissol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/4/execution/node/106/log?consoleFull",
+            "ex:ci_stdout_command": "flake8 .",
+            "ex:ci_stdout_text": "./postprocessing/science/estimateMinimumCohesiveZone.py:4:80: E501 line too long (98 > 79 characters)\n./postprocessing/science/estimateMinimumCohesiveZone.py:17:41: E225 missing whitespace around operator\n./postprocessing/science/estimateMinimumCohesiveZone.py:19:24: E225 missing whitespace around operator\n./postprocessing/science/estimateMinimumCohesiveZone.py:20:26: E225 missing whitespace around operator\n./postprocessing/science/estimateMinimumCohesiveZone.py:22:71: E225 missing whitespace ar",
+            "ex:required_for_next_level_badge": true
+        },
+        "ex:qc_QC.Uni_3": {
+            "prov:type": "activity",
+            "ex:description": "Are the tests passing through an automated means?",
+            "ex:output": false,
+            "ex:percentage": "0%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 0,
+            "ex:requirement_level": "MUST",
+            "ex:tools_failed": [
+                "pytest v7.1.3"
+            ],
+            "ex:failure_messages": [
+                "[QC.Uni01][pytest] Test cases are not passing using None testing framework"
+            ],
+            "ex:fix_hints": "[{\"subcriterion\": \"QC.Uni01\", \"description\": \"Are the tests passing through an automated means?\", \"requirement_level\": \"MUST\", \"hint\": \"Please check & solve the failing test cases found by the {tool_name} tool\", \"tools_failing\": [\"pytest\"]}]",
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Uni01\", \"description\": \"Are the tests passing through an automated means?\", \"valid\": false, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": true}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-jenkins_exit_status",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/seissol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/4/execution/node/142/log?consoleFull",
+            "ex:ci_stdout_command": "pytest  --json-report  --json-report-indent 4",
+            "ex:ci_stdout_text": "============================= test session starts ==============================\nplatform linux -- Python 3.9.17, pytest-7.1.3, pluggy-1.2.0\nrootdir: /sqaaas-build/github.com/seissol/seissol\nplugins: metadata-3.0.0, json-report-1.5.0\ncollected 0 items\n\n--------------------------------- JSON report ----------------------------------\nreport saved to: .report.json\n============================ no tests ran in 1.54s =============================",
+            "ex:required_for_next_level_badge": true
+        },
+        "ex:qc_QC.Ver_3": {
+            "prov:type": "activity",
+            "ex:description": "Are tags being used for releasing software; Is the latest release compliant with Semantic Versioning (SemVer) specification?; Are all release tags with Semantic Versioning (SemVer) specification?",
+            "ex:output": true,
+            "ex:percentage": "33%",
+            "ex:total_subcriteria": 3,
+            "ex:success_subcriteria": 1,
+            "ex:requirement_level": "MUST",
+            "ex:tools_passed": [
+                "get_git_tags.py"
+            ],
+            "ex:failure_messages": [
+                "[QC.Ver01][get_git_tags.py] Latest release tag v1.3.0 found, but is not SemVer compliant",
+                "[QC.Ver02][get_git_tags.py] Not all release tags are SemVer compliant"
+            ],
+            "ex:fix_hints": "[{\"subcriterion\": \"QC.Ver01\", \"description\": \"Is the latest release compliant with Semantic Versioning (SemVer) specification?\", \"requirement_level\": \"SHOULD\", \"hint\": \"Latest tag must be compliant with SemVer specification\", \"tools_failing\": [\"file_check\"]}, {\"subcriterion\": \"QC.Ver02\", \"description\": \"Are all release tags with Semantic Versioning (SemVer) specification?\", \"requirement_level\": \"SHOULD\", \"hint\": \"Existent release tags shall be SemVer compliant for this subcriterion to be successful\", \"tools_failing\": [\"file_check\"]}]",
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Ver01.0\", \"description\": \"Are tags being used for releasing software\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Ver01\", \"description\": \"Is the latest release compliant with Semantic Versioning (SemVer) specification?\", \"valid\": false, \"requirement_level\": \"SHOULD\", \"required_for_next_level_badge\": false}, {\"id\": \"QC.Ver02\", \"description\": \"Are all release tags with Semantic Versioning (SemVer) specification?\", \"valid\": false, \"requirement_level\": \"SHOULD\", \"required_for_next_level_badge\": false}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-is_semver",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/seissol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/4/execution/node/151/log?consoleFull",
+            "ex:ci_stdout_command": "get_git_tags.py",
+            "ex:ci_stdout_text": "['v1.3.0', 'v1.2.0', 'v1.1.4', 'v1.1.3', 'v1.1.2', 'v1.1.1', 'v1.1.0', 'v1.0.1', 'v1.0.0', 'v1.0.0-rc2', 'v1.0.0-rc', 'v0.9.0', 'sc21revision', 'sc21', '202103_Sumatra', '201807_Kaikoura', '201703', 'sc17_baseline', '201511']",
+            "ex:required_for_next_level_badge": false
+        },
+        "ex:qc_QC.Acc_4": {
+            "prov:type": "activity",
+            "ex:description": "Is the source code managed with a Version Control System?",
+            "ex:output": true,
+            "ex:percentage": "100%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 1,
+            "ex:requirement_level": "MUST",
+            "ex:tools_passed": [
+                "git"
+            ],
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Acc01\", \"description\": \"Is the source code managed with a Version Control System?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-boolean",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/seissol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/7/execution/node/34/log?consoleFull",
+            "ex:ci_stdout_command": "git rev-parse --is-inside-work-tree ",
+            "ex:ci_stdout_text": "true"
+        },
+        "ex:qc_QC.Doc_4": {
+            "prov:type": "activity",
+            "ex:description": "Is the software scope outlined in the code repository?; Does the project establish a code of conduct for its participants?; Is there a clear path or guidelines on how to contribute to the code?; Are docs managed in the same repository as code?; Are docs following a style for the Markdown markup language?",
+            "ex:output": true,
+            "ex:percentage": "80%",
+            "ex:total_subcriteria": 5,
+            "ex:success_subcriteria": 4,
+            "ex:requirement_level": "MUST",
+            "ex:tools_failed": [
+                "markdownlint v0.11.0",
+                "restructuredtext-lint v1.3.2"
+            ],
+            "ex:tools_passed": [
+                "find_doc_files.py",
+                "git"
+            ],
+            "ex:failure_messages": [
+                "[QC.Doc02.X][markdownlint] Docs are not fully compliant with markdownlint standard",
+                "[QC.Doc02.X][restructuredtext-lint] Docs are not fully compliant with restructuredtext-lint standard"
+            ],
+            "ex:fix_hints": "[{\"subcriterion\": \"QC.Doc02.X\", \"description\": \"Are docs following a style for the Markdown markup language?\", \"requirement_level\": \"MAY\", \"hint\": \"When using a docs-as-code approach, the style of the markup language is being checked. SQAaaS relies on markdownlint for Markdown files and restructuredtext-lint for reStructuredText\", \"tools_failing\": [\"markdownlint\", \"restructuredtext-lint\"]}]",
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Doc06.1\", \"description\": \"Is the software scope outlined in the code repository?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Doc06.3\", \"description\": \"Does the project establish a code of conduct for its participants?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Doc06.2\", \"description\": \"Is there a clear path or guidelines on how to contribute to the code?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Doc01.1\", \"description\": \"Are docs managed in the same repository as code?\", \"valid\": true, \"requirement_level\": \"MAY\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Doc02.X\", \"description\": \"Are docs following a style for the Markdown markup language?\", \"valid\": false, \"requirement_level\": \"MAY\", \"required_for_next_level_badge\": false}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-find_doc_files",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/seissol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/7/execution/node/43/log?consoleFull",
+            "ex:ci_stdout_command": "find_doc_files.py --file_type all",
+            "ex:ci_stdout_text": "{\"README\": [{\"file_name\": \"README.md\", \"size\": 2447}], \"CODE_OF_CONDUCT\": [{\"file_name\": \"CODE_OF_CONDUCT.md\", \"size\": 5361}], \"CONTRIBUTING\": [{\"file_name\": \"CONTRIBUTING.md\", \"size\": 6642}]}",
+            "ex:required_for_next_level_badge": false
+        },
+        "ex:qc_QC.Lic_4": {
+            "prov:type": "activity",
+            "ex:description": "Is code licensed to be freely used, modified and distributed by others?; Is LICENSE file placed in the root path of the code repository?; Does the code use a license approved by Open Source Initiative?; Does the code use an Open Source Initiative's popular-recognized license?",
+            "ex:output": true,
+            "ex:percentage": "100%",
+            "ex:total_subcriteria": 4,
+            "ex:success_subcriteria": 4,
+            "ex:requirement_level": "MUST",
+            "ex:tools_passed": [
+                "licensee"
+            ],
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Lic01\", \"description\": \"Is code licensed to be freely used, modified and distributed by others?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Lic01.1\", \"description\": \"Is LICENSE file placed in the root path of the code repository?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Lic02\", \"description\": \"Does the code use a license approved by Open Source Initiative?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Lic02.1\", \"description\": \"Does the code use an Open Source Initiative's popular-recognized license?\", \"valid\": true, \"requirement_level\": \"MAY\", \"required_for_next_level_badge\": null}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-licensee",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/seissol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/7/execution/node/79/log?consoleFull",
+            "ex:ci_stdout_command": "licensee detect . --confidence 60 --json ",
+            "ex:ci_stdout_text": "{\"licenses\":[{\"key\":\"bsd-3-clause\",\"spdx_id\":\"BSD-3-Clause\",\"meta\":{\"title\":\"BSD 3-Clause \\\"New\\\" or \\\"Revised\\\" License\",\"source\":\"https://spdx.org/licenses/BSD-3-Clause.html\",\"description\":\"A permissive license similar to the <a href=\\\"/licenses/bsd-2-clause/\\\">BSD 2-Clause License</a>, but with a 3rd clause that prohibits others from using the name of the copyright holder or its contributors to promote derived products without written consent.\",\"how\":\"Create a text file (typically named LICEN"
+        },
+        "ex:qc_QC.Met_4": {
+            "prov:type": "activity",
+            "ex:description": "Is the software citable?",
+            "ex:output": true,
+            "ex:percentage": "100%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 1,
+            "ex:requirement_level": "MUST",
+            "ex:tools_passed": [
+                "cff-converter-python"
+            ],
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Met01\", \"description\": \"Is the software citable?\", \"valid\": true, \"requirement_level\": \"SHOULD\", \"required_for_next_level_badge\": null}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-cff",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/seissol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/7/execution/node/88/log?consoleFull",
+            "ex:ci_stdout_command": "cffconvert --validate ",
+            "ex:ci_stdout_text": "Citation metadata are valid according to schema version 1.2.0."
+        },
+        "ex:qc_QC.Sec_4": {
+            "prov:type": "activity",
+            "ex:description": "Is the source code passing Static Analysis Security Testing (SAST)?",
+            "ex:output": true,
+            "ex:percentage": "100%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 1,
+            "ex:requirement_level": "MUST",
+            "ex:tools_passed": [
+                "bandit"
+            ],
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Sec02\", \"description\": \"Is the source code passing Static Analysis Security Testing (SAST)?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-bandit",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/seissol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/7/execution/node/97/log?consoleFull",
+            "ex:ci_stdout_command": "bandit -f json --quiet  --confidence-level high --severity-level high --recursive  .",
+            "ex:ci_stdout_text": "[warnings]\tWARNING\tinvalid escape sequence '\\s'\n\n[warnings]\tWARNING\tinvalid escape sequence '\\s'\n\n{\n  \"errors\": [\n    {\n      \"filename\": \"./postprocessing/visualization/tools/pickpoint2mseed.py\",\n      \"reason\": \"syntax error while parsing AST from file\"\n    },\n    {\n      \"filename\": \"./postprocessing/visualization/tools/tecp2vtk_merge.py\",\n      \"reason\": \"syntax error while parsing AST from file\"\n    },\n    {\n      \"filename\": \"./postprocessing/visualization/tools/tecp2vtk_merge_loop.py\",\n  "
+        },
+        "ex:qc_QC.Sty_4": {
+            "prov:type": "activity",
+            "ex:description": "Is the software product following a style standard for Python files?",
+            "ex:output": false,
+            "ex:percentage": "0%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 0,
+            "ex:requirement_level": "MUST",
+            "ex:tools_failed": [
+                "oclint v20.11"
+            ],
+            "ex:tools_passed": [
+                "flake8",
+                "hadolint",
+                "jsonlint"
+            ],
+            "ex:failure_messages": [
+                "[QC.Sty01][oclint] C++ files are not fully compliant with oclint standard"
+            ],
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Sty01\", \"description\": \"Is the software product following a style standard for Python files?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": true}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-flake8",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/seissol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/7/execution/node/106/log?consoleFull",
+            "ex:ci_stdout_command": "flake8 .",
+            "ex:ci_stdout_text": ".ci/gha-gpu-nvhpc/Dockerfile:15 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`\n.ci/gha-gpu-nvhpc/Dockerfile:15 DL3009 \u001b[92minfo\u001b[0m: Delete the apt-get lists after installing something\n.ci/gha-gpu-nvhpc/Dockerfile:48 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory\n.ci/gha-gpu-nvhpc/Dockerfile:48 DL3047 \u001b[92minfo\u001b[0m: Avoid use of wget without progress bar. Use `wget --progress=dot:gi",
+            "ex:required_for_next_level_badge": true
+        },
+        "ex:qc_QC.Uni_4": {
+            "prov:type": "activity",
+            "ex:description": "Are the tests passing through an automated means?",
+            "ex:output": false,
+            "ex:percentage": "0%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 0,
+            "ex:requirement_level": "MUST",
+            "ex:tools_failed": [
+                "pytest v7.1.3"
+            ],
+            "ex:failure_messages": [
+                "[QC.Uni01][pytest] Test cases are not passing using None testing framework"
+            ],
+            "ex:fix_hints": "[{\"subcriterion\": \"QC.Uni01\", \"description\": \"Are the tests passing through an automated means?\", \"requirement_level\": \"MUST\", \"hint\": \"Please check & solve the failing test cases found by the {tool_name} tool\", \"tools_failing\": [\"pytest\"]}]",
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Uni01\", \"description\": \"Are the tests passing through an automated means?\", \"valid\": false, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": true}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-jenkins_exit_status",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/seissol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/7/execution/node/142/log?consoleFull",
+            "ex:ci_stdout_command": "pytest  --json-report  --json-report-indent 4",
+            "ex:ci_stdout_text": "============================= test session starts ==============================\nplatform linux -- Python 3.9.17, pytest-7.1.3, pluggy-1.2.0\nrootdir: /sqaaas-build/github.com/seissol/seissol\nplugins: json-report-1.5.0, metadata-3.0.0\ncollected 0 items\n\n--------------------------------- JSON report ----------------------------------\nreport saved to: .report.json\n============================ no tests ran in 0.18s =============================",
+            "ex:required_for_next_level_badge": true
+        },
+        "ex:qc_QC.Ver_4": {
+            "prov:type": "activity",
+            "ex:description": "Are tags being used for releasing software; Is the latest release compliant with Semantic Versioning (SemVer) specification?; Are all release tags with Semantic Versioning (SemVer) specification?",
+            "ex:output": true,
+            "ex:percentage": "33%",
+            "ex:total_subcriteria": 3,
+            "ex:success_subcriteria": 1,
+            "ex:requirement_level": "MUST",
+            "ex:tools_passed": [
+                "get_git_tags.py"
+            ],
+            "ex:failure_messages": [
+                "[QC.Ver01][get_git_tags.py] Latest release tag v1.3.0 found, but is not SemVer compliant",
+                "[QC.Ver02][get_git_tags.py] Not all release tags are SemVer compliant"
+            ],
+            "ex:fix_hints": "[{\"subcriterion\": \"QC.Ver01\", \"description\": \"Is the latest release compliant with Semantic Versioning (SemVer) specification?\", \"requirement_level\": \"SHOULD\", \"hint\": \"Latest tag must be compliant with SemVer specification\", \"tools_failing\": [\"file_check\"]}, {\"subcriterion\": \"QC.Ver02\", \"description\": \"Are all release tags with Semantic Versioning (SemVer) specification?\", \"requirement_level\": \"SHOULD\", \"hint\": \"Existent release tags shall be SemVer compliant for this subcriterion to be successful\", \"tools_failing\": [\"file_check\"]}]",
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Ver01.0\", \"description\": \"Are tags being used for releasing software\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Ver01\", \"description\": \"Is the latest release compliant with Semantic Versioning (SemVer) specification?\", \"valid\": false, \"requirement_level\": \"SHOULD\", \"required_for_next_level_badge\": false}, {\"id\": \"QC.Ver02\", \"description\": \"Are all release tags with Semantic Versioning (SemVer) specification?\", \"valid\": false, \"requirement_level\": \"SHOULD\", \"required_for_next_level_badge\": false}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-is_semver",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/seissol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/7/execution/node/151/log?consoleFull",
+            "ex:ci_stdout_command": "get_git_tags.py",
+            "ex:ci_stdout_text": "['v1.3.0', 'v1.2.0', 'v1.1.4', 'v1.1.3', 'v1.1.2', 'v1.1.1', 'v1.1.0', 'v1.0.1', 'v1.0.0', 'v1.0.0-rc2', 'v1.0.0-rc', 'v0.9.0', 'sc21revision', 'sc21', '202103_Sumatra', '201807_Kaikoura', '201703', 'sc17_baseline', '201511']",
+            "ex:required_for_next_level_badge": false
+        },
+        "ex:qc_QC.Acc_5": {
+            "prov:type": "activity",
+            "ex:description": "Is the source code managed with a Version Control System?",
+            "ex:output": true,
+            "ex:percentage": "100%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 1,
+            "ex:requirement_level": "MUST",
+            "ex:tools_passed": [
+                "git"
+            ],
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Acc01\", \"description\": \"Is the source code managed with a Version Control System?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-boolean",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/seissol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/10/execution/node/34/log?consoleFull",
+            "ex:ci_stdout_command": "git rev-parse --is-inside-work-tree ",
+            "ex:ci_stdout_text": "true"
+        },
+        "ex:qc_QC.Doc_5": {
+            "prov:type": "activity",
+            "ex:description": "Is the software scope outlined in the code repository?; Does the project establish a code of conduct for its participants?; Is there a clear path or guidelines on how to contribute to the code?; Are docs managed in the same repository as code?; Are docs following a style for the Markdown markup language?",
+            "ex:output": true,
+            "ex:percentage": "80%",
+            "ex:total_subcriteria": 5,
+            "ex:success_subcriteria": 4,
+            "ex:requirement_level": "MUST",
+            "ex:tools_failed": [
+                "markdownlint v0.11.0",
+                "restructuredtext-lint v1.3.2"
+            ],
+            "ex:tools_passed": [
+                "find_doc_files.py",
+                "git"
+            ],
+            "ex:failure_messages": [
+                "[QC.Doc02.X][markdownlint] Docs are not fully compliant with markdownlint standard",
+                "[QC.Doc02.X][restructuredtext-lint] Docs are not fully compliant with restructuredtext-lint standard"
+            ],
+            "ex:fix_hints": "[{\"subcriterion\": \"QC.Doc02.X\", \"description\": \"Are docs following a style for the Markdown markup language?\", \"requirement_level\": \"MAY\", \"hint\": \"When using a docs-as-code approach, the style of the markup language is being checked. SQAaaS relies on markdownlint for Markdown files and restructuredtext-lint for reStructuredText\", \"tools_failing\": [\"markdownlint\", \"restructuredtext-lint\"]}]",
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Doc06.1\", \"description\": \"Is the software scope outlined in the code repository?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Doc06.3\", \"description\": \"Does the project establish a code of conduct for its participants?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Doc06.2\", \"description\": \"Is there a clear path or guidelines on how to contribute to the code?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Doc01.1\", \"description\": \"Are docs managed in the same repository as code?\", \"valid\": true, \"requirement_level\": \"MAY\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Doc02.X\", \"description\": \"Are docs following a style for the Markdown markup language?\", \"valid\": false, \"requirement_level\": \"MAY\", \"required_for_next_level_badge\": false}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-find_doc_files",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/seissol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/10/execution/node/43/log?consoleFull",
+            "ex:ci_stdout_command": "find_doc_files.py --file_type all",
+            "ex:ci_stdout_text": "{\"README\": [{\"file_name\": \"README.md\", \"size\": 2579}], \"CODE_OF_CONDUCT\": [{\"file_name\": \"CODE_OF_CONDUCT.md\", \"size\": 5493}], \"CONTRIBUTING\": [{\"file_name\": \"CONTRIBUTING.md\", \"size\": 6774}]}",
+            "ex:required_for_next_level_badge": false
+        },
+        "ex:qc_QC.Lic_5": {
+            "prov:type": "activity",
+            "ex:description": "Is code licensed to be freely used, modified and distributed by others?; Is LICENSE file placed in the root path of the code repository?; Does the code use a license approved by Open Source Initiative?; Does the code use an Open Source Initiative's popular-recognized license?",
+            "ex:output": true,
+            "ex:percentage": "100%",
+            "ex:total_subcriteria": 4,
+            "ex:success_subcriteria": 4,
+            "ex:requirement_level": "MUST",
+            "ex:tools_passed": [
+                "licensee"
+            ],
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Lic01\", \"description\": \"Is code licensed to be freely used, modified and distributed by others?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Lic01.1\", \"description\": \"Is LICENSE file placed in the root path of the code repository?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Lic02\", \"description\": \"Does the code use a license approved by Open Source Initiative?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Lic02.1\", \"description\": \"Does the code use an Open Source Initiative's popular-recognized license?\", \"valid\": true, \"requirement_level\": \"MAY\", \"required_for_next_level_badge\": null}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-licensee",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/seissol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/10/execution/node/79/log?consoleFull",
+            "ex:ci_stdout_command": "licensee detect . --confidence 60 --json ",
+            "ex:ci_stdout_text": "{\"licenses\":[{\"key\":\"bsd-3-clause\",\"spdx_id\":\"BSD-3-Clause\",\"meta\":{\"title\":\"BSD 3-Clause \\\"New\\\" or \\\"Revised\\\" License\",\"source\":\"https://spdx.org/licenses/BSD-3-Clause.html\",\"description\":\"A permissive license similar to the <a href=\\\"/licenses/bsd-2-clause/\\\">BSD 2-Clause License</a>, but with a 3rd clause that prohibits others from using the name of the copyright holder or its contributors to promote derived products without written consent.\",\"how\":\"Create a text file (typically named LICEN"
+        },
+        "ex:qc_QC.Met_5": {
+            "prov:type": "activity",
+            "ex:description": "Is the software citable?",
+            "ex:output": true,
+            "ex:percentage": "100%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 1,
+            "ex:requirement_level": "MUST",
+            "ex:tools_passed": [
+                "cff-converter-python"
+            ],
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Met01\", \"description\": \"Is the software citable?\", \"valid\": true, \"requirement_level\": \"SHOULD\", \"required_for_next_level_badge\": null}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-cff",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/seissol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/10/execution/node/88/log?consoleFull",
+            "ex:ci_stdout_command": "cffconvert --validate ",
+            "ex:ci_stdout_text": "Citation metadata are valid according to schema version 1.2.0."
+        },
+        "ex:qc_QC.Sec_5": {
+            "prov:type": "activity",
+            "ex:description": "Is the source code passing Static Analysis Security Testing (SAST)?",
+            "ex:output": true,
+            "ex:percentage": "100%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 1,
+            "ex:requirement_level": "MUST",
+            "ex:tools_passed": [
+                "bandit"
+            ],
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Sec02\", \"description\": \"Is the source code passing Static Analysis Security Testing (SAST)?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-bandit",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/seissol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/10/execution/node/97/log?consoleFull",
+            "ex:ci_stdout_command": "bandit -f json --quiet  --confidence-level high --severity-level high --recursive  .",
+            "ex:ci_stdout_text": "[warnings]\tWARNING\tinvalid escape sequence '\\s'\n\n[warnings]\tWARNING\tinvalid escape sequence '\\s'\n\n{\n  \"errors\": [\n    {\n      \"filename\": \"./postprocessing/visualization/tools/pickpoint2mseed.py\",\n      \"reason\": \"syntax error while parsing AST from file\"\n    },\n    {\n      \"filename\": \"./postprocessing/visualization/tools/tecp2vtk_merge.py\",\n      \"reason\": \"syntax error while parsing AST from file\"\n    },\n    {\n      \"filename\": \"./postprocessing/visualization/tools/tecp2vtk_merge_loop.py\",\n  "
+        },
+        "ex:qc_QC.Sty_5": {
+            "prov:type": "activity",
+            "ex:description": "Is the software product following a style standard for Python files?",
+            "ex:output": false,
+            "ex:percentage": "0%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 0,
+            "ex:requirement_level": "MUST",
+            "ex:tools_failed": [
+                "oclint v20.11"
+            ],
+            "ex:tools_passed": [
+                "flake8",
+                "hadolint",
+                "jsonlint"
+            ],
+            "ex:failure_messages": [
+                "[QC.Sty01][oclint] C++ files are not fully compliant with oclint standard"
+            ],
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Sty01\", \"description\": \"Is the software product following a style standard for Python files?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": true}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-flake8",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/seissol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/10/execution/node/106/log?consoleFull",
+            "ex:ci_stdout_command": "flake8 .",
+            "ex:ci_stdout_text": ".ci/gha-gpu-amd/Dockerfile:15 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`\n.ci/gha-gpu-amd/Dockerfile:15 DL3009 \u001b[92minfo\u001b[0m: Delete the apt-get lists after installing something\n.ci/gha-gpu-amd/Dockerfile:49 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory\n.ci/gha-gpu-amd/Dockerfile:49 DL3047 \u001b[92minfo\u001b[0m: Avoid use of wget without progress bar. Use `wget --progress=dot:giga <url>",
+            "ex:required_for_next_level_badge": true
+        },
+        "ex:qc_QC.Uni_5": {
+            "prov:type": "activity",
+            "ex:description": "Are the tests passing through an automated means?",
+            "ex:output": false,
+            "ex:percentage": "0%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 0,
+            "ex:requirement_level": "MUST",
+            "ex:tools_failed": [
+                "pytest v7.1.3"
+            ],
+            "ex:failure_messages": [
+                "[QC.Uni01][pytest] Test cases are not passing using None testing framework"
+            ],
+            "ex:fix_hints": "[{\"subcriterion\": \"QC.Uni01\", \"description\": \"Are the tests passing through an automated means?\", \"requirement_level\": \"MUST\", \"hint\": \"Please check & solve the failing test cases found by the {tool_name} tool\", \"tools_failing\": [\"pytest\"]}]",
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Uni01\", \"description\": \"Are the tests passing through an automated means?\", \"valid\": false, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": true}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-jenkins_exit_status",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/seissol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/10/execution/node/142/log?consoleFull",
+            "ex:ci_stdout_command": "pytest  --json-report  --json-report-indent 4",
+            "ex:ci_stdout_text": "============================= test session starts ==============================\nplatform linux -- Python 3.9.17, pytest-7.1.3, pluggy-1.2.0\nrootdir: /sqaaas-build/github.com/seissol/seissol\nplugins: json-report-1.5.0, metadata-3.0.0\ncollected 0 items\n\n--------------------------------- JSON report ----------------------------------\nreport saved to: .report.json\n============================ no tests ran in 0.18s =============================",
+            "ex:required_for_next_level_badge": true
+        },
+        "ex:qc_QC.Ver_5": {
+            "prov:type": "activity",
+            "ex:description": "Are tags being used for releasing software; Is the latest release compliant with Semantic Versioning (SemVer) specification?; Are all release tags with Semantic Versioning (SemVer) specification?",
+            "ex:output": true,
+            "ex:percentage": "33%",
+            "ex:total_subcriteria": 3,
+            "ex:success_subcriteria": 1,
+            "ex:requirement_level": "MUST",
+            "ex:tools_passed": [
+                "get_git_tags.py"
+            ],
+            "ex:failure_messages": [
+                "[QC.Ver01][get_git_tags.py] Latest release tag v1.3.0 found, but is not SemVer compliant",
+                "[QC.Ver02][get_git_tags.py] Not all release tags are SemVer compliant"
+            ],
+            "ex:fix_hints": "[{\"subcriterion\": \"QC.Ver01\", \"description\": \"Is the latest release compliant with Semantic Versioning (SemVer) specification?\", \"requirement_level\": \"SHOULD\", \"hint\": \"Latest tag must be compliant with SemVer specification\", \"tools_failing\": [\"file_check\"]}, {\"subcriterion\": \"QC.Ver02\", \"description\": \"Are all release tags with Semantic Versioning (SemVer) specification?\", \"requirement_level\": \"SHOULD\", \"hint\": \"Existent release tags shall be SemVer compliant for this subcriterion to be successful\", \"tools_failing\": [\"file_check\"]}]",
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Ver01.0\", \"description\": \"Are tags being used for releasing software\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Ver01\", \"description\": \"Is the latest release compliant with Semantic Versioning (SemVer) specification?\", \"valid\": false, \"requirement_level\": \"SHOULD\", \"required_for_next_level_badge\": false}, {\"id\": \"QC.Ver02\", \"description\": \"Are all release tags with Semantic Versioning (SemVer) specification?\", \"valid\": false, \"requirement_level\": \"SHOULD\", \"required_for_next_level_badge\": false}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-is_semver",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/seissol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/10/execution/node/151/log?consoleFull",
+            "ex:ci_stdout_command": "get_git_tags.py",
+            "ex:ci_stdout_text": "['v1.3.0', 'v1.2.0', 'v1.1.4', 'v1.1.3', 'v1.1.2', 'v1.1.1', 'v1.1.0', 'v1.0.1', 'v1.0.0', 'v1.0.0-rc2', 'v1.0.0-rc', 'v0.9.0', 'sc21revision', 'sc21', '202103_Sumatra', '201807_Kaikoura', '201703', 'sc17_baseline', '201511']",
+            "ex:required_for_next_level_badge": false
+        },
+        "ex:qc_QC.Acc_6": {
+            "prov:type": "activity",
+            "ex:description": "Is the source code managed with a Version Control System?",
+            "ex:output": true,
+            "ex:percentage": "100%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 1,
+            "ex:requirement_level": "MUST",
+            "ex:tools_passed": [
+                "git"
+            ],
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Acc01\", \"description\": \"Is the source code managed with a Version Control System?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-boolean",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/SeisSol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/12/execution/node/34/log?consoleFull",
+            "ex:ci_stdout_command": "git rev-parse --is-inside-work-tree ",
+            "ex:ci_stdout_text": "true"
+        },
+        "ex:qc_QC.Doc_6": {
+            "prov:type": "activity",
+            "ex:description": "Is the software scope outlined in the code repository?; Does the project establish a code of conduct for its participants?; Is there a clear path or guidelines on how to contribute to the code?; Are docs managed in the same repository as code?; Are docs following a style for the Markdown markup language?",
+            "ex:output": true,
+            "ex:percentage": "80%",
+            "ex:total_subcriteria": 5,
+            "ex:success_subcriteria": 4,
+            "ex:requirement_level": "MUST",
+            "ex:tools_failed": [
+                "markdownlint v0.11.0",
+                "restructuredtext-lint v1.3.2"
+            ],
+            "ex:tools_passed": [
+                "find_doc_files.py",
+                "git"
+            ],
+            "ex:failure_messages": [
+                "[QC.Doc02.X][markdownlint] Docs are not fully compliant with markdownlint standard",
+                "[QC.Doc02.X][restructuredtext-lint] Docs are not fully compliant with restructuredtext-lint standard"
+            ],
+            "ex:fix_hints": "[{\"subcriterion\": \"QC.Doc02.X\", \"description\": \"Are docs following a style for the Markdown markup language?\", \"requirement_level\": \"MAY\", \"hint\": \"When using a docs-as-code approach, the style of the markup language is being checked. SQAaaS relies on markdownlint for Markdown files and restructuredtext-lint for reStructuredText\", \"tools_failing\": [\"markdownlint\", \"restructuredtext-lint\"]}]",
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Doc06.1\", \"description\": \"Is the software scope outlined in the code repository?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Doc06.3\", \"description\": \"Does the project establish a code of conduct for its participants?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Doc06.2\", \"description\": \"Is there a clear path or guidelines on how to contribute to the code?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Doc01.1\", \"description\": \"Are docs managed in the same repository as code?\", \"valid\": true, \"requirement_level\": \"MAY\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Doc02.X\", \"description\": \"Are docs following a style for the Markdown markup language?\", \"valid\": false, \"requirement_level\": \"MAY\", \"required_for_next_level_badge\": false}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-find_doc_files",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/SeisSol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/12/execution/node/43/log?consoleFull",
+            "ex:ci_stdout_command": "find_doc_files.py --file_type all",
+            "ex:ci_stdout_text": "{\"README\": [{\"file_name\": \"README.md\", \"size\": 2570}], \"CODE_OF_CONDUCT\": [{\"file_name\": \"CODE_OF_CONDUCT.md\", \"size\": 5488}], \"CONTRIBUTING\": [{\"file_name\": \"CONTRIBUTING.md\", \"size\": 6769}]}",
+            "ex:required_for_next_level_badge": false
+        },
+        "ex:qc_QC.Lic_6": {
+            "prov:type": "activity",
+            "ex:description": "Is code licensed to be freely used, modified and distributed by others?; Is LICENSE file placed in the root path of the code repository?; Does the code use a license approved by Open Source Initiative?; Does the code use an Open Source Initiative's popular-recognized license?",
+            "ex:output": true,
+            "ex:percentage": "100%",
+            "ex:total_subcriteria": 4,
+            "ex:success_subcriteria": 4,
+            "ex:requirement_level": "MUST",
+            "ex:tools_passed": [
+                "licensee"
+            ],
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Lic01\", \"description\": \"Is code licensed to be freely used, modified and distributed by others?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Lic01.1\", \"description\": \"Is LICENSE file placed in the root path of the code repository?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Lic02\", \"description\": \"Does the code use a license approved by Open Source Initiative?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Lic02.1\", \"description\": \"Does the code use an Open Source Initiative's popular-recognized license?\", \"valid\": true, \"requirement_level\": \"MAY\", \"required_for_next_level_badge\": null}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-licensee",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/SeisSol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/12/execution/node/79/log?consoleFull",
+            "ex:ci_stdout_command": "licensee detect . --confidence 60 --json ",
+            "ex:ci_stdout_text": "{\"licenses\":[{\"key\":\"bsd-3-clause\",\"spdx_id\":\"BSD-3-Clause\",\"meta\":{\"title\":\"BSD 3-Clause \\\"New\\\" or \\\"Revised\\\" License\",\"source\":\"https://spdx.org/licenses/BSD-3-Clause.html\",\"description\":\"A permissive license similar to the <a href=\\\"/licenses/bsd-2-clause/\\\">BSD 2-Clause License</a>, but with a 3rd clause that prohibits others from using the name of the copyright holder or its contributors to promote derived products without written consent.\",\"how\":\"Create a text file (typically named LICEN"
+        },
+        "ex:qc_QC.Met_6": {
+            "prov:type": "activity",
+            "ex:description": "Is the software citable?",
+            "ex:output": true,
+            "ex:percentage": "100%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 1,
+            "ex:requirement_level": "MUST",
+            "ex:tools_passed": [
+                "cff-converter-python"
+            ],
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Met01\", \"description\": \"Is the software citable?\", \"valid\": true, \"requirement_level\": \"SHOULD\", \"required_for_next_level_badge\": null}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-cff",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/SeisSol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/12/execution/node/88/log?consoleFull",
+            "ex:ci_stdout_command": "cffconvert --validate ",
+            "ex:ci_stdout_text": "Citation metadata are valid according to schema version 1.2.0."
+        },
+        "ex:qc_QC.Sec_6": {
+            "prov:type": "activity",
+            "ex:description": "Is the source code passing Static Analysis Security Testing (SAST)?",
+            "ex:output": true,
+            "ex:percentage": "100%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 1,
+            "ex:requirement_level": "MUST",
+            "ex:tools_passed": [
+                "bandit"
+            ],
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Sec02\", \"description\": \"Is the source code passing Static Analysis Security Testing (SAST)?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-bandit",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/SeisSol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/12/execution/node/97/log?consoleFull",
+            "ex:ci_stdout_command": "bandit -f json --quiet  --confidence-level high --severity-level high --recursive  .",
+            "ex:ci_stdout_text": "{\n  \"errors\": [\n    {\n      \"filename\": \"./postprocessing/visualization/tools/pickpoint2mseed.py\",\n      \"reason\": \"syntax error while parsing AST from file\"\n    },\n    {\n      \"filename\": \"./postprocessing/visualization/tools/tecp2vtk_merge.py\",\n      \"reason\": \"syntax error while parsing AST from file\"\n    },\n    {\n      \"filename\": \"./postprocessing/visualization/tools/tecp2vtk_merge_loop.py\",\n      \"reason\": \"syntax error while parsing AST from file\"\n    },\n    {\n      \"filename\": \"./postpro"
+        },
+        "ex:qc_QC.Sty_6": {
+            "prov:type": "activity",
+            "ex:description": "Is the software product following a style standard for Python files?",
+            "ex:output": false,
+            "ex:percentage": "0%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 0,
+            "ex:requirement_level": "MUST",
+            "ex:tools_failed": [
+                "oclint v20.11"
+            ],
+            "ex:tools_passed": [
+                "flake8",
+                "hadolint",
+                "jsonlint"
+            ],
+            "ex:failure_messages": [
+                "[QC.Sty01][oclint] C++ files are not fully compliant with oclint standard"
+            ],
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Sty01\", \"description\": \"Is the software product following a style standard for Python files?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": true}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-flake8",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/SeisSol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/12/execution/node/106/log?consoleFull",
+            "ex:ci_stdout_command": "flake8 .",
+            "ex:ci_stdout_text": ".ci/gha-gpu-nv/Dockerfile:15 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`\n.ci/gha-gpu-nv/Dockerfile:15 DL3009 \u001b[92minfo\u001b[0m: Delete the apt-get lists after installing something\n.ci/gha-gpu-nv/Dockerfile:49 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory\n.ci/gha-gpu-nv/Dockerfile:49 DL3047 \u001b[92minfo\u001b[0m: Avoid use of wget without progress bar. Use `wget --progress=dot:giga <url>`.Or",
+            "ex:required_for_next_level_badge": true
+        },
+        "ex:qc_QC.Uni_6": {
+            "prov:type": "activity",
+            "ex:description": "Are the tests passing through an automated means?",
+            "ex:output": false,
+            "ex:percentage": "0%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 0,
+            "ex:requirement_level": "MUST",
+            "ex:tools_failed": [
+                "pytest v7.1.3"
+            ],
+            "ex:failure_messages": [
+                "[QC.Uni01][pytest] Test cases are not passing using None testing framework"
+            ],
+            "ex:fix_hints": "[{\"subcriterion\": \"QC.Uni01\", \"description\": \"Are the tests passing through an automated means?\", \"requirement_level\": \"MUST\", \"hint\": \"Please check & solve the failing test cases found by the {tool_name} tool\", \"tools_failing\": [\"pytest\"]}]",
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Uni01\", \"description\": \"Are the tests passing through an automated means?\", \"valid\": false, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": true}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-jenkins_exit_status",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/SeisSol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/12/execution/node/142/log?consoleFull",
+            "ex:ci_stdout_command": "pytest  --json-report  --json-report-indent 4",
+            "ex:ci_stdout_text": "============================= test session starts ==============================\nplatform linux -- Python 3.9.17, pytest-7.1.3, pluggy-1.2.0\nrootdir: /sqaaas-build/github.com/SeisSol/SeisSol\nplugins: metadata-3.0.0, json-report-1.5.0\ncollected 0 items\n\n--------------------------------- JSON report ----------------------------------\nreport saved to: .report.json\n============================ no tests ran in 0.42s =============================",
+            "ex:required_for_next_level_badge": true
+        },
+        "ex:qc_QC.Ver_6": {
+            "prov:type": "activity",
+            "ex:description": "Are tags being used for releasing software; Is the latest release compliant with Semantic Versioning (SemVer) specification?; Are all release tags with Semantic Versioning (SemVer) specification?",
+            "ex:output": true,
+            "ex:percentage": "33%",
+            "ex:total_subcriteria": 3,
+            "ex:success_subcriteria": 1,
+            "ex:requirement_level": "MUST",
+            "ex:tools_passed": [
+                "get_git_tags.py"
+            ],
+            "ex:failure_messages": [
+                "[QC.Ver01][get_git_tags.py] Latest release tag v1.3.2 found, but is not SemVer compliant",
+                "[QC.Ver02][get_git_tags.py] Not all release tags are SemVer compliant"
+            ],
+            "ex:fix_hints": "[{\"subcriterion\": \"QC.Ver01\", \"description\": \"Is the latest release compliant with Semantic Versioning (SemVer) specification?\", \"requirement_level\": \"SHOULD\", \"hint\": \"Latest tag must be compliant with SemVer specification\", \"tools_failing\": [\"file_check\"]}, {\"subcriterion\": \"QC.Ver02\", \"description\": \"Are all release tags with Semantic Versioning (SemVer) specification?\", \"requirement_level\": \"SHOULD\", \"hint\": \"Existent release tags shall be SemVer compliant for this subcriterion to be successful\", \"tools_failing\": [\"file_check\"]}]",
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Ver01.0\", \"description\": \"Are tags being used for releasing software\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Ver01\", \"description\": \"Is the latest release compliant with Semantic Versioning (SemVer) specification?\", \"valid\": false, \"requirement_level\": \"SHOULD\", \"required_for_next_level_badge\": false}, {\"id\": \"QC.Ver02\", \"description\": \"Are all release tags with Semantic Versioning (SemVer) specification?\", \"valid\": false, \"requirement_level\": \"SHOULD\", \"required_for_next_level_badge\": false}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-is_semver",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/SeisSol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/12/execution/node/151/log?consoleFull",
+            "ex:ci_stdout_command": "get_git_tags.py",
+            "ex:ci_stdout_text": "['v1.3.2', 'UQ-serial', 'UQ-fused', 'v1.3.1', 'v1.3.0', 'v1.2.0', 'v1.1.4', 'v1.1.3', 'v1.1.2', 'v1.1.1', 'v1.1.0', 'v1.0.1', 'v1.0.0', 'v1.0.0-rc2', 'v1.0.0-rc', 'v0.9.0', 'sc21revision', 'sc21', '202103_Sumatra', '201807_Kaikoura', '201703', 'sc17_baseline', '201511']",
+            "ex:required_for_next_level_badge": false
+        },
+        "ex:qc_QC.Acc_7": {
+            "prov:type": "activity",
+            "ex:description": "Is the source code managed with a Version Control System?",
+            "ex:output": true,
+            "ex:percentage": "100%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 1,
+            "ex:requirement_level": "MUST",
+            "ex:tools_passed": [
+                "git"
+            ],
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Acc01\", \"description\": \"Is the source code managed with a Version Control System?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-boolean",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/SeisSol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/14/execution/node/34/log?consoleFull",
+            "ex:ci_stdout_command": "git rev-parse --is-inside-work-tree ",
+            "ex:ci_stdout_text": "true"
+        },
+        "ex:qc_QC.Doc_7": {
+            "prov:type": "activity",
+            "ex:description": "Is the software scope outlined in the code repository?; Does the project establish a code of conduct for its participants?; Is there a clear path or guidelines on how to contribute to the code?; Are docs managed in the same repository as code?; Are docs following a style for the Markdown markup language?",
+            "ex:output": true,
+            "ex:percentage": "80%",
+            "ex:total_subcriteria": 5,
+            "ex:success_subcriteria": 4,
+            "ex:requirement_level": "MUST",
+            "ex:tools_failed": [
+                "markdownlint v0.11.0",
+                "restructuredtext-lint v1.3.2"
+            ],
+            "ex:tools_passed": [
+                "find_doc_files.py",
+                "git"
+            ],
+            "ex:failure_messages": [
+                "[QC.Doc02.X][markdownlint] Docs are not fully compliant with markdownlint standard",
+                "[QC.Doc02.X][restructuredtext-lint] Docs are not fully compliant with restructuredtext-lint standard"
+            ],
+            "ex:fix_hints": "[{\"subcriterion\": \"QC.Doc02.X\", \"description\": \"Are docs following a style for the Markdown markup language?\", \"requirement_level\": \"MAY\", \"hint\": \"When using a docs-as-code approach, the style of the markup language is being checked. SQAaaS relies on markdownlint for Markdown files and restructuredtext-lint for reStructuredText\", \"tools_failing\": [\"markdownlint\", \"restructuredtext-lint\"]}]",
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Doc06.1\", \"description\": \"Is the software scope outlined in the code repository?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Doc06.3\", \"description\": \"Does the project establish a code of conduct for its participants?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Doc06.2\", \"description\": \"Is there a clear path or guidelines on how to contribute to the code?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Doc01.1\", \"description\": \"Are docs managed in the same repository as code?\", \"valid\": true, \"requirement_level\": \"MAY\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Doc02.X\", \"description\": \"Are docs following a style for the Markdown markup language?\", \"valid\": false, \"requirement_level\": \"MAY\", \"required_for_next_level_badge\": false}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-find_doc_files",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/SeisSol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/14/execution/node/43/log?consoleFull",
+            "ex:ci_stdout_command": "find_doc_files.py --file_type all",
+            "ex:ci_stdout_text": "{\"README\": [{\"file_name\": \"README.md\", \"size\": 2570}], \"CODE_OF_CONDUCT\": [{\"file_name\": \"CODE_OF_CONDUCT.md\", \"size\": 5488}], \"CONTRIBUTING\": [{\"file_name\": \"CONTRIBUTING.md\", \"size\": 6769}]}",
+            "ex:required_for_next_level_badge": false
+        },
+        "ex:qc_QC.Lic_7": {
+            "prov:type": "activity",
+            "ex:description": "Is code licensed to be freely used, modified and distributed by others?; Is LICENSE file placed in the root path of the code repository?; Does the code use a license approved by Open Source Initiative?; Does the code use an Open Source Initiative's popular-recognized license?",
+            "ex:output": true,
+            "ex:percentage": "100%",
+            "ex:total_subcriteria": 4,
+            "ex:success_subcriteria": 4,
+            "ex:requirement_level": "MUST",
+            "ex:tools_passed": [
+                "licensee"
+            ],
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Lic01\", \"description\": \"Is code licensed to be freely used, modified and distributed by others?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Lic01.1\", \"description\": \"Is LICENSE file placed in the root path of the code repository?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Lic02\", \"description\": \"Does the code use a license approved by Open Source Initiative?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Lic02.1\", \"description\": \"Does the code use an Open Source Initiative's popular-recognized license?\", \"valid\": true, \"requirement_level\": \"MAY\", \"required_for_next_level_badge\": null}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-licensee",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/SeisSol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/14/execution/node/79/log?consoleFull",
+            "ex:ci_stdout_command": "licensee detect . --confidence 60 --json ",
+            "ex:ci_stdout_text": "{\"licenses\":[{\"key\":\"bsd-3-clause\",\"spdx_id\":\"BSD-3-Clause\",\"meta\":{\"title\":\"BSD 3-Clause \\\"New\\\" or \\\"Revised\\\" License\",\"source\":\"https://spdx.org/licenses/BSD-3-Clause.html\",\"description\":\"A permissive license similar to the <a href=\\\"/licenses/bsd-2-clause/\\\">BSD 2-Clause License</a>, but with a 3rd clause that prohibits others from using the name of the copyright holder or its contributors to promote derived products without written consent.\",\"how\":\"Create a text file (typically named LICEN"
+        },
+        "ex:qc_QC.Met_7": {
+            "prov:type": "activity",
+            "ex:description": "Is the software citable?",
+            "ex:output": true,
+            "ex:percentage": "100%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 1,
+            "ex:requirement_level": "MUST",
+            "ex:tools_passed": [
+                "cff-converter-python"
+            ],
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Met01\", \"description\": \"Is the software citable?\", \"valid\": true, \"requirement_level\": \"SHOULD\", \"required_for_next_level_badge\": null}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-cff",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/SeisSol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/14/execution/node/88/log?consoleFull",
+            "ex:ci_stdout_command": "cffconvert --validate ",
+            "ex:ci_stdout_text": "Citation metadata are valid according to schema version 1.2.0."
+        },
+        "ex:qc_QC.Sec_7": {
+            "prov:type": "activity",
+            "ex:description": "Is the source code passing Static Analysis Security Testing (SAST)?",
+            "ex:output": true,
+            "ex:percentage": "100%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 1,
+            "ex:requirement_level": "MUST",
+            "ex:tools_passed": [
+                "bandit"
+            ],
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Sec02\", \"description\": \"Is the source code passing Static Analysis Security Testing (SAST)?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-bandit",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/SeisSol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/14/execution/node/97/log?consoleFull",
+            "ex:ci_stdout_command": "bandit -f json --quiet  --confidence-level high --severity-level high --recursive  .",
+            "ex:ci_stdout_text": "{\n  \"errors\": [\n    {\n      \"filename\": \"./postprocessing/visualization/tools/pickpoint2mseed.py\",\n      \"reason\": \"syntax error while parsing AST from file\"\n    },\n    {\n      \"filename\": \"./postprocessing/visualization/tools/tecp2vtk_merge.py\",\n      \"reason\": \"syntax error while parsing AST from file\"\n    },\n    {\n      \"filename\": \"./postprocessing/visualization/tools/tecp2vtk_merge_loop.py\",\n      \"reason\": \"syntax error while parsing AST from file\"\n    },\n    {\n      \"filename\": \"./postpro"
+        },
+        "ex:qc_QC.Sty_7": {
+            "prov:type": "activity",
+            "ex:description": "Is the software product following a style standard for Python files?",
+            "ex:output": false,
+            "ex:percentage": "0%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 0,
+            "ex:requirement_level": "MUST",
+            "ex:tools_failed": [
+                "oclint v20.11"
+            ],
+            "ex:tools_passed": [
+                "flake8",
+                "hadolint",
+                "jsonlint"
+            ],
+            "ex:failure_messages": [
+                "[QC.Sty01][oclint] C++ files are not fully compliant with oclint standard"
+            ],
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Sty01\", \"description\": \"Is the software product following a style standard for Python files?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": true}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-flake8",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/SeisSol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/14/execution/node/106/log?consoleFull",
+            "ex:ci_stdout_command": "flake8 .",
+            "ex:ci_stdout_text": ".ci/gha-gpu-intel/Dockerfile:18 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`\n.ci/gha-gpu-intel/Dockerfile:18 DL3009 \u001b[92minfo\u001b[0m: Delete the apt-get lists after installing something\n.ci/gha-gpu-intel/Dockerfile:52 DL3003 \u001b[1m\u001b[93mwarning\u001b[0m: Use WORKDIR to switch to a directory\n.ci/gha-gpu-intel/Dockerfile:52 DL3047 \u001b[92minfo\u001b[0m: Avoid use of wget without progress bar. Use `wget --progress=dot:gi",
+            "ex:required_for_next_level_badge": true
+        },
+        "ex:qc_QC.Uni_7": {
+            "prov:type": "activity",
+            "ex:description": "Are the tests passing through an automated means?",
+            "ex:output": false,
+            "ex:percentage": "0%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 0,
+            "ex:requirement_level": "MUST",
+            "ex:tools_failed": [
+                "pytest v7.1.3"
+            ],
+            "ex:failure_messages": [
+                "[QC.Uni01][pytest] Test cases are not passing using None testing framework"
+            ],
+            "ex:fix_hints": "[{\"subcriterion\": \"QC.Uni01\", \"description\": \"Are the tests passing through an automated means?\", \"requirement_level\": \"MUST\", \"hint\": \"Please check & solve the failing test cases found by the {tool_name} tool\", \"tools_failing\": [\"pytest\"]}]",
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Uni01\", \"description\": \"Are the tests passing through an automated means?\", \"valid\": false, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": true}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-jenkins_exit_status",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/SeisSol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/14/execution/node/142/log?consoleFull",
+            "ex:ci_stdout_command": "pytest  --json-report  --json-report-indent 4",
+            "ex:ci_stdout_text": "============================= test session starts ==============================\nplatform linux -- Python 3.9.17, pytest-7.1.3, pluggy-1.2.0\nrootdir: /sqaaas-build/github.com/SeisSol/SeisSol\nplugins: metadata-3.0.0, json-report-1.5.0\ncollected 0 items\n\n--------------------------------- JSON report ----------------------------------\nreport saved to: .report.json\n============================ no tests ran in 0.58s =============================",
+            "ex:required_for_next_level_badge": true
+        },
+        "ex:qc_QC.Ver_7": {
+            "prov:type": "activity",
+            "ex:description": "Are tags being used for releasing software; Is the latest release compliant with Semantic Versioning (SemVer) specification?; Are all release tags with Semantic Versioning (SemVer) specification?",
+            "ex:output": true,
+            "ex:percentage": "33%",
+            "ex:total_subcriteria": 3,
+            "ex:success_subcriteria": 1,
+            "ex:requirement_level": "MUST",
+            "ex:tools_passed": [
+                "get_git_tags.py"
+            ],
+            "ex:failure_messages": [
+                "[QC.Ver01][get_git_tags.py] Latest release tag v1.3.2 found, but is not SemVer compliant",
+                "[QC.Ver02][get_git_tags.py] Not all release tags are SemVer compliant"
+            ],
+            "ex:fix_hints": "[{\"subcriterion\": \"QC.Ver01\", \"description\": \"Is the latest release compliant with Semantic Versioning (SemVer) specification?\", \"requirement_level\": \"SHOULD\", \"hint\": \"Latest tag must be compliant with SemVer specification\", \"tools_failing\": [\"file_check\"]}, {\"subcriterion\": \"QC.Ver02\", \"description\": \"Are all release tags with Semantic Versioning (SemVer) specification?\", \"requirement_level\": \"SHOULD\", \"hint\": \"Existent release tags shall be SemVer compliant for this subcriterion to be successful\", \"tools_failing\": [\"file_check\"]}]",
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Ver01.0\", \"description\": \"Are tags being used for releasing software\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Ver01\", \"description\": \"Is the latest release compliant with Semantic Versioning (SemVer) specification?\", \"valid\": false, \"requirement_level\": \"SHOULD\", \"required_for_next_level_badge\": false}, {\"id\": \"QC.Ver02\", \"description\": \"Are all release tags with Semantic Versioning (SemVer) specification?\", \"valid\": false, \"requirement_level\": \"SHOULD\", \"required_for_next_level_badge\": false}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-is_semver",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/SeisSol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/14/execution/node/151/log?consoleFull",
+            "ex:ci_stdout_command": "get_git_tags.py",
+            "ex:ci_stdout_text": "['v1.3.2', 'UQ-serial', 'UQ-fused', 'v1.3.1', 'v1.3.0', 'v1.2.0', 'v1.1.4', 'v1.1.3', 'v1.1.2', 'v1.1.1', 'v1.1.0', 'v1.0.1', 'v1.0.0', 'v1.0.0-rc2', 'v1.0.0-rc', 'v0.9.0', 'sc21revision', 'sc21', '202103_Sumatra', '201807_Kaikoura', '201703', 'sc17_baseline', '201511']",
+            "ex:required_for_next_level_badge": false
+        },
+        "ex:qc_QC.Acc_8": {
+            "prov:type": "activity",
+            "ex:description": "Is the source code managed with a Version Control System?",
+            "ex:output": true,
+            "ex:percentage": "100%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 1,
+            "ex:requirement_level": "MUST",
+            "ex:tools_passed": [
+                "git"
+            ],
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Acc01\", \"description\": \"Is the source code managed with a Version Control System?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-boolean",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/SeisSol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/16/execution/node/34/log?consoleFull",
+            "ex:ci_stdout_command": "git rev-parse --is-inside-work-tree ",
+            "ex:ci_stdout_text": "true"
+        },
+        "ex:qc_QC.Doc_8": {
+            "prov:type": "activity",
+            "ex:description": "Is the software scope outlined in the code repository?; Does the project establish a code of conduct for its participants?; Is there a clear path or guidelines on how to contribute to the code?; Are docs managed in the same repository as code?; Are docs following a style for the Markdown markup language?",
+            "ex:output": true,
+            "ex:percentage": "80%",
+            "ex:total_subcriteria": 5,
+            "ex:success_subcriteria": 4,
+            "ex:requirement_level": "MUST",
+            "ex:tools_failed": [
+                "markdownlint v0.11.0",
+                "restructuredtext-lint v1.3.2"
+            ],
+            "ex:tools_passed": [
+                "find_doc_files.py",
+                "git"
+            ],
+            "ex:failure_messages": [
+                "[QC.Doc02.X][markdownlint] Docs are not fully compliant with markdownlint standard",
+                "[QC.Doc02.X][restructuredtext-lint] Docs are not fully compliant with restructuredtext-lint standard"
+            ],
+            "ex:fix_hints": "[{\"subcriterion\": \"QC.Doc02.X\", \"description\": \"Are docs following a style for the Markdown markup language?\", \"requirement_level\": \"MAY\", \"hint\": \"When using a docs-as-code approach, the style of the markup language is being checked. SQAaaS relies on markdownlint for Markdown files and restructuredtext-lint for reStructuredText\", \"tools_failing\": [\"markdownlint\", \"restructuredtext-lint\"]}]",
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Doc06.1\", \"description\": \"Is the software scope outlined in the code repository?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Doc06.3\", \"description\": \"Does the project establish a code of conduct for its participants?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Doc06.2\", \"description\": \"Is there a clear path or guidelines on how to contribute to the code?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Doc01.1\", \"description\": \"Are docs managed in the same repository as code?\", \"valid\": true, \"requirement_level\": \"MAY\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Doc02.X\", \"description\": \"Are docs following a style for the Markdown markup language?\", \"valid\": false, \"requirement_level\": \"MAY\", \"required_for_next_level_badge\": false}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-find_doc_files",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/SeisSol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/16/execution/node/43/log?consoleFull",
+            "ex:ci_stdout_command": "find_doc_files.py --file_type all",
+            "ex:ci_stdout_text": "{\"README\": [{\"file_name\": \"README.md\", \"size\": 5015}], \"CODE_OF_CONDUCT\": [{\"file_name\": \"CODE_OF_CONDUCT.md\", \"size\": 5488}], \"CONTRIBUTING\": [{\"file_name\": \"CONTRIBUTING.md\", \"size\": 11388}]}",
+            "ex:required_for_next_level_badge": false
+        },
+        "ex:qc_QC.Lic_8": {
+            "prov:type": "activity",
+            "ex:description": "Is code licensed to be freely used, modified and distributed by others?; Is LICENSE file placed in the root path of the code repository?; Does the code use a license approved by Open Source Initiative?; Does the code use an Open Source Initiative's popular-recognized license?",
+            "ex:output": true,
+            "ex:percentage": "100%",
+            "ex:total_subcriteria": 4,
+            "ex:success_subcriteria": 4,
+            "ex:requirement_level": "MUST",
+            "ex:tools_passed": [
+                "licensee"
+            ],
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Lic01\", \"description\": \"Is code licensed to be freely used, modified and distributed by others?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Lic01.1\", \"description\": \"Is LICENSE file placed in the root path of the code repository?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Lic02\", \"description\": \"Does the code use a license approved by Open Source Initiative?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Lic02.1\", \"description\": \"Does the code use an Open Source Initiative's popular-recognized license?\", \"valid\": true, \"requirement_level\": \"MAY\", \"required_for_next_level_badge\": null}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-licensee",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/SeisSol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/16/execution/node/79/log?consoleFull",
+            "ex:ci_stdout_command": "licensee detect . --confidence 60 --json ",
+            "ex:ci_stdout_text": "{\"licenses\":[{\"key\":\"bsd-3-clause\",\"spdx_id\":\"BSD-3-Clause\",\"meta\":{\"title\":\"BSD 3-Clause \\\"New\\\" or \\\"Revised\\\" License\",\"source\":\"https://spdx.org/licenses/BSD-3-Clause.html\",\"description\":\"A permissive license similar to the <a href=\\\"/licenses/bsd-2-clause/\\\">BSD 2-Clause License</a>, but with a 3rd clause that prohibits others from using the name of the copyright holder or its contributors to promote derived products without written consent.\",\"how\":\"Create a text file (typically named LICEN"
+        },
+        "ex:qc_QC.Met_8": {
+            "prov:type": "activity",
+            "ex:description": "Is the software citable?",
+            "ex:output": true,
+            "ex:percentage": "100%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 1,
+            "ex:requirement_level": "MUST",
+            "ex:tools_passed": [
+                "cff-converter-python"
+            ],
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Met01\", \"description\": \"Is the software citable?\", \"valid\": true, \"requirement_level\": \"SHOULD\", \"required_for_next_level_badge\": null}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-cff",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/SeisSol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/16/execution/node/88/log?consoleFull",
+            "ex:ci_stdout_command": "cffconvert --validate ",
+            "ex:ci_stdout_text": "Citation metadata are valid according to schema version 1.2.0."
+        },
+        "ex:qc_QC.Sec_8": {
+            "prov:type": "activity",
+            "ex:description": "Is the source code passing Static Analysis Security Testing (SAST)?",
+            "ex:output": true,
+            "ex:percentage": "100%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 1,
+            "ex:requirement_level": "MUST",
+            "ex:tools_passed": [
+                "bandit"
+            ],
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Sec02\", \"description\": \"Is the source code passing Static Analysis Security Testing (SAST)?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-bandit",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/SeisSol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/16/execution/node/97/log?consoleFull",
+            "ex:ci_stdout_command": "bandit -f json --quiet  --confidence-level high --severity-level high --recursive  .",
+            "ex:ci_stdout_text": "{\n  \"errors\": [\n    {\n      \"filename\": \"./postprocessing/visualization/tools/pickpoint2mseed.py\",\n      \"reason\": \"syntax error while parsing AST from file\"\n    },\n    {\n      \"filename\": \"./postprocessing/visualization/tools/tecp2vtk_merge.py\",\n      \"reason\": \"syntax error while parsing AST from file\"\n    },\n    {\n      \"filename\": \"./postprocessing/visualization/tools/tecp2vtk_merge_loop.py\",\n      \"reason\": \"syntax error while parsing AST from file\"\n    },\n    {\n      \"filename\": \"./postpro"
+        },
+        "ex:qc_QC.Sty_8": {
+            "prov:type": "activity",
+            "ex:description": "Is the software product following a style standard for Python files?",
+            "ex:output": false,
+            "ex:percentage": "0%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 0,
+            "ex:requirement_level": "MUST",
+            "ex:tools_failed": [
+                "jsonlint v1.6.3",
+                "oclint v20.11"
+            ],
+            "ex:tools_passed": [
+                "flake8",
+                "hadolint"
+            ],
+            "ex:failure_messages": [
+                "[QC.Sty01][jsonlint] JSON files are not fully compliant with jsonlint standard",
+                "[QC.Sty01][oclint] C++ files are not fully compliant with oclint standard"
+            ],
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Sty01\", \"description\": \"Is the software product following a style standard for Python files?\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": true}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-flake8",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/SeisSol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/16/execution/node/106/log?consoleFull",
+            "ex:ci_stdout_command": "flake8 .",
+            "ex:ci_stdout_text": ".ci/gha-cpu/Dockerfile:15 DL3008 \u001b[1m\u001b[93mwarning\u001b[0m: Pin versions in apt get install. Instead of `apt-get install <package>` use `apt-get install <package>=<version>`\n.ci/gha-cpu/Dockerfile:15 DL3015 \u001b[92minfo\u001b[0m: Avoid additional packages by specifying `--no-install-recommends`\n.ci/gha-cpu/Dockerfile:15 DL3009 \u001b[92minfo\u001b[0m: Delete the apt-get lists after installing something\n.ci/gha-cpu/Dockerfile:15 DL3047 \u001b[92minfo\u001b[0m: Avoid use of wget without progress bar. Use `wget --progress=dot:giga",
+            "ex:required_for_next_level_badge": true
+        },
+        "ex:qc_QC.Uni_8": {
+            "prov:type": "activity",
+            "ex:description": "Are the tests passing through an automated means?",
+            "ex:output": false,
+            "ex:percentage": "0%",
+            "ex:total_subcriteria": 1,
+            "ex:success_subcriteria": 0,
+            "ex:requirement_level": "MUST",
+            "ex:tools_failed": [
+                "pytest v7.1.3"
+            ],
+            "ex:failure_messages": [
+                "[QC.Uni01][pytest] Test cases are not passing using None testing framework"
+            ],
+            "ex:fix_hints": "[{\"subcriterion\": \"QC.Uni01\", \"description\": \"Are the tests passing through an automated means?\", \"requirement_level\": \"MUST\", \"hint\": \"Please check & solve the failing test cases found by the {tool_name} tool\", \"tools_failing\": [\"pytest\"]}]",
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Uni01\", \"description\": \"Are the tests passing through an automated means?\", \"valid\": false, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": true}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-jenkins_exit_status",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/SeisSol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/16/execution/node/142/log?consoleFull",
+            "ex:ci_stdout_command": "pytest  --json-report  --json-report-indent 4",
+            "ex:ci_stdout_text": "============================= test session starts ==============================\nplatform linux -- Python 3.9.17, pytest-7.1.3, pluggy-1.2.0\nrootdir: /sqaaas-build/github.com/SeisSol/SeisSol\nplugins: json-report-1.5.0, metadata-3.0.0\ncollected 121 items / 6 errors\n\n==================================== ERRORS ====================================\n__________ ERROR collecting tests/python/codegen/test_aderdg_math.py ___________\nImportError while importing test module '/sqaaas-build/github.com/SeisSo",
+            "ex:required_for_next_level_badge": true
+        },
+        "ex:qc_QC.Ver_8": {
+            "prov:type": "activity",
+            "ex:description": "Are tags being used for releasing software; Is the latest release compliant with Semantic Versioning (SemVer) specification?; Are all release tags with Semantic Versioning (SemVer) specification?",
+            "ex:output": true,
+            "ex:percentage": "33%",
+            "ex:total_subcriteria": 3,
+            "ex:success_subcriteria": 1,
+            "ex:requirement_level": "MUST",
+            "ex:tools_passed": [
+                "get_git_tags.py"
+            ],
+            "ex:failure_messages": [
+                "[QC.Ver01][get_git_tags.py] Latest release tag UQ-serial found, but is not SemVer compliant",
+                "[QC.Ver02][get_git_tags.py] Not all release tags are SemVer compliant"
+            ],
+            "ex:fix_hints": "[{\"subcriterion\": \"QC.Ver01\", \"description\": \"Is the latest release compliant with Semantic Versioning (SemVer) specification?\", \"requirement_level\": \"SHOULD\", \"hint\": \"Latest tag must be compliant with SemVer specification\", \"tools_failing\": [\"file_check\"]}, {\"subcriterion\": \"QC.Ver02\", \"description\": \"Are all release tags with Semantic Versioning (SemVer) specification?\", \"requirement_level\": \"SHOULD\", \"hint\": \"Existent release tags shall be SemVer compliant for this subcriterion to be successful\", \"tools_failing\": [\"file_check\"]}]",
+            "ex:subcriteria_summary": "[{\"id\": \"QC.Ver01.0\", \"description\": \"Are tags being used for releasing software\", \"valid\": true, \"requirement_level\": \"MUST\", \"required_for_next_level_badge\": null}, {\"id\": \"QC.Ver01\", \"description\": \"Is the latest release compliant with Semantic Versioning (SemVer) specification?\", \"valid\": false, \"requirement_level\": \"SHOULD\", \"required_for_next_level_badge\": false}, {\"id\": \"QC.Ver02\", \"description\": \"Are all release tags with Semantic Versioning (SemVer) specification?\", \"valid\": false, \"requirement_level\": \"SHOULD\", \"required_for_next_level_badge\": false}]",
+            "ex:standard_title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+            "ex:standard_version": "v4.0",
+            "ex:standard_url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0",
+            "ex:plugin_name": "report2sqaaas-plugin-is_semver",
+            "ex:plugin_version": "2.1.0",
+            "ex:tool_level": "REQUIRED",
+            "ex:build_repo": "https://github.com/eosc-synergy/SeisSol.assess.sqaaas",
+            "ex:ci_url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SeisSol.assess.sqaaas/job/master/16/execution/node/151/log?consoleFull",
+            "ex:ci_stdout_command": "get_git_tags.py",
+            "ex:ci_stdout_text": "['UQ-serial', 'v1.3.2', 'UQ-fused', 'v1.3.1', 'v1.3.0', 'v1.2.0', 'v1.1.4', 'v1.1.3', 'v1.1.2', 'v1.1.1', 'v1.1.0', 'v1.0.1', 'v1.0.0', 'v1.0.0-rc2', 'v1.0.0-rc', 'v0.9.0', 'sc21revision', 'sc21', '202103_Sumatra', '201807_Kaikoura', '201703', 'sc17_baseline', '201511']",
+            "ex:required_for_next_level_badge": false
+        }
+    },
+    "wasGeneratedBy": {
+        "_:wGB_qc_QC.Acc_1_assessment1": {
+            "prov:activity": "ex:qc_QC.Acc_1",
+            "prov:entity": "ex:assessment1"
+        },
+        "_:wGB_qc_QC.Doc_1_assessment1": {
+            "prov:activity": "ex:qc_QC.Doc_1",
+            "prov:entity": "ex:assessment1"
+        },
+        "_:wGB_qc_QC.Lic_1_assessment1": {
+            "prov:activity": "ex:qc_QC.Lic_1",
+            "prov:entity": "ex:assessment1"
+        },
+        "_:wGB_qc_QC.Met_1_assessment1": {
+            "prov:activity": "ex:qc_QC.Met_1",
+            "prov:entity": "ex:assessment1"
+        },
+        "_:wGB_qc_QC.Sec_1_assessment1": {
+            "prov:activity": "ex:qc_QC.Sec_1",
+            "prov:entity": "ex:assessment1"
+        },
+        "_:wGB_qc_QC.Sty_1_assessment1": {
+            "prov:activity": "ex:qc_QC.Sty_1",
+            "prov:entity": "ex:assessment1"
+        },
+        "_:wGB_qc_QC.Ver_1_assessment1": {
+            "prov:activity": "ex:qc_QC.Ver_1",
+            "prov:entity": "ex:assessment1"
+        },
+        "_:wGB_qc_QC.Acc_2_assessment2": {
+            "prov:activity": "ex:qc_QC.Acc_2",
+            "prov:entity": "ex:assessment2"
+        },
+        "_:wGB_qc_QC.Doc_2_assessment2": {
+            "prov:activity": "ex:qc_QC.Doc_2",
+            "prov:entity": "ex:assessment2"
+        },
+        "_:wGB_qc_QC.Lic_2_assessment2": {
+            "prov:activity": "ex:qc_QC.Lic_2",
+            "prov:entity": "ex:assessment2"
+        },
+        "_:wGB_qc_QC.Met_2_assessment2": {
+            "prov:activity": "ex:qc_QC.Met_2",
+            "prov:entity": "ex:assessment2"
+        },
+        "_:wGB_qc_QC.Sec_2_assessment2": {
+            "prov:activity": "ex:qc_QC.Sec_2",
+            "prov:entity": "ex:assessment2"
+        },
+        "_:wGB_qc_QC.Sty_2_assessment2": {
+            "prov:activity": "ex:qc_QC.Sty_2",
+            "prov:entity": "ex:assessment2"
+        },
+        "_:wGB_qc_QC.Uni_2_assessment2": {
+            "prov:activity": "ex:qc_QC.Uni_2",
+            "prov:entity": "ex:assessment2"
+        },
+        "_:wGB_qc_QC.Ver_2_assessment2": {
+            "prov:activity": "ex:qc_QC.Ver_2",
+            "prov:entity": "ex:assessment2"
+        },
+        "_:wGB_qc_QC.Acc_3_assessment3": {
+            "prov:activity": "ex:qc_QC.Acc_3",
+            "prov:entity": "ex:assessment3"
+        },
+        "_:wGB_qc_QC.Doc_3_assessment3": {
+            "prov:activity": "ex:qc_QC.Doc_3",
+            "prov:entity": "ex:assessment3"
+        },
+        "_:wGB_qc_QC.Lic_3_assessment3": {
+            "prov:activity": "ex:qc_QC.Lic_3",
+            "prov:entity": "ex:assessment3"
+        },
+        "_:wGB_qc_QC.Met_3_assessment3": {
+            "prov:activity": "ex:qc_QC.Met_3",
+            "prov:entity": "ex:assessment3"
+        },
+        "_:wGB_qc_QC.Sec_3_assessment3": {
+            "prov:activity": "ex:qc_QC.Sec_3",
+            "prov:entity": "ex:assessment3"
+        },
+        "_:wGB_qc_QC.Sty_3_assessment3": {
+            "prov:activity": "ex:qc_QC.Sty_3",
+            "prov:entity": "ex:assessment3"
+        },
+        "_:wGB_qc_QC.Uni_3_assessment3": {
+            "prov:activity": "ex:qc_QC.Uni_3",
+            "prov:entity": "ex:assessment3"
+        },
+        "_:wGB_qc_QC.Ver_3_assessment3": {
+            "prov:activity": "ex:qc_QC.Ver_3",
+            "prov:entity": "ex:assessment3"
+        },
+        "_:wGB_qc_QC.Acc_4_assessment4": {
+            "prov:activity": "ex:qc_QC.Acc_4",
+            "prov:entity": "ex:assessment4"
+        },
+        "_:wGB_qc_QC.Doc_4_assessment4": {
+            "prov:activity": "ex:qc_QC.Doc_4",
+            "prov:entity": "ex:assessment4"
+        },
+        "_:wGB_qc_QC.Lic_4_assessment4": {
+            "prov:activity": "ex:qc_QC.Lic_4",
+            "prov:entity": "ex:assessment4"
+        },
+        "_:wGB_qc_QC.Met_4_assessment4": {
+            "prov:activity": "ex:qc_QC.Met_4",
+            "prov:entity": "ex:assessment4"
+        },
+        "_:wGB_qc_QC.Sec_4_assessment4": {
+            "prov:activity": "ex:qc_QC.Sec_4",
+            "prov:entity": "ex:assessment4"
+        },
+        "_:wGB_qc_QC.Sty_4_assessment4": {
+            "prov:activity": "ex:qc_QC.Sty_4",
+            "prov:entity": "ex:assessment4"
+        },
+        "_:wGB_qc_QC.Uni_4_assessment4": {
+            "prov:activity": "ex:qc_QC.Uni_4",
+            "prov:entity": "ex:assessment4"
+        },
+        "_:wGB_qc_QC.Ver_4_assessment4": {
+            "prov:activity": "ex:qc_QC.Ver_4",
+            "prov:entity": "ex:assessment4"
+        },
+        "_:wGB_qc_QC.Acc_5_assessment5": {
+            "prov:activity": "ex:qc_QC.Acc_5",
+            "prov:entity": "ex:assessment5"
+        },
+        "_:wGB_qc_QC.Doc_5_assessment5": {
+            "prov:activity": "ex:qc_QC.Doc_5",
+            "prov:entity": "ex:assessment5"
+        },
+        "_:wGB_qc_QC.Lic_5_assessment5": {
+            "prov:activity": "ex:qc_QC.Lic_5",
+            "prov:entity": "ex:assessment5"
+        },
+        "_:wGB_qc_QC.Met_5_assessment5": {
+            "prov:activity": "ex:qc_QC.Met_5",
+            "prov:entity": "ex:assessment5"
+        },
+        "_:wGB_qc_QC.Sec_5_assessment5": {
+            "prov:activity": "ex:qc_QC.Sec_5",
+            "prov:entity": "ex:assessment5"
+        },
+        "_:wGB_qc_QC.Sty_5_assessment5": {
+            "prov:activity": "ex:qc_QC.Sty_5",
+            "prov:entity": "ex:assessment5"
+        },
+        "_:wGB_qc_QC.Uni_5_assessment5": {
+            "prov:activity": "ex:qc_QC.Uni_5",
+            "prov:entity": "ex:assessment5"
+        },
+        "_:wGB_qc_QC.Ver_5_assessment5": {
+            "prov:activity": "ex:qc_QC.Ver_5",
+            "prov:entity": "ex:assessment5"
+        },
+        "_:wGB_qc_QC.Acc_6_assessment6": {
+            "prov:activity": "ex:qc_QC.Acc_6",
+            "prov:entity": "ex:assessment6"
+        },
+        "_:wGB_qc_QC.Doc_6_assessment6": {
+            "prov:activity": "ex:qc_QC.Doc_6",
+            "prov:entity": "ex:assessment6"
+        },
+        "_:wGB_qc_QC.Lic_6_assessment6": {
+            "prov:activity": "ex:qc_QC.Lic_6",
+            "prov:entity": "ex:assessment6"
+        },
+        "_:wGB_qc_QC.Met_6_assessment6": {
+            "prov:activity": "ex:qc_QC.Met_6",
+            "prov:entity": "ex:assessment6"
+        },
+        "_:wGB_qc_QC.Sec_6_assessment6": {
+            "prov:activity": "ex:qc_QC.Sec_6",
+            "prov:entity": "ex:assessment6"
+        },
+        "_:wGB_qc_QC.Sty_6_assessment6": {
+            "prov:activity": "ex:qc_QC.Sty_6",
+            "prov:entity": "ex:assessment6"
+        },
+        "_:wGB_qc_QC.Uni_6_assessment6": {
+            "prov:activity": "ex:qc_QC.Uni_6",
+            "prov:entity": "ex:assessment6"
+        },
+        "_:wGB_qc_QC.Ver_6_assessment6": {
+            "prov:activity": "ex:qc_QC.Ver_6",
+            "prov:entity": "ex:assessment6"
+        },
+        "_:wGB_qc_QC.Acc_7_assessment7": {
+            "prov:activity": "ex:qc_QC.Acc_7",
+            "prov:entity": "ex:assessment7"
+        },
+        "_:wGB_qc_QC.Doc_7_assessment7": {
+            "prov:activity": "ex:qc_QC.Doc_7",
+            "prov:entity": "ex:assessment7"
+        },
+        "_:wGB_qc_QC.Lic_7_assessment7": {
+            "prov:activity": "ex:qc_QC.Lic_7",
+            "prov:entity": "ex:assessment7"
+        },
+        "_:wGB_qc_QC.Met_7_assessment7": {
+            "prov:activity": "ex:qc_QC.Met_7",
+            "prov:entity": "ex:assessment7"
+        },
+        "_:wGB_qc_QC.Sec_7_assessment7": {
+            "prov:activity": "ex:qc_QC.Sec_7",
+            "prov:entity": "ex:assessment7"
+        },
+        "_:wGB_qc_QC.Sty_7_assessment7": {
+            "prov:activity": "ex:qc_QC.Sty_7",
+            "prov:entity": "ex:assessment7"
+        },
+        "_:wGB_qc_QC.Uni_7_assessment7": {
+            "prov:activity": "ex:qc_QC.Uni_7",
+            "prov:entity": "ex:assessment7"
+        },
+        "_:wGB_qc_QC.Ver_7_assessment7": {
+            "prov:activity": "ex:qc_QC.Ver_7",
+            "prov:entity": "ex:assessment7"
+        },
+        "_:wGB_qc_QC.Acc_8_assessment8": {
+            "prov:activity": "ex:qc_QC.Acc_8",
+            "prov:entity": "ex:assessment8"
+        },
+        "_:wGB_qc_QC.Doc_8_assessment8": {
+            "prov:activity": "ex:qc_QC.Doc_8",
+            "prov:entity": "ex:assessment8"
+        },
+        "_:wGB_qc_QC.Lic_8_assessment8": {
+            "prov:activity": "ex:qc_QC.Lic_8",
+            "prov:entity": "ex:assessment8"
+        },
+        "_:wGB_qc_QC.Met_8_assessment8": {
+            "prov:activity": "ex:qc_QC.Met_8",
+            "prov:entity": "ex:assessment8"
+        },
+        "_:wGB_qc_QC.Sec_8_assessment8": {
+            "prov:activity": "ex:qc_QC.Sec_8",
+            "prov:entity": "ex:assessment8"
+        },
+        "_:wGB_qc_QC.Sty_8_assessment8": {
+            "prov:activity": "ex:qc_QC.Sty_8",
+            "prov:entity": "ex:assessment8"
+        },
+        "_:wGB_qc_QC.Uni_8_assessment8": {
+            "prov:activity": "ex:qc_QC.Uni_8",
+            "prov:entity": "ex:assessment8"
+        },
+        "_:wGB_qc_QC.Ver_8_assessment8": {
+            "prov:activity": "ex:qc_QC.Ver_8",
+            "prov:entity": "ex:assessment8"
+        }
+    },
+    "wasAttributedTo": {
+        "_:wat_SQAaaS_repository1": {
+            "prov:entity": "ex:repository1",
+            "prov:agent": "ex:SQAaaS"
+        }
+    },
+    "wasDerivedFrom": {
+        "_:id_repository1_assessment1": {
+            "prov:generatedEntity": "ex:repository1",
+            "prov:usedEntity": "ex:assessment1"
+        },
+        "_:id_assessment1_output1": {
+            "prov:generatedEntity": "ex:assessment1",
+            "prov:usedEntity": "ex:output1"
+        },
+        "_:id_repository1_assessment2": {
+            "prov:generatedEntity": "ex:repository1",
+            "prov:usedEntity": "ex:assessment2"
+        },
+        "_:id_assessment2_output2": {
+            "prov:generatedEntity": "ex:assessment2",
+            "prov:usedEntity": "ex:output2"
+        },
+        "_:id_repository1_assessment3": {
+            "prov:generatedEntity": "ex:repository1",
+            "prov:usedEntity": "ex:assessment3"
+        },
+        "_:id_assessment3_output3": {
+            "prov:generatedEntity": "ex:assessment3",
+            "prov:usedEntity": "ex:output3"
+        },
+        "_:id_repository1_assessment4": {
+            "prov:generatedEntity": "ex:repository1",
+            "prov:usedEntity": "ex:assessment4"
+        },
+        "_:id_assessment4_output4": {
+            "prov:generatedEntity": "ex:assessment4",
+            "prov:usedEntity": "ex:output4"
+        },
+        "_:id_repository1_assessment5": {
+            "prov:generatedEntity": "ex:repository1",
+            "prov:usedEntity": "ex:assessment5"
+        },
+        "_:id_assessment5_output5": {
+            "prov:generatedEntity": "ex:assessment5",
+            "prov:usedEntity": "ex:output5"
+        },
+        "_:id_repository1_assessment6": {
+            "prov:generatedEntity": "ex:repository1",
+            "prov:usedEntity": "ex:assessment6"
+        },
+        "_:id_assessment6_output6": {
+            "prov:generatedEntity": "ex:assessment6",
+            "prov:usedEntity": "ex:output6"
+        },
+        "_:id_repository1_assessment7": {
+            "prov:generatedEntity": "ex:repository1",
+            "prov:usedEntity": "ex:assessment7"
+        },
+        "_:id_assessment7_output7": {
+            "prov:generatedEntity": "ex:assessment7",
+            "prov:usedEntity": "ex:output7"
+        },
+        "_:id_repository1_assessment8": {
+            "prov:generatedEntity": "ex:repository1",
+            "prov:usedEntity": "ex:assessment8"
+        },
+        "_:id_assessment8_output8": {
+            "prov:generatedEntity": "ex:assessment8",
+            "prov:usedEntity": "ex:output8"
+        }
+    }
+}
