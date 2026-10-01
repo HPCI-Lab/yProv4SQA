@@ -81,10 +81,10 @@ This command generates a level-1 provenance document of all assessments availabl
 ## **6. Comparing Two quality Assessments with yProv4SQA**
 
    ```bash
-   compare ./Provenance_documents/interTwin-eu_itwinai_prov_output.json 59 87
+   compare ./Provenance_documents/interTwin-eu_itwinai_prov_output.json 64 115
    ```
 
-This command generates a level-2 provenance document that captures the file changes between assessments no. 59 and assessments no. 87, integrates directly with URLs to the corresponding GitHub diff and SQAaaS reports, and stores the graph as `./Compare_commit_provenance/itwinai_commit_provenance_f7a0...3d6c_to_3076...4621.json`
+This command generates a level-2 provenance document that captures the file changes between assessments no. 64 (bronze badge) and no. 115 (silver badge), integrates directly with URLs to the corresponding GitHub diff and SQAaaS reports, and stores the graph as `./Compare_commit_provenance/itwinai_commit_provenance_fc45...fd9c_to_4086...54f4.json`
 
 ## **7. Exploration of Provenance graph**
 
@@ -104,7 +104,7 @@ This PROV library can be used to check the PROV syntax, convert the provenance d
 
    ```bash
    json2graph ./Provenance_documents/interTwin-eu_itwinai_prov_output.json
-   json2graph ./Compare_commit_provenance/itwinai_commit_provenance_f7a0...3d6c_to_3076...4621.json
+   json2graph ./Compare_commit_provenance/itwinai_commit_provenance_fc45...fd9c_to_4086...54f4.json
    ```
 
 This command converts the `.json` file into an `.svg` provenance graph and saves it to `./Graph_outputs`.
@@ -124,12 +124,12 @@ For the Level-1 Provenance document (Fig. 5), we have published it to the yProvS
 PID: `21.T11961/de35c9af-31d4-4fe8-b571-72f4c1bca8dd`  
 Direct URL: [http://yprov.disi.unitn.it:8000/documents/21.T11961/de35c9af-31d4-4fe8-b571-72f4c1bca8dd?stream=false](http://yprov.disi.unitn.it:8000/documents/21.T11961/de35c9af-31d4-4fe8-b571-72f4c1bca8dd?stream=false)
 
-For the comparison of two assessments (Fig. 7): generate it locally by following step 6, then upload the resulting `.json` file to the explorer.
+For the comparison of two assessments (Fig. 8): generate it locally by following step 6, then upload the resulting `.json` file to the explorer.
 
 Or open them directly in yProvExplorer without uploading:
 
 - **Full assessment history of itwinai (Fig. 5):** [View Graph](https://explorer.yprov.disi.unitn.it/?file=http%3A%2F%2Fyprov.disi.unitn.it%3A8000%2Fdocuments%2F21.T11961%2Fde35c9af-31d4-4fe8-b571-72f4c1bca8dd%3Fstream%3Dfalse)  
-- **file changes between the two assessments (Fig. 7):** generate locally (step 6), then drag-and-drop the `.json` into the explorer.
+- **file changes between the two assessments (Fig. 8):** generate locally (step 6), then drag-and-drop the `.json` into the explorer.
 
 We have used the yProv service and a Neo4j database running on our internal service, which is not directly accessible externally.
 
@@ -292,7 +292,7 @@ The query exports the raw data behind Fig. 6; the CSV file and the Excel line-ch
    silver_ass.id
    ```
 
-The query in Listing 2 returns the last assessment ID that earned a bronze badge and the first one that achieved silver; the resulting [level-2 provenance graph](./results/Compare_commit_provenance). (Fig. 7) and query result is stored in [Results](./results/Cypher_query_results).
+The query in Listing 2 returns the last assessment ID that earned a bronze badge and the first one that achieved silver; the resulting [level-2 provenance graph](./results/Compare_commit_provenance) (Fig. 8) and query result is stored in [Results](./results/Cypher_query_results).
 
 ## **10. Multi-Repository Evaluation (SAC 2027)**
 
