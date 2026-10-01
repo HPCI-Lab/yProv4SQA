@@ -294,6 +294,28 @@ The query exports the raw data behind Fig. 6; the CSV file and the Excel line-ch
 
 The query in Listing 2 returns the last assessment ID that earned a bronze badge and the first one that achieved silver; the resulting [level-2 provenance graph](./results/Compare_commit_provenance). (Fig. 7) and query result is stored in [Results](./results/Cypher_query_results).
 
+## **10. Multi-Repository Evaluation (SAC 2027)**
+
+The paper validates yProv4SQA across 11 open-source repositories (469 unique assessments). All generated provenance documents and the pipeline script used to produce them are in `./multi_repo_evaluation/`.
+
+### **10.1. Reproduce the full evaluation**
+
+```bash
+python multi_repo_evaluation/run_all_repos.py
+```
+
+This script fetches SQAaaS reports, normalises them, and generates provenance documents for all 11 repositories. A GitHub token is strongly recommended (see Section 1).
+
+### **10.2. Pre-generated provenance documents**
+
+All 10 provenance documents (one per external repository; the 11th is this repository itself) are pre-generated in `./multi_repo_evaluation/Provenance_documents/`. Each file is named `<org>_<repo>_prov_output.json`.
+
+### **10.3. Open a document in yProvExplorer**
+
+Upload any `.json` file from `./multi_repo_evaluation/Provenance_documents/` to [https://explorer.yprov.disi.unitn.it/](https://explorer.yprov.disi.unitn.it/) or drag-and-drop it for immediate visualisation.
+
+---
+
 ## **Summary**
 
-This artifact demonstrates the complete provenance-based SQA workflow from the paper. With yProv4SQA, you can collect SQAaaS reports, generate provenance documents, compare any two assessments, directly navigate to git diff of those assessments, visualize graphs, and explore them through Neo4j and the yProv service. A few examples of Cypher queries are included, and developers can extend them with their own queries as needed.
+This artifact demonstrates the complete provenance-based SQA workflow from the paper. With yProv4SQA, you can collect SQAaaS reports, generate provenance documents, compare any two assessments, directly navigate to git diff of those assessments, visualise graphs, and explore them through Neo4j and the yProv service. The `multi_repo_evaluation/` folder contains the full 11-repository evaluation supporting the SAC 2027 paper results.
