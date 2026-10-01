@@ -70,7 +70,7 @@ Open [http://localhost:5000](http://localhost:5000) in your browser.
 
 # Documentation
 
-For detailed information, please refer to the [Documentation](https://github.com/HPCI-Lab/yProv4SQA/tree/main/docs).
+For detailed information, please refer to the [Documentation](docs/).
 
 # Contributors
 
