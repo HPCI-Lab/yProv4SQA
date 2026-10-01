@@ -8,10 +8,11 @@
 
 ---
 
-## 1. Clone the repository
+## 1. Get the repository
+
+Download the repository using the **Download** button on the anonymous repository page (https://anonymous.4open.science/r/yProv4SQA-D046), then extract and navigate to the directory:
 
 ```bash
-git clone https://anonymous.4open.science/r/yProv4SQA-D046
 cd yProv4SQA
 ```
 

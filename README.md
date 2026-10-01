@@ -1,33 +1,12 @@
 
 <div align="center">
-  <a href="https://github.com/HPCI-Lab">
-    <img src="https://raw.githubusercontent.com/HPCI-Lab/yProv4ML/main/assets/HPCI-Lab.png" alt="HPCI Lab Logo" width="100" height="100">
-  </a>
-
   <h3 align="center">yProv4SQA</h3>
 
   <p align="center">
     A provenance-based framework for traceability in Software Quality Assurance pipelines — tracking the evolution of software quality over time using W3C PROV-compliant documents.
     <br />
-    <a href="https://github.com/HPCI-Lab/yProv4SQA/tree/main/docs"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/HPCI-Lab/yProv4SQA/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
-    &middot;
-    <a href="https://github.com/HPCI-Lab/yProv4SQA/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    <a href="docs/"><strong>Explore the docs »</strong></a>
   </p>
-</div>
-
-<br />
-
-<div align="center">
-
-[![Contributors](https://img.shields.io/github/contributors/HPCI-Lab/yProv4SQA?style=for-the-badge)](https://github.com/HPCI-Lab/yProv4SQA/graphs/contributors)
-[![Forks](https://img.shields.io/github/forks/HPCI-Lab/yProv4SQA?style=for-the-badge)](https://github.com/HPCI-Lab/yProv4SQA/network/members)
-[![Stars](https://img.shields.io/github/stars/HPCI-Lab/yProv4SQA?style=for-the-badge)](https://github.com/HPCI-Lab/yProv4SQA/stargazers)
-[![Issues](https://img.shields.io/github/issues/HPCI-Lab/yProv4SQA?style=for-the-badge)](https://github.com/HPCI-Lab/yProv4SQA/issues)
-[![GPLv3 License](https://img.shields.io/badge/LICENCE-GPL3.0-green?style=for-the-badge)](https://opensource.org/licenses/)
-
 </div>
 
 This library is part of the yProv suite, and provides a provenance-based architecture for traceability in Software Quality Assurance (SQA) pipelines. It integrates with [SQAaaS](https://docs.sqaaas.eosc-synergy.eu/) to collect quality assessment reports and generate W3C PROV-compliant provenance documents that capture the full quality evolution of a software project over time.
