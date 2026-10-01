@@ -33,7 +33,7 @@ You should see "limit": 5000
 ## **2. Clone the repository and navigate to the directory**
 
    ```bash
-   git clone https://github.com/HPCI-Lab/yProv4SQA.git
+   git clone https://anonymous.4open.science/r/yProv4SQA-D046
    cd yProv4SQA
    ```
 
@@ -207,7 +207,7 @@ docker network create yprov_net
         -v yprov_data:/app/conf \
         --env USER=neo4j \
         --env PASSWORD=password \
-        hpci/yprov:latest
+        anonymous/yprov:latest
 ```
 
 ### **8.3. Neo4j for Provenance Visualization and Data Exploration**
