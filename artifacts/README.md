@@ -1,8 +1,10 @@
-# Artifact for “A Provenance-Based Architecture for Traceability in Software Quality Assurance Pipelines” (ICSA 2026)
+# Artifact for “A Provenance-Based Architecture for Traceability in Software Quality Assurance Pipelines” (SAC 2027)
 
 To gain complete insights about software quality evaluation, we introduce the concept of provenance for Software Quality Assurance pipelines called yProv4SQA, which is used for tracking the evolution of software quality over time by generating detailed provenance documents during software development.
 
-In this example, we demonstrate how to use our library by analyzing the [itwinai GitHub repository](https://github.com/interTwin-eu/itwinai).  
+The paper validates yProv4SQA across **11 open-source repositories** (469 unique assessments), spanning Python, C++, Go, and Java projects.
+
+In this artifact, we demonstrate the complete workflow by analyzing the [itwinai GitHub repository](https://github.com/interTwin-eu/itwinai) as a running example.  
 This repository already utilizes [SQAaaS](https://docs.sqaaas.eosc-synergy.eu/) and contains existing assessments. We will use it to showcase the capabilities of our library and extract insights related to software quality and provenance.
 
 
@@ -118,14 +120,16 @@ You can either upload the `interTwin-eu_itwinai_prov_output.json` file into the 
 
 For convenience, we have already uploaded the graphs that we used in our paper to the yProv server. You can use these URLs as input to yProvExplorer.
 
-For the Level-1 Provenance document (Fig. 5):[http://yprov.disi.unitn.it:3000/api/v0/documents/itwinai](http://yprov.disi.unitn.it:3000/api/v0/documents/itwinai)
+For the Level-1 Provenance document (Fig. 5), we have published it to the yProvStore with a persistent identifier (PID):  
+PID: `21.T11961/de35c9af-31d4-4fe8-b571-72f4c1bca8dd`  
+Direct URL: [http://yprov.disi.unitn.it:8000/documents/21.T11961/de35c9af-31d4-4fe8-b571-72f4c1bca8dd?stream=false](http://yprov.disi.unitn.it:8000/documents/21.T11961/de35c9af-31d4-4fe8-b571-72f4c1bca8dd?stream=false)
 
-For the comparison of two assessments (Fig. 7): [http://yprov.disi.unitn.it:3000/api/v0/documents/gitdif](http://yprov.disi.unitn.it:3000/api/v0/documents/gitdif)
+For the comparison of two assessments (Fig. 7): generate it locally by following step 6, then upload the resulting `.json` file to the explorer.
 
-or you can open them without uploading or using the URLs as input:
+Or open them directly in yProvExplorer without uploading:
 
-- **Full assessment history of itwinai (Fig. 5):** [View Graph](https://explorer.yprov.disi.unitn.it/?file=http%3A%2F%2Fyprov.disi.unitn.it%3A3000%2Fapi%2Fv0%2Fdocuments%2Fitwinai)  
-- **file changes between the two assessments (Fig. 7):** [View Graph](https://explorer.yprov.disi.unitn.it/?file=http%3A%2F%2Fyprov.disi.unitn.it%3A3000%2Fapi%2Fv0%2Fdocuments%2Fgitdif)
+- **Full assessment history of itwinai (Fig. 5):** [View Graph](https://explorer.yprov.disi.unitn.it/?file=http%3A%2F%2Fyprov.disi.unitn.it%3A8000%2Fdocuments%2F21.T11961%2Fde35c9af-31d4-4fe8-b571-72f4c1bca8dd%3Fstream%3Dfalse)  
+- **file changes between the two assessments (Fig. 7):** generate locally (step 6), then drag-and-drop the `.json` into the explorer.
 
 We have used the yProv service and a Neo4j database running on our internal service, which is not directly accessible externally.
 
