@@ -11,7 +11,7 @@
 ## 1. Clone the repository
 
 ```bash
-git clone https://github.com/HPCI-Lab/yProv4SQA.git
+git clone https://anonymous.4open.science/r/yProv4SQA-D046
 cd yProv4SQA
 ```
 

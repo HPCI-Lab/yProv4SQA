@@ -47,5 +47,5 @@ setup(
     description      = "Provenance library for software quality assurance pipelines",
     long_description = long_description,
     long_description_content_type = 'text/markdown',
-    url = "https://github.com/HPCI-Lab/yProv4SQA",
+    url = "https://anonymous.4open.science/r/yProv4SQA-D046",
 )

@@ -33,7 +33,7 @@ You should see "limit": 5000
 ## **2. Clone the repository and navigate to the directory**
 
    ```bash
-   git clone https://anonymous.4open.science/r/yProv4SQA-D046
+   Download the repository using the **Download** button on the anonymous repository page (https://anonymous.4open.science/r/yProv4SQA-D046), then extract and navigate to the directory:
    cd yProv4SQA
    ```
 

@@ -5,9 +5,9 @@ Fetch + process SQAaaS assessment reports for multiple repositories
 and produce a summary table (results/summary.json + results/summary.csv).
 
 Usage:
-    cd /home/yousa/projects/yProv4SQA_AI/yProv4SQA
+    cd yProv4SQA
     export GITHUB_TOKEN=<your_token>
-    python3 results/run_all_repos.py
+    python3 artifacts/multi_repo_evaluation/run_all_repos.py
 """
 
 import os

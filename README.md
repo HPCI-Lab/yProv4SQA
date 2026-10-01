@@ -95,4 +95,4 @@ For detailed information, please refer to the [Documentation](https://github.com
 
 # Contributors
 
-- [Hafiz Muhammad Yousaf](https://github.com/Yousaf95)
+- Anonymous (to be revealed at camera-ready)

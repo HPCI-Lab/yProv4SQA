@@ -86,7 +86,7 @@ docker run --name web --network=yprov_net \
   -p 3000:3000 -d \
   -v yprov_data:/app/conf \
   --env USER=neo4j --env PASSWORD=password \
-  hpci/yprov:latest
+  anonymous/yprov:latest
 ```
 
 Neo4j browser: [http://localhost:7474](http://localhost:7474)  
