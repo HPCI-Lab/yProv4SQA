@@ -2,11 +2,6 @@
 yprov4sqa/agent/agent.py
 ========================
 Lightweight tool-calling agent using ChatOllama.bind_tools().
-
-Replaces the heavy create_agent()/CompiledStateGraph approach (which
-compiled a full LangGraph state machine at startup and froze VS Code).
-This version builds nothing at startup — the LLM connection is made
-only when the user asks the first question.
 """
 
 import os
@@ -16,26 +11,23 @@ from langchain_core.messages import (
     HumanMessage, AIMessage, SystemMessage, ToolMessage,
 )
 
-
-
 from .tools import ALL_TOOLS
 from .loader import load_provenance
 
 
-def _extract_text_tool_calls(content: str, known_tools: set | None = None,
-                             hint_tool: str | None = None) -> list[dict]:
+def _extract_text_tool_calls(content: str, known_tools: set | None = None) -> list[dict]:
     """
     Fallback parser: extract tool calls from model text output.
     Handles three formats that smaller/Ollama models produce:
 
     1. JSON object:
-         {"name": "compare_assessments", "parameters": {"n1": 50, "n2": 100}}
+         {"name": "compare_assessments", "parameters": {"num1_num2": "50,100"}}
 
     2. LangChain object repr (seen in some Ollama builds):
-         {object <nil> {compare_assessments} [50,100] {"n1":{"type":"integer"}}}
+         {object <nil> {compare_assessments} [50,100] {"num1_num2":{"type":"string"}}}
 
     3. Python-style function call:
-         compare_assessments(50, 100)   or   compare_assessments(n1=50, n2=100)
+         compare_assessments("50,100")   or   compare_assessments(50, 100)
     """
     if not content:
         return []
@@ -57,7 +49,11 @@ def _extract_text_tool_calls(content: str, known_tools: set | None = None,
             if depth == 0 and start != -1:
                 fragment = text[start:i + 1]
                 try:
-                    obj = json.loads(fragment)
+                    # Normalize Python literals that smaller models emit
+                    fragment_json = re.sub(r'\bNone\b', 'null', fragment)
+                    fragment_json = re.sub(r'\bTrue\b', 'true', fragment_json)
+                    fragment_json = re.sub(r'\bFalse\b', 'false', fragment_json)
+                    obj = json.loads(fragment_json)
                     if isinstance(obj, dict) and 'name' in obj:
                         name = obj['name']
                         args = obj.get('parameters',
@@ -65,6 +61,9 @@ def _extract_text_tool_calls(content: str, known_tools: set | None = None,
                                obj.get('input', {})))
                         if not isinstance(args, dict):
                             args = {}
+                        # Strip malformed keys (empty string, "[0]", "{}", etc.)
+                        args = {k: v for k, v in args.items()
+                                if k and re.match(r'^[a-zA-Z_]\w*$', k)}
                         calls.append({'name': name, 'args': args,
                                       'id': f'txt_{len(calls)}'})
                 except (json.JSONDecodeError, ValueError):
@@ -75,7 +74,7 @@ def _extract_text_tool_calls(content: str, known_tools: set | None = None,
         return calls
 
     # ── Format 2: {object <nil> {tool_name} [pos_args] {schema}} ──────────
-    # e.g. {object <nil> {compare_assessments} [50,100] {"n1":{"type":"integer"}}}
+    # e.g. {object <nil> {compare_assessments} [50,100] {"num1_num2":{"type":"string"}}}
     obj_pat = re.compile(
         r'\{object\s+<\w+>\s+\{(\w+)\}'   # {object <nil> {tool_name}
         r'\s+(\[[^\]]*\])'                 # [positional_args_json]
@@ -129,31 +128,6 @@ def _extract_text_tool_calls(content: str, known_tools: set | None = None,
             calls.append({'name': tool_name, 'args': args,
                           'id': f'fn_{len(calls)}'})
 
-    # ── Format 4: raw args dict with no "name" key ────────────────────────
-    # Some models output just {"window": 10} when they mean to call the
-    # hinted tool.  If we have a hint and the content is a bare JSON dict,
-    # use the hint tool with that dict as args.
-    if not calls and hint_tool:
-        depth, start = 0, -1
-        for i, ch in enumerate(text):
-            if ch == '{':
-                if depth == 0:
-                    start = i
-                depth += 1
-            elif ch == '}':
-                depth -= 1
-                if depth == 0 and start != -1:
-                    fragment = text[start:i + 1]
-                    try:
-                        obj = json.loads(fragment)
-                        if isinstance(obj, dict) and 'name' not in obj:
-                            calls.append({'name': hint_tool, 'args': obj,
-                                          'id': f'raw_{len(calls)}'})
-                    except (json.JSONDecodeError, ValueError):
-                        pass
-                    start = -1
-                    break  # only need the first dict
-
     return calls
 
 SYSTEM_PROMPT = """You are an expert Software Quality Assurance (SQA) analyst.
@@ -161,28 +135,67 @@ You have access to tools that query a real W3C PROV-compliant provenance
 document for a GitHub repository assessed by the SQAaaS platform.
 
 AVAILABLE TOOLS — you may ONLY call these 16, never invent tool names:
-  get_summary, get_assessment, get_regressions, get_badge_history,
-  get_qc_trend, compare_assessments, find_best_period,
-  get_tool_failures, get_fix_hints, get_badge_path,
-  get_branch_analysis, get_subcriteria_detail, get_ci_provenance,
-  get_quality_velocity, get_partial_runs, get_badge_journey
+
+  Core analysis:
+    get_summary          — repo overview, badge counts, recent/all-time QC averages,
+                           latest assessment QC scores. Call this first for overviews.
+    get_assessment       — full details of one assessment (badge, QC scores, date).
+    get_badge_history    — full badge progression over time (bronze/silver/gold dates).
+    get_regressions      — recent badge drops and QC score drops (criteria that got worse).
+    get_qc_trend         — score trend for a single criterion over last N assessments.
+    compare_assessments  — diff two assessments: which criteria improved or degraded.
+    find_best_period     — find the assessment range with the highest quality scores.
+
+  Actionable guidance:
+    get_tool_failures    — specific tools/checks that failed for a criterion.
+    get_fix_hints        — actionable fix recommendations for failing criteria.
+    get_badge_path       — criteria still missing to reach the next badge level.
+
+  Extended analysis:
+    get_branch_analysis  — QC scores and badge distribution broken down by branch.
+    get_subcriteria_detail — subcriteria breakdown for a specific QC criterion.
+    get_ci_provenance    — CI/pipeline provenance details for a criterion.
+    get_quality_velocity — rate of quality improvement over a sliding window.
+    get_partial_runs     — assessments flagged as partial (incomplete) runs.
+    get_badge_journey    — narrative of how the repo progressed through badge levels.
+
+MULTI-TOOL CHAINING — use multiple tool calls in sequence when the question has
+more than one part, or when the answer to step 1 determines the arguments for step 2.
+Examples of correct chaining patterns:
+
+  Q: "What caused the latest regression and how do I fix it?"
+  → Step 1: get_regressions()           (find which criteria regressed)
+  → Step 2: get_fix_hints("QC.Sty")    (get fix recommendations for that criterion)
+  → Answer: combine both results.
+
+  Q: "What changed when itwinai went from bronze to silver, and what still blocks gold?"
+  → Step 1: get_badge_history()         (find the assessment where silver was first earned)
+  → Step 2: compare_assessments(N-1, N) (diff that transition)
+  → Step 3: get_badge_path("gold")      (list remaining blockers)
+  → Answer: combine all three.
+
+  Q: "What is the trend for QC.Sec and what should devs do about it?"
+  → Step 1: get_qc_trend("QC.Sec")     (get recent score history)
+  → Step 2: get_fix_hints("QC.Sec")    (get recommendations)
+  → Answer: combine both.
+
+  Q: "Compare assessment 64 and 115."
+  → Step 1: compare_assessments(64, 115)
+  → Answer: report the diff directly.
 
 RULES — follow these strictly:
-1. Always call at least one tool before answering. Never guess data values.
-2. Call multiple tools in sequence when one result raises a follow-up question.
-3. Be precise: use exact assessment numbers, percentages, dates from tool results.
-4. Explain QC drops using delta values returned by tools.
-5. Give actionable recommendations based on what the tools return.
-6. For ANY general, overview, or summary question about the repository, ALWAYS
-   call get_summary first — never invent filters or call tools unnecessarily.
-   Use get_summary to get an overall picture; use get_qc_trend for per-criterion trends.
-7. When describing the CURRENT state of the project use latest_assessment.qc_scores
-   from get_summary — NOT qc_all_time_averages (which is skewed by old history).
-8. For recent trends call get_summary and read qc_recent_10_averages.
-   For long-term history call get_summary and read qc_all_time_averages.
-   Both fields are returned by get_summary — do NOT invent a separate tool.
-9. When comparing two assessments, call compare_assessments for QC score changes.
-   Use get_regressions to explain badge drops and get_qc_trend for criterion history.
+1. Always call at least one tool before answering. Never guess or invent data.
+2. If a question has two parts (e.g., "X and how to fix it"), call tools for both parts.
+3. Do NOT call the same tool with the same arguments twice — that is a loop.
+   If a tool returns insufficient data, call a DIFFERENT tool to get more context.
+4. Be precise: use exact assessment numbers, percentages, dates from tool results.
+5. For overview/summary questions always call get_summary first.
+6. Use qc_recent_10_averages from get_summary for recent trends.
+   Use qc_all_time_averages for long-term history. Do NOT call get_qc_trend for this.
+7. When a question asks about a specific criterion (e.g., "QC.Sec"), extract the
+   criterion name from the question and pass it directly to the relevant tool.
+8. After calling get_regressions, if it identifies a specific criterion, immediately
+   call get_fix_hints with that criterion to complete a "cause + remedy" answer.
 
 PROVENANCE MODEL CONTEXT (W3C PROV standard):
 - Entity:   Repository, Assessment (one per commit), Output (badge result)
@@ -191,37 +204,33 @@ PROVENANCE MODEL CONTEXT (W3C PROV standard):
 - Agent:    SQAaaS (automated assessment platform)
 - Relations: wasGeneratedBy, wasDerivedFrom, wasAttributedTo
 
-QUALITY CRITERION GLOSSARY (SQAaaS official names — indigo-dc/sqa-baseline v4.1):
-- QC.Acc = Code Accessibility   : source code MUST be open, public, and in a VCS.
-                                   NOT accessibility (a11y/WCAG). NOT accuracy.
-- QC.Doc = Documentation        : docs treated as code; README, CONTRIBUTING etc. required.
-- QC.Lic = Licensing            : OSI-compliant open-source license required (MIT, Apache…).
-- QC.Sec = Security             : SAST tools (bandit) applied; no known vulnerabilities.
-- QC.Sty = Code Style           : community style standards followed (flake8, rubocop…).
-- QC.Ver = Semantic Versioning  : release tags MUST follow SemVer (e.g. v1.2.0).
-- QC.Met = Code Metadata        : citation file required (CITATION.cff or codemeta.json).
-- QC.Uni = Unit Testing         : unit tests MUST exist, pass, and reach 70% coverage.
+QUALITY CRITERION GLOSSARY (SQAaaS official names):
+- QC.Acc = Code Accessibility   : source code open, public, in a VCS.
+- QC.Doc = Documentation        : docs treated as code; README, CONTRIBUTING required.
+- QC.Lic = Licensing            : OSI-compliant open-source license required.
+- QC.Sec = Security             : SAST tools applied; no known vulnerabilities.
+- QC.Sty = Code Style           : community style standards (flake8, rubocop…).
+- QC.Ver = Semantic Versioning  : release tags follow SemVer (e.g. v1.2.0).
+- QC.Met = Code Metadata        : CITATION.cff or codemeta.json required.
+- QC.Uni = Unit Testing         : unit tests exist, pass, reach 70%+ coverage.
 
-BADGE LEVELS (SQAaaS stable criteria):
-- Bronze: QC.Acc, QC.Doc, QC.Lic
-- Silver: + QC.Ver, QC.Met
-- Gold:   + QC.Sec, QC.Sty, QC.Uni
+BADGE LEVELS:
+- Bronze: QC.Acc + QC.Doc + QC.Lic
+- Silver: Bronze + QC.Ver + QC.Met
+- Gold:   Silver + QC.Sec + QC.Sty + QC.Uni
 
-QC SCORE MEANING — never misinterpret these:
-- 100%  = criterion FULLY PASSED (all subcriteria satisfied)
-- 0%    = criterion COMPLETELY FAILED (no subcriteria passed) — this is BAD
-- 50%   = criterion PARTIALLY passed
-- assessment_id is a sequential history index (e.g. 110 = the 110th run),
-  it is NOT a score and must never be presented as one.
+QC SCORE MEANING:
+- 100% = criterion FULLY PASSED.  0% = COMPLETELY FAILED (BAD).
+- assessment_id is a sequential index (e.g. 110 = the 110th run), NOT a score.
 
 """
 
 # Lookup map: tool name → callable (built once at module load, lightweight)
 _TOOL_MAP = {t.name: t for t in ALL_TOOLS}
 
-MAX_ITERATIONS  = 8     # max tool-call rounds per question
+MAX_ITERATIONS  = 12    # max tool-call rounds per question (raised for multi-hop)
 HISTORY_WINDOW  = 8     # keep last 4 turns (human+AI pairs) to limit token count
-TOOL_OUT_LIMIT  = 1500  # max chars of tool output sent to LLM per call
+TOOL_OUT_LIMIT  = int(os.environ.get('TOOL_OUT_LIMIT', '1500'))
 
 
 class ProvAgent:
@@ -273,23 +282,13 @@ class ProvAgent:
                     temperature = 0,
                 )
             else:
-                import requests as _req
-                try:
-                    _req.get(f'{self._base_url}/api/tags', timeout=5)
-                except Exception:
-                    raise ConnectionError(
-                        f"Ollama is not reachable at {self._base_url}. "
-                        "Start it with: ollama serve"
-                    )
                 from langchain_ollama import ChatOllama
+                _is_large = any(x in self._model_name for x in ('70b', '72b', '65b', '34b'))
                 llm = ChatOllama(
-                    model              = self._model_name,
-                    base_url           = self._base_url,
-                    temperature        = 0,
-                    num_ctx            = 4096,
-                    num_predict        = 2048,
-                    keep_alive         = -1,
-                    sync_client_kwargs = {'timeout': 600},
+                    model       = self._model_name,
+                    base_url    = self._base_url,
+                    temperature = 0,
+                    num_predict = 2048 if _is_large else 512,
                 )
             self._llm = llm.bind_tools(ALL_TOOLS)
         return self._llm
@@ -309,107 +308,102 @@ class ProvAgent:
         llm = self._get_llm()
 
         # Inject per-question tool hints so small models pick the right tool.
-        # Each entry: (trigger_phrases, tool_name)  — first match wins, order matters.
+        # Multi-hop hints describe a full chain; single hints point to the first tool.
+        # Each entry: (trigger_phrases, hint_text)
         _TOOL_HINTS = [
-            # Most specific patterns first to avoid wrong routing.
+            # ── Multi-hop chains (checked first — more specific) ─────────────
             (
-                # Subcriteria breakdown for a specific QC criterion
-                ('subcriteria', 'sub-criteria', 'breakdown of qc', 'detail for qc'),
-                'get_subcriteria_detail',
+                ('regression', 'regressions', 'badge dropped', 'badge fell',
+                 'quality dropped', 'went down', 'score dropped', 'quality fallen',
+                 'badge level go down', 'badge level dropped',
+                 'has the quality', 'did any badge', 'quality score dropped'),
+                (
+                    'get_regressions first to identify which criteria regressed. '
+                    'Then, if the question asks what to do or how to fix it, '
+                    'call get_fix_hints with the affected criterion.'
+                ),
             ),
             (
-                # Per-criterion trend (QC.* names are unambiguous)
-                ('trend for qc', 'trend of qc',
-                 'qc.acc', 'qc.doc', 'qc.lic', 'qc.sec',
-                 'qc.sty', 'qc.ver', 'qc.met', 'qc.uni'),
-                'get_qc_trend',
+                ('what caused', 'why did', 'what changed', 'what happened',
+                 'what led to', 'what made'),
+                (
+                    'compare_assessments(N1, N2) to diff the two assessments. '
+                    'If the question also asks for a fix, follow with get_fix_hints.'
+                ),
             ),
             (
-                # General summary / overview of the whole repo
+                ('how do i fix', 'how to fix', 'how can i fix', 'how can i improve',
+                 'how do i improve', 'how to improve', 'what should developers do',
+                 'what should i do to fix', 'recommendations for', 'fix hint'),
+                (
+                    'get_fix_hints with the specific criterion name (e.g. "QC.Sec"). '
+                    'If you do not know which criterion is failing, call get_regressions first.'
+                ),
+            ),
+            (
+                ('path to gold', 'missing for gold', 'how to achieve gold',
+                 'what do i need for gold', 'how to get gold',
+                 'missing for silver', 'how to achieve silver', 'path to silver',
+                 'missing for', 'what is missing for', 'requirements for badge',
+                 'criteria missing', 'criteria are missing', 'achieve a gold',
+                 'achieve gold', 'achieve a silver', 'achieve silver'),
+                (
+                    'Use get_badge_path — it returns the criteria still missing for '
+                    'the next badge level. Do NOT use get_badge_history; that tool '
+                    'only shows dates when past badges were awarded, not what is missing.'
+                ),
+            ),
+            # ── Single-tool hints ────────────────────────────────────────────
+            (
+                ('assessment number', 'assessment no', 'assessment #',
+                 'what badge was awarded in assessment', 'details of assessment',
+                 'show assessment', 'look at assessment', 'check assessment',
+                 'what happened in assessment', 'result of assessment',
+                 'score in assessment', 'info on assessment',
+                 'hold at assessment', 'badge at assessment',
+                 'held at assessment', 'have at assessment'),
+                'get_assessment',
+            ),
+            (
                 ('overall summary', 'general summary', 'give me a summary',
                  'summary of this', 'overview of this', 'overview of the',
                  'summarize this', 'summarise this', 'tell me about this repo',
                  'what is this repository', 'about this repository',
-                 'history of this', 'repository history',
                  'overall quality', 'quality history', 'quality overview',
-                 'how is this repo', 'how has this repo', 'how did this repo'),
+                 'how is this repo', 'how has this repo',
+                 'current badge level', 'current badge', 'what badge level',
+                 'what is the current badge', 'what is the badge'),
                 'get_summary',
             ),
             (
-                ('how do i fix', 'how to fix', 'how can i fix', 'how can i improve',
-                 'how do i improve', 'how to improve', 'how to pass', 'how do i pass',
-                 'fix hint', 'fix hints', 'what should i do to fix',
-                 'what do i need to fix', 'recommendations for'),
-                'get_fix_hints',
-            ),
-            (
-                ('what failed', 'which tools failed', 'tool failures', 'what tools failed',
+                ('what failed', 'which tools failed', 'tool failures',
                  'tools that failed', 'failing tools', 'what is failing'),
                 'get_tool_failures',
             ),
             (
-                # Badge-path: what is needed to achieve a badge level
-                ('what do i need for', 'what do i need to get',
-                 'how to get', 'how to achieve',
-                 'path to', 'missing for', 'what is missing for',
-                 'how to reach', 'requirements for'),
-                'get_badge_path',
-            ),
-            (
-                ('regression', 'regressions', 'badge dropped', 'badge fell',
-                 'quality dropped', 'went down'),
-                'get_regressions',
-            ),
-            (
-                # Overall quality velocity / direction (not a single criterion)
-                ('is quality improving', 'is quality getting', 'quality velocity',
-                 'rate of change', 'on track to reach',
-                 'which criteria are improving', 'criteria improving',
-                 'overall improving', 'overall getting'),
-                'get_quality_velocity',
-            ),
-            (
-                # Narrative / timeline of badge history
-                ('badge journey', 'story of this project', 'story of the project',
-                 'first reach', 'first achieved', 'project journey',
-                 'when did this repo', 'when did the project',
-                 'how long did it take', 'badge progression', 'badge timeline'),
-                'get_badge_journey',
-            ),
-            (
-                # Best sustained period / longest gold streak
-                ('at its best', 'best quality', 'best period',
-                 'longest gold streak', 'when was this project',
-                 'when was the project', 'best sustained'),
-                'find_best_period',
-            ),
-            (
-                # All assessments for a specific badge level
-                ('all gold badge', 'all silver badge', 'all bronze badge',
-                 'show all gold', 'show all silver', 'show all bronze',
-                 'gold badge assessments', 'silver badge assessments',
-                 'bronze badge assessments'),
+                ('first badge', 'badge history',
+                 'when did', 'when was the first', 'badge awarded',
+                 'how many badges', 'how many silver', 'how many bronze', 'how many gold',
+                 'first bronze', 'first silver', 'first gold'),
                 'get_badge_history',
             ),
             (
-                # Side-by-side comparison of two assessments
-                ('compare the first', 'compare first', 'compare assessment',
-                 'compare the last', 'first and last assessment',
-                 'compare 2', 'compare two', 'differences between assessment',
-                 'between assessment'),
-                'compare_assessments',
+                ('trend', 'score over', 'score trend', 'how has qc', 'recent score',
+                 'last 10', 'last 20', 'over the last', 'over time'),
+                'get_qc_trend',
             ),
         ]
         q_lower = question.lower()
-        hint_tool = None
-        for triggers, tool_name in _TOOL_HINTS:
+        hint_text = None
+        for triggers, hint in _TOOL_HINTS:
             if any(t in q_lower for t in triggers):
-                hint_tool = tool_name
+                hint_text = hint
                 break
 
-        if hint_tool:
+        import os as _os
+        if hint_text and not _os.environ.get('DISABLE_TOOL_HINTS'):
             guided_question = (
-                f'[TOOL HINT: You MUST call {hint_tool} — do not call any other tool first.]\n'
+                f'[TOOL HINT: {hint_text}]\n'
                 + question
             )
         else:
@@ -424,38 +418,31 @@ class ProvAgent:
 
         tool_calls_log: list[dict] = []
         response = AIMessage(content='')
+        _seen_calls: set = set()   # (name, frozen_args) — loop detection
+        _empty_rounds = 0          # consecutive rounds with no successful tool calls
 
         for _ in range(MAX_ITERATIONS):
-            try:
-                if on_token:
-                    # Stream chunks; display content live, accumulate for tool detection
-                    chunks = []
-                    tool_call_seen = False
-                    for chunk in llm.stream(messages):
-                        chunks.append(chunk)
-                        if getattr(chunk, 'tool_calls', None):
-                            tool_call_seen = True
-                        # Only stream text to user when no tool call is being built
-                        if chunk.content and not tool_call_seen:
-                            on_token(chunk.content)
-                    # Merge all chunks into one AIMessage
-                    response = chunks[0] if chunks else AIMessage(content='')
-                    for c in chunks[1:]:
-                        try:
-                            response = response + c
-                        except Exception:
-                            # chunk merge failed — carry on with what we have
-                            break
-                else:
-                    response = llm.invoke(messages)
-            except Exception as exc:
-                msg = str(exc)
-                if 'connect' in msg.lower() or 'connection' in msg.lower() or 'refused' in msg.lower():
-                    raise ConnectionError(
-                        f"Ollama lost connection at {self._base_url} — "
-                        "is it still running? Try: ollama serve"
-                    ) from exc
-                raise
+            if on_token:
+                # Stream chunks; display content live, accumulate for tool detection
+                chunks = []
+                tool_call_seen = False
+                for chunk in llm.stream(messages):
+                    chunks.append(chunk)
+                    if getattr(chunk, 'tool_calls', None):
+                        tool_call_seen = True
+                    # Only stream text to user when no tool call is being built
+                    if chunk.content and not tool_call_seen:
+                        on_token(chunk.content)
+                # Merge all chunks into one AIMessage
+                response = chunks[0] if chunks else AIMessage(content='')
+                for c in chunks[1:]:
+                    try:
+                        response = response + c
+                    except Exception:
+                        # chunk merge failed — carry on with what we have
+                        break
+            else:
+                response = llm.invoke(messages)
 
             messages.append(response)
 
@@ -467,13 +454,16 @@ class ProvAgent:
                 tool_calls = _extract_text_tool_calls(
                     getattr(response, 'content', '') or '',
                     known_tools=set(_TOOL_MAP.keys()),
-                    hint_tool=hint_tool,
                 )
                 # Filter to known tools only — ignore any hallucinated names
                 tool_calls = [tc for tc in tool_calls if tc['name'] in _TOOL_MAP]
 
             if not tool_calls:
                 break   # model is done — final answer ready
+
+            # Dead-end guard: if 3 consecutive rounds produce zero new tool calls
+            # (all were duplicates or all failed), stop looping.
+            round_new_calls = 0
 
             # Execute each tool call, truncate output to keep tokens low
             for tc in tool_calls:
@@ -493,7 +483,58 @@ class ProvAgent:
                     except Exception:
                         args = {}
 
-                output  = tool.invoke(args) if tool else f"Unknown tool: {name}"
+                # Loop detection: skip if this exact (tool, args) was already called.
+                _call_key = (name, tuple(sorted(str(args).split())))
+                if _call_key in _seen_calls:
+                    messages.append(ToolMessage(
+                        content=(
+                            f"[LOOP DETECTED] You already called {name} with these "
+                            f"arguments. Do NOT call it again. Use the result you "
+                            f"already received, or call a DIFFERENT tool."
+                        ),
+                        tool_call_id=tc_id,
+                        name=name,
+                    ))
+                    continue
+                _seen_calls.add(_call_key)
+                round_new_calls += 1
+
+                # Coerce args: 70B sometimes passes {"type":"integer","value":N}
+                # instead of a plain integer — extract the value before invoking.
+                if tool is not None and args:
+                    try:
+                        schema_props = tool.args_schema.schema().get('properties', {})
+                        coerced = {}
+                        for k, v in args.items():
+                            expected = schema_props.get(k, {}).get('type', '')
+                            if expected == 'integer' and isinstance(v, dict):
+                                for candidate in ('value', 'default'):
+                                    if candidate in v:
+                                        try:
+                                            coerced[k] = int(v[candidate]); break
+                                        except (TypeError, ValueError):
+                                            pass
+                                else:
+                                    coerced[k] = v
+                            elif expected == 'integer' and isinstance(v, str):
+                                try:
+                                    coerced[k] = int(v)
+                                except ValueError:
+                                    coerced[k] = v
+                            else:
+                                coerced[k] = v
+                        args = coerced
+                    except Exception:
+                        pass
+
+                try:
+                    output = tool.invoke(args) if tool else f"Unknown tool: {name}"
+                except Exception as exc:
+                    output = (
+                        f"Tool call failed: {exc}. "
+                        f"Please retry {name} with correct argument types "
+                        f"(integer arguments must be plain numbers, not objects)."
+                    )
                 out_str = str(output)
 
                 tool_calls_log.append({
@@ -512,6 +553,24 @@ class ProvAgent:
                     tool_call_id = tc_id,
                     name         = name,
                 ))
+
+            # Dead-end: if this whole round produced no new calls, increment counter.
+            if round_new_calls == 0:
+                _empty_rounds += 1
+                if _empty_rounds >= 3:
+                    # Inject a message telling the model to synthesise from what it has.
+                    messages.append(ToolMessage(
+                        content=(
+                            "[AGENT] You have made no new tool calls for 3 rounds. "
+                            "Stop calling tools and provide your final answer using "
+                            "the information already gathered."
+                        ),
+                        tool_call_id='__dead_end__',
+                        name='__agent__',
+                    ))
+                    break
+            else:
+                _empty_rounds = 0
 
         answer = getattr(response, 'content', '') or ''
 

@@ -1,0 +1,61 @@
+{
+  "run_id": "20261007_143854",
+  "model": "llama3.2",
+  "n_groups": 8,
+  "n_robust": 8,
+  "n_questions": 24,
+  "n_correct": 24,
+  "robust_pct": 100.0,
+  "tool_acc_pct": 100.0,
+  "latency_avg_s": 1.07,
+  "per_group": [
+    {
+      "concept": "summary",
+      "correct": 3,
+      "total": 3,
+      "robust": true
+    },
+    {
+      "concept": "badge_history",
+      "correct": 3,
+      "total": 3,
+      "robust": true
+    },
+    {
+      "concept": "badge_history_silver",
+      "correct": 3,
+      "total": 3,
+      "robust": true
+    },
+    {
+      "concept": "assessment_detail",
+      "correct": 3,
+      "total": 3,
+      "robust": true
+    },
+    {
+      "concept": "badge_path",
+      "correct": 3,
+      "total": 3,
+      "robust": true
+    },
+    {
+      "concept": "regressions",
+      "correct": 3,
+      "total": 3,
+      "robust": true
+    },
+    {
+      "concept": "compare",
+      "correct": 3,
+      "total": 3,
+      "robust": true
+    },
+    {
+      "concept": "fix_hints",
+      "correct": 3,
+      "total": 3,
+      "robust": true
+    }
+  ]
+}

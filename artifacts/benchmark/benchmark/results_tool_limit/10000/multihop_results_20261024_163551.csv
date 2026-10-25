@@ -1,0 +1,58 @@
+id,category,question,expected_tools,tools_called,chain_complete,correct,latency_s,ground_truth,answer,error
+MH01,regression+fix,"What regression caused itwinai to drop from gold to silver, and what should the developers do to fix it?",get_regressions; get_fix_hints,get_regressions; get_fix_hints,True,False,1.2,QC.Sty and/or QC.Uni dropped at assessment 270; fix via code style and unit tests,"The regression that caused itwinai to drop from gold to silver is the lack of unit testing, specifically QC.Uni. The developers should focus on improving their unit testing coverage to reach the next badge level.
+
+To fix this issue, the developers can:
+
+*   Implement more comprehensive unit tests for their codebase.
+*   Increase the test coverage rate to at least 70%.
+*   Ensure that all new featu",
+MH02,trend+fix,"What is the current trend for QC.Sty (code style) over the last 10 assessments, and what should the team do to address it?",get_qc_trend; get_fix_hints,get_qc_trend,False,True,1.24,QC.Sty = 0% in last 10 assessments; fix: apply flake8/rubocop or equivalent,"The current trend for QC.Sty (code style) over the last 10 assessments is stable, with an average score of 0.0%. This indicates that the team has not seen any improvement in code style over this period.
+
+To address this issue, the team should focus on implementing community-style standards such as flake8 or rubocop to ensure consistency in their coding practices. Additionally, they can consider pr",
+MH03,badge_path+fix,"What criteria are still missing for itwinai to achieve a gold badge, and what is the recommended fix for each missing criterion?",get_badge_path; get_fix_hints,get_badge_path,False,True,0.99,"QC.Sty missing; fix: code style tools (flake8, rubocop)","To achieve a gold badge, itwinai is still missing the criterion `QC.Sty` (Code Style). The current percentage of fulfilled criteria for this criterion is 0%.
+
+The tools failing for this criterion are:
+
+* flake8 v4.0.1 (mccabe: 0.6.1, pycodestyle: 2.8.0, pyflakes: 2.4.0)
+
+For the `QC.Sty` criterion, the recommended fix is to address these tool failures by ensuring that the code adheres to community",
+MH04,history+compare,"When did itwinai first achieve a gold badge, and what criterion changed to make that possible compared to the previous assessment?",get_badge_history; compare_assessments,get_badge_path,False,False,0.96,First gold at assessment 163 (2024-10-23); QC.Uni went from 0% to 100%,"itwinai first achieved a gold badge in the assessment with ID 64. The criterion that changed to make this possible compared to the previous assessment (ID 63) is QC.Sty, where 0% of the code style checks were passed. The specific tools failing for this criterion are flake8 v4.0.1 (mccabe: 0.6.1, pycodestyle: 2.8.0, pyflakes: 2.4.0).",
+MH05,assessment+compare,"What badge did itwinai hold at assessment 100, and how does its quality profile compare to the latest assessment?",get_assessment; compare_assessments,get_assessment; get_summary; compare_assessments,True,True,2.78,"Assessment 100: bronze (2024-06-06); latest (279): silver with QC.Sec, QC.Uni passing","Since I've already called `get_assessment` and got the assessment details for ID 100, I can use that information to answer your question.
+
+To find out what badge itwinai held at assessment 100, I'll extract the badge from the assessment details:
+
+```
+{""name"": ""get_assessment"", ""parameters"": {""n"": ""100""}}
+```
+
+Assessment 100 had a bronze badge. Now, let me compare this to the latest assessment:
+
+``",
+MH06,history+compare+fix,"Compare assessment 39 (the first bronze badge) and assessment 163 (the first gold badge). Which criteria changed, and what was the most important improvement?",compare_assessments; get_badge_history,get_badge_history; get_badge_history; compare_assessments,True,False,1.64,"QC.Sec, QC.Sty, QC.Met, QC.Uni all went from 0% to 100%; bronze->gold","The most important improvement was the increase in security, style, metadata, and unit testing. The criterion that showed the largest improvement is QC.Sec with a delta of 100.0.
+
+Here are the details of the changes:
+
+*   Security (QC.Sec) improved from 0% to 100%, indicating that no known vulnerabilities were found.
+*   Code Style (QC.Sty) improved from 0% to 100%, showing adherence to community ",
+MH07,regression+trend+fix,"itwinai had a quality regression recently. Which criteria regressed, what does the trend look like for the worst one, and what is the recommended fix?",get_regressions; get_qc_trend; get_fix_hints,get_regressions; get_fix_hints; get_qc_trend,True,True,1.25,QC.Sty regressed; trend: 0% in recent assessments; fix: code style enforcement,"itwinai recently experienced a quality regression, with the criterion QC.Sty being the most affected. The trend for this criterion over the last 20 assessments shows a stable average score of 30%, with all recent scores being 0%. This indicates that the code style has been consistently failing the assessment.
+
+To fix this issue, the recommended fix is to review and update the code style according ",
+MH08,summary+badge_path,"Give me an overview of itwinai's quality history, and then tell me specifically what is blocking it from reaching gold today.",get_summary; get_badge_path,get_summary; get_badge_path,True,True,0.95,"279 assessments, bronze->silver->gold->silver progression; QC.Sty blocks gold","itwinai is currently at the silver badge level and needs to improve in one area: Code Style (QC.Sty). The current score for this criterion is 0%, indicating that it has not been fully passed. The tool failures listed include flake8 v4.0.1, which indicates that there are issues with the code's McCabe cyclomatic complexity, pycodestyle, and pyflakes. To reach the gold badge level, itwinai needs to a",
+MH09,tool_failures+fix,"What specific tools are currently failing for QC.Sty (code style), and what would fix them?",get_tool_failures; get_fix_hints,get_tool_failures,False,True,1.32,Code style tools failing; fix: configure flake8/rubocop/similar,"The specific tools currently failing for QC.Sty (code style) are:
+
+* flake8 v4.0.1
+	+ Specifically, the following checks failed:
+		- mccabe: 0.6.1
+		- pycodestyle: 2.8.0
+		- pyflakes: 2.4.0
+
+To fix these issues, you can refer to the failure messages provided:
+
+* For flake8, ensure that your Python files comply with the flake8 standard by addressing the following:
+	+ mccabe: Ensure that your code a",
+MH10,subcriteria+fix,What are the subcriteria for QC.Uni (unit testing) and what does itwinai need to do to ensure it keeps passing?,get_subcriteria_detail; get_fix_hints,get_subcriteria_detail,False,True,0.95,"QC.Uni subcriteria: tests exist, pass, coverage >= 70%; currently passing (100%)","To ensure itwinai keeps passing for the QC.Uni (unit testing) criterion, it needs to focus on ensuring that all its unit tests are passing through an automated means. This involves:
+
+*   Verifying that all unit tests are successfully running and passing as part of the automated testing suite.
+*   Ensuring that the test coverage is at least 70% to meet the minimum requirement for this criterion.
+
+B",

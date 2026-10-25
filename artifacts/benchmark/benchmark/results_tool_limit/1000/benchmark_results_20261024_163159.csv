@@ -1,0 +1,38 @@
+id,category,question,expected_tool,tools_called,tool_match,correct,latency_s,answer,ground_truth,error
+Q01,summary,How many assessments are in the provenance document?,get_summary,get_summary,True,True,3.46,The repository has a total of 279 assessments in the provenance document.,279,
+Q02,summary,What is the name of the software repository?,get_summary,get_summary,True,True,0.56,The name of the software repository is `interTwin-eu/itwinai`.,interTwin-eu/itwinai,
+Q03,badge,When was the first bronze badge awarded?,get_badge_history,get_badge_history,True,True,0.58,"The first bronze badge was awarded on November 16, 2023.",assessment 39 / 2023-11-16,
+Q04,badge,When was the first silver badge awarded?,get_badge_history,get_badge_history,True,True,0.6,The first silver badge was awarded on 2024-06-13.,assessment 115 / 2024-06-13,
+Q05,badge,When was the first gold badge awarded?,get_badge_history,get_badge_history,True,True,0.7,"The first gold badge was awarded on October 23, 2024 (assessments 163 and 165), with the most recent assessment being on August 26, 2025 (assessments 266).",assessment 163,
+Q06,badge,How many silver badges has itwinai received in total?,get_badge_history,get_badge_history,True,True,0.65,itwinai has received a total of 135 silver badges.,135 silver badges,
+Q07,assessment,What badge was awarded in assessment 64?,get_assessment,get_assessment,True,True,0.55,The bronze badge was awarded in assessment 64.,bronze,
+Q08,assessment,What badge was awarded in assessment 115?,get_assessment,get_assessment,True,True,0.53,The silver badge was awarded in assessment 115.,silver,
+Q09,qc_trend,What is the trend for the QC.Sec (security) criterion over the last 10 assessments?,get_qc_trend,get_qc_trend,True,True,0.89,"The trend for the QC.Sec (security) criterion over the last 10 assessments is stable, with a consistent score of 100%. This indicates that SAST tools have been successfully applied and no known vulnerabilities have been found in the codebase. The most recent assessment (assessment 277) showed a slight drop to 100%, but this was likely due to a minor issue that was quickly resolved. Overall, the security of the codebase remains strong, with all criteria meeting the required standards.",0% (security consistently fails),
+Q10,qc_trend,What is the current score for QC.Lic (licensing)?,get_qc_trend; get_tool_failures; get_assessment,get_qc_trend,True,False,0.74,"The current score for QC.Lic (licensing) is 95%, with a trend of declining over the last 10 assessments. The most recent assessment, assessment 277, had a score of 100% and was classified as bronze.",75% (latest assessment 279),
+Q11,regressions,Are there any quality regressions in the recent assessments?,get_regressions,get_regressions; get_fix_hints; get_fix_hints; get_fix_hints; get_fix_hints,True,True,2.59,"It appears that there are multiple criteria that regressed, and each has its own set of fix hints.
+
+To address the issues, you can follow these recommendations:
+
+* For QC.Acc (Code Accessibility), check if docs are following a style for the Markdown markup language. You can use markdownlint to verify this.
+* For QC.Lic (Licensing), ensure that the code uses an Open Source Initiative's popular-recognized license. You can use file_check to verify this.
+* For QC.Ver (Semantic Versioning), make sure",regression info from prov doc,
+Q12,compare,Compare assessment 64 and assessment 115. What changed?,compare_assessments,compare_assessments; get_fix_hints,True,True,1.67,"Based on the results, it appears that the main changes between assessments 64 and 115 are:
+
+* The addition of QC.Ver with a value of 33.0 in assessment 64, which improved to 100.0 in assessment 115.
+* The improvement of QC.Met from 0.0 to 100.0.
+
+To address these changes, the following fix hints were provided:
+
+* For QC.Ver, no specific fix hints were provided, but it is recommended to ensure that release tags follow SemVer (e.g., v1.2.0).
+* For QC.Met, a fix hint was provided for subcriterion Q","bronze to silver, QC.Met fulfilled",
+Q13,badge_path,What criteria are missing for itwinai to achieve a gold badge?,get_badge_path,get_badge_path,True,True,0.85,"itwinai is missing the criterion `QC.Sty` (Code Style) to achieve a gold badge. The specific tools that are failing for this criterion are flake8 v4.0.1, mccabe: 0.6.1, pycodestyle: 2.8.0, and pyflakes: 2.4.0.","QC.Sty, QC.Uni, QC.Sec",
+Q14,fix_hints,What should the developers do to improve the security (QC.Sec) score?,get_fix_hints; get_tool_failures,get_qc_trend; get_fix_hints,True,True,1.34,"Based on the tool responses, it appears that there are a few areas where the developers can improve the security score:
+
+1. Ensure that all documentation files follow a consistent style using markdownlint and restructuredtext-lint.
+2. Verify that the code uses an OSI-compliant open-source license.
+
+To address these issues, the developers should:
+
+* Review and update their documentation to ensure it meets the required standards.
+* Check their license usage to ensure it aligns with the OSI's requi",SAST / static analysis tools,
+Q15,quality_velocity,Is the overall quality of itwinai improving or declining recently?,get_quality_velocity; get_summary,get_summary,True,True,0.86,"The overall quality of itwinai is improving recently. The latest assessment (assessment_id 279) shows a silver badge, indicating that the repository has met all the required criteria for the current assessment period. Additionally, the recent 10-assessment average QC scores show improvements in most criteria, with the exception of QC.Ver and QC.Sty, which are still below 100%. The long-term averages also suggest an overall improvement in quality, with most criteria showing increases over time.",improving/stable (silver badge),

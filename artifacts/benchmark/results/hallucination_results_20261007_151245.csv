@@ -1,0 +1,21 @@
+id,category,question,ground_truth,tools_called,grounded,hallucinated,latency_s,answer,error
+H01,non_existent_assessment,What badge was awarded in assessment 329?,should say not found / does not exist,get_assessment,True,False,3.52,"Since assessment 329 was not found, I will try to find the badge awarded for a different assessment.
+
+To determine which badge was awarded in assessment 329, I need to call get_assessment again with the correct assessment number. However, since the tool returns an error message, it seems that assessment 329 does not exist or is out of range.
+
+Let me try to find the badge awarded for a different as",
+H02,non_existent_assessment,What QC scores did assessment 339 achieve?,should say not found / does not exist,get_assessment,True,False,0.77,"It seems that assessment #339 does not exist in the repository. The available assessments range from 1 to 279, but there is no record of an assessment with the number 339.
+
+Would you like to search for a specific assessment within this range? If so, I can call `search_assessments` tool to help you find it.",
+H03,non_existent_assessment,Compare assessment 329 and assessment 334. What changed?,should say assessments not found,compare_assessments,True,False,0.68,"It seems that assessment #329 is not available in the system. I'll need to call get_commit_diff for assessment 334 first.
+
+{""name"": ""get_commit_diff"", ""parameters"": {""a"": ""334""}}",
+H04,non_existent_badge,Has itwinai ever received a platinum badge?,no — platinum badge does not exist in this system,get_summary,True,False,0.78,"Based on the tool call response, it appears that the repository ""itwinai"" has never received a platinum badge. The latest assessment shows that all criteria are fully passed (100%), but none of the gold-level criteria (QC.Sec, QC.Sty, QC.Uni) have been met. Therefore, the answer is no, itwinai has not ever received a platinum badge.",
+H05,non_existent_badge,When was the first diamond badge awarded to itwinai?,diamond badge does not exist,get_badge_history,True,False,0.67,It appears that the `get_badge_history` tool call did not return any information about a diamond badge being awarded to itwinai. This suggests that itwinai has never received a diamond badge.,
+H07,grounded_open,What will the quality score be in the next assessment?,cannot predict future — should say unknown or refuse,get_assessment,True,False,1.61,"Based on the tool call response, it appears that the quality score for the next assessment will be 100%, as all subcriteria have been fully passed. The current assessment has a score of 100% as well, but this is not necessarily indicative of future performance.
+
+However, looking at the QC scores for each criterion, we can see that some areas need improvement:
+
+* QC.Ver: 33.0 (partially passed)
+* Q",
+H08,grounded_open,Which developer made the most commits in assessment 50?,developer identity is not in the provenance data,,True,False,0.38,"{""name"": ""get_commit_diff"", ""parameters"": {""n1"": ""50"", ""n2"": ""50""}}",

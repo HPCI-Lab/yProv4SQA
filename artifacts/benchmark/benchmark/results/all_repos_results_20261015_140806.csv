@@ -1,0 +1,153 @@
+repo,id,category,question,expected_tool,tools_called,tool_match,correct,latency_s,answer,ground_truth,error
+EOSC-synergy_FAIR_eva,Q01,summary,How many assessments are in the provenance document?,get_summary,get_summary,True,True,12.23,The provenance document contains a total of 3 assessments.,3,
+EOSC-synergy_FAIR_eva,Q02,summary,What is the name of the software repository?,get_summary,get_summary,True,True,4.17,The name of the software repository is EOSC-synergy/FAIR_eva.,EOSC-synergy/FAIR_eva,
+EOSC-synergy_FAIR_eva,Q04,badge,When was the first silver badge awarded?,get_badge_history,get_badge_history,True,True,4.28,"The first silver badge was awarded on May 16, 2024, during assessment number 1.",assessment 1 / 2024-05-16,
+EOSC-synergy_FAIR_eva,Q05,badge,What is the current badge level of the repository?,get_badge_history; get_summary,get_summary,True,True,3.73,The current badge level of the repository is silver.,silver,
+EOSC-synergy_FAIR_eva,Q06,regressions,Are there any quality regressions in the recent assessments?,get_regressions,get_regressions,True,True,4.61,"There are no quality regressions in the recent assessments. All criteria have maintained or improved their scores over time, indicating a stable or increasing level of quality in the repository.",regression info,
+EOSC-synergy_FAIR_eva,Q07,assessment,What badge was awarded in assessment 3?,get_assessment,get_assessment,True,True,4.12,The badge awarded in assessment 3 was silver.,silver,
+EOSC-synergy_FAIR_eva,Q08,badge_path,What criteria are missing for the repository to achieve a gold badge?,get_badge_path,get_badge_path,True,True,9.41,"To achieve a gold badge, the repository is missing two criteria: `QC.Sty` (Code Style) and `QC.Sec` (Security). 
+
+For `QC.Sty`, the tools that are failing include flake8 and hadolint. There are no specific fix hints provided for this criterion.
+
+For `QC.Sec`, the tool that is failing is bandit, whic",missing criteria list,
+EOSC-synergy_FAIR_eva,Q09,fix_hints,What should developers do to improve the quality score?,get_fix_hints; get_tool_failures,get_fix_hints,True,True,12.31,"To improve the quality score, developers should focus on the following areas:
+
+1. **Documentation (QC.Doc)**: The documentation is currently at 80%. To improve this, developers can ensure that their docs follow a style for the Markdown markup language. Specifically, they can use markdownlint for Mar",improvement recommendations,
+EOSC-synergy_FAIR_eva,Q10,compare,Compare assessment 1 and assessment 3. What changed?,compare_assessments,compare_assessments,True,True,8.09,"Between assessment 1 and assessment 3, the only change was a degradation in ""QC.Lic"" (Licensing) from 100.0 to 75.0, indicating a drop of 25.0 in the licensing quality criterion. No improvements were observed in any criteria. The badge level remained the same at ""silver"". To address the degradation ",comparison of first and last,
+EOSC-synergy_o3api,Q01,summary,How many assessments are in the provenance document?,get_summary,get_summary,True,True,4.06,There is only 1 assessment in the provenance document.,1,
+EOSC-synergy_o3api,Q02,summary,What is the name of the software repository?,get_summary,get_summary,True,True,3.99,The name of the software repository is EOSC-synergy/o3api.,EOSC-synergy/o3api,
+EOSC-synergy_o3api,Q03,badge,When was the first bronze badge awarded?,get_badge_history,get_badge_history,True,True,4.29,"The first bronze badge was awarded on assessment number 1, which occurred on January 24, 2025.",assessment 1 / 2025-01-24,
+EOSC-synergy_o3api,Q05,badge,What is the current badge level of the repository?,get_badge_history; get_summary,get_summary,True,True,3.74,The current badge level of the repository is bronze.,bronze,
+EOSC-synergy_o3api,Q06,regressions,Are there any quality regressions in the recent assessments?,get_regressions,get_regressions,True,True,4.39,"There are no quality regressions in the recent assessments. All criteria have maintained or improved their scores over time, indicating a stable or increasing level of quality in the repository.",regression info,
+EOSC-synergy_o3api,Q07,assessment,What badge was awarded in assessment 1?,get_assessment,get_assessment,True,True,7.22,"The badge awarded in assessment 1 was bronze. This assessment was conducted on January 24, 2025, for commit `1d470d06b18c` on the master branch. The repository passed the Code Accessibility (QC.Acc), Documentation (QC.Doc), and Licensing (QC.Lic) criteria with a score of 100%, but did not meet the o",bronze,
+EOSC-synergy_o3api,Q08,badge_path,What criteria are missing for the repository to achieve a gold badge?,get_badge_path,get_badge_path,True,True,11.01,"To achieve a gold badge, the repository is missing the following criteria:
+
+1. QC.Met (Code Metadata): The repository needs to have either a CITATION.cff file or a codemeta.json file to fulfill this criterion.
+2. QC.Sec (Security): The source code must pass Static Analysis Security Testing (SAST) wi",missing criteria list,
+EOSC-synergy_o3api,Q09,fix_hints,What should developers do to improve the quality score?,get_fix_hints; get_tool_failures,get_fix_hints,True,True,12.09,"To improve the quality score, developers should focus on the following areas:
+
+1. **Security (QC.Sec)**: The source code is not passing Static Analysis Security Testing (SAST). Developers should check and solve the security weaknesses found by the SAST tool.
+2. **Code Style (QC.Sty)**: The software ",improvement recommendations,
+EOSC-synergy_sqaaas-assessment-action,Q01,summary,How many assessments are in the provenance document?,get_summary,get_summary,True,True,4.09,The provenance document contains a total of 39 assessments.,39,
+EOSC-synergy_sqaaas-assessment-action,Q02,summary,What is the name of the software repository?,get_summary,get_summary,True,True,4.18,The name of the software repository is EOSC-synergy/sqaaas-assessment-action.,EOSC-synergy/sqaaas-assessment-action,
+EOSC-synergy_sqaaas-assessment-action,Q05,badge,What is the current badge level of the repository?,get_badge_history; get_summary,get_summary,True,True,6.71,"The current badge level of the repository is ""no_badge"". This means that the repository does not currently meet the criteria for any badge (Bronze, Silver, or Gold). To achieve a badge, the repository would need to improve its quality scores in areas such as documentation (QC.Doc), security (QC.Sec)",no_badge,
+EOSC-synergy_sqaaas-assessment-action,Q06,regressions,Are there any quality regressions in the recent assessments?,get_regressions,get_regressions,True,True,4.51,"There are no quality regressions in the recent assessments. All criteria have maintained or improved their scores over time, indicating a stable or increasing level of quality in the repository.",regression info,
+EOSC-synergy_sqaaas-assessment-action,Q07,assessment,What badge was awarded in assessment 39?,get_assessment,get_assessment,True,True,4.76,"In assessment 39, no badge was awarded. The repository did not meet the necessary criteria for a badge at that time.",no_badge,
+EOSC-synergy_sqaaas-assessment-action,Q08,badge_path,What criteria are missing for the repository to achieve a gold badge?,get_badge_path,get_badge_path,True,True,11.03,"To achieve a gold badge, the repository is missing the following criteria:
+
+1. QC.Uni (Unit Testing): The repository lacks unit tests that pass and reach 70%+ coverage. Specifically, the subcriterion QC.Uni01 is not met, as the tests are not passing through an automated means. The tool ""pytest v7.1.",missing criteria list,
+EOSC-synergy_sqaaas-assessment-action,Q09,fix_hints,What should developers do to improve the quality score?,get_fix_hints; get_tool_failures,get_fix_hints,True,True,8.6,"To improve the quality score, developers should focus on addressing the issues in the QC.Doc criterion, which currently has a percentage of 40.0. Specifically, they should:
+
+1. Establish a code of conduct for participants by adding a CODE_OF_CONDUCT file to the project.
+2. Create a clear path or gui",improvement recommendations,
+EOSC-synergy_sqaaas-assessment-action,Q10,compare,Compare assessment 1 and assessment 39. What changed?,compare_assessments,compare_assessments,True,True,9.41,"Between assessment 1 and assessment 39, the only improvement was in QC.Sty (Code Style), which increased from 0.0 to 100.0. No criteria degraded during this period. The badge level remained as ""No Badge"" or ""no_badge"". 
+
+To address potential issues or further improvements, especially for criteria th",comparison of first and last,
+SeisSol_SeisSol,Q01,summary,How many assessments are in the provenance document?,get_summary,get_summary,True,True,4.0,The provenance document contains a total of 8 assessments.,8,
+SeisSol_SeisSol,Q02,summary,What is the name of the software repository?,get_summary,get_summary,True,True,3.66,The name of the software repository is SeisSol/SeisSol.,SeisSol/SeisSol,
+SeisSol_SeisSol,Q04,badge,When was the first silver badge awarded?,get_badge_history,get_badge_history,True,True,3.98,"The first silver badge was awarded on December 2, 2024, during assessment number 2.",assessment 2 / 2024-12-02,
+SeisSol_SeisSol,Q05,badge,What is the current badge level of the repository?,get_badge_history; get_summary,get_summary,True,True,3.41,The current badge level of the repository is silver.,silver,
+SeisSol_SeisSol,Q06,regressions,Are there any quality regressions in the recent assessments?,get_regressions,get_regressions,True,True,4.13,"There are no quality regressions in the recent assessments. All criteria have maintained or improved their scores over time, indicating a stable or increasing level of quality in the repository.",regression info,
+SeisSol_SeisSol,Q07,assessment,What badge was awarded in assessment 8?,get_assessment,get_assessment,True,True,3.77,The badge awarded in assessment 8 was silver.,silver,
+SeisSol_SeisSol,Q08,badge_path,What criteria are missing for the repository to achieve a gold badge?,get_badge_path,get_badge_path,True,True,7.34,"To achieve a gold badge, the repository is missing two criteria: QC.Sty (Code Style) and QC.Uni (Unit Testing). For QC.Sty, the tools jsonlint v1.6.3 and oclint v20.11 are failing. For QC.Uni, the tool pytest v7.1.3 is failing, indicating that there are failing test cases that need to be addressed. ",missing criteria list,
+SeisSol_SeisSol,Q09,fix_hints,What should developers do to improve the quality score?,get_fix_hints; get_tool_failures,get_fix_hints,True,True,9.95,"To improve the quality score, developers should focus on the following areas:
+
+1. **QC.Doc**: The documentation score is at 80%. To improve this, developers can ensure that their Markdown files follow a consistent style by using markdownlint and restructuredtext-lint for reStructuredText.
+2. **QC.St",improvement recommendations,
+SeisSol_SeisSol,Q10,compare,Compare assessment 1 and assessment 8. What changed?,compare_assessments,compare_assessments,True,True,8.99,"Between assessment 1 and assessment 8, the main change was in the ""QC.Sec"" criterion, which improved from 0.0 to 100.0. This improvement led to a badge change from ""No Badge"" to ""silver"". The other criteria remained relatively stable, with no significant changes. 
+
+To address potential future improv",comparison of first and last,
+galaxyproject_galaxy,Q01,summary,How many assessments are in the provenance document?,get_summary,get_summary,True,True,4.09,There is only 1 assessment in the provenance document.,1,
+galaxyproject_galaxy,Q02,summary,What is the name of the software repository?,get_summary,get_summary,True,True,3.57,The name of the software repository is galaxyproject/galaxy.,galaxyproject/galaxy,
+galaxyproject_galaxy,Q03,badge,When was the first bronze badge awarded?,get_badge_history,get_badge_history,True,True,3.85,"The first bronze badge was awarded on August 4, 2025, during assessment number 1.",assessment 1 / 2025-08-04,
+galaxyproject_galaxy,Q05,badge,What is the current badge level of the repository?,get_badge_history; get_summary,get_summary,True,True,3.49,The current badge level of the repository is bronze.,bronze,
+galaxyproject_galaxy,Q06,regressions,Are there any quality regressions in the recent assessments?,get_regressions,get_regressions,True,True,4.06,"There are no quality regressions in the recent assessments. All criteria have maintained or improved their scores over time, indicating a stable or increasing level of quality in the repository.",regression info,
+galaxyproject_galaxy,Q07,assessment,What badge was awarded in assessment 1?,get_assessment,get_assessment,True,True,3.6,The badge awarded in assessment 1 was bronze.,bronze,
+galaxyproject_galaxy,Q08,badge_path,What criteria are missing for the repository to achieve a gold badge?,get_badge_path,get_badge_path,True,True,8.9,"To achieve a gold badge, the repository is missing the following criteria:
+
+1. QC.Uni (Unit Testing): The repository lacks unit tests that pass and reach 70%+ coverage. To fix this, the developers should check and solve the failing test cases found by the pytest tool.
+2. QC.Sty (Code Style): The rep",missing criteria list,
+galaxyproject_galaxy,Q09,fix_hints,What should developers do to improve the quality score?,get_fix_hints; get_tool_failures,get_fix_hints,True,True,8.0,"To improve the quality score, developers should focus on the following areas:
+
+1. **QC.Doc**: Improve documentation by ensuring that Markdown files follow a consistent style. Use tools like markdownlint and restructuredtext-lint to check for issues.
+2. **QC.Sec**: Address security weaknesses found b",improvement recommendations,
+grycap_im,Q01,summary,How many assessments are in the provenance document?,get_summary,get_summary,True,True,3.79,The provenance document contains a total of 36 assessments.,36,
+grycap_im,Q02,summary,What is the name of the software repository?,get_summary,get_summary,True,True,4.12,"The name of the software repository is grycap/im, which can be accessed at https://github.com/grycap/im.",grycap/im,
+grycap_im,Q03,badge,When was the first bronze badge awarded?,get_badge_history,get_badge_history,True,True,3.97,"The first bronze badge was awarded on assessment number 1, which occurred on February 28, 2024.",assessment 1 / 2024-02-28,
+grycap_im,Q04,badge,When was the first silver badge awarded?,get_badge_history,get_badge_history,True,True,4.32,"The first silver badge was awarded on assessment number 2, which occurred on March 5, 2024.",assessment 2 / 2024-03-05,
+grycap_im,Q05,badge,What is the current badge level of the repository?,get_badge_history; get_summary,get_summary,True,True,4.36,"The current badge level of the repository is silver, as indicated in the latest assessment (assessment_id 36) with a date of 2026-09-15.",silver,
+grycap_im,Q06,regressions,Are there any quality regressions in the recent assessments?,get_regressions,get_regressions,True,True,8.81,"There are recent quality regressions in the assessments. The most common regression is the drop in ""QC.Uni"" (Unit Testing), which occurred in assessments 9, 32, 34, and 36, where the score dropped from 100% to 0%. Additionally, there were drops in ""QC.Sec"" (Security), ""QC.Sty"" (Code Style), and ""QC.",regression info,
+grycap_im,Q07,assessment,What badge was awarded in assessment 36?,get_assessment,get_assessment,True,True,3.71,The badge awarded in assessment 36 was silver.,silver,
+grycap_im,Q08,badge_path,What criteria are missing for the repository to achieve a gold badge?,get_badge_path,get_badge_path,True,True,7.78,"To achieve a gold badge, the repository is missing the QC.Uni (Unit Testing) criterion. Specifically, it needs to ensure that unit tests exist, pass, and reach 70%+ coverage. The get_badge_path tool output indicates that the current badge is silver, and the repository has already fulfilled several c",missing criteria list,
+grycap_im,Q09,fix_hints,What should developers do to improve the quality score?,get_fix_hints; get_tool_failures,get_fix_hints,True,True,8.79,"To improve the quality score, developers should focus on the following areas:
+
+1. **Documentation (QC.Doc)**: Ensure that documentation follows a consistent style for Markdown markup language. Use tools like markdownlint for Markdown files and restructuredtext-lint for reStructuredText.
+2. **Semanti",improvement recommendations,
+grycap_im,Q10,compare,Compare assessment 1 and assessment 36. What changed?,compare_assessments,compare_assessments; get_fix_hints,True,True,14.32,"Between assessment 1 and assessment 36, the badge level changed from bronze to silver. The quality criterion scores that improved are QC.Sec (from 0.0 to 100.0), QC.Sty (from 0.0 to 100.0), and QC.Met (from 0.0 to 100.0). However, the score for QC.Doc degraded from 100.0 to 80.0.
+
+To address the deg",comparison of first and last,
+grycap_oscar,Q01,summary,How many assessments are in the provenance document?,get_summary,get_summary,True,True,4.12,The provenance document contains a total of 7 assessments.,7,
+grycap_oscar,Q02,summary,What is the name of the software repository?,get_summary,get_summary,True,True,4.3,"The name of the software repository is grycap/oscar, and it can be found at https://github.com/grycap/oscar.",grycap/oscar,
+grycap_oscar,Q03,badge,When was the first bronze badge awarded?,get_badge_history,get_badge_history,True,True,3.79,"The first bronze badge was awarded on assessment number 6, which occurred on January 24, 2025.",assessment 6 / 2025-01-24,
+grycap_oscar,Q04,badge,When was the first silver badge awarded?,get_badge_history,get_badge_history,True,True,4.13,"The first silver badge was awarded on assessment number 1, which occurred on 2024-01-11.",assessment 1 / 2024-01-11,
+grycap_oscar,Q05,badge,What is the current badge level of the repository?,get_badge_history; get_summary,get_summary,True,True,3.54,The current badge level of the repository is silver.,silver,
+grycap_oscar,Q06,regressions,Are there any quality regressions in the recent assessments?,get_regressions,get_regressions,True,True,5.83,"There is one recent quality regression in the assessments. It occurred on assessment 6, dated 2025-01-24, where the repository dropped from a silver badge to a bronze badge due to a regression in the QC.Met criterion, which went from 100% to 0%. 
+
+To address this regression, I will now call get_fix_",regression info,
+grycap_oscar,Q07,assessment,What badge was awarded in assessment 7?,get_assessment,get_assessment,True,True,3.68,The badge awarded in assessment 7 was silver.,silver,
+grycap_oscar,Q08,badge_path,What criteria are missing for the repository to achieve a gold badge?,get_badge_path,get_badge_path,True,True,7.59,"To achieve a gold badge, the repository is missing three criteria: QC.Sty (Code Style), QC.Uni (Unit Testing), and QC.Sec (Security). 
+
+For QC.Sty, the tools hadolint, oclint, and staticcheck are failing. 
+
+For QC.Uni, the tool pytest is failing, and it's recommended to check and solve the failing t",missing criteria list,
+grycap_oscar,Q09,fix_hints,What should developers do to improve the quality score?,get_fix_hints; get_tool_failures,get_fix_hints,True,True,8.68,"To improve the quality score, developers should focus on the following areas:
+
+1. **QC.Doc**: Improve documentation style by ensuring that Markdown files follow a consistent style. Specifically, address the subcriterion QC.Doc02.X, which checks for adherence to a style guide for Markdown markup lang",improvement recommendations,
+grycap_oscar,Q10,compare,Compare assessment 1 and assessment 7. What changed?,compare_assessments,compare_assessments,True,True,7.72,"Comparing assessment 1 and assessment 7 shows that there were no changes in the badge level, which remained at silver for both assessments. The quality criterion scores also did not change between the two assessments. All criteria (QC.Acc, QC.Doc, QC.Lic, QC.Sec, QC.Sty, QC.Ver, QC.Met, QC.Uni) had ",comparison of first and last,
+indigo-dc_orchestrator,Q01,summary,How many assessments are in the provenance document?,get_summary,get_summary,True,True,3.96,There is only 1 assessment in the provenance document.,1,
+indigo-dc_orchestrator,Q02,summary,What is the name of the software repository?,get_summary,get_summary,True,True,3.85,The name of the software repository is indigo-dc/orchestrator.,indigo-dc/orchestrator,
+indigo-dc_orchestrator,Q05,badge,What is the current badge level of the repository?,get_badge_history; get_summary,get_summary,True,True,6.46,"The current badge level of the repository is ""no_badge"". This means that the repository does not currently meet the criteria for any badge (Bronze, Silver, or Gold). To achieve a badge, the repository would need to improve its quality scores in areas such as documentation, security, style, versionin",no_badge,
+indigo-dc_orchestrator,Q06,regressions,Are there any quality regressions in the recent assessments?,get_regressions,get_regressions,True,True,4.49,"There are no quality regressions in the recent assessments. All criteria have maintained or improved their scores over time, indicating a stable or increasing level of quality in the repository.",regression info,
+indigo-dc_orchestrator,Q07,assessment,What badge was awarded in assessment 1?,get_assessment,get_assessment,True,True,4.87,"In assessment 1, no badge was awarded. The repository did not meet the necessary criteria for a bronze, silver, or gold badge at that time.",no_badge,
+indigo-dc_orchestrator,Q08,badge_path,What criteria are missing for the repository to achieve a gold badge?,get_badge_path,get_badge_path,True,True,9.58,"To achieve a gold badge, the repository is missing the following criteria:
+
+1. QC.Met (Code Metadata): The repository needs to have a CITATION.cff or codemeta.json file.
+2. QC.Sec (Security): The source code needs to pass Static Analysis Security Testing (SAST) with no known vulnerabilities.
+3. QC.S",missing criteria list,
+indigo-dc_orchestrator,Q09,fix_hints,What should developers do to improve the quality score?,get_fix_hints; get_tool_failures,get_fix_hints,True,True,12.97,"To improve the quality score, developers should focus on addressing the issues in the QC.Doc and QC.Sec criteria. 
+
+For QC.Doc, which is currently at 50%, the project needs to establish a code of conduct for its participants and provide clear guidelines on how to contribute to the code. This can be ",improvement recommendations,
+indigo-dc_udocker,Q01,summary,How many assessments are in the provenance document?,get_summary,get_summary,True,True,4.02,The provenance document contains a total of 42 assessments.,42,
+indigo-dc_udocker,Q02,summary,What is the name of the software repository?,get_summary,get_summary,True,True,4.03,The name of the software repository is indigo-dc/udocker.,indigo-dc/udocker,
+indigo-dc_udocker,Q04,badge,When was the first silver badge awarded?,get_badge_history,get_badge_history,True,True,4.7,"The first silver badge was awarded on assessment number 18, which occurred on April 2, 2024.",assessment 18 / 2024-04-02,
+indigo-dc_udocker,Q05,badge,What is the current badge level of the repository?,get_badge_history; get_summary,get_summary,True,True,5.45,"The current badge level of the repository is gold, as indicated by the latest assessment (assessment_id 42) with a date of 2025-06-03. This assessment achieved a gold badge, meeting all the necessary quality criteria.",gold,
+indigo-dc_udocker,Q06,regressions,Are there any quality regressions in the recent assessments?,get_regressions,get_regressions,True,True,7.9,"There was a quality regression in assessment 39, which occurred on January 24, 2025. The repository dropped from gold to silver badge due to regressions in the following criteria: QC.Doc (from 100% to 80%), QC.Sty (from 100% to 0%), QC.Ver (from 100% to 66%), and QC.Uni (from 100% to 0%). 
+
+To addre",regression info,
+indigo-dc_udocker,Q07,assessment,What badge was awarded in assessment 42?,get_assessment,get_assessment,True,True,3.95,The badge awarded in assessment 42 was gold.,gold,
+indigo-dc_udocker,Q08,badge_path,What criteria are missing for the repository to achieve a gold badge?,get_badge_path,get_badge_path,True,True,5.9,"The repository has already achieved a gold badge, and there are no missing criteria to reach the next level. All necessary quality criteria (QC.Lic, QC.Ver, QC.Uni, QC.Sec, QC.Sty, QC.Doc, QC.Met, QC.Acc) have been fulfilled.",missing criteria list,
+indigo-dc_udocker,Q09,fix_hints,What should developers do to improve the quality score?,get_fix_hints; get_tool_failures,get_fix_hints,True,True,7.1,"To improve the quality score, developers should focus on the QC.Doc criterion, which currently has a score of 80.0%. Specifically, they should ensure that their documentation follows a style for the Markdown markup language. This can be achieved by using tools like markdownlint to check for consiste",improvement recommendations,
+indigo-dc_udocker,Q10,compare,Compare assessment 1 and assessment 42. What changed?,compare_assessments,compare_assessments,True,True,13.13,"Between assessment 1 and assessment 42, the following changes occurred:
+- The badge changed from ""No Badge"" to ""gold"".
+- The quality criterion scores improved for:
+  - QC.Doc: from 60.0 to 80.0 (delta of 20.0)
+  - QC.Sty: from 0.0 to 100.0 (delta of 100.0)
+  - QC.Met: from 0.0 to 100.0 (delta of 100",comparison of first and last,
+interTwin-eu_itwinai,Q01,summary,How many assessments are in the provenance document?,get_summary,get_summary,True,True,4.11,The provenance document contains a total of 279 assessments.,279,
+interTwin-eu_itwinai,Q02,summary,What is the name of the software repository?,get_summary,get_summary,True,True,4.09,The name of the software repository is interTwin-eu/itwinai.,interTwin-eu/itwinai,
+interTwin-eu_itwinai,Q03,badge,When was the first bronze badge awarded?,get_badge_history,get_badge_history,True,True,4.73,"The first bronze badge was awarded on assessment number 39, which occurred on November 16, 2023.",assessment 39 / 2023-11-16,
+interTwin-eu_itwinai,Q04,badge,When was the first silver badge awarded?,get_badge_history,get_badge_history,True,True,4.7,"The first silver badge was awarded on assessment number 115, which occurred on June 13, 2024.",assessment 115 / 2024-06-13,
+interTwin-eu_itwinai,Q05,badge,What is the current badge level of the repository?,get_badge_history; get_summary,get_summary,True,True,4.69,"The current badge level of the repository is silver, as indicated by the latest assessment (assessment_id 279) on 2026-02-23.",silver,
+interTwin-eu_itwinai,Q06,regressions,Are there any quality regressions in the recent assessments?,get_regressions,get_regressions; get_fix_hints; get_fix_hints; get_subcriteria_detail; get_subcriteria_detail,True,True,22.94,"The `get_subcriteria_detail` tool output for ""QC.Sec"" also shows that all subcriteria have passed, which again contradicts the earlier finding of a regression in this criterion. This suggests an inconsistency in the data.
+
+Given the inconsistencies in the data, it is difficult to provide a clear ans",regression info,
+interTwin-eu_itwinai,Q07,assessment,What badge was awarded in assessment 279?,get_assessment,get_assessment,True,True,3.94,The badge awarded in assessment 279 was silver.,silver,
+interTwin-eu_itwinai,Q08,badge_path,What criteria are missing for the repository to achieve a gold badge?,get_badge_path,get_badge_path,True,True,7.47,"To achieve a gold badge, the repository is missing the ""QC.Sty"" (Code Style) criterion, which currently has a score of 0.0%. The tool flake8 v4.0.1 (with mccabe: 0.6.1, pycodestyle: 2.8.0, pyflakes: 2.4.0) is failing, indicating that the code does not meet community style standards.",missing criteria list,
+interTwin-eu_itwinai,Q09,fix_hints,What should developers do to improve the quality score?,get_fix_hints; get_tool_failures,get_fix_hints,True,True,12.91,"To improve the quality score, developers should focus on the following areas:
+
+1. **Documentation (QC.Doc)**: The documentation score is at 80%. To improve this, developers can ensure that their docs follow a style for the Markdown markup language. They can use tools like markdownlint for Markdown f",improvement recommendations,
+interTwin-eu_itwinai,Q10,compare,Compare assessment 1 and assessment 279. What changed?,compare_assessments,compare_assessments,True,True,11.06,"Between assessment 1 and assessment 279, the following changes occurred:
+
+- The badge changed from ""No Badge"" to ""silver"".
+- QC.Sec improved from 0.0% to 100.0%, indicating that security vulnerabilities were addressed.
+- QC.Met improved from 0.0% to 100.0%, showing that code metadata requirements we",comparison of first and last,

@@ -1,0 +1,82 @@
+{
+  "run_id": "20261015_125502",
+  "model": "llama3.2",
+  "mode": "no_tools_baseline",
+  "repos": 10,
+  "total_questions": 88,
+  "total_correct": 55,
+  "overall_accuracy_pct": 62.5,
+  "overall_latency_avg_s": 0.71,
+  "per_repo": [
+    {
+      "repo": "EOSC-synergy_FAIR_eva",
+      "questions": 9,
+      "correct": 6,
+      "accuracy_pct": 66.7,
+      "latency_avg_s": 0.91
+    },
+    {
+      "repo": "EOSC-synergy_o3api",
+      "questions": 8,
+      "correct": 4,
+      "accuracy_pct": 50.0,
+      "latency_avg_s": 1.03
+    },
+    {
+      "repo": "EOSC-synergy_sqaaas-assessment-action",
+      "questions": 8,
+      "correct": 7,
+      "accuracy_pct": 87.5,
+      "latency_avg_s": 0.78
+    },
+    {
+      "repo": "SeisSol_SeisSol",
+      "questions": 9,
+      "correct": 5,
+      "accuracy_pct": 55.6,
+      "latency_avg_s": 0.65
+    },
+    {
+      "repo": "galaxyproject_galaxy",
+      "questions": 8,
+      "correct": 5,
+      "accuracy_pct": 62.5,
+      "latency_avg_s": 0.67
+    },
+    {
+      "repo": "grycap_im",
+      "questions": 10,
+      "correct": 6,
+      "accuracy_pct": 60.0,
+      "latency_avg_s": 0.59
+    },
+    {
+      "repo": "grycap_oscar",
+      "questions": 10,
+      "correct": 5,
+      "accuracy_pct": 50.0,
+      "latency_avg_s": 0.62
+    },
+    {
+      "repo": "indigo-dc_orchestrator",
+      "questions": 7,
+      "correct": 7,
+      "accuracy_pct": 100.0,
+      "latency_avg_s": 0.65
+    },
+    {
+      "repo": "indigo-dc_udocker",
+      "questions": 9,
+      "correct": 5,
+      "accuracy_pct": 55.6,
+      "latency_avg_s": 0.69
+    },
+    {
+      "repo": "interTwin-eu_itwinai",
+      "questions": 10,
+      "correct": 5,
+      "accuracy_pct": 50.0,
+      "latency_avg_s": 0.57
+    }
+  ]
+}

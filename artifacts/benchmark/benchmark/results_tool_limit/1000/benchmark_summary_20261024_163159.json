@@ -1,0 +1,14 @@
+{
+  "run_id": "20261024_163159",
+  "model": "llama3.2",
+  "url": "http://localhost:5000",
+  "n_questions": 15,
+  "n_correct": 14,
+  "n_tool_match": 15,
+  "n_errors": 0,
+  "accuracy_pct": 93.3,
+  "tool_acc_pct": 100.0,
+  "latency_avg_s": 1.1,
+  "latency_min_s": 0.53,
+  "latency_max_s": 3.46
+}

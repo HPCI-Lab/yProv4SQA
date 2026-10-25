@@ -1,0 +1,103 @@
+{
+  "run_id": "20261015_140806",
+  "model": "llama3.3:70b",
+  "repos": 10,
+  "total_questions": 88,
+  "total_correct": 88,
+  "total_tool_match": 88,
+  "overall_accuracy_pct": 100.0,
+  "overall_tool_acc_pct": 100.0,
+  "overall_latency_avg_s": 6.32,
+  "per_repo": [
+    {
+      "repo": "EOSC-synergy_FAIR_eva",
+      "questions": 9,
+      "correct": 9,
+      "tool_match": 9,
+      "accuracy_pct": 100.0,
+      "tool_acc_pct": 100.0,
+      "latency_avg_s": 6.99
+    },
+    {
+      "repo": "EOSC-synergy_o3api",
+      "questions": 8,
+      "correct": 8,
+      "tool_match": 8,
+      "accuracy_pct": 100.0,
+      "tool_acc_pct": 100.0,
+      "latency_avg_s": 6.35
+    },
+    {
+      "repo": "EOSC-synergy_sqaaas-assessment-action",
+      "questions": 8,
+      "correct": 8,
+      "tool_match": 8,
+      "accuracy_pct": 100.0,
+      "tool_acc_pct": 100.0,
+      "latency_avg_s": 6.66
+    },
+    {
+      "repo": "SeisSol_SeisSol",
+      "questions": 9,
+      "correct": 9,
+      "tool_match": 9,
+      "accuracy_pct": 100.0,
+      "tool_acc_pct": 100.0,
+      "latency_avg_s": 5.47
+    },
+    {
+      "repo": "galaxyproject_galaxy",
+      "questions": 8,
+      "correct": 8,
+      "tool_match": 8,
+      "accuracy_pct": 100.0,
+      "tool_acc_pct": 100.0,
+      "latency_avg_s": 4.95
+    },
+    {
+      "repo": "grycap_im",
+      "questions": 10,
+      "correct": 10,
+      "tool_match": 10,
+      "accuracy_pct": 100.0,
+      "tool_acc_pct": 100.0,
+      "latency_avg_s": 6.4
+    },
+    {
+      "repo": "grycap_oscar",
+      "questions": 10,
+      "correct": 10,
+      "tool_match": 10,
+      "accuracy_pct": 100.0,
+      "tool_acc_pct": 100.0,
+      "latency_avg_s": 5.34
+    },
+    {
+      "repo": "indigo-dc_orchestrator",
+      "questions": 7,
+      "correct": 7,
+      "tool_match": 7,
+      "accuracy_pct": 100.0,
+      "tool_acc_pct": 100.0,
+      "latency_avg_s": 6.6
+    },
+    {
+      "repo": "indigo-dc_udocker",
+      "questions": 9,
+      "correct": 9,
+      "tool_match": 9,
+      "accuracy_pct": 100.0,
+      "tool_acc_pct": 100.0,
+      "latency_avg_s": 6.24
+    },
+    {
+      "repo": "interTwin-eu_itwinai",
+      "questions": 10,
+      "correct": 10,
+      "tool_match": 10,
+      "accuracy_pct": 100.0,
+      "tool_acc_pct": 100.0,
+      "latency_avg_s": 8.06
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+id,category,question,expected_tool,tools_called,tool_match,correct,latency_s,answer,ground_truth,error
+Q01,summary,How many assessments are in the provenance document?,get_summary,get_summary,True,True,2.47,"There are 279 assessments in the provenance document for the repository interTwin-eu/itwinai. The latest assessment is the 279th run, which was completed on February 23, 2026, and resulted in a silver badge. The recent 10-averages show that all criteria have been fully passed (100%) except QC.Sty, which has an average of 0%. The long-term averages are also available, showing that the repository has generally met the quality criteria, with some exceptions.",279,
+Q02,summary,What is the name of the software repository?,get_summary,get_summary,True,True,1.54,The name of the software repository is interTwin-eu/itwinai.,interTwin-eu/itwinai,
+Q03,badge,When was the first bronze badge awarded?,get_badge_history,get_badge_history,True,True,1.5,"The first bronze badge was awarded on November 16, 2023, with assessment number 39.",assessment 39 / 2023-11-16,
+Q04,badge,When was the first silver badge awarded?,get_badge_history,get_badge_history,True,True,1.51,The first silver badge was awarded on 2024-06-13.,assessment 115 / 2024-06-13,
+Q05,badge,When was the first gold badge awarded?,get_badge_history,get_badge_history,True,True,1.57,"The first gold badge was awarded on October 23, 2024, with assessment number 163. The commit hash associated with this assessment is c5ea0aa49e04, and the branch was main.",assessment 163,
+Q06,badge,How many silver badges has itwinai received in total?,get_badge_history,get_badge_history,True,True,1.6,The repository itwinai has received a total of 135 silver badges.,135 silver badges,
+Q07,assessment,What badge was awarded in assessment 64?,get_assessment,get_assessment,True,True,1.89,"The badge awarded in assessment 64 is bronze. This means that all the subcriteria for the bronze level were met: Code Accessibility, Documentation, and Licensing. The current state of the project shows that these criteria are fully passed (100%). However, there are some areas where improvements can be made to reach a higher badge level.",bronze,
+Q08,assessment,What badge was awarded in assessment 115?,get_assessment,get_assessment,True,True,2.18,"Based on the assessment 115, a silver badge was awarded. The current state of the project is as follows:
+
+- Code Accessibility: fully passed (100%)
+- Documentation: partially passed (80%)
+- Licensing: fully passed (100%)
+- Security: failed (0%)
+- Code Style: failed (0%)
+- Semantic Versioning: partially passed (33%)
+- Code Metadata: fully passed (100%)
+- Unit Testing: failed (0%)
+
+The previous badge was bronze, and there are no regressions. The assessment shows that the project has made progress ",silver,
+Q09,qc_trend,What is the trend for the QC.Sec (security) criterion over the last 10 assessments?,get_qc_trend,get_qc_trend,True,True,1.85,"The trend for the QC.Sec (security) criterion over the last 10 assessments is stable, with a consistent score of 100%. This means that SAST tools have been applied and no known vulnerabilities were found in the code. All assessments in the last 10 periods have resulted in a silver badge, indicating that security has been fully passed.",0% (security consistently fails),
+Q10,qc_trend,What is the current score for QC.Lic (licensing)?,get_qc_trend; get_tool_failures; get_assessment,get_tool_failures,True,True,1.82,"The current score for QC.Lic (licensing) is 75%. This means that out of all the licensing checks, 25% failed. The specific failure message indicates that the licensee tool was unable to access any of the available Open Source Initiative endpoints.
+
+To improve the licensing score, it would be recommended to investigate and resolve this issue with the licensee tool.",75% (latest assessment 279),
+Q11,regressions,Are there any quality regressions in the recent assessments?,get_regressions,get_regressions,True,True,2.99,"There are quality regressions in the recent assessments. The get_regressions tool indicates that there are a total of 16 regressions found across all assessments.
+
+The regressions include:
+
+* Assessment 41: Dropped criteria QC.Acc, QC.Doc, QC.Lic, and QC.Ver.
+* Assessment 71: Dropped criteria QC.Acc, QC.Doc, QC.Lic, and QC.Ver.
+* Assessment 106: Dropped criteria QC.Acc, QC.Doc, QC.Lic, and QC.Ver.
+* Assessment 153: Dropped criteria QC.Sec and QC.Met.
+
+These regressions indicate that there are is",regression info from prov doc,
+Q12,compare,Compare assessment 64 and assessment 115. What changed?,compare_assessments,compare_assessments,True,True,2.26,"Based on the comparison of assessment 64 and assessment 115, here are the changes that occurred:
+
+* The badge changed from bronze to silver.
+* There were no changes in Code Accessibility (QC.Acc), Documentation (QC.Doc), or Licensing (QC.Lic).
+* There was an improvement in Code Metadata (QC.Met) from 0% to 100%, indicating that a citation file is now required.
+* There were no changes in Security (QC.Sec), Code Style (QC.Sty), or Unit Testing (QC.Uni).
+
+Overall, the assessment improved in one cri","bronze to silver, QC.Met fulfilled",
+Q13,badge_path,What criteria are missing for itwinai to achieve a gold badge?,get_badge_path,get_badge_path,True,True,2.23,"Based on the tool output, it appears that for twinai to achieve a Gold badge, the criterion ""Code Style"" (QC.Sty) is missing. The current assessment shows that this criterion has not been fully met, as indicated by the percentage value of 0.0. Additionally, there are specific tools failing to meet this criterion, including flake8 v4.0.1.
+
+To achieve a Gold badge, twinai needs to address the issues with its code style, specifically the McCabe cyclomatic complexity and Pycodestyle scores. The tool","QC.Sty, QC.Uni, QC.Sec",
+Q14,fix_hints,What should the developers do to improve the security (QC.Sec) score?,get_fix_hints; get_tool_failures,get_tool_failures,True,True,2.37,"Based on the tool call result, it appears that all security checks (using the Bandit tool) have passed for this assessment. However, to further improve the security score, I recommend that the developers:
+
+1. Review the list of tools that failed in the past (if any), as indicated by `tools_failed` in the output.
+2. Investigate why certain tools were not used or failed in the past, and address those issues.
+
+Since all security checks have passed for this assessment, there are no specific actions ",SAST / static analysis tools,
+Q15,quality_velocity,Is the overall quality of itwinai improving or declining recently?,get_quality_velocity; get_summary,get_summary,True,True,2.56,"Based on the latest assessment, the overall quality of itwinai is improving. The QC scores for all criteria are above 50%, indicating that the project has made significant progress in recent assessments.
+
+However, looking at the QC recent 10 averages and QC all time averages, there are some concerns:
+
+* QC.Sec has been consistently low (55.2% average) over the long term, which is a concern for security.
+* QC.Sty has been consistently low (10.4% average) over the long term, which may indicate iss",improving/stable (silver badge),
