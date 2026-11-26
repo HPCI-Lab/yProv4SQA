@@ -1,0 +1,50 @@
+[
+  {
+    "name": "single_assessment",
+    "prov_library": "2.1.1",
+    "records": 23,
+    "load": "PASS",
+    "provn_serialize": "PASS",
+    "unification": "PASS",
+    "status": "PASS",
+    "notes": [
+      "PROV-ALLOWED: 1 entities with multiple wasGeneratedBy (each assessment has up to 8 QC activities).  Examples: ex:assessment1\u21928 \u2026 This is NOT a PROV-CONSTRAINTS violation: uniqueness of generation applies per activity-entity pair, not per entity.",
+      "wasAttributedTo: entity ex:repository1 \u2190 agent ex:SQAaaS \u2014 PRESENT"
+    ],
+    "violations": [],
+    "provn_file": "/home/yousa/projects/yProv4SQA_AI/yProv4SQA/artifacts/validation/prov_constraints/single_assessment.provn",
+    "wasAttributedTo_count": 1
+  },
+  {
+    "name": "full_itwinai",
+    "prov_library": "2.1.1",
+    "records": 5341,
+    "load": "PASS",
+    "provn_serialize": "PASS",
+    "unification": "PASS",
+    "status": "PASS",
+    "notes": [
+      "PROV-ALLOWED: 270 entities with multiple wasGeneratedBy (each assessment has up to 8 QC activities).  Examples: ex:assessment1\u21927, ex:assessment10\u21927, ex:assessment100\u21928, ex:assessment101\u21928, ex:assessment102\u21928 \u2026 This is NOT a PROV-CONSTRAINTS violation: uniqueness of generation applies per activity-entity pair, not per entity.",
+      "wasAttributedTo: entity ex:repository1 \u2190 agent ex:SQAaaS \u2014 PRESENT"
+    ],
+    "violations": [],
+    "provn_file": "/home/yousa/projects/yProv4SQA_AI/yProv4SQA/artifacts/validation/prov_constraints/full_itwinai.provn",
+    "wasAttributedTo_count": 1
+  },
+  {
+    "name": "level2_fc45_4086",
+    "prov_library": "2.1.1",
+    "records": 570,
+    "load": "PASS",
+    "provn_serialize": "PASS",
+    "unification": "PASS",
+    "status": "PASS",
+    "notes": [
+      "wasAttributedTo: SQAaaS agent link found but agent name differs from 'SQAaaS'",
+      "Level-2 uses wasDerivedFrom (282 relations) to link file-change activities to commit entities; no 'used' relations present in this document version."
+    ],
+    "violations": [],
+    "provn_file": "/home/yousa/projects/yProv4SQA_AI/yProv4SQA/artifacts/validation/prov_constraints/level2_fc45_4086.provn",
+    "wasAttributedTo_count": 2
+  }
+]

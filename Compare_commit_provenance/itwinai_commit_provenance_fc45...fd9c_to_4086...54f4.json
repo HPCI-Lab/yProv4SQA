@@ -1,0 +1,4005 @@
+{
+  "prefix": {
+    "ex": "https://sqaaas.eosc-synergy.eu/",
+    "w3": "http://www.w3.org/",
+    "tr": "http://www.w3.org/TR/2011/"
+  },
+  "entity": {
+    "ex:commit_fc45...fd9c": {
+      "prov:type": "document",
+      "ex:commit_id": "fc45759a19708e074c44ee8e41bea2507959fd9c",
+      "ex:state": "before",
+      "ex:badge_won": "bronze",
+      "ex:date": "2024-03-20T20:46:44Z"
+    },
+    "ex:commit_4086...54f4": {
+      "prov:type": "document",
+      "ex:commit_id": "40865372a244ef4217eab083221207da6a1054f4",
+      "ex:state": "after",
+      "ex:badge_won": "silver",
+      "ex:date": "2024-06-13T08:14:39Z"
+    }
+  },
+  "activity": {
+    "ex:activity_": {
+      "prov:type": "activity",
+      "ex:filename": ".dockerignore",
+      "ex:status": "added",
+      "ex:lines_added": 135,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 135,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/.dockerignore"
+    },
+    "ex:activity_githublint": {
+      "prov:type": "activity",
+      "ex:filename": ".github/linters/.jscpd.json",
+      "ex:status": "added",
+      "ex:lines_added": 6,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 6,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/.github/linters/.jscpd.json"
+    },
+    "ex:activity_githubwork": {
+      "prov:type": "activity",
+      "ex:filename": ".github/workflows/lint.yml",
+      "ex:status": "modified",
+      "ex:lines_added": 8,
+      "ex:lines_removed": 2,
+      "ex:number_of_lines_affected": 10,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/.github/workflows/lint.yml"
+    },
+    "ex:activity_githubwork_1": {
+      "prov:type": "activity",
+      "ex:filename": ".github/workflows/pages.yml",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 70,
+      "ex:number_of_lines_affected": 70,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/.github/workflows/pages.yml"
+    },
+    "ex:activity_githubwork_2": {
+      "prov:type": "activity",
+      "ex:filename": ".github/workflows/pypi.yml",
+      "ex:status": "added",
+      "ex:lines_added": 31,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 31,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/.github/workflows/pypi.yml"
+    },
+    "ex:activity_githubwork_3": {
+      "prov:type": "activity",
+      "ex:filename": ".github/workflows/pytest.yml",
+      "ex:status": "added",
+      "ex:lines_added": 38,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 38,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/.github/workflows/pytest.yml"
+    },
+    "ex:activity_githubwork_4": {
+      "prov:type": "activity",
+      "ex:filename": ".github/workflows/sqaaas.yml",
+      "ex:status": "added",
+      "ex:lines_added": 33,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 33,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/.github/workflows/sqaaas.yml"
+    },
+    "ex:activity_githubwork_5": {
+      "prov:type": "activity",
+      "ex:filename": ".github/workflows/workflows-dt.yml",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 50,
+      "ex:number_of_lines_affected": 50,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/.github/workflows/workflows-dt.yml"
+    },
+    "ex:activity__1": {
+      "prov:type": "activity",
+      "ex:filename": ".gitignore",
+      "ex:status": "modified",
+      "ex:lines_added": 33,
+      "ex:lines_removed": 4,
+      "ex:number_of_lines_affected": 37,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/.gitignore"
+    },
+    "ex:activity__2": {
+      "prov:type": "activity",
+      "ex:filename": ".python-version",
+      "ex:status": "added",
+      "ex:lines_added": 1,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 1,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/.python-version"
+    },
+    "ex:activity_readthedoc": {
+      "prov:type": "activity",
+      "ex:filename": ".readthedocs.yaml",
+      "ex:status": "added",
+      "ex:lines_added": 38,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 38,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/.readthedocs.yaml"
+    },
+    "ex:activity_vscodeexte": {
+      "prov:type": "activity",
+      "ex:filename": ".vscode/extensions.json",
+      "ex:status": "modified",
+      "ex:lines_added": 2,
+      "ex:lines_removed": 2,
+      "ex:number_of_lines_affected": 4,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/.vscode/extensions.json"
+    },
+    "ex:activity_vscodesett": {
+      "prov:type": "activity",
+      "ex:filename": ".vscode/settings.json",
+      "ex:status": "modified",
+      "ex:lines_added": 17,
+      "ex:lines_removed": 7,
+      "ex:number_of_lines_affected": 24,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/.vscode/settings.json"
+    },
+    "ex:activity_AUTHORS": {
+      "prov:type": "activity",
+      "ex:filename": "AUTHORS.md",
+      "ex:status": "modified",
+      "ex:lines_added": 4,
+      "ex:lines_removed": 3,
+      "ex:number_of_lines_affected": 7,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/AUTHORS.md"
+    },
+    "ex:activity_CITATION": {
+      "prov:type": "activity",
+      "ex:filename": "CITATION.cff",
+      "ex:status": "added",
+      "ex:lines_added": 38,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 38,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/CITATION.cff"
+    },
+    "ex:activity_CODEOWNERS": {
+      "prov:type": "activity",
+      "ex:filename": "CODEOWNERS",
+      "ex:status": "modified",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 1,
+      "ex:number_of_lines_affected": 1,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/CODEOWNERS"
+    },
+    "ex:activity_Makefile": {
+      "prov:type": "activity",
+      "ex:filename": "Makefile",
+      "ex:status": "modified",
+      "ex:lines_added": 145,
+      "ex:lines_removed": 24,
+      "ex:number_of_lines_affected": 169,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/Makefile"
+    },
+    "ex:activity_README": {
+      "prov:type": "activity",
+      "ex:filename": "README.md",
+      "ex:status": "modified",
+      "ex:lines_added": 136,
+      "ex:lines_removed": 75,
+      "ex:number_of_lines_affected": 211,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/README.md"
+    },
+    "ex:activity_aiREADME": {
+      "prov:type": "activity",
+      "ex:filename": "ai/README.md",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 6,
+      "ex:number_of_lines_affected": 6,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/ai/README.md"
+    },
+    "ex:activity_aienvfiles": {
+      "prov:type": "activity",
+      "ex:filename": "ai/env-files/pytorch-env-gpu.yml",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 41,
+      "ex:number_of_lines_affected": 41,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/ai/env-files/pytorch-env-gpu.yml"
+    },
+    "ex:activity_aienvfiles_1": {
+      "prov:type": "activity",
+      "ex:filename": "ai/env-files/pytorch-env.yml",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 36,
+      "ex:number_of_lines_affected": 36,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/ai/env-files/pytorch-env.yml"
+    },
+    "ex:activity_aienvfiles_2": {
+      "prov:type": "activity",
+      "ex:filename": "ai/env-files/pytorch-gpu-lock.yml",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/ai/env-files/pytorch-gpu-lock.yml"
+    },
+    "ex:activity_aienvfiles_3": {
+      "prov:type": "activity",
+      "ex:filename": "ai/env-files/pytorch-lock.yml",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/ai/env-files/pytorch-lock.yml"
+    },
+    "ex:activity_aisetup": {
+      "prov:type": "activity",
+      "ex:filename": "ai/setup.py",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 20,
+      "ex:number_of_lines_affected": 20,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/ai/setup.py"
+    },
+    "ex:activity_aisrcitwin": {
+      "prov:type": "activity",
+      "ex:filename": "ai/src/itwinai/cli.py",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 412,
+      "ex:number_of_lines_affected": 412,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/ai/src/itwinai/cli.py"
+    },
+    "ex:activity_aisrcitwin_1": {
+      "prov:type": "activity",
+      "ex:filename": "ai/src/itwinai/models/cnn.py",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 32,
+      "ex:number_of_lines_affected": 32,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/ai/src/itwinai/models/cnn.py"
+    },
+    "ex:activity_aisrcitwin_2": {
+      "prov:type": "activity",
+      "ex:filename": "ai/src/itwinai/plmodels/base.py",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 26,
+      "ex:number_of_lines_affected": 26,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/ai/src/itwinai/plmodels/base.py"
+    },
+    "ex:activity_aisrcitwin_3": {
+      "prov:type": "activity",
+      "ex:filename": "ai/src/itwinai/plmodels/mnist.py",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 246,
+      "ex:number_of_lines_affected": 246,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/ai/src/itwinai/plmodels/mnist.py"
+    },
+    "ex:activity_aiteststes": {
+      "prov:type": "activity",
+      "ex:filename": "ai/tests/test_cli.py",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 27,
+      "ex:number_of_lines_affected": 27,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/ai/tests/test_cli.py"
+    },
+    "ex:activity_aiteststes_1": {
+      "prov:type": "activity",
+      "ex:filename": "ai/tests/test_utils.py",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 24,
+      "ex:number_of_lines_affected": 24,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/ai/tests/test_utils.py"
+    },
+    "ex:activity_aitraining": {
+      "prov:type": "activity",
+      "ex:filename": "ai/training.cwl",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 68,
+      "ex:number_of_lines_affected": 68,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/ai/training.cwl"
+    },
+    "ex:activity_devenv": {
+      "prov:type": "activity",
+      "ex:filename": "dev-env.yml",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 39,
+      "ex:number_of_lines_affected": 39,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/dev-env.yml"
+    },
+    "ex:activity_docs": {
+      "prov:type": "activity",
+      "ex:filename": "docs/.gitignore",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 10,
+      "ex:number_of_lines_affected": 10,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/.gitignore"
+    },
+    "ex:activity_docs3dgan_": {
+      "prov:type": "activity",
+      "ex:filename": "docs/3dgan_doc.rst",
+      "ex:status": "added",
+      "ex:lines_added": 388,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 388,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/3dgan_doc.rst"
+    },
+    "ex:activity_docs404": {
+      "prov:type": "activity",
+      "ex:filename": "docs/404.html",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 10,
+      "ex:number_of_lines_affected": 10,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/404.html"
+    },
+    "ex:activity_docsGemfil": {
+      "prov:type": "activity",
+      "ex:filename": "docs/Gemfile",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 7,
+      "ex:number_of_lines_affected": 7,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/Gemfile"
+    },
+    "ex:activity_docsGemfil_1": {
+      "prov:type": "activity",
+      "ex:filename": "docs/Gemfile.lock",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 79,
+      "ex:number_of_lines_affected": 79,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/Gemfile.lock"
+    },
+    "ex:activity_docsLICENS": {
+      "prov:type": "activity",
+      "ex:filename": "docs/LICENSE",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 21,
+      "ex:number_of_lines_affected": 21,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/LICENSE"
+    },
+    "ex:activity_docsMakefi": {
+      "prov:type": "activity",
+      "ex:filename": "docs/Makefile",
+      "ex:status": "added",
+      "ex:lines_added": 20,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 20,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/Makefile"
+    },
+    "ex:activity_docsREADME": {
+      "prov:type": "activity",
+      "ex:filename": "docs/README.md",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 180,
+      "ex:number_of_lines_affected": 180,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/README.md"
+    },
+    "ex:activity_docs_confi": {
+      "prov:type": "activity",
+      "ex:filename": "docs/_config.yml",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 26,
+      "ex:number_of_lines_affected": 26,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/_config.yml"
+    },
+    "ex:activity_docsadvanc": {
+      "prov:type": "activity",
+      "ex:filename": "docs/advanced_workflow.rst",
+      "ex:status": "added",
+      "ex:lines_added": 15,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 15,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/advanced_workflow.rst"
+    },
+    "ex:activity_docsbasic_": {
+      "prov:type": "activity",
+      "ex:filename": "docs/basic_comp.rst",
+      "ex:status": "added",
+      "ex:lines_added": 13,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 13,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/basic_comp.rst"
+    },
+    "ex:activity_docsbasic__1": {
+      "prov:type": "activity",
+      "ex:filename": "docs/basic_workflow.rst",
+      "ex:status": "added",
+      "ex:lines_added": 15,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 15,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/basic_workflow.rst"
+    },
+    "ex:activity_docsconf": {
+      "prov:type": "activity",
+      "ex:filename": "docs/conf.py",
+      "ex:status": "added",
+      "ex:lines_added": 88,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 88,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/conf.py"
+    },
+    "ex:activity_docscyclon": {
+      "prov:type": "activity",
+      "ex:filename": "docs/cyclones_doc.rst",
+      "ex:status": "added",
+      "ex:lines_added": 85,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 85,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/cyclones_doc.rst"
+    },
+    "ex:activity_docsddp_wh": {
+      "prov:type": "activity",
+      "ex:filename": "docs/ddp_why.rst",
+      "ex:status": "added",
+      "ex:lines_added": 30,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 30,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/ddp_why.rst"
+    },
+    "ex:activity_docsdocsCL": {
+      "prov:type": "activity",
+      "ex:filename": "docs/docs/CLI.md",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 49,
+      "ex:number_of_lines_affected": 49,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/docs/CLI.md"
+    },
+    "ex:activity_docsdocsCo": {
+      "prov:type": "activity",
+      "ex:filename": "docs/docs/Concepts.md",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 31,
+      "ex:number_of_lines_affected": 31,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/docs/Concepts.md"
+    },
+    "ex:activity_docsdocsHo": {
+      "prov:type": "activity",
+      "ex:filename": "docs/docs/How-to-use-this-software.md",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 537,
+      "ex:number_of_lines_affected": 537,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/docs/How-to-use-this-software.md"
+    },
+    "ex:activity_docsdocsim": {
+      "prov:type": "activity",
+      "ex:filename": "docs/docs/img/Workflow DAG concept.png",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/docs/img/Workflow DAG concept.png"
+    },
+    "ex:activity_docsdocsim_1": {
+      "prov:type": "activity",
+      "ex:filename": "docs/docs/img/cwl-workflow.png",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/docs/img/cwl-workflow.png"
+    },
+    "ex:activity_docsdocsim_2": {
+      "prov:type": "activity",
+      "ex:filename": "docs/docs/img/user-platform interaction full.png",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/docs/img/user-platform interaction full.png"
+    },
+    "ex:activity_docsdocsim_3": {
+      "prov:type": "activity",
+      "ex:filename": "docs/docs/img/user-platform interaction.png",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/docs/img/user-platform interaction.png"
+    },
+    "ex:activity_docsdocsus": {
+      "prov:type": "activity",
+      "ex:filename": "docs/docs/use-cases/index.md",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 10,
+      "ex:number_of_lines_affected": 10,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/docs/use-cases/index.md"
+    },
+    "ex:activity_docsdocsus_1": {
+      "prov:type": "activity",
+      "ex:filename": "docs/docs/use-cases/mnist.md",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 182,
+      "ex:number_of_lines_affected": 182,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/docs/use-cases/mnist.md"
+    },
+    "ex:activity_docsfavico": {
+      "prov:type": "activity",
+      "ex:filename": "docs/favicon.ico",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/favicon.ico"
+    },
+    "ex:activity_docsgettin": {
+      "prov:type": "activity",
+      "ex:filename": "docs/getting_started_with_itwinai.rst",
+      "ex:status": "added",
+      "ex:lines_added": 373,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 373,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/getting_started_with_itwinai.rst"
+    },
+    "ex:activity_docsindex": {
+      "prov:type": "activity",
+      "ex:filename": "docs/index.md",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 58,
+      "ex:number_of_lines_affected": 58,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/index.md"
+    },
+    "ex:activity_docsindex_1": {
+      "prov:type": "activity",
+      "ex:filename": "docs/index.rst",
+      "ex:status": "added",
+      "ex:lines_added": 119,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 119,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/index.rst"
+    },
+    "ex:activity_docsinterm": {
+      "prov:type": "activity",
+      "ex:filename": "docs/intermediate_workflow.rst",
+      "ex:status": "added",
+      "ex:lines_added": 17,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 17,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/intermediate_workflow.rst"
+    },
+    "ex:activity_docsitwina": {
+      "prov:type": "activity",
+      "ex:filename": "docs/itwinai.cli.rst",
+      "ex:status": "added",
+      "ex:lines_added": 8,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 8,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/itwinai.cli.rst"
+    },
+    "ex:activity_docsitwina_1": {
+      "prov:type": "activity",
+      "ex:filename": "docs/itwinai.components.rst",
+      "ex:status": "added",
+      "ex:lines_added": 9,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 9,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/itwinai.components.rst"
+    },
+    "ex:activity_docsitwina_2": {
+      "prov:type": "activity",
+      "ex:filename": "docs/itwinai.distributed.rst",
+      "ex:status": "added",
+      "ex:lines_added": 8,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 8,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/itwinai.distributed.rst"
+    },
+    "ex:activity_docsitwina_3": {
+      "prov:type": "activity",
+      "ex:filename": "docs/itwinai.loggers.rst",
+      "ex:status": "added",
+      "ex:lines_added": 9,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 9,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/itwinai.loggers.rst"
+    },
+    "ex:activity_docsitwina_4": {
+      "prov:type": "activity",
+      "ex:filename": "docs/itwinai.parser.rst",
+      "ex:status": "added",
+      "ex:lines_added": 9,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 9,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/itwinai.parser.rst"
+    },
+    "ex:activity_docsitwina_5": {
+      "prov:type": "activity",
+      "ex:filename": "docs/itwinai.pipeline.rst",
+      "ex:status": "added",
+      "ex:lines_added": 9,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 9,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/itwinai.pipeline.rst"
+    },
+    "ex:activity_docsitwina_6": {
+      "prov:type": "activity",
+      "ex:filename": "docs/itwinai.serialization.rst",
+      "ex:status": "added",
+      "ex:lines_added": 9,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 9,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/itwinai.serialization.rst"
+    },
+    "ex:activity_docsitwina_7": {
+      "prov:type": "activity",
+      "ex:filename": "docs/itwinai.tf.modules.rst",
+      "ex:status": "added",
+      "ex:lines_added": 37,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 37,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/itwinai.tf.modules.rst"
+    },
+    "ex:activity_docsitwina_8": {
+      "prov:type": "activity",
+      "ex:filename": "docs/itwinai.torch.modules.rst",
+      "ex:status": "added",
+      "ex:lines_added": 63,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 63,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/itwinai.torch.modules.rst"
+    },
+    "ex:activity_docsitwina_9": {
+      "prov:type": "activity",
+      "ex:filename": "docs/itwinai.type.rst",
+      "ex:status": "added",
+      "ex:lines_added": 9,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 9,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/itwinai.type.rst"
+    },
+    "ex:activity_docsitwina_10": {
+      "prov:type": "activity",
+      "ex:filename": "docs/itwinai.utils.rst",
+      "ex:status": "added",
+      "ex:lines_added": 9,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 9,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/itwinai.utils.rst"
+    },
+    "ex:activity_docsmake": {
+      "prov:type": "activity",
+      "ex:filename": "docs/make.bat",
+      "ex:status": "added",
+      "ex:lines_added": 35,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 35,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/make.bat"
+    },
+    "ex:activity_docsmnist_": {
+      "prov:type": "activity",
+      "ex:filename": "docs/mnist_doc.rst",
+      "ex:status": "added",
+      "ex:lines_added": 281,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 281,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/mnist_doc.rst"
+    },
+    "ex:activity_docsmodule": {
+      "prov:type": "activity",
+      "ex:filename": "docs/modules.rst",
+      "ex:status": "added",
+      "ex:lines_added": 21,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 21,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/modules.rst"
+    },
+    "ex:activity_docsnotebo": {
+      "prov:type": "activity",
+      "ex:filename": "docs/notebooks/example.ipynb",
+      "ex:status": "added",
+      "ex:lines_added": 92,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 92,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/notebooks/example.ipynb"
+    },
+    "ex:activity_docsrequir": {
+      "prov:type": "activity",
+      "ex:filename": "docs/requirements.txt",
+      "ex:status": "added",
+      "ex:lines_added": 15,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 15,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/requirements.txt"
+    },
+    "ex:activity_docstf_sca": {
+      "prov:type": "activity",
+      "ex:filename": "docs/tf_scaling_test.rst",
+      "ex:status": "added",
+      "ex:lines_added": 71,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 71,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/tf_scaling_test.rst"
+    },
+    "ex:activity_docstf_tut": {
+      "prov:type": "activity",
+      "ex:filename": "docs/tf_tutorial_0_basics.rst",
+      "ex:status": "added",
+      "ex:lines_added": 38,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 38,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/tf_tutorial_0_basics.rst"
+    },
+    "ex:activity_docstf_tut_1": {
+      "prov:type": "activity",
+      "ex:filename": "docs/tf_tutorial_1_imagenet.rst",
+      "ex:status": "added",
+      "ex:lines_added": 37,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 37,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/tf_tutorial_1_imagenet.rst"
+    },
+    "ex:activity_docstorch_": {
+      "prov:type": "activity",
+      "ex:filename": "docs/torch_scaling_test.rst",
+      "ex:status": "added",
+      "ex:lines_added": 212,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 212,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/torch_scaling_test.rst"
+    },
+    "ex:activity_docstorch__1": {
+      "prov:type": "activity",
+      "ex:filename": "docs/torch_tutorial_0_basics.rst",
+      "ex:status": "added",
+      "ex:lines_added": 96,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 96,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/torch_tutorial_0_basics.rst"
+    },
+    "ex:activity_docstorch__2": {
+      "prov:type": "activity",
+      "ex:filename": "docs/torch_tutorial_1_mnist.rst",
+      "ex:status": "added",
+      "ex:lines_added": 113,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 113,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/torch_tutorial_1_mnist.rst"
+    },
+    "ex:activity_docstutori": {
+      "prov:type": "activity",
+      "ex:filename": "docs/tutorials.rst",
+      "ex:status": "added",
+      "ex:lines_added": 52,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 52,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/tutorials.rst"
+    },
+    "ex:activity_docsuse_ca": {
+      "prov:type": "activity",
+      "ex:filename": "docs/use_cases.rst",
+      "ex:status": "added",
+      "ex:lines_added": 97,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 97,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/use_cases.rst"
+    },
+    "ex:activity_docsvirgo_": {
+      "prov:type": "activity",
+      "ex:filename": "docs/virgo_doc.rst",
+      "ex:status": "added",
+      "ex:lines_added": 100,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 100,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/docs/virgo_doc.rst"
+    },
+    "ex:activity_envfilesit": {
+      "prov:type": "activity",
+      "ex:filename": "env-files/itwinai-installer.sh",
+      "ex:status": "added",
+      "ex:lines_added": 41,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 41,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/env-files/itwinai-installer.sh"
+    },
+    "ex:activity_envfileste": {
+      "prov:type": "activity",
+      "ex:filename": "env-files/tensorflow/createEnvJSCTF.sh",
+      "ex:status": "added",
+      "ex:lines_added": 81,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 81,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/env-files/tensorflow/createEnvJSCTF.sh"
+    },
+    "ex:activity_envfileste_1": {
+      "prov:type": "activity",
+      "ex:filename": "env-files/tensorflow/generic_tf.sh",
+      "ex:status": "added",
+      "ex:lines_added": 90,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 90,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/env-files/tensorflow/generic_tf.sh"
+    },
+    "ex:activity_envfileste_2": {
+      "prov:type": "activity",
+      "ex:filename": "env-files/tensorflow/tensorflow-2.10.yml",
+      "ex:status": "added",
+      "ex:lines_added": 13,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 13,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/env-files/tensorflow/tensorflow-2.10.yml"
+    },
+    "ex:activity_envfileste_3": {
+      "prov:type": "activity",
+      "ex:filename": "env-files/tensorflow/tensorflow-2.11.yml",
+      "ex:status": "added",
+      "ex:lines_added": 19,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 19,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/env-files/tensorflow/tensorflow-2.11.yml"
+    },
+    "ex:activity_envfileste_4": {
+      "prov:type": "activity",
+      "ex:filename": "env-files/tensorflow/tensorflow-2.13-cpu.yml",
+      "ex:status": "added",
+      "ex:lines_added": 14,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 14,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/env-files/tensorflow/tensorflow-2.13-cpu.yml"
+    },
+    "ex:activity_envfileste_5": {
+      "prov:type": "activity",
+      "ex:filename": "env-files/tensorflow/tensorflow-2.13.yml",
+      "ex:status": "added",
+      "ex:lines_added": 17,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 17,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/env-files/tensorflow/tensorflow-2.13.yml"
+    },
+    "ex:activity_envfilesto": {
+      "prov:type": "activity",
+      "ex:filename": "env-files/torch/createEnvJSC.sh",
+      "ex:status": "added",
+      "ex:lines_added": 63,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 63,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/env-files/torch/createEnvJSC.sh"
+    },
+    "ex:activity_envfilesto_1": {
+      "prov:type": "activity",
+      "ex:filename": "env-files/torch/generic_torch.sh",
+      "ex:status": "added",
+      "ex:lines_added": 170,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 170,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/env-files/torch/generic_torch.sh"
+    },
+    "ex:activity_envfilesto_2": {
+      "prov:type": "activity",
+      "ex:filename": "env-files/torch/pytorch-env-cpu.yml",
+      "ex:status": "added",
+      "ex:lines_added": 15,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 15,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/env-files/torch/pytorch-env-cpu.yml"
+    },
+    "ex:activity_envfilesto_3": {
+      "prov:type": "activity",
+      "ex:filename": "env-files/torch/pytorch-env-gpu.yml",
+      "ex:status": "added",
+      "ex:lines_added": 19,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 19,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/env-files/torch/pytorch-env-gpu.yml"
+    },
+    "ex:activity_environmen": {
+      "prov:type": "activity",
+      "ex:filename": "environment-cern.yml",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 12,
+      "ex:number_of_lines_affected": 12,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/environment-cern.yml"
+    },
+    "ex:activity_examples": {
+      "prov:type": "activity",
+      "ex:filename": "examples.sh",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 72,
+      "ex:number_of_lines_affected": 72,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/examples.sh"
+    },
+    "ex:activity_otherargpa": {
+      "prov:type": "activity",
+      "ex:filename": "other/argparse/argparsee.py",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 31,
+      "ex:number_of_lines_affected": 31,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/other/argparse/argparsee.py"
+    },
+    "ex:activity_otherargpa_1": {
+      "prov:type": "activity",
+      "ex:filename": "other/argparse/config.yml",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 10,
+      "ex:number_of_lines_affected": 10,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/other/argparse/config.yml"
+    },
+    "ex:activity_pyproject": {
+      "prov:type": "activity",
+      "ex:filename": "pyproject.toml",
+      "ex:status": "modified",
+      "ex:lines_added": 86,
+      "ex:lines_removed": 2,
+      "ex:number_of_lines_affected": 88,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/pyproject.toml"
+    },
+    "ex:activity_runworkflo": {
+      "prov:type": "activity",
+      "ex:filename": "run-workflow.py",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 154,
+      "ex:number_of_lines_affected": 154,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/run-workflow.py"
+    },
+    "ex:activity_srcitwinai": {
+      "prov:type": "activity",
+      "ex:filename": "src/itwinai/__init__.py",
+      "ex:status": "renamed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/src/itwinai/__init__.py"
+    },
+    "ex:activity_srcitwinai_1": {
+      "prov:type": "activity",
+      "ex:filename": "src/itwinai/cli.py",
+      "ex:status": "added",
+      "ex:lines_added": 297,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 297,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/src/itwinai/cli.py"
+    },
+    "ex:activity_srcitwinai_2": {
+      "prov:type": "activity",
+      "ex:filename": "src/itwinai/components.py",
+      "ex:status": "added",
+      "ex:lines_added": 473,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 473,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/src/itwinai/components.py"
+    },
+    "ex:activity_srcitwinai_3": {
+      "prov:type": "activity",
+      "ex:filename": "src/itwinai/distributed.py",
+      "ex:status": "added",
+      "ex:lines_added": 79,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 79,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/src/itwinai/distributed.py"
+    },
+    "ex:activity_srcitwinai_4": {
+      "prov:type": "activity",
+      "ex:filename": "src/itwinai/loggers.py",
+      "ex:status": "added",
+      "ex:lines_added": 748,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 748,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/src/itwinai/loggers.py"
+    },
+    "ex:activity_srcitwinai_5": {
+      "prov:type": "activity",
+      "ex:filename": "src/itwinai/parser.py",
+      "ex:status": "added",
+      "ex:lines_added": 265,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 265,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/src/itwinai/parser.py"
+    },
+    "ex:activity_srcitwinai_6": {
+      "prov:type": "activity",
+      "ex:filename": "src/itwinai/pipeline.py",
+      "ex:status": "added",
+      "ex:lines_added": 103,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 103,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/src/itwinai/pipeline.py"
+    },
+    "ex:activity_srcitwinai_7": {
+      "prov:type": "activity",
+      "ex:filename": "src/itwinai/serialization.py",
+      "ex:status": "added",
+      "ex:lines_added": 178,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 178,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/src/itwinai/serialization.py"
+    },
+    "ex:activity_srcitwinai_8": {
+      "prov:type": "activity",
+      "ex:filename": "src/itwinai/tensorflow/__init__.py",
+      "ex:status": "renamed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/src/itwinai/tensorflow/__init__.py"
+    },
+    "ex:activity_srcitwinai_9": {
+      "prov:type": "activity",
+      "ex:filename": "src/itwinai/tensorflow/data/__init__.py",
+      "ex:status": "renamed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/src/itwinai/tensorflow/data/__init__.py"
+    },
+    "ex:activity_srcitwinai_10": {
+      "prov:type": "activity",
+      "ex:filename": "src/itwinai/tensorflow/distributed.py",
+      "ex:status": "added",
+      "ex:lines_added": 64,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 64,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/src/itwinai/tensorflow/distributed.py"
+    },
+    "ex:activity_srcitwinai_11": {
+      "prov:type": "activity",
+      "ex:filename": "src/itwinai/tensorflow/models/__init__.py",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/src/itwinai/tensorflow/models/__init__.py"
+    },
+    "ex:activity_srcitwinai_12": {
+      "prov:type": "activity",
+      "ex:filename": "src/itwinai/tensorflow/models/mnist.py",
+      "ex:status": "added",
+      "ex:lines_added": 56,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 56,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/src/itwinai/tensorflow/models/mnist.py"
+    },
+    "ex:activity_srcitwinai_13": {
+      "prov:type": "activity",
+      "ex:filename": "src/itwinai/tensorflow/trainer.py",
+      "ex:status": "added",
+      "ex:lines_added": 260,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 260,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/src/itwinai/tensorflow/trainer.py"
+    },
+    "ex:activity_srcitwinai_14": {
+      "prov:type": "activity",
+      "ex:filename": "src/itwinai/tensorflow/utils.py",
+      "ex:status": "added",
+      "ex:lines_added": 27,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 27,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/src/itwinai/tensorflow/utils.py"
+    },
+    "ex:activity_srcitwinai_15": {
+      "prov:type": "activity",
+      "ex:filename": "src/itwinai/tests/__init__.py",
+      "ex:status": "added",
+      "ex:lines_added": 11,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 11,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/src/itwinai/tests/__init__.py"
+    },
+    "ex:activity_srcitwinai_16": {
+      "prov:type": "activity",
+      "ex:filename": "src/itwinai/tests/dummy_components.py",
+      "ex:status": "added",
+      "ex:lines_added": 97,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 97,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/src/itwinai/tests/dummy_components.py"
+    },
+    "ex:activity_srcitwinai_17": {
+      "prov:type": "activity",
+      "ex:filename": "src/itwinai/torch/__init__.py",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/src/itwinai/torch/__init__.py"
+    },
+    "ex:activity_srcitwinai_18": {
+      "prov:type": "activity",
+      "ex:filename": "src/itwinai/torch/config.py",
+      "ex:status": "added",
+      "ex:lines_added": 63,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 63,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/src/itwinai/torch/config.py"
+    },
+    "ex:activity_srcitwinai_19": {
+      "prov:type": "activity",
+      "ex:filename": "src/itwinai/torch/data/__init__.py",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/src/itwinai/torch/data/__init__.py"
+    },
+    "ex:activity_srcitwinai_20": {
+      "prov:type": "activity",
+      "ex:filename": "src/itwinai/torch/distributed.py",
+      "ex:status": "added",
+      "ex:lines_added": 944,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 944,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/src/itwinai/torch/distributed.py"
+    },
+    "ex:activity_srcitwinai_21": {
+      "prov:type": "activity",
+      "ex:filename": "src/itwinai/torch/inference.py",
+      "ex:status": "added",
+      "ex:lines_added": 197,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 197,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/src/itwinai/torch/inference.py"
+    },
+    "ex:activity_srcitwinai_22": {
+      "prov:type": "activity",
+      "ex:filename": "src/itwinai/torch/mlflow.py",
+      "ex:status": "added",
+      "ex:lines_added": 82,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 82,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/src/itwinai/torch/mlflow.py"
+    },
+    "ex:activity_srcitwinai_23": {
+      "prov:type": "activity",
+      "ex:filename": "src/itwinai/torch/models/__init__.py",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/src/itwinai/torch/models/__init__.py"
+    },
+    "ex:activity_srcitwinai_24": {
+      "prov:type": "activity",
+      "ex:filename": "src/itwinai/torch/models/mnist.py",
+      "ex:status": "added",
+      "ex:lines_added": 75,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 75,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/src/itwinai/torch/models/mnist.py"
+    },
+    "ex:activity_srcitwinai_25": {
+      "prov:type": "activity",
+      "ex:filename": "src/itwinai/torch/reproducibility.py",
+      "ex:status": "added",
+      "ex:lines_added": 48,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 48,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/src/itwinai/torch/reproducibility.py"
+    },
+    "ex:activity_srcitwinai_26": {
+      "prov:type": "activity",
+      "ex:filename": "src/itwinai/torch/trainer.py",
+      "ex:status": "added",
+      "ex:lines_added": 774,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 774,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/src/itwinai/torch/trainer.py"
+    },
+    "ex:activity_srcitwinai_27": {
+      "prov:type": "activity",
+      "ex:filename": "src/itwinai/torch/type.py",
+      "ex:status": "added",
+      "ex:lines_added": 26,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 26,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/src/itwinai/torch/type.py"
+    },
+    "ex:activity_srcitwinai_28": {
+      "prov:type": "activity",
+      "ex:filename": "src/itwinai/type.py",
+      "ex:status": "added",
+      "ex:lines_added": 15,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 15,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/src/itwinai/type.py"
+    },
+    "ex:activity_srcitwinai_29": {
+      "prov:type": "activity",
+      "ex:filename": "src/itwinai/utils.py",
+      "ex:status": "added",
+      "ex:lines_added": 193,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 193,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/src/itwinai/utils.py"
+    },
+    "ex:activity_testscompo": {
+      "prov:type": "activity",
+      "ex:filename": "tests/components/conftest.py",
+      "ex:status": "added",
+      "ex:lines_added": 72,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 72,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tests/components/conftest.py"
+    },
+    "ex:activity_testscompo_1": {
+      "prov:type": "activity",
+      "ex:filename": "tests/components/test_components.py",
+      "ex:status": "added",
+      "ex:lines_added": 151,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 151,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tests/components/test_components.py"
+    },
+    "ex:activity_testscompo_2": {
+      "prov:type": "activity",
+      "ex:filename": "tests/components/test_pipe_parser.py",
+      "ex:status": "added",
+      "ex:lines_added": 216,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 216,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tests/components/test_pipe_parser.py"
+    },
+    "ex:activity_testscompo_3": {
+      "prov:type": "activity",
+      "ex:filename": "tests/components/test_pipeline.py",
+      "ex:status": "added",
+      "ex:lines_added": 83,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 83,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tests/components/test_pipeline.py"
+    },
+    "ex:activity_testsconft": {
+      "prov:type": "activity",
+      "ex:filename": "tests/conftest.py",
+      "ex:status": "added",
+      "ex:lines_added": 34,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 34,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tests/conftest.py"
+    },
+    "ex:activity_testsrun_o": {
+      "prov:type": "activity",
+      "ex:filename": "tests/run_on_jsc.sh",
+      "ex:status": "added",
+      "ex:lines_added": 28,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 28,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tests/run_on_jsc.sh"
+    },
+    "ex:activity_teststest_": {
+      "prov:type": "activity",
+      "ex:filename": "tests/test_loggers.py",
+      "ex:status": "added",
+      "ex:lines_added": 165,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 165,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tests/test_loggers.py"
+    },
+    "ex:activity_teststest__1": {
+      "prov:type": "activity",
+      "ex:filename": "tests/test_utils.py",
+      "ex:status": "added",
+      "ex:lines_added": 99,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 99,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tests/test_utils.py"
+    },
+    "ex:activity_teststorch": {
+      "prov:type": "activity",
+      "ex:filename": "tests/torch/distribtued_decorator.py",
+      "ex:status": "added",
+      "ex:lines_added": 111,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 111,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tests/torch/distribtued_decorator.py"
+    },
+    "ex:activity_teststorch_1": {
+      "prov:type": "activity",
+      "ex:filename": "tests/torch/test_config.py",
+      "ex:status": "added",
+      "ex:lines_added": 26,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 26,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tests/torch/test_config.py"
+    },
+    "ex:activity_teststorch_2": {
+      "prov:type": "activity",
+      "ex:filename": "tests/torch/test_distribtued_training.py",
+      "ex:status": "added",
+      "ex:lines_added": 25,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 25,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tests/torch/test_distribtued_training.py"
+    },
+    "ex:activity_teststorch_3": {
+      "prov:type": "activity",
+      "ex:filename": "tests/torch/torch_dist_trainer.py",
+      "ex:status": "added",
+      "ex:lines_added": 62,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 62,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tests/torch/torch_dist_trainer.py"
+    },
+    "ex:activity_testsuseca": {
+      "prov:type": "activity",
+      "ex:filename": "tests/use-cases/conftest.py",
+      "ex:status": "added",
+      "ex:lines_added": 54,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 54,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tests/use-cases/conftest.py"
+    },
+    "ex:activity_testsuseca_1": {
+      "prov:type": "activity",
+      "ex:filename": "tests/use-cases/test_3dgan.py",
+      "ex:status": "added",
+      "ex:lines_added": 86,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 86,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tests/use-cases/test_3dgan.py"
+    },
+    "ex:activity_testsuseca_2": {
+      "prov:type": "activity",
+      "ex:filename": "tests/use-cases/test_cyclones.py",
+      "ex:status": "added",
+      "ex:lines_added": 42,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 42,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tests/use-cases/test_cyclones.py"
+    },
+    "ex:activity_testsuseca_3": {
+      "prov:type": "activity",
+      "ex:filename": "tests/use-cases/test_mnist.py",
+      "ex:status": "modified",
+      "ex:lines_added": 97,
+      "ex:lines_removed": 24,
+      "ex:number_of_lines_affected": 121,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tests/use-cases/test_mnist.py"
+    },
+    "ex:activity_tutorialsd": {
+      "prov:type": "activity",
+      "ex:filename": "tutorials/distributed-ml/tf-scaling-test-jube/README.md",
+      "ex:status": "added",
+      "ex:lines_added": 44,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 44,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tutorials/distributed-ml/tf-scaling-test-jube/README.md"
+    },
+    "ex:activity_tutorialsd_1": {
+      "prov:type": "activity",
+      "ex:filename": "tutorials/distributed-ml/tf-scaling-test-jube/bench_plot.ipynb",
+      "ex:status": "added",
+      "ex:lines_added": 170,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 170,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tutorials/distributed-ml/tf-scaling-test-jube/bench_plot.ipynb"
+    },
+    "ex:activity_tutorialsd_2": {
+      "prov:type": "activity",
+      "ex:filename": "tutorials/distributed-ml/tf-scaling-test-jube/general_jobsys.xml",
+      "ex:status": "added",
+      "ex:lines_added": 140,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 140,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tutorials/distributed-ml/tf-scaling-test-jube/general_jobsys.xml"
+    },
+    "ex:activity_tutorialsd_3": {
+      "prov:type": "activity",
+      "ex:filename": "tutorials/distributed-ml/tf-scaling-test-jube/jube_ddp.sh",
+      "ex:status": "added",
+      "ex:lines_added": 72,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 72,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tutorials/distributed-ml/tf-scaling-test-jube/jube_ddp.sh"
+    },
+    "ex:activity_tutorialsd_4": {
+      "prov:type": "activity",
+      "ex:filename": "tutorials/distributed-ml/tf-scaling-test-jube/train.py",
+      "ex:status": "added",
+      "ex:lines_added": 171,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 171,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tutorials/distributed-ml/tf-scaling-test-jube/train.py"
+    },
+    "ex:activity_tutorialsd_5": {
+      "prov:type": "activity",
+      "ex:filename": "tutorials/distributed-ml/tf-tutorial-0-basics/README.md",
+      "ex:status": "added",
+      "ex:lines_added": 20,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 20,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tutorials/distributed-ml/tf-tutorial-0-basics/README.md"
+    },
+    "ex:activity_tutorialsd_6": {
+      "prov:type": "activity",
+      "ex:filename": "tutorials/distributed-ml/tf-tutorial-0-basics/tfmirrored_slurm.sh",
+      "ex:status": "added",
+      "ex:lines_added": 67,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 67,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tutorials/distributed-ml/tf-tutorial-0-basics/tfmirrored_slurm.sh"
+    },
+    "ex:activity_tutorialsd_7": {
+      "prov:type": "activity",
+      "ex:filename": "tutorials/distributed-ml/tf-tutorial-0-basics/train.py",
+      "ex:status": "added",
+      "ex:lines_added": 108,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 108,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tutorials/distributed-ml/tf-tutorial-0-basics/train.py"
+    },
+    "ex:activity_tutorialsd_8": {
+      "prov:type": "activity",
+      "ex:filename": "tutorials/distributed-ml/tf-tutorial-1-imagenet/README.md",
+      "ex:status": "added",
+      "ex:lines_added": 20,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 20,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tutorials/distributed-ml/tf-tutorial-1-imagenet/README.md"
+    },
+    "ex:activity_tutorialsd_9": {
+      "prov:type": "activity",
+      "ex:filename": "tutorials/distributed-ml/tf-tutorial-1-imagenet/tfmirrored_slurm.sh",
+      "ex:status": "added",
+      "ex:lines_added": 70,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 70,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tutorials/distributed-ml/tf-tutorial-1-imagenet/tfmirrored_slurm.sh"
+    },
+    "ex:activity_tutorialsd_10": {
+      "prov:type": "activity",
+      "ex:filename": "tutorials/distributed-ml/tf-tutorial-1-imagenet/train.py",
+      "ex:status": "added",
+      "ex:lines_added": 171,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 171,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tutorials/distributed-ml/tf-tutorial-1-imagenet/train.py"
+    },
+    "ex:activity_tutorialsd_11": {
+      "prov:type": "activity",
+      "ex:filename": "tutorials/distributed-ml/torch-scaling-test/README.md",
+      "ex:status": "added",
+      "ex:lines_added": 118,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 118,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tutorials/distributed-ml/torch-scaling-test/README.md"
+    },
+    "ex:activity_tutorialsd_12": {
+      "prov:type": "activity",
+      "ex:filename": "tutorials/distributed-ml/torch-scaling-test/config/base.yaml",
+      "ex:status": "added",
+      "ex:lines_added": 16,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 16,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tutorials/distributed-ml/torch-scaling-test/config/base.yaml"
+    },
+    "ex:activity_tutorialsd_13": {
+      "prov:type": "activity",
+      "ex:filename": "tutorials/distributed-ml/torch-scaling-test/config/ddp.yaml",
+      "ex:status": "added",
+      "ex:lines_added": 1,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 1,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tutorials/distributed-ml/torch-scaling-test/config/ddp.yaml"
+    },
+    "ex:activity_tutorialsd_14": {
+      "prov:type": "activity",
+      "ex:filename": "tutorials/distributed-ml/torch-scaling-test/config/deepspeed.yaml",
+      "ex:status": "added",
+      "ex:lines_added": 1,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 1,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tutorials/distributed-ml/torch-scaling-test/config/deepspeed.yaml"
+    },
+    "ex:activity_tutorialsd_15": {
+      "prov:type": "activity",
+      "ex:filename": "tutorials/distributed-ml/torch-scaling-test/config/horovod.yaml",
+      "ex:status": "added",
+      "ex:lines_added": 3,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 3,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tutorials/distributed-ml/torch-scaling-test/config/horovod.yaml"
+    },
+    "ex:activity_tutorialsd_16": {
+      "prov:type": "activity",
+      "ex:filename": "tutorials/distributed-ml/torch-scaling-test/ddp_trainer.py",
+      "ex:status": "added",
+      "ex:lines_added": 272,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 272,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tutorials/distributed-ml/torch-scaling-test/ddp_trainer.py"
+    },
+    "ex:activity_tutorialsd_17": {
+      "prov:type": "activity",
+      "ex:filename": "tutorials/distributed-ml/torch-scaling-test/deepspeed_trainer.py",
+      "ex:status": "added",
+      "ex:lines_added": 286,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 286,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tutorials/distributed-ml/torch-scaling-test/deepspeed_trainer.py"
+    },
+    "ex:activity_tutorialsd_18": {
+      "prov:type": "activity",
+      "ex:filename": "tutorials/distributed-ml/torch-scaling-test/horovod_trainer.py",
+      "ex:status": "added",
+      "ex:lines_added": 321,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 321,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tutorials/distributed-ml/torch-scaling-test/horovod_trainer.py"
+    },
+    "ex:activity_tutorialsd_19": {
+      "prov:type": "activity",
+      "ex:filename": "tutorials/distributed-ml/torch-scaling-test/img/report.png",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tutorials/distributed-ml/torch-scaling-test/img/report.png"
+    },
+    "ex:activity_tutorialsd_20": {
+      "prov:type": "activity",
+      "ex:filename": "tutorials/distributed-ml/torch-scaling-test/itwinai_trainer.py",
+      "ex:status": "added",
+      "ex:lines_added": 342,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 342,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tutorials/distributed-ml/torch-scaling-test/itwinai_trainer.py"
+    },
+    "ex:activity_tutorialsd_21": {
+      "prov:type": "activity",
+      "ex:filename": "tutorials/distributed-ml/torch-scaling-test/runall.sh",
+      "ex:status": "added",
+      "ex:lines_added": 89,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 89,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tutorials/distributed-ml/torch-scaling-test/runall.sh"
+    },
+    "ex:activity_tutorialsd_22": {
+      "prov:type": "activity",
+      "ex:filename": "tutorials/distributed-ml/torch-scaling-test/scaling-test.sh",
+      "ex:status": "added",
+      "ex:lines_added": 10,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 10,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tutorials/distributed-ml/torch-scaling-test/scaling-test.sh"
+    },
+    "ex:activity_tutorialsd_23": {
+      "prov:type": "activity",
+      "ex:filename": "tutorials/distributed-ml/torch-scaling-test/slurm.sh",
+      "ex:status": "added",
+      "ex:lines_added": 117,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 117,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tutorials/distributed-ml/torch-scaling-test/slurm.sh"
+    },
+    "ex:activity_tutorialsd_24": {
+      "prov:type": "activity",
+      "ex:filename": "tutorials/distributed-ml/torch-scaling-test/utils.py",
+      "ex:status": "added",
+      "ex:lines_added": 21,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 21,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tutorials/distributed-ml/torch-scaling-test/utils.py"
+    },
+    "ex:activity_tutorialsd_25": {
+      "prov:type": "activity",
+      "ex:filename": "tutorials/distributed-ml/torch-tutorial-0-basics/README.md",
+      "ex:status": "added",
+      "ex:lines_added": 126,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 126,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tutorials/distributed-ml/torch-tutorial-0-basics/README.md"
+    },
+    "ex:activity_tutorialsd_26": {
+      "prov:type": "activity",
+      "ex:filename": "tutorials/distributed-ml/torch-tutorial-0-basics/runall.sh",
+      "ex:status": "added",
+      "ex:lines_added": 39,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 39,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tutorials/distributed-ml/torch-tutorial-0-basics/runall.sh"
+    },
+    "ex:activity_tutorialsd_27": {
+      "prov:type": "activity",
+      "ex:filename": "tutorials/distributed-ml/torch-tutorial-0-basics/slurm.sh",
+      "ex:status": "added",
+      "ex:lines_added": 117,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 117,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tutorials/distributed-ml/torch-tutorial-0-basics/slurm.sh"
+    },
+    "ex:activity_tutorialsd_28": {
+      "prov:type": "activity",
+      "ex:filename": "tutorials/distributed-ml/torch-tutorial-0-basics/train.py",
+      "ex:status": "added",
+      "ex:lines_added": 155,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 155,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tutorials/distributed-ml/torch-tutorial-0-basics/train.py"
+    },
+    "ex:activity_tutorialsd_29": {
+      "prov:type": "activity",
+      "ex:filename": "tutorials/distributed-ml/torch-tutorial-1-mnist/README.md",
+      "ex:status": "added",
+      "ex:lines_added": 79,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 79,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tutorials/distributed-ml/torch-tutorial-1-mnist/README.md"
+    },
+    "ex:activity_tutorialsd_30": {
+      "prov:type": "activity",
+      "ex:filename": "tutorials/distributed-ml/torch-tutorial-1-mnist/config.yaml",
+      "ex:status": "added",
+      "ex:lines_added": 28,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 28,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tutorials/distributed-ml/torch-tutorial-1-mnist/config.yaml"
+    },
+    "ex:activity_tutorialsd_31": {
+      "prov:type": "activity",
+      "ex:filename": "tutorials/distributed-ml/torch-tutorial-1-mnist/runall.sh",
+      "ex:status": "added",
+      "ex:lines_added": 39,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 39,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tutorials/distributed-ml/torch-tutorial-1-mnist/runall.sh"
+    },
+    "ex:activity_tutorialsd_32": {
+      "prov:type": "activity",
+      "ex:filename": "tutorials/distributed-ml/torch-tutorial-1-mnist/slurm.sh",
+      "ex:status": "added",
+      "ex:lines_added": 116,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 116,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tutorials/distributed-ml/torch-tutorial-1-mnist/slurm.sh"
+    },
+    "ex:activity_tutorialsd_33": {
+      "prov:type": "activity",
+      "ex:filename": "tutorials/distributed-ml/torch-tutorial-1-mnist/train.py",
+      "ex:status": "added",
+      "ex:lines_added": 426,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 426,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tutorials/distributed-ml/torch-tutorial-1-mnist/train.py"
+    },
+    "ex:activity_tutorialsm": {
+      "prov:type": "activity",
+      "ex:filename": "tutorials/ml-workflows/basic_components.py",
+      "ex:status": "added",
+      "ex:lines_added": 86,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 86,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tutorials/ml-workflows/basic_components.py"
+    },
+    "ex:activity_tutorialsm_1": {
+      "prov:type": "activity",
+      "ex:filename": "tutorials/ml-workflows/tutorial_0_basic_workflow.py",
+      "ex:status": "added",
+      "ex:lines_added": 71,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 71,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tutorials/ml-workflows/tutorial_0_basic_workflow.py"
+    },
+    "ex:activity_tutorialsm_2": {
+      "prov:type": "activity",
+      "ex:filename": "tutorials/ml-workflows/tutorial_1_intermediate_workflow.py",
+      "ex:status": "added",
+      "ex:lines_added": 98,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 98,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tutorials/ml-workflows/tutorial_1_intermediate_workflow.py"
+    },
+    "ex:activity_tutorialsm_3": {
+      "prov:type": "activity",
+      "ex:filename": "tutorials/ml-workflows/tutorial_2_advanced_workflow.py",
+      "ex:status": "added",
+      "ex:lines_added": 87,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 87,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/tutorials/ml-workflows/tutorial_2_advanced_workflow.py"
+    },
+    "ex:activity_usecases3d": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/3dgan/Dockerfile",
+      "ex:status": "added",
+      "ex:lines_added": 25,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 25,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/3dgan/Dockerfile"
+    },
+    "ex:activity_usecases3d_1": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/3dgan/README.md",
+      "ex:status": "added",
+      "ex:lines_added": 257,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 257,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/3dgan/README.md"
+    },
+    "ex:activity_usecases3d_2": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/3dgan/__init__.py",
+      "ex:status": "added",
+      "ex:lines_added": 1,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 1,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/3dgan/__init__.py"
+    },
+    "ex:activity_usecases3d_3": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/3dgan/config.yaml",
+      "ex:status": "added",
+      "ex:lines_added": 208,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 208,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/3dgan/config.yaml"
+    },
+    "ex:activity_usecases3d_4": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/3dgan/create_inference_sample.py",
+      "ex:status": "added",
+      "ex:lines_added": 23,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 23,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/3dgan/create_inference_sample.py"
+    },
+    "ex:activity_usecases3d_5": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/3dgan/dataloader.py",
+      "ex:status": "added",
+      "ex:lines_added": 212,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 212,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/3dgan/dataloader.py"
+    },
+    "ex:activity_usecases3d_6": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/3dgan/interLink/3dgan-inference-cpu.yaml",
+      "ex:status": "added",
+      "ex:lines_added": 76,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 76,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/3dgan/interLink/3dgan-inference-cpu.yaml"
+    },
+    "ex:activity_usecases3d_7": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/3dgan/interLink/3dgan-inference.yaml",
+      "ex:status": "added",
+      "ex:lines_added": 76,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 76,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/3dgan/interLink/3dgan-inference.yaml"
+    },
+    "ex:activity_usecases3d_8": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/3dgan/interLink/3dgan-train.yaml",
+      "ex:status": "added",
+      "ex:lines_added": 88,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 88,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/3dgan/interLink/3dgan-train.yaml"
+    },
+    "ex:activity_usecases3d_9": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/3dgan/interLink/README.md",
+      "ex:status": "added",
+      "ex:lines_added": 66,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 66,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/3dgan/interLink/README.md"
+    },
+    "ex:activity_usecases3d_10": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/3dgan/model.py",
+      "ex:status": "added",
+      "ex:lines_added": 786,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 786,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/3dgan/model.py"
+    },
+    "ex:activity_usecases3d_11": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/3dgan/requirements.txt",
+      "ex:status": "added",
+      "ex:lines_added": 6,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 6,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/3dgan/requirements.txt"
+    },
+    "ex:activity_usecases3d_12": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/3dgan/saver.py",
+      "ex:status": "added",
+      "ex:lines_added": 122,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 122,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/3dgan/saver.py"
+    },
+    "ex:activity_usecases3d_13": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/3dgan/startscript",
+      "ex:status": "renamed",
+      "ex:lines_added": 6,
+      "ex:lines_removed": 5,
+      "ex:number_of_lines_affected": 11,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/3dgan/startscript"
+    },
+    "ex:activity_usecases3d_14": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/3dgan/trainer.py",
+      "ex:status": "added",
+      "ex:lines_added": 157,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 157,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/3dgan/trainer.py"
+    },
+    "ex:activity_usecasesRE": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/README.md",
+      "ex:status": "added",
+      "ex:lines_added": 33,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 33,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/README.md"
+    },
+    "ex:activity_usecasescy": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/cyclones/.gitignore",
+      "ex:status": "added",
+      "ex:lines_added": 2,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 2,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/cyclones/.gitignore"
+    },
+    "ex:activity_usecasescy_1": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/cyclones/README.md",
+      "ex:status": "added",
+      "ex:lines_added": 47,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 47,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/cyclones/README.md"
+    },
+    "ex:activity_usecasescy_2": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/cyclones/cyclones_vgg.py",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/cyclones/cyclones_vgg.py"
+    },
+    "ex:activity_usecasescy_3": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/cyclones/dataloader.py",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/cyclones/dataloader.py"
+    },
+    "ex:activity_usecasescy_4": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/cyclones/pipeline.yaml",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/cyclones/pipeline.yaml"
+    },
+    "ex:activity_usecasescy_5": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/cyclones/requirements.txt",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/cyclones/requirements.txt"
+    },
+    "ex:activity_usecasescy_6": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/cyclones/src/callbacks.py",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/cyclones/src/callbacks.py"
+    },
+    "ex:activity_usecasescy_7": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/cyclones/src/macros.py",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/cyclones/src/macros.py"
+    },
+    "ex:activity_usecasescy_8": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/cyclones/src/scaling.py",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/cyclones/src/scaling.py"
+    },
+    "ex:activity_usecasescy_9": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/cyclones/src/strategy.py",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/cyclones/src/strategy.py"
+    },
+    "ex:activity_usecasescy_10": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/cyclones/src/tfrecords/dataset.py",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/cyclones/src/tfrecords/dataset.py"
+    },
+    "ex:activity_usecasescy_11": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/cyclones/src/tfrecords/functions.py",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/cyclones/src/tfrecords/functions.py"
+    },
+    "ex:activity_usecasescy_12": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/cyclones/src/transform.py",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/cyclones/src/transform.py"
+    },
+    "ex:activity_usecasescy_13": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/cyclones/src/utils.py",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/cyclones/src/utils.py"
+    },
+    "ex:activity_usecasescy_14": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/cyclones/startscript.sh",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/cyclones/startscript.sh"
+    },
+    "ex:activity_usecasescy_15": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/cyclones/train.py",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/cyclones/train.py"
+    },
+    "ex:activity_usecasescy_16": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/cyclones/trainer.py",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/cyclones/trainer.py"
+    },
+    "ex:activity_usecasesmn": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/mnist/README.md",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/mnist/README.md"
+    },
+    "ex:activity_usecasesmn_1": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/mnist/env-files/preproc-env.yml",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/mnist/env-files/preproc-env.yml"
+    },
+    "ex:activity_usecasesmn_2": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/mnist/inference-workflow.yml",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/mnist/inference-workflow.yml"
+    },
+    "ex:activity_usecasesmn_3": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/mnist/meta.yml",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/mnist/meta.yml"
+    },
+    "ex:activity_usecasesmn_4": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/mnist/mlflow-server.py",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/mnist/mlflow-server.py"
+    },
+    "ex:activity_usecasesmn_5": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/mnist/mnist-ai-inference.yml",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/mnist/mnist-ai-inference.yml"
+    },
+    "ex:activity_usecasesmn_6": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/mnist/mnist-ai-train.yml",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/mnist/mnist-ai-train.yml"
+    },
+    "ex:activity_usecasesmn_7": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/mnist/mnist-preproc.cwl",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/mnist/mnist-preproc.cwl"
+    },
+    "ex:activity_usecasesmn_8": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/mnist/mnist-preproc.py",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/mnist/mnist-preproc.py"
+    },
+    "ex:activity_usecasesmn_9": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/mnist/tensorflow/dataloader.py",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/mnist/tensorflow/dataloader.py"
+    },
+    "ex:activity_usecasesmn_10": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/mnist/tensorflow/pipeline.yaml",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/mnist/tensorflow/pipeline.yaml"
+    },
+    "ex:activity_usecasesmn_11": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/mnist/tensorflow/startscript.sh",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/mnist/tensorflow/startscript.sh"
+    },
+    "ex:activity_usecasesmn_12": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/mnist/torch-lightning/README.md",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/mnist/torch-lightning/README.md"
+    },
+    "ex:activity_usecasesmn_13": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/mnist/torch-lightning/config.yaml",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/mnist/torch-lightning/config.yaml"
+    },
+    "ex:activity_usecasesmn_14": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/mnist/torch-lightning/dataloader.py",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/mnist/torch-lightning/dataloader.py"
+    },
+    "ex:activity_usecasesmn_15": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/mnist/torch-lightning/startscript",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/mnist/torch-lightning/startscript"
+    },
+    "ex:activity_usecasesmn_16": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/mnist/torch-lightning/utils.py",
+      "ex:status": "renamed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/mnist/torch-lightning/utils.py"
+    },
+    "ex:activity_usecasesmn_17": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/mnist/torch/Dockerfile",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/mnist/torch/Dockerfile"
+    },
+    "ex:activity_usecasesmn_18": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/mnist/torch/README.md",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/mnist/torch/README.md"
+    },
+    "ex:activity_usecasesmn_19": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/mnist/torch/config.yaml",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/mnist/torch/config.yaml"
+    },
+    "ex:activity_usecasesmn_20": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/mnist/torch/create_inference_sample.py",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/mnist/torch/create_inference_sample.py"
+    },
+    "ex:activity_usecasesmn_21": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/mnist/torch/dataloader.py",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/mnist/torch/dataloader.py"
+    },
+    "ex:activity_usecasesmn_22": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/mnist/torch/model.py",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/mnist/torch/model.py"
+    },
+    "ex:activity_usecasesmn_23": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/mnist/torch/runall.sh",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/mnist/torch/runall.sh"
+    },
+    "ex:activity_usecasesmn_24": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/mnist/torch/saver.py",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/mnist/torch/saver.py"
+    },
+    "ex:activity_usecasesmn_25": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/mnist/torch/slurm.sh",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/mnist/torch/slurm.sh"
+    },
+    "ex:activity_usecasesmn_26": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/mnist/torch/startscript.sh",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/mnist/torch/startscript.sh"
+    },
+    "ex:activity_usecasesmn_27": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/mnist/training-workflow.yml",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/mnist/training-workflow.yml"
+    },
+    "ex:activity_usecasesmn_28": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/mnist/workflow.cwl",
+      "ex:status": "removed",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/mnist/workflow.cwl"
+    },
+    "ex:activity_usecasesvi": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/virgo/.gitignore",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/virgo/.gitignore"
+    },
+    "ex:activity_usecasesvi_1": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/virgo/README.md",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/virgo/README.md"
+    },
+    "ex:activity_usecasesvi_2": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/virgo/config.yaml",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/virgo/config.yaml"
+    },
+    "ex:activity_usecasesvi_3": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/virgo/data.py",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/virgo/data.py"
+    },
+    "ex:activity_usecasesvi_4": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/virgo/requirements.txt",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/virgo/requirements.txt"
+    },
+    "ex:activity_usecasesvi_5": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/virgo/runall.sh",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/virgo/runall.sh"
+    },
+    "ex:activity_usecasesvi_6": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/virgo/slurm.sh",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/virgo/slurm.sh"
+    },
+    "ex:activity_usecasesvi_7": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/virgo/src/dataset.py",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/virgo/src/dataset.py"
+    },
+    "ex:activity_usecasesvi_8": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/virgo/src/model.py",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/virgo/src/model.py"
+    },
+    "ex:activity_usecasesvi_9": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/virgo/src/utils.py",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/virgo/src/utils.py"
+    },
+    "ex:activity_usecasesvi_10": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/virgo/train.py",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/virgo/train.py"
+    },
+    "ex:activity_usecasesvi_11": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/virgo/trainer.py",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/virgo/trainer.py"
+    },
+    "ex:activity_usecasesxt": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/xtclim/LICENSE",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/xtclim/LICENSE"
+    },
+    "ex:activity_usecasesxt_1": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/xtclim/README.md",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/xtclim/README.md"
+    },
+    "ex:activity_usecasesxt_2": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/xtclim/Requirements.txt",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/xtclim/Requirements.txt"
+    },
+    "ex:activity_usecasesxt_3": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/xtclim/outputs/.DS_Store",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/xtclim/outputs/.DS_Store"
+    },
+    "ex:activity_usecasesxt_4": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/xtclim/pipeline.yaml",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/xtclim/pipeline.yaml"
+    },
+    "ex:activity_usecasesxt_5": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/xtclim/preprocessing/.DS_Store",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/xtclim/preprocessing/.DS_Store"
+    },
+    "ex:activity_usecasesxt_6": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/xtclim/preprocessing/preprocess_2d_seasons.py",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/xtclim/preprocessing/preprocess_2d_seasons.py"
+    },
+    "ex:activity_usecasesxt_7": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/xtclim/preprocessing/preprocess_3d_seasons.ipynb",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/xtclim/preprocessing/preprocess_3d_seasons.ipynb"
+    },
+    "ex:activity_usecasesxt_8": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/xtclim/preprocessing/preprocess_3d_seasons.py",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/xtclim/preprocessing/preprocess_3d_seasons.py"
+    },
+    "ex:activity_usecasesxt_9": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/xtclim/preprocessing/preprocess_functions_1d_temp_members.ipynb",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/xtclim/preprocessing/preprocess_functions_1d_temp_members.ipynb"
+    },
+    "ex:activity_usecasesxt_10": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/xtclim/preprocessing/preprocess_functions_2d_ssp.py",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/xtclim/preprocessing/preprocess_functions_2d_ssp.py"
+    },
+    "ex:activity_usecasesxt_11": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/xtclim/src/.DS_Store",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/xtclim/src/.DS_Store"
+    },
+    "ex:activity_usecasesxt_12": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/xtclim/src/anomaly.py",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/xtclim/src/anomaly.py"
+    },
+    "ex:activity_usecasesxt_13": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/xtclim/src/engine.py",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/xtclim/src/engine.py"
+    },
+    "ex:activity_usecasesxt_14": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/xtclim/src/initialization.py",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/xtclim/src/initialization.py"
+    },
+    "ex:activity_usecasesxt_15": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/xtclim/src/model.py",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/xtclim/src/model.py"
+    },
+    "ex:activity_usecasesxt_16": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/xtclim/src/pipeline.yaml",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/xtclim/src/pipeline.yaml"
+    },
+    "ex:activity_usecasesxt_17": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/xtclim/src/scenario_season_comparison.ipynb",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/xtclim/src/scenario_season_comparison.ipynb"
+    },
+    "ex:activity_usecasesxt_18": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/xtclim/src/trainer.py",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/xtclim/src/trainer.py"
+    },
+    "ex:activity_usecasesxt_19": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/xtclim/src/utils.py",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/xtclim/src/utils.py"
+    },
+    "ex:activity_usecasesxt_20": {
+      "prov:type": "activity",
+      "ex:filename": "use-cases/xtclim/train.py",
+      "ex:status": "added",
+      "ex:lines_added": 0,
+      "ex:lines_removed": 0,
+      "ex:number_of_lines_affected": 0,
+      "ex:file_url": "https://github.com/interTwin-eu/itwinai/blob/40865372a244ef4217eab083221207da6a1054f4/use-cases/xtclim/train.py"
+    }
+  },
+  "agent": {
+    "ex:agent_matbun_1": {
+      "prov:type": "prov:Agent",
+      "ex:username": "matbun",
+      "ex:name": "matbun",
+      "ex:email": "N/A",
+      "ex:avatar_url": "https://avatars.githubusercontent.com/u/48362942?v=4"
+    },
+    "ex:agent_web-flow_2": {
+      "prov:type": "prov:Agent",
+      "ex:username": "web-flow",
+      "ex:name": "web-flow",
+      "ex:email": "N/A",
+      "ex:avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4"
+    }
+  },
+  "wasDerivedFrom": {
+    "_:id_.dockerignore_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_"
+    },
+    "_:id_.github_linters_.jscpd.json_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_githublint"
+    },
+    "_:id_.github_workflows_lint.yml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_githubwork"
+    },
+    "_:id_.github_workflows_pages.yml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_githubwork_1"
+    },
+    "_:id_.github_workflows_pypi.yml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_githubwork_2"
+    },
+    "_:id_.github_workflows_pytest.yml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_githubwork_3"
+    },
+    "_:id_.github_workflows_sqaaas.yml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_githubwork_4"
+    },
+    "_:id_.github_workflows_workflows-dt.yml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_githubwork_5"
+    },
+    "_:id_.gitignore_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity__1"
+    },
+    "_:id_.python-version_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity__2"
+    },
+    "_:id_.readthedocs.yaml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_readthedoc"
+    },
+    "_:id_.vscode_extensions.json_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_vscodeexte"
+    },
+    "_:id_.vscode_settings.json_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_vscodesett"
+    },
+    "_:id_AUTHORS.md_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_AUTHORS"
+    },
+    "_:id_CITATION.cff_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_CITATION"
+    },
+    "_:id_CODEOWNERS_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_CODEOWNERS"
+    },
+    "_:id_Makefile_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_Makefile"
+    },
+    "_:id_README.md_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_README"
+    },
+    "_:id_ai_README.md_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_aiREADME"
+    },
+    "_:id_ai_env-files_pytorch-env-gpu.yml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_aienvfiles"
+    },
+    "_:id_ai_env-files_pytorch-env.yml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_aienvfiles_1"
+    },
+    "_:id_ai_env-files_pytorch-gpu-lock.yml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_aienvfiles_2"
+    },
+    "_:id_ai_env-files_pytorch-lock.yml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_aienvfiles_3"
+    },
+    "_:id_ai_setup.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_aisetup"
+    },
+    "_:id_ai_src_itwinai_cli.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_aisrcitwin"
+    },
+    "_:id_ai_src_itwinai_models_cnn.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_aisrcitwin_1"
+    },
+    "_:id_ai_src_itwinai_plmodels_base.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_aisrcitwin_2"
+    },
+    "_:id_ai_src_itwinai_plmodels_mnist.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_aisrcitwin_3"
+    },
+    "_:id_ai_tests_test_cli.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_aiteststes"
+    },
+    "_:id_ai_tests_test_utils.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_aiteststes_1"
+    },
+    "_:id_ai_training.cwl_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_aitraining"
+    },
+    "_:id_dev-env.yml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_devenv"
+    },
+    "_:id_docs_.gitignore_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docs"
+    },
+    "_:id_docs_3dgan_doc.rst_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docs3dgan_"
+    },
+    "_:id_docs_404.html_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docs404"
+    },
+    "_:id_docs_Gemfile_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsGemfil"
+    },
+    "_:id_docs_Gemfile.lock_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsGemfil_1"
+    },
+    "_:id_docs_LICENSE_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsLICENS"
+    },
+    "_:id_docs_Makefile_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsMakefi"
+    },
+    "_:id_docs_README.md_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsREADME"
+    },
+    "_:id_docs__config.yml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docs_confi"
+    },
+    "_:id_docs_advanced_workflow.rst_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsadvanc"
+    },
+    "_:id_docs_basic_comp.rst_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsbasic_"
+    },
+    "_:id_docs_basic_workflow.rst_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsbasic__1"
+    },
+    "_:id_docs_conf.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsconf"
+    },
+    "_:id_docs_cyclones_doc.rst_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docscyclon"
+    },
+    "_:id_docs_ddp_why.rst_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsddp_wh"
+    },
+    "_:id_docs_docs_CLI.md_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsdocsCL"
+    },
+    "_:id_docs_docs_Concepts.md_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsdocsCo"
+    },
+    "_:id_docs_docs_How-to-use-this-software.md_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsdocsHo"
+    },
+    "_:id_docs_docs_img_Workflow DAG concept.png_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsdocsim"
+    },
+    "_:id_docs_docs_img_cwl-workflow.png_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsdocsim_1"
+    },
+    "_:id_docs_docs_img_user-platform interaction full.png_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsdocsim_2"
+    },
+    "_:id_docs_docs_img_user-platform interaction.png_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsdocsim_3"
+    },
+    "_:id_docs_docs_use-cases_index.md_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsdocsus"
+    },
+    "_:id_docs_docs_use-cases_mnist.md_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsdocsus_1"
+    },
+    "_:id_docs_favicon.ico_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsfavico"
+    },
+    "_:id_docs_getting_started_with_itwinai.rst_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsgettin"
+    },
+    "_:id_docs_index.md_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsindex"
+    },
+    "_:id_docs_index.rst_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsindex_1"
+    },
+    "_:id_docs_intermediate_workflow.rst_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsinterm"
+    },
+    "_:id_docs_itwinai.cli.rst_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsitwina"
+    },
+    "_:id_docs_itwinai.components.rst_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsitwina_1"
+    },
+    "_:id_docs_itwinai.distributed.rst_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsitwina_2"
+    },
+    "_:id_docs_itwinai.loggers.rst_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsitwina_3"
+    },
+    "_:id_docs_itwinai.parser.rst_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsitwina_4"
+    },
+    "_:id_docs_itwinai.pipeline.rst_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsitwina_5"
+    },
+    "_:id_docs_itwinai.serialization.rst_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsitwina_6"
+    },
+    "_:id_docs_itwinai.tf.modules.rst_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsitwina_7"
+    },
+    "_:id_docs_itwinai.torch.modules.rst_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsitwina_8"
+    },
+    "_:id_docs_itwinai.type.rst_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsitwina_9"
+    },
+    "_:id_docs_itwinai.utils.rst_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsitwina_10"
+    },
+    "_:id_docs_make.bat_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsmake"
+    },
+    "_:id_docs_mnist_doc.rst_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsmnist_"
+    },
+    "_:id_docs_modules.rst_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsmodule"
+    },
+    "_:id_docs_notebooks_example.ipynb_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsnotebo"
+    },
+    "_:id_docs_requirements.txt_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsrequir"
+    },
+    "_:id_docs_tf_scaling_test.rst_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docstf_sca"
+    },
+    "_:id_docs_tf_tutorial_0_basics.rst_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docstf_tut"
+    },
+    "_:id_docs_tf_tutorial_1_imagenet.rst_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docstf_tut_1"
+    },
+    "_:id_docs_torch_scaling_test.rst_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docstorch_"
+    },
+    "_:id_docs_torch_tutorial_0_basics.rst_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docstorch__1"
+    },
+    "_:id_docs_torch_tutorial_1_mnist.rst_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docstorch__2"
+    },
+    "_:id_docs_tutorials.rst_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docstutori"
+    },
+    "_:id_docs_use_cases.rst_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsuse_ca"
+    },
+    "_:id_docs_virgo_doc.rst_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_docsvirgo_"
+    },
+    "_:id_env-files_itwinai-installer.sh_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_envfilesit"
+    },
+    "_:id_env-files_tensorflow_createEnvJSCTF.sh_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_envfileste"
+    },
+    "_:id_env-files_tensorflow_generic_tf.sh_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_envfileste_1"
+    },
+    "_:id_env-files_tensorflow_tensorflow-2.10.yml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_envfileste_2"
+    },
+    "_:id_env-files_tensorflow_tensorflow-2.11.yml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_envfileste_3"
+    },
+    "_:id_env-files_tensorflow_tensorflow-2.13-cpu.yml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_envfileste_4"
+    },
+    "_:id_env-files_tensorflow_tensorflow-2.13.yml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_envfileste_5"
+    },
+    "_:id_env-files_torch_createEnvJSC.sh_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_envfilesto"
+    },
+    "_:id_env-files_torch_generic_torch.sh_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_envfilesto_1"
+    },
+    "_:id_env-files_torch_pytorch-env-cpu.yml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_envfilesto_2"
+    },
+    "_:id_env-files_torch_pytorch-env-gpu.yml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_envfilesto_3"
+    },
+    "_:id_environment-cern.yml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_environmen"
+    },
+    "_:id_examples.sh_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_examples"
+    },
+    "_:id_other_argparse_argparsee.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_otherargpa"
+    },
+    "_:id_other_argparse_config.yml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_otherargpa_1"
+    },
+    "_:id_pyproject.toml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_pyproject"
+    },
+    "_:id_run-workflow.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_runworkflo"
+    },
+    "_:id_src_itwinai___init__.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_srcitwinai"
+    },
+    "_:id_src_itwinai_cli.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_srcitwinai_1"
+    },
+    "_:id_src_itwinai_components.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_srcitwinai_2"
+    },
+    "_:id_src_itwinai_distributed.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_srcitwinai_3"
+    },
+    "_:id_src_itwinai_loggers.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_srcitwinai_4"
+    },
+    "_:id_src_itwinai_parser.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_srcitwinai_5"
+    },
+    "_:id_src_itwinai_pipeline.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_srcitwinai_6"
+    },
+    "_:id_src_itwinai_serialization.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_srcitwinai_7"
+    },
+    "_:id_src_itwinai_tensorflow___init__.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_srcitwinai_8"
+    },
+    "_:id_src_itwinai_tensorflow_data___init__.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_srcitwinai_9"
+    },
+    "_:id_src_itwinai_tensorflow_distributed.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_srcitwinai_10"
+    },
+    "_:id_src_itwinai_tensorflow_models___init__.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_srcitwinai_11"
+    },
+    "_:id_src_itwinai_tensorflow_models_mnist.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_srcitwinai_12"
+    },
+    "_:id_src_itwinai_tensorflow_trainer.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_srcitwinai_13"
+    },
+    "_:id_src_itwinai_tensorflow_utils.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_srcitwinai_14"
+    },
+    "_:id_src_itwinai_tests___init__.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_srcitwinai_15"
+    },
+    "_:id_src_itwinai_tests_dummy_components.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_srcitwinai_16"
+    },
+    "_:id_src_itwinai_torch___init__.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_srcitwinai_17"
+    },
+    "_:id_src_itwinai_torch_config.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_srcitwinai_18"
+    },
+    "_:id_src_itwinai_torch_data___init__.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_srcitwinai_19"
+    },
+    "_:id_src_itwinai_torch_distributed.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_srcitwinai_20"
+    },
+    "_:id_src_itwinai_torch_inference.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_srcitwinai_21"
+    },
+    "_:id_src_itwinai_torch_mlflow.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_srcitwinai_22"
+    },
+    "_:id_src_itwinai_torch_models___init__.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_srcitwinai_23"
+    },
+    "_:id_src_itwinai_torch_models_mnist.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_srcitwinai_24"
+    },
+    "_:id_src_itwinai_torch_reproducibility.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_srcitwinai_25"
+    },
+    "_:id_src_itwinai_torch_trainer.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_srcitwinai_26"
+    },
+    "_:id_src_itwinai_torch_type.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_srcitwinai_27"
+    },
+    "_:id_src_itwinai_type.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_srcitwinai_28"
+    },
+    "_:id_src_itwinai_utils.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_srcitwinai_29"
+    },
+    "_:id_tests_components_conftest.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_testscompo"
+    },
+    "_:id_tests_components_test_components.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_testscompo_1"
+    },
+    "_:id_tests_components_test_pipe_parser.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_testscompo_2"
+    },
+    "_:id_tests_components_test_pipeline.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_testscompo_3"
+    },
+    "_:id_tests_conftest.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_testsconft"
+    },
+    "_:id_tests_run_on_jsc.sh_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_testsrun_o"
+    },
+    "_:id_tests_test_loggers.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_teststest_"
+    },
+    "_:id_tests_test_utils.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_teststest__1"
+    },
+    "_:id_tests_torch_distribtued_decorator.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_teststorch"
+    },
+    "_:id_tests_torch_test_config.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_teststorch_1"
+    },
+    "_:id_tests_torch_test_distribtued_training.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_teststorch_2"
+    },
+    "_:id_tests_torch_torch_dist_trainer.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_teststorch_3"
+    },
+    "_:id_tests_use-cases_conftest.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_testsuseca"
+    },
+    "_:id_tests_use-cases_test_3dgan.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_testsuseca_1"
+    },
+    "_:id_tests_use-cases_test_cyclones.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_testsuseca_2"
+    },
+    "_:id_tests_use-cases_test_mnist.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_testsuseca_3"
+    },
+    "_:id_tutorials_distributed-ml_tf-scaling-test-jube_README.md_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_tutorialsd"
+    },
+    "_:id_tutorials_distributed-ml_tf-scaling-test-jube_bench_plot.ipynb_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_tutorialsd_1"
+    },
+    "_:id_tutorials_distributed-ml_tf-scaling-test-jube_general_jobsys.xml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_tutorialsd_2"
+    },
+    "_:id_tutorials_distributed-ml_tf-scaling-test-jube_jube_ddp.sh_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_tutorialsd_3"
+    },
+    "_:id_tutorials_distributed-ml_tf-scaling-test-jube_train.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_tutorialsd_4"
+    },
+    "_:id_tutorials_distributed-ml_tf-tutorial-0-basics_README.md_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_tutorialsd_5"
+    },
+    "_:id_tutorials_distributed-ml_tf-tutorial-0-basics_tfmirrored_slurm.sh_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_tutorialsd_6"
+    },
+    "_:id_tutorials_distributed-ml_tf-tutorial-0-basics_train.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_tutorialsd_7"
+    },
+    "_:id_tutorials_distributed-ml_tf-tutorial-1-imagenet_README.md_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_tutorialsd_8"
+    },
+    "_:id_tutorials_distributed-ml_tf-tutorial-1-imagenet_tfmirrored_slurm.sh_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_tutorialsd_9"
+    },
+    "_:id_tutorials_distributed-ml_tf-tutorial-1-imagenet_train.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_tutorialsd_10"
+    },
+    "_:id_tutorials_distributed-ml_torch-scaling-test_README.md_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_tutorialsd_11"
+    },
+    "_:id_tutorials_distributed-ml_torch-scaling-test_config_base.yaml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_tutorialsd_12"
+    },
+    "_:id_tutorials_distributed-ml_torch-scaling-test_config_ddp.yaml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_tutorialsd_13"
+    },
+    "_:id_tutorials_distributed-ml_torch-scaling-test_config_deepspeed.yaml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_tutorialsd_14"
+    },
+    "_:id_tutorials_distributed-ml_torch-scaling-test_config_horovod.yaml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_tutorialsd_15"
+    },
+    "_:id_tutorials_distributed-ml_torch-scaling-test_ddp_trainer.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_tutorialsd_16"
+    },
+    "_:id_tutorials_distributed-ml_torch-scaling-test_deepspeed_trainer.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_tutorialsd_17"
+    },
+    "_:id_tutorials_distributed-ml_torch-scaling-test_horovod_trainer.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_tutorialsd_18"
+    },
+    "_:id_tutorials_distributed-ml_torch-scaling-test_img_report.png_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_tutorialsd_19"
+    },
+    "_:id_tutorials_distributed-ml_torch-scaling-test_itwinai_trainer.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_tutorialsd_20"
+    },
+    "_:id_tutorials_distributed-ml_torch-scaling-test_runall.sh_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_tutorialsd_21"
+    },
+    "_:id_tutorials_distributed-ml_torch-scaling-test_scaling-test.sh_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_tutorialsd_22"
+    },
+    "_:id_tutorials_distributed-ml_torch-scaling-test_slurm.sh_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_tutorialsd_23"
+    },
+    "_:id_tutorials_distributed-ml_torch-scaling-test_utils.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_tutorialsd_24"
+    },
+    "_:id_tutorials_distributed-ml_torch-tutorial-0-basics_README.md_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_tutorialsd_25"
+    },
+    "_:id_tutorials_distributed-ml_torch-tutorial-0-basics_runall.sh_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_tutorialsd_26"
+    },
+    "_:id_tutorials_distributed-ml_torch-tutorial-0-basics_slurm.sh_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_tutorialsd_27"
+    },
+    "_:id_tutorials_distributed-ml_torch-tutorial-0-basics_train.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_tutorialsd_28"
+    },
+    "_:id_tutorials_distributed-ml_torch-tutorial-1-mnist_README.md_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_tutorialsd_29"
+    },
+    "_:id_tutorials_distributed-ml_torch-tutorial-1-mnist_config.yaml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_tutorialsd_30"
+    },
+    "_:id_tutorials_distributed-ml_torch-tutorial-1-mnist_runall.sh_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_tutorialsd_31"
+    },
+    "_:id_tutorials_distributed-ml_torch-tutorial-1-mnist_slurm.sh_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_tutorialsd_32"
+    },
+    "_:id_tutorials_distributed-ml_torch-tutorial-1-mnist_train.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_tutorialsd_33"
+    },
+    "_:id_tutorials_ml-workflows_basic_components.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_tutorialsm"
+    },
+    "_:id_tutorials_ml-workflows_tutorial_0_basic_workflow.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_tutorialsm_1"
+    },
+    "_:id_tutorials_ml-workflows_tutorial_1_intermediate_workflow.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_tutorialsm_2"
+    },
+    "_:id_tutorials_ml-workflows_tutorial_2_advanced_workflow.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_tutorialsm_3"
+    },
+    "_:id_use-cases_3dgan_Dockerfile_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecases3d"
+    },
+    "_:id_use-cases_3dgan_README.md_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecases3d_1"
+    },
+    "_:id_use-cases_3dgan___init__.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecases3d_2"
+    },
+    "_:id_use-cases_3dgan_config.yaml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecases3d_3"
+    },
+    "_:id_use-cases_3dgan_create_inference_sample.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecases3d_4"
+    },
+    "_:id_use-cases_3dgan_dataloader.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecases3d_5"
+    },
+    "_:id_use-cases_3dgan_interLink_3dgan-inference-cpu.yaml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecases3d_6"
+    },
+    "_:id_use-cases_3dgan_interLink_3dgan-inference.yaml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecases3d_7"
+    },
+    "_:id_use-cases_3dgan_interLink_3dgan-train.yaml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecases3d_8"
+    },
+    "_:id_use-cases_3dgan_interLink_README.md_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecases3d_9"
+    },
+    "_:id_use-cases_3dgan_model.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecases3d_10"
+    },
+    "_:id_use-cases_3dgan_requirements.txt_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecases3d_11"
+    },
+    "_:id_use-cases_3dgan_saver.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecases3d_12"
+    },
+    "_:id_use-cases_3dgan_startscript_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecases3d_13"
+    },
+    "_:id_use-cases_3dgan_trainer.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecases3d_14"
+    },
+    "_:id_use-cases_README.md_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesRE"
+    },
+    "_:id_use-cases_cyclones_.gitignore_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasescy"
+    },
+    "_:id_use-cases_cyclones_README.md_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasescy_1"
+    },
+    "_:id_use-cases_cyclones_cyclones_vgg.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasescy_2"
+    },
+    "_:id_use-cases_cyclones_dataloader.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasescy_3"
+    },
+    "_:id_use-cases_cyclones_pipeline.yaml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasescy_4"
+    },
+    "_:id_use-cases_cyclones_requirements.txt_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasescy_5"
+    },
+    "_:id_use-cases_cyclones_src_callbacks.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasescy_6"
+    },
+    "_:id_use-cases_cyclones_src_macros.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasescy_7"
+    },
+    "_:id_use-cases_cyclones_src_scaling.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasescy_8"
+    },
+    "_:id_use-cases_cyclones_src_strategy.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasescy_9"
+    },
+    "_:id_use-cases_cyclones_src_tfrecords_dataset.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasescy_10"
+    },
+    "_:id_use-cases_cyclones_src_tfrecords_functions.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasescy_11"
+    },
+    "_:id_use-cases_cyclones_src_transform.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasescy_12"
+    },
+    "_:id_use-cases_cyclones_src_utils.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasescy_13"
+    },
+    "_:id_use-cases_cyclones_startscript.sh_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasescy_14"
+    },
+    "_:id_use-cases_cyclones_train.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasescy_15"
+    },
+    "_:id_use-cases_cyclones_trainer.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasescy_16"
+    },
+    "_:id_use-cases_mnist_README.md_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesmn"
+    },
+    "_:id_use-cases_mnist_env-files_preproc-env.yml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesmn_1"
+    },
+    "_:id_use-cases_mnist_inference-workflow.yml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesmn_2"
+    },
+    "_:id_use-cases_mnist_meta.yml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesmn_3"
+    },
+    "_:id_use-cases_mnist_mlflow-server.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesmn_4"
+    },
+    "_:id_use-cases_mnist_mnist-ai-inference.yml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesmn_5"
+    },
+    "_:id_use-cases_mnist_mnist-ai-train.yml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesmn_6"
+    },
+    "_:id_use-cases_mnist_mnist-preproc.cwl_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesmn_7"
+    },
+    "_:id_use-cases_mnist_mnist-preproc.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesmn_8"
+    },
+    "_:id_use-cases_mnist_tensorflow_dataloader.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesmn_9"
+    },
+    "_:id_use-cases_mnist_tensorflow_pipeline.yaml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesmn_10"
+    },
+    "_:id_use-cases_mnist_tensorflow_startscript.sh_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesmn_11"
+    },
+    "_:id_use-cases_mnist_torch-lightning_README.md_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesmn_12"
+    },
+    "_:id_use-cases_mnist_torch-lightning_config.yaml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesmn_13"
+    },
+    "_:id_use-cases_mnist_torch-lightning_dataloader.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesmn_14"
+    },
+    "_:id_use-cases_mnist_torch-lightning_startscript_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesmn_15"
+    },
+    "_:id_use-cases_mnist_torch-lightning_utils.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesmn_16"
+    },
+    "_:id_use-cases_mnist_torch_Dockerfile_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesmn_17"
+    },
+    "_:id_use-cases_mnist_torch_README.md_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesmn_18"
+    },
+    "_:id_use-cases_mnist_torch_config.yaml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesmn_19"
+    },
+    "_:id_use-cases_mnist_torch_create_inference_sample.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesmn_20"
+    },
+    "_:id_use-cases_mnist_torch_dataloader.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesmn_21"
+    },
+    "_:id_use-cases_mnist_torch_model.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesmn_22"
+    },
+    "_:id_use-cases_mnist_torch_runall.sh_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesmn_23"
+    },
+    "_:id_use-cases_mnist_torch_saver.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesmn_24"
+    },
+    "_:id_use-cases_mnist_torch_slurm.sh_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesmn_25"
+    },
+    "_:id_use-cases_mnist_torch_startscript.sh_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesmn_26"
+    },
+    "_:id_use-cases_mnist_training-workflow.yml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesmn_27"
+    },
+    "_:id_use-cases_mnist_workflow.cwl_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesmn_28"
+    },
+    "_:id_use-cases_virgo_.gitignore_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesvi"
+    },
+    "_:id_use-cases_virgo_README.md_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesvi_1"
+    },
+    "_:id_use-cases_virgo_config.yaml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesvi_2"
+    },
+    "_:id_use-cases_virgo_data.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesvi_3"
+    },
+    "_:id_use-cases_virgo_requirements.txt_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesvi_4"
+    },
+    "_:id_use-cases_virgo_runall.sh_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesvi_5"
+    },
+    "_:id_use-cases_virgo_slurm.sh_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesvi_6"
+    },
+    "_:id_use-cases_virgo_src_dataset.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesvi_7"
+    },
+    "_:id_use-cases_virgo_src_model.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesvi_8"
+    },
+    "_:id_use-cases_virgo_src_utils.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesvi_9"
+    },
+    "_:id_use-cases_virgo_train.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesvi_10"
+    },
+    "_:id_use-cases_virgo_trainer.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesvi_11"
+    },
+    "_:id_use-cases_xtclim_LICENSE_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesxt"
+    },
+    "_:id_use-cases_xtclim_README.md_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesxt_1"
+    },
+    "_:id_use-cases_xtclim_Requirements.txt_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesxt_2"
+    },
+    "_:id_use-cases_xtclim_outputs_.DS_Store_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesxt_3"
+    },
+    "_:id_use-cases_xtclim_pipeline.yaml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesxt_4"
+    },
+    "_:id_use-cases_xtclim_preprocessing_.DS_Store_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesxt_5"
+    },
+    "_:id_use-cases_xtclim_preprocessing_preprocess_2d_seasons.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesxt_6"
+    },
+    "_:id_use-cases_xtclim_preprocessing_preprocess_3d_seasons.ipynb_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesxt_7"
+    },
+    "_:id_use-cases_xtclim_preprocessing_preprocess_3d_seasons.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesxt_8"
+    },
+    "_:id_use-cases_xtclim_preprocessing_preprocess_functions_1d_temp_members.ipynb_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesxt_9"
+    },
+    "_:id_use-cases_xtclim_preprocessing_preprocess_functions_2d_ssp.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesxt_10"
+    },
+    "_:id_use-cases_xtclim_src_.DS_Store_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesxt_11"
+    },
+    "_:id_use-cases_xtclim_src_anomaly.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesxt_12"
+    },
+    "_:id_use-cases_xtclim_src_engine.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesxt_13"
+    },
+    "_:id_use-cases_xtclim_src_initialization.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesxt_14"
+    },
+    "_:id_use-cases_xtclim_src_model.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesxt_15"
+    },
+    "_:id_use-cases_xtclim_src_pipeline.yaml_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesxt_16"
+    },
+    "_:id_use-cases_xtclim_src_scenario_season_comparison.ipynb_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesxt_17"
+    },
+    "_:id_use-cases_xtclim_src_trainer.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesxt_18"
+    },
+    "_:id_use-cases_xtclim_src_utils.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesxt_19"
+    },
+    "_:id_use-cases_xtclim_train.py_after": {
+      "prov:generatedEntity": "ex:commit_4086...54f4",
+      "prov:usedEntity": "ex:commit_fc45...fd9c",
+      "prov:activity": "ex:activity_usecasesxt_20"
+    }
+  },
+  "wasAttributedTo": {
+    "_:id_committer_1_commit_fc45...fd9c": {
+      "prov:activity": "ex:activity_commit_fc45...fd9c",
+      "prov:agent": "ex:agent_matbun_1",
+      "prov:entity": "ex:commit_fc45...fd9c",
+      "ex:github_diff_url": "https://github.com/interTwin-eu/itwinai/compare/fc45759a19708e074c44ee8e41bea2507959fd9c...40865372a244ef4217eab083221207da6a1054f4"
+    },
+    "_:id_committer_2_commit_4086...54f4": {
+      "prov:activity": "ex:activity_commit_4086...54f4",
+      "prov:agent": "ex:agent_web-flow_2",
+      "prov:entity": "ex:commit_4086...54f4",
+      "ex:github_diff_url": "https://github.com/interTwin-eu/itwinai/compare/fc45759a19708e074c44ee8e41bea2507959fd9c...40865372a244ef4217eab083221207da6a1054f4"
+    }
+  }
+}

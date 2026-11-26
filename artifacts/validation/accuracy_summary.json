@@ -1,0 +1,12 @@
+{
+  "prov_document": "/home/yousa/projects/yProv4SQA_AI/yProv4SQA/Provenance_documents/interTwin-eu_itwinai_prov_output.json",
+  "reports_folder": "/home/yousa/projects/yProv4SQA_AI/yProv4SQA/artifacts/data/itwinai_SQAaaS_reports",
+  "total_raw_reports": 380,
+  "retained_reports": 279,
+  "total_pairs": 2111,
+  "matches": 2111,
+  "mismatches": 0,
+  "raw_only": 0,
+  "prov_only": 0,
+  "overall_status": "PASS"
+}

@@ -1,0 +1,234 @@
+{
+  "prov_document": "/home/yousa/projects/yProv4SQA_AI/yProv4SQA/Provenance_documents/interTwin-eu_itwinai_prov_output.json",
+  "overall_status": "PASS",
+  "checks": [
+    {
+      "check": "total_entities",
+      "expected": 559,
+      "observed": 559,
+      "status": "PASS"
+    },
+    {
+      "check": "assessment_entities",
+      "expected": 279,
+      "observed": 279,
+      "status": "PASS"
+    },
+    {
+      "check": "output_entities",
+      "expected": 279,
+      "observed": 279,
+      "status": "PASS"
+    },
+    {
+      "check": "repository_entities",
+      "expected": 1,
+      "observed": 1,
+      "status": "PASS"
+    },
+    {
+      "check": "total_activities",
+      "expected": 2111,
+      "observed": 2111,
+      "status": "PASS"
+    },
+    {
+      "check": "total_agents",
+      "expected": 1,
+      "observed": 1,
+      "status": "PASS"
+    },
+    {
+      "check": "total_wasGeneratedBy",
+      "expected": 2111,
+      "observed": 2111,
+      "status": "PASS"
+    },
+    {
+      "check": "total_wasDerivedFrom",
+      "expected": 558,
+      "observed": 558,
+      "status": "PASS"
+    },
+    {
+      "check": "total_wasAttributedTo",
+      "expected": 1,
+      "observed": 1,
+      "status": "PASS"
+    },
+    {
+      "check": "partial_run_assessments",
+      "expected": 9,
+      "observed": 9,
+      "status": "PASS"
+    },
+    {
+      "check": "assessments_with_8_checks",
+      "expected": 212,
+      "observed": 212,
+      "status": "PASS"
+    },
+    {
+      "check": "assessments_fewer_than_8",
+      "expected": 67,
+      "observed": 67,
+      "status": "PASS"
+    },
+    {
+      "check": "activities_QC.Acc",
+      "expected": 270,
+      "observed": 270,
+      "status": "PASS"
+    },
+    {
+      "check": "activities_QC.Doc",
+      "expected": 270,
+      "observed": 270,
+      "status": "PASS"
+    },
+    {
+      "check": "activities_QC.Lic",
+      "expected": 270,
+      "observed": 270,
+      "status": "PASS"
+    },
+    {
+      "check": "activities_QC.Met",
+      "expected": 278,
+      "observed": 278,
+      "status": "PASS"
+    },
+    {
+      "check": "activities_QC.Sec",
+      "expected": 270,
+      "observed": 270,
+      "status": "PASS"
+    },
+    {
+      "check": "activities_QC.Sty",
+      "expected": 271,
+      "observed": 271,
+      "status": "PASS"
+    },
+    {
+      "check": "activities_QC.Uni",
+      "expected": 212,
+      "observed": 212,
+      "status": "PASS"
+    },
+    {
+      "check": "activities_QC.Ver",
+      "expected": 270,
+      "observed": 270,
+      "status": "PASS"
+    }
+  ],
+  "badge_distribution": {
+    "No Badge": 38,
+    "bronze": 88,
+    "gold": 9,
+    "no_badge": 9,
+    "silver": 135
+  },
+  "partial_run_detail": [
+    {
+      "entity_id": "ex:assessment41",
+      "index": 41,
+      "commit_date": "2023-11-16T15:17:13Z",
+      "qc_checks": [
+        {
+          "criterion": "QC.Met",
+          "percentage": "0%"
+        }
+      ]
+    },
+    {
+      "entity_id": "ex:assessment42",
+      "index": 42,
+      "commit_date": "2023-11-16T17:38:35Z",
+      "qc_checks": [
+        {
+          "criterion": "QC.Met",
+          "percentage": "0%"
+        }
+      ]
+    },
+    {
+      "entity_id": "ex:assessment43",
+      "index": 43,
+      "commit_date": "2023-11-16T17:43:30Z",
+      "qc_checks": [
+        {
+          "criterion": "QC.Met",
+          "percentage": "0%"
+        }
+      ]
+    },
+    {
+      "entity_id": "ex:assessment44",
+      "index": 44,
+      "commit_date": "2023-11-16T17:46:24Z",
+      "qc_checks": [
+        {
+          "criterion": "QC.Met",
+          "percentage": "0%"
+        }
+      ]
+    },
+    {
+      "entity_id": "ex:assessment71",
+      "index": 71,
+      "commit_date": "2024-04-16T15:07:16Z",
+      "qc_checks": [
+        {
+          "criterion": "QC.Met",
+          "percentage": "0%"
+        }
+      ]
+    },
+    {
+      "entity_id": "ex:assessment72",
+      "index": 72,
+      "commit_date": "2024-04-16T16:00:53Z",
+      "qc_checks": [
+        {
+          "criterion": "QC.Met",
+          "percentage": "0%"
+        }
+      ]
+    },
+    {
+      "entity_id": "ex:assessment73",
+      "index": 73,
+      "commit_date": "2024-04-16T16:48:26Z",
+      "qc_checks": [
+        {
+          "criterion": "QC.Met",
+          "percentage": "0%"
+        }
+      ]
+    },
+    {
+      "entity_id": "ex:assessment106",
+      "index": 106,
+      "commit_date": "2024-06-11T07:53:14Z",
+      "qc_checks": [
+        {
+          "criterion": "QC.Met",
+          "percentage": "0%"
+        }
+      ]
+    },
+    {
+      "entity_id": "ex:assessment168",
+      "index": 168,
+      "commit_date": "2024-11-19T10:34:21Z",
+      "qc_checks": [
+        {
+          "criterion": "QC.Sty",
+          "percentage": "100%"
+        }
+      ]
+    }
+  ]
+}

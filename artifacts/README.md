@@ -1,321 +1,277 @@
-# Artifact for “A Provenance-Based Architecture for Traceability in Software Quality Assurance Pipelines” (SAC 2027)
+# Artifact for "yProv4SQA: A Provenance-Based Architecture with an AI Agent for Traceability in Software Quality Assurance Pipelines" (SAC 2027)
 
-To gain complete insights about software quality evaluation, we introduce the concept of provenance for Software Quality Assurance pipelines called yProv4SQA, which is used for tracking the evolution of software quality over time by generating detailed provenance documents during software development.
+We introduce **yProv4SQA**, a W3C PROV-DM provenance framework for Software Quality
+Assurance (SQA) pipelines, with a ReAct-style LLM agent for natural-language querying.
+In this example we analyse the [iTwinAI GitHub repository](https://github.com/interTwin-eu/itwinai).
 
-The paper validates yProv4SQA across **11 open-source repositories** (469 unique assessments), spanning Python, C++, Go, and Java projects.
-
-In this artifact, we demonstrate the complete workflow by analyzing the [itwinai GitHub repository](https://github.com/interTwin-eu/itwinai) as a running example.  
-This repository already utilizes [SQAaaS](https://docs.sqaaas.eosc-synergy.eu/) and contains existing assessments. We will use it to showcase the capabilities of our library and extract insights related to software quality and provenance.
-
-
-## 1. GitHub API rate-limit notice
-
-GitHub allows:
-
-- **60 requests / hour** for **anonymous** calls (no token).
-- **5000 requests / hour** when you supply a **personal-access token**.
-If you process many repositories for large histories you will quickly hit the 60/h ceiling and the tool will **pause** (it auto-retries after the reset time). To avoid delays we **strongly recommend** that you authenticate.
-
-### 1.1. Export it in your shell (temporary)
-
-   ```bash
-   export GITHUB_TOKEN= <replace with your GITHUB_TOKEN>
-   ```
-
-Verify quota
-
-   ```bash
-   curl -H "Authorization: token $GITHUB_TOKEN" https://api.github.com/rate_limit
-   ```
-
-You should see "limit": 5000
-
-## **2. Clone the repository and navigate to the directory**
-
-   ```bash
-   Download the repository using the **Download** button on the anonymous repository page (https://anonymous.4open.science/r/yProv4SQA-D046), then extract and navigate to the directory:
-   cd yProv4SQA
-   ```
-
-## **3. Set up the environment and install dependencies**
-
-### 3.1. Create and activate a virtual environment (recommended)
-
-   ```bash
-   # Create a virtual environment
-   python3 -m venv yProv4SQA_venv
-
-   # Activate the virtual environment
-   source yProv4SQA_venv/bin/activate
-   ```
-
-This ensures that all dependencies are installed in an isolated environment, preventing conflicts with other Python packages on your system.
-
-### **3.2. Install the library and required dependencies**
-
-   ```bash
-   pip install -e .
-   pip install requests
-   ```
-
-This installs the library and also installs the requests library, which is required to run the examples.
-
-## **4. Fetch SQA reports**
-
-   ```bash
-   fetch-sqa-reports itwinai
-   ```
-
-This command fetches all SQAaaS assessments for the `itwinai` repository from the [EOSC-Synergy GitHub space](https://github.com/EOSC-synergy). The library then removes duplicates and outdated assessments, and produces a final cleaned directory used to generate the provenance document. For this example, the output directory will be created as `./itwinai_SQAaaS_reports`.
-
-Note: It may take some time to fetch all reports from GitHub. You can skip this step and use the reports we have already downloaded, stored in the `./data/itwinai_SQAaaS_reports` directory.
-
-## **5. Generate provenance documents**
-
-   ```bash
-   process-provenance ./itwinai_SQAaaS_reports
-   ```
-
-This command generates a level-1 provenance document of all assessments available in `itwinai_SQAaaS_reports` directory. It will produce a `.json` file named `interTwin-eu_itwinai_prov_output.json` in `Provenance_documents` directory, which can be further used for exploration and analysis.
-
-## **6. Comparing Two quality Assessments with yProv4SQA**
-
-   ```bash
-   compare ./Provenance_documents/interTwin-eu_itwinai_prov_output.json 64 115
-   ```
-
-This command generates a level-2 provenance document that captures the file changes between assessments no. 64 (bronze badge) and no. 115 (silver badge), integrates directly with URLs to the corresponding GitHub diff and SQAaaS reports, and stores the graph as `./Compare_commit_provenance/itwinai_commit_provenance_fc45...fd9c_to_4086...54f4.json`
-
-## **7. Exploration of Provenance graph**
-
-We can use several tools to visualize and analyze the generated provenance documents.
-
-### 7.1. PROV Library Visualization
-
-#### GraphViz prerequisite
-
-The `json2graph` command needs the **system-level GraphViz** renderer (`dot`) in addition to the Python package:
-
-   ```bash
-   sudo apt install graphviz
-   ```
-
-This PROV library can be used to check the PROV syntax, convert the provenance document into an SVG graph for standard visualization of PROV documents, and to ensure the compliance with the W3C PROV standard.
-
-   ```bash
-   json2graph ./Provenance_documents/interTwin-eu_itwinai_prov_output.json
-   json2graph ./Compare_commit_provenance/itwinai_commit_provenance_fc45...fd9c_to_4086...54f4.json
-   ```
-
-This command converts the `.json` file into an `.svg` provenance graph and saves it to `./Graph_outputs`.
-The figure that appears as `Fig. 4` in the paper was generated using this command and included as an examples in `./results`.
-
-### 7.2. Using yProv service and yProvExplorer
-
-yProvExplorer is a web-based tool for visualizing and interacting with provenance documents.
-
-Access the explorer here: [https://explorer.yprov.disi.unitn.it/](https://explorer.yprov.disi.unitn.it/)
-
-You can either upload the `interTwin-eu_itwinai_prov_output.json` file into the explorer or drag and drop the file for visualization.  
-
-For convenience, we have already uploaded the graphs that we used in our paper to the yProv server. You can use these URLs as input to yProvExplorer.
-
-For the Level-1 Provenance document (Fig. 5), we have published it to the yProvStore with a persistent identifier (PID):  
-PID: `21.T11961/de35c9af-31d4-4fe8-b571-72f4c1bca8dd`  
-Direct URL: [http://yprov.disi.unitn.it:8000/documents/21.T11961/de35c9af-31d4-4fe8-b571-72f4c1bca8dd?stream=false](http://yprov.disi.unitn.it:8000/documents/21.T11961/de35c9af-31d4-4fe8-b571-72f4c1bca8dd?stream=false)
-
-For the comparison of two assessments (Fig. 8): generate it locally by following step 6, then upload the resulting `.json` file to the explorer.
-
-Or open them directly in yProvExplorer without uploading:
-
-- **Full assessment history of itwinai (Fig. 5):** [View Graph](https://explorer.yprov.disi.unitn.it/?file=http%3A%2F%2Fyprov.disi.unitn.it%3A8000%2Fdocuments%2F21.T11961%2Fde35c9af-31d4-4fe8-b571-72f4c1bca8dd%3Fstream%3Dfalse)  
-- **file changes between the two assessments (Fig. 8):** generate locally (step 6), then drag-and-drop the `.json` into the explorer.
-
-We have used the yProv service and a Neo4j database running on our internal service, which is not directly accessible externally.
-
-To run Cypher queries, you need to install the yProv service and Neo4j database locally (Step 8). Once the service is running locally, you will be able to perform the Cypher queries locally reported in step 9.
-
-## **8. Running yProv Service**
-
-yProv is a provenance service allows scientists to manage provenance information compliant with the [W3C PROV standard](https://www.w3.org/TR/prov-overview/).
-
-The deployment consists of two Docker containers:
-
-- **yProv** Web Service front-end
-- **Neo4J** graph database engine back-end
-
-### **8.1. Preliminary setup**
-
-- Create a named volume to make Neo4j data persistent
-
-```bash
-docker volume create neo4j_data
-```
-
-- Create a named volume to export logs to the host machine
-
-```bash
-docker volume create neo4j_logs
-```
-
-- Create a named volume to make yProv configuration and data persistent to the host machine
-
-```bash
-docker volume create yprov_data
-```
-
-Create a Docker network to enable communication between the two Docker containers
-
-- Create a Docker network
-
-```bash
-docker network create yprov_net
-```
-
-### 8.2. Deployment from DockerHub
-
-- **8.2.1. Run the Neo4j container**
-
-```bash
-    docker run \
-        --name db \
-        --network=yprov_net \
-        -p 7474:7474 -p 7687:7687 \
-        -d \
-        -v neo4j_data:/data \
-        -v neo4j_logs:/logs \
-        -v $HOME/neo4j/import:/var/lib/neo4j/import \
-        -v $HOME/neo4j/plugins:/plugins \
-        --env NEO4J_AUTH=neo4j/password \
-        --env NEO4J_ACCEPT_LICENSE_AGREEMENT=eval \
-        -e NEO4J_apoc_export_file_enabled=true \
-        -e NEO4J_apoc_import_file_enabled=true \
-        -e NEO4J_apoc_import_file_use__neo4j__config=true \
-        -e NEO4J_PLUGINS=\[\"apoc\"\] \
-        neo4j:enterprise
-```
-
-- **8.2.2. Run the yProv container**
-
-```bash
-    docker run \
-        --restart on-failure \
-        --name web \
-        --network=yprov_net \
-        -p 3000:3000 \
-        -d \
-        -v yprov_data:/app/conf \
-        --env USER=neo4j \
-        --env PASSWORD=password \
-        anonymous/yprov:latest
-```
-
-### **8.3. Neo4j for Provenance Visualization and Data Exploration**
-
-After registering with the service, provenance documents can be uploaded and automatically synchronized with a Neo4j graph database for exploration.
-
-Once both containers are running, you can interact with the yProv REST API as shown below.
-
-Register to the yProv service and replace the "..." with your own username and password.
-
-   ```bash
-   curl -X POST http://localhost:3000/api/v0/auth/register -H 'Content-Type: application/json' -d '{"user": "...", "password": "..."}'
-   ```
-
-Log in to the service to get a valid token for performing all the other operations
-
-   ```bash
-   curl -X POST http://localhost:3000/api/v0/auth/login -H 'Content-Type: application/json' -d '{"user": "...", "password": "..."}'
-   ```
-
-Load the JSON document associated with itwinai use case
-
-   ```bash
-   curl -X PUT  http://localhost:3000/api/v0/documents/itwinai -H "Content-Type: application/json" -H 'Authorization: Bearer <token>' -d @./Provenance_documents/interTwin-eu_itwinai_prov_output.json
-   ```
-
-- This command will upload the `./Provenance_documents/interTwin-eu_itwinai_prov_output.json` to the yProv service.
-
-- Replace `<token>` with the actual token you obtained in the previous step.
-
-After uploading the provenance document, open Neo4j in your browser using the mapped ports, typically:
-[http://localhost:7474/browser](http://localhost:7474/browser)
-
-**NOTE** – before running the queries below, select the database **"itwinai"** in the Neo4j browser and use the following credentials while login:  
-
-- **Username**: `neo4j`
-- **Password**: `password` (default set in docker-compose)
-
-
-## **9. Sample Neo4j Queries**
-
-Below are the Neo4j sample queries we run to extract and analyze the results presented in the paper.
-
-### **9.1. Cypher Neo4j Query (Listing 1)**
-
-   ```cypher
-   MATCH (e:Entity)-[:wasGeneratedBy]->(a:Activity)
-   WHERE a.`ex:percentage` IS NOT NULL
-   RETURN
-      e.`ex:commit_id` AS CommitID,
-      e.`ex:commit_date` AS CommitDate,
-      a.`ex:description` AS QualityCriteria,
-      a.`ex:percentage` AS PercentagePassed
-   ORDER BY e.`ex:commit_date`
-   ```
-
-The query exports the raw data behind Fig. 6; the CSV file and the Excel line-chart we plotted are archived in [Results](./results/Cypher_query_results)
-
-### **9.2. Cypher Neo4j Query (Listing 2)**
-
-   ```cypher
-   // Earliest Bronze badge
-   MATCH (bronze:Entity)-[:wasDerivedFrom]->(bronze_ass:Entity)
-   WHERE bronze.`ex:badge_won` = "bronze"
-   WITH bronze , bronze_ass
-   ORDER BY bronze_ass.`ex:commit_date` ASC
-   LIMIT 1
-   // Earliest Silver badge
-   MATCH (silver:Entity)-[:wasDerivedFrom]->(silver_ass:Entity)
-   WHERE silver.`ex:badge_won` = "silver"
-   WITH bronze , bronze_ass, silver , silver_ass
-   ORDER BY silver_ass.`ex:commit_date` ASC
-   LIMIT 1
-   RETURN 
-   bronze_ass.`ex:commit_id` AS BronzeCommitID,
-   bronze_ass.`ex:commit_date` AS BronzeCommitDate,
-   bronze.`ex:badge_won` AS BronzeBadge,
-   bronze_ass.id,
-   silver_ass.`ex:commit_id` AS SilverCommitID,
-   silver_ass.`ex:commit_date` AS SilverCommitDate,
-   silver.`ex:badge_won` AS SilverBadge,
-   silver_ass.id
-   ```
-
-The query in Listing 2 returns the last assessment ID that earned a bronze badge and the first one that achieved silver; the resulting [level-2 provenance graph](./results/Compare_commit_provenance) (Fig. 8) and query result is stored in [Results](./results/Cypher_query_results).
-
-## **10. Multi-Repository Evaluation (SAC 2027)**
-
-The paper validates yProv4SQA across 11 open-source repositories (469 unique assessments). All generated provenance documents and the pipeline script used to produce them are in `./multi_repo_evaluation/`.
-
-### **10.1. Reproduce the full evaluation**
-
-```bash
-python multi_repo_evaluation/run_all_repos.py
-```
-
-This script fetches SQAaaS reports, normalises them, and generates provenance documents for all 11 repositories. A GitHub token is strongly recommended (see Section 1).
-
-### **10.2. Pre-generated provenance documents**
-
-10 of the 11 provenance documents are pre-generated in `./multi_repo_evaluation/Provenance_documents/`. Each file is named `<org>_<repo>_prov_output.json`. The 11th document (for this repository itself) is withheld for anonymity and will be made available in the camera-ready version.
-
-### **10.3. Open a document in yProvExplorer**
-
-Upload any `.json` file from `./multi_repo_evaluation/Provenance_documents/` to [https://explorer.yprov.disi.unitn.it/](https://explorer.yprov.disi.unitn.it/) or drag-and-drop it for immediate visualisation.
+The paper validates yProv4SQA across **11 open-source repositories** (469 unique assessments),
+spanning Python, C++, Go, and Java projects.
 
 ---
 
-## **Summary**
+## Contents of this branch
 
-This artifact demonstrates the complete provenance-based SQA workflow from the paper. With yProv4SQA, you can collect SQAaaS reports, generate provenance documents, compare any two assessments, directly navigate to git diff of those assessments, visualise graphs, and explore them through Neo4j and the yProv service. The `multi_repo_evaluation/` folder contains the full 11-repository evaluation supporting the SAC 2027 paper results.
+| Path | Description |
+|------|-------------|
+| `Provenance_documents/` | Level-1 PROV-JSON files for all 11 repositories (see §PIDs below) |
+| `Compare_commit_provenance/itwinai_commit_provenance_fc45...fd9c_to_4086...54f4.json` | Level-2 commit-comparison document (Fig. 6) |
+| `artifacts/data/itwinai_SQAaaS_reports/` | 380 raw SQAaaS JSON reports for itwinai |
+| `artifacts/data/Figure5_data.csv` | Listing 1 output: quality evolution data |
+| `artifacts/paper/One_prov_output_enriched.svg` | Fig. 3: single-assessment Level-1 SVG provenance graph |
+| `artifacts/validation/` | Completeness, accuracy, PROV-CONSTRAINTS, timing checks |
+
+---
+
+## GitHub API rate-limit notice
+
+GitHub allows:
+* **60 requests / hour** for **anonymous** calls (no token).
+* **5000 requests / hour** when you supply a **personal-access token**.
+
+```bash
+export GITHUB_TOKEN=ghp_xxxxxxxxxxxxxxxxxxxx   # replace with your token
+curl -H "Authorization: token $GITHUB_TOKEN" https://api.github.com/rate_limit
+```
+
+---
+
+## Setup
+
+```bash
+git clone https://github.com/HPCI-Lab/yProv4SQA.git
+cd yProv4SQA
+git checkout yProv4SQA_SAC2027
+python -m venv .venv && source .venv/bin/activate
+pip install -e .
+pip install requests
+```
+
+---
+
+## Fetch SQA reports
+
+```bash
+fetch-sqa-reports itwinai
+```
+
+Fetches all SQAaaS assessments for `itwinai` from the
+[EOSC-Synergy GitHub space](https://github.com/EOSC-synergy), deduplicates by commit
+SHA, and writes the cleaned set to `./itwinai_SQAaaS_reports`.
+
+You can skip this step and use the reports already downloaded in
+`./artifacts/data/itwinai_SQAaaS_reports` (380 raw reports, 279 retained after
+deduplication).
+
+---
+
+## Generate provenance documents
+
+```bash
+process-provenance ./itwinai_SQAaaS_reports
+```
+
+Generates a Level-1 provenance document
+(`Provenance_documents/interTwin-eu_itwinai_prov_output.json`) conforming to W3C PROV-DM.
+
+---
+
+## Compare two assessments (Level-2)
+
+```bash
+compare ./Provenance_documents/interTwin-eu_itwinai_prov_output.json 64 115
+```
+
+Generates the Level-2 document that captures file changes between assessments 64 and 115,
+archived at `Compare_commit_provenance/itwinai_commit_provenance_fc45...fd9c_to_4086...54f4.json`.
+
+---
+
+## Visualise and explore provenance graphs
+
+### 1. PROV library (SVG, Fig. 3)
+
+```bash
+json2graph ./Provenance_documents/interTwin-eu_itwinai_prov_output.json
+```
+
+The figure that appears as **Fig. 3** in the paper was generated using this command and
+is included in `./artifacts/paper/One_prov_output_enriched.svg`.
+
+### 2. yProvExplorer (interactive)
+
+Upload any `.json` file at [https://explorer.yprov.disi.unitn.it/](https://explorer.yprov.disi.unitn.it/)
+or use the pre-uploaded documents (see §PIDs below):
+
+- **Full assessment history (Fig. 4):**  
+  [View graph](https://explorer.yprov.disi.unitn.it/?file=http%3A%2F%2Fyprov.disi.unitn.it%3A8000%2Fdocuments%2F21.T11961%2Fde35c9af-31d4-4fe8-b571-72f4c1bca8dd%3Fstream%3Dfalse)
+- **File changes between assessments 64 and 115 (Fig. 6):**  
+  Generate locally (see step above) and drag-and-drop the `.json` into the explorer.
+
+### 3. yProv + Neo4j
+
+Follow [Pre_requisites/yProv/README.md](Pre_requisites/yProv/README.md) to start the
+yProv service and a Neo4j database.  Then load the Level-1 document:
+
+```bash
+# Register and log in, then:
+curl -X PUT http://localhost:3000/api/v0/documents/itwinai \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer <token>" \
+  -d @./Provenance_documents/interTwin-eu_itwinai_prov_output.json
+```
+
+Open Neo4j at http://localhost:7474/browser/
+
+---
+
+## AI Agent
+
+```bash
+prov-chat ./Provenance_documents/interTwin-eu_itwinai_prov_output.json --web --port 5000
+```
+
+Open http://localhost:5000 in your browser.  Requires [Ollama](https://ollama.com/) with
+`llama3.2` installed, or a Google Gemini API key (set `GEMINI_API_KEY`).
+
+---
+
+## Sample Neo4j Queries
+
+**Cypher Neo4j Query (Listing 1)**
+```cypher
+MATCH (e:Entity)-[:wasGeneratedBy]->(a:Activity)
+WHERE a.`ex:percentage` IS NOT NULL
+RETURN
+   e.`ex:commit_id`   AS CommitID,
+   e.`ex:commit_date` AS CommitDate,
+   a.`ex:description` AS QualityCriteria,
+   a.`ex:percentage`  AS PercentagePassed
+ORDER BY e.`ex:commit_date`
+```
+
+The query exports the raw data behind **Fig. 5**; the result CSV is archived in
+[artifacts/data/Figure5_data.csv](data/Figure5_data.csv).
+
+**Cypher Neo4j Query (Listing 2)**
+```cypher
+// Find the earliest Silver badge assessment
+MATCH (silver:Entity)-[:wasDerivedFrom]->(silver_ass:Entity)
+WHERE silver.`ex:badge_won` = "silver"
+WITH silver, silver_ass
+ORDER BY silver_ass.`ex:commit_date` ASC
+LIMIT 1
+
+// Find all Bronze badge assessments that precede it
+MATCH (bronze:Entity)-[:wasDerivedFrom]->(bronze_ass:Entity)
+WHERE bronze.`ex:badge_won` = "bronze"
+  AND bronze_ass.`ex:commit_date` < silver_ass.`ex:commit_date`
+RETURN
+  silver_ass.`ex:commit_id`   AS SilverCommitID,
+  silver_ass.`ex:commit_date` AS SilverCommitDate,
+  bronze_ass.`ex:commit_id`   AS BronzeCommitID,
+  bronze_ass.`ex:commit_date` AS BronzeCommitDate,
+  bronze.`ex:badge_won`       AS BronzeBadge
+ORDER BY bronze_ass.`ex:commit_date` ASC
+```
+
+The query in Listing 2 returns the earliest Silver assessment and all Bronze assessments
+that precede it, motivating the Level-2 comparison shown in **Fig. 6**.
+The resulting Level-2 graph is at
+`Compare_commit_provenance/itwinai_commit_provenance_fc45...fd9c_to_4086...54f4.json`.
+
+---
+
+## Badge labels in the PROV document
+
+The Level-1 document contains two distinct badge labels in `ex:badge_won`:
+
+| Label | Count | Meaning |
+|-------|-------|---------|
+| `No Badge` | 38 | Full assessment run; badge criteria not satisfied |
+| `no_badge` | 9 | Partial run (`ex:is_partial_run=true`); assessment aborted before all criteria ran |
+| `bronze` | 88 | Bronze badge awarded |
+| `silver` | 135 | Silver badge awarded |
+| `gold` | 9 | Gold badge awarded |
+
+The lowercase `no_badge` label (9 occurrences) always co-occurs with
+`ex:is_partial_run=true` in the corresponding assessment entity — verified in
+`artifacts/validation/completeness_results.json`.
+
+---
+
+## Paper — Figure and Listing index
+
+| Paper ref | Description | File(s) in artifact |
+|-----------|-------------|---------------------|
+| Fig. 3 | Single-assessment Level-1 provenance graph (SVG) | `artifacts/paper/One_prov_output_enriched.svg` |
+| Fig. 4 | Full itwinai assessment history in yProvExplorer | pre-uploaded at yProv server (see §PIDs) |
+| Fig. 5 | Quality evolution chart (Listing 1 output) | `artifacts/data/Figure5_data.csv` |
+| Fig. 6 | Level-2 commit-comparison graph | `Compare_commit_provenance/itwinai_commit_provenance_fc45...fd9c_to_4086...54f4.json` |
+| Listing 1 | Cypher query for quality evolution data | this README, section "Sample Neo4j Queries" |
+| Listing 2 | Cypher query for first-silver + preceding-bronze | this README, section "Sample Neo4j Queries" |
+
+---
+
+## Persistent identifiers (PIDs)
+
+All 11 Level-1 provenance documents are stored in the yProv service
+(http://yprov.disi.unitn.it:8000) and assigned persistent identifiers via the
+ePIC Handle service.
+
+| Repository | PID | Explorer link |
+|------------|-----|---------------|
+| interTwin-eu/itwinai | `21.T11961/de35c9af-31d4-4fe8-b571-72f4c1bca8dd` | [Open](https://explorer.yprov.disi.unitn.it/?file=http%3A%2F%2Fyprov.disi.unitn.it%3A8000%2Fdocuments%2F21.T11961%2Fde35c9af-31d4-4fe8-b571-72f4c1bca8dd%3Fstream%3Dfalse) |
+| grycap/im | `21.T11961/4a3cddf7-a1e5-41d3-9e8f-4a46506cdaa2` | [Open](https://explorer.yprov.disi.unitn.it/?file=http%3A%2F%2Fyprov.disi.unitn.it%3A8000%2Fdocuments%2F21.T11961%2F4a3cddf7-a1e5-41d3-9e8f-4a46506cdaa2%3Fstream%3Dfalse) |
+| HPCI-Lab/yProv | `21.T11961/a044e1b6-58a2-40e7-ad01-a3aab86a3a4c` | [Open](https://explorer.yprov.disi.unitn.it/?file=http%3A%2F%2Fyprov.disi.unitn.it%3A8000%2Fdocuments%2F21.T11961%2Fa044e1b6-58a2-40e7-ad01-a3aab86a3a4c%3Fstream%3Dfalse) |
+| indigo-dc/udocker | `21.T11961/c38bfb85-abbc-442c-a0a4-63af3e064ce8` | [Open](https://explorer.yprov.disi.unitn.it/?file=http%3A%2F%2Fyprov.disi.unitn.it%3A8000%2Fdocuments%2F21.T11961%2Fc38bfb85-abbc-442c-a0a4-63af3e064ce8%3Fstream%3Dfalse) |
+| EOSC-synergy/sqaaas-assessment-action | `21.T11961/c6da4c59-2d18-479c-9f40-5f10d9432130` | [Open](https://explorer.yprov.disi.unitn.it/?file=http%3A%2F%2Fyprov.disi.unitn.it%3A8000%2Fdocuments%2F21.T11961%2Fc6da4c59-2d18-479c-9f40-5f10d9432130%3Fstream%3Dfalse) |
+| SeisSol/SeisSol | `21.T11961/c074c13f-a1ce-4b2b-ab3a-c24e29b42c5e` | [Open](https://explorer.yprov.disi.unitn.it/?file=http%3A%2F%2Fyprov.disi.unitn.it%3A8000%2Fdocuments%2F21.T11961%2Fc074c13f-a1ce-4b2b-ab3a-c24e29b42c5e%3Fstream%3Dfalse) |
+| grycap/oscar | `21.T11961/052fbfa2-fedd-4ac5-9446-e1274dcebfae` | [Open](https://explorer.yprov.disi.unitn.it/?file=http%3A%2F%2Fyprov.disi.unitn.it%3A8000%2Fdocuments%2F21.T11961%2F052fbfa2-fedd-4ac5-9446-e1274dcebfae%3Fstream%3Dfalse) |
+| EOSC-synergy/FAIR\_eva | `21.T11961/12bdd31c-262d-4869-8689-f655dc798389` | [Open](https://explorer.yprov.disi.unitn.it/?file=http%3A%2F%2Fyprov.disi.unitn.it%3A8000%2Fdocuments%2F21.T11961%2F12bdd31c-262d-4869-8689-f655dc798389%3Fstream%3Dfalse) |
+| galaxyproject/galaxy | `21.T11961/cb00c83e-63c9-402f-a393-291b139c8439` | [Open](https://explorer.yprov.disi.unitn.it/?file=http%3A%2F%2Fyprov.disi.unitn.it%3A8000%2Fdocuments%2F21.T11961%2Fcb00c83e-63c9-402f-a393-291b139c8439%3Fstream%3Dfalse) |
+| EOSC-synergy/o3api | `21.T11961/41223a47-cdf1-4f8c-aa76-300174d63181` | [Open](https://explorer.yprov.disi.unitn.it/?file=http%3A%2F%2Fyprov.disi.unitn.it%3A8000%2Fdocuments%2F21.T11961%2F41223a47-cdf1-4f8c-aa76-300174d63181%3Fstream%3Dfalse) |
+| indigo-dc/orchestrator | `21.T11961/26b7e356-ef7d-4c6c-9e45-048ec2a24d62` | [Open](https://explorer.yprov.disi.unitn.it/?file=http%3A%2F%2Fyprov.disi.unitn.it%3A8000%2Fdocuments%2F21.T11961%2F26b7e356-ef7d-4c6c-9e45-048ec2a24d62%3Fstream%3Dfalse) |
+
+---
+
+## Normalization of old-format SQAaaS reports
+
+Two repositories (`sqaaas-assessment-action`, `oscar`) have reports where the `repository`
+field is a JSON object instead of a list.  Pre-normalized copies are in the
+`results/*_SQAaaS_reports_norm` folders.  To normalize from scratch:
+
+```bash
+python artifacts/validation/normalize_reports.py results/sqaaas-assessment-action_SQAaaS_reports \
+  --dest results/sqaaas-assessment-action_SQAaaS_reports_norm
+```
+
+Requirements: Python 3.6+, standard library only.
+
+---
+
+## Multi-Repository Evaluation
+
+The paper validates yProv4SQA across 11 open-source repositories.
+Pre-generated provenance documents are in `./Provenance_documents/`.
+
+To regenerate all documents from scratch:
+
+```bash
+python artifacts/multi_repo_evaluation/run_all_repos.py
+```
+
+---
+
+## Validation checks
+
+Completeness, accuracy, structural (PROV-CONSTRAINTS), and timing checks are
+documented in [artifacts/validation/README.md](validation/README.md).
+
+---
+
+## Summary
+
+This artifact demonstrates the complete provenance-based SQA workflow from the paper.
+With yProv4SQA you can collect SQAaaS reports, generate Level-1 and Level-2 provenance
+documents, visualise graphs, explore via Neo4j, and ask natural-language questions
+through the AI agent.

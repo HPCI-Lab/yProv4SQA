@@ -1,0 +1,84 @@
+ProvToolbox PROV-CONSTRAINTS Validation Commands
+=================================================
+
+Validator     : ProvToolbox provconvert 2.2.1
+Downloaded to : ~/ProvToolbox/
+Java required : 17+ (tested: OpenJDK 25.0.4.1, Temurin — found at
+                ~/projects/MMU/.jdk/jdk-25.0.4.1+1-jre/bin/java)
+
+ProvToolbox was downloaded from Maven Central:
+  https://repo1.maven.org/maven2/org/openprovenance/prov/provconvert/2.2.1/provconvert-2.2.1-release.zip
+
+Run the following from the yProv4SQA root with JAVA_HOME set:
+
+  export JAVA_HOME=~/projects/MMU/.jdk/jdk-25.0.4.1+1-jre
+
+  export PATH=$JAVA_HOME/bin:$PATH
+  PROVCONVERT=~/ProvToolbox/bin/provconvert
+
+--- Step 1: Check provconvert version ---
+
+  $PROVCONVERT --version
+
+--- Step 2: Convert PROV-JSON → PROV-N (required for validation) ---
+
+  # Single-assessment Level-1 document
+  $PROVCONVERT \
+    -infile artifacts/paper/One_prov_output_enriched.json \
+    -outfile artifacts/validation/prov_constraints/single_assessment.provn
+
+  # Full itwinai Level-1 document (279 assessments)
+  $PROVCONVERT \
+    -infile Provenance_documents/interTwin-eu_itwinai_prov_output.json \
+    -outfile artifacts/validation/prov_constraints/full_itwinai.provn
+
+  # Level-2 comparison document (fc45...fd9c → 4086...54f4)
+  $PROVCONVERT \
+    -infile "Compare_commit_provenance/itwinai_commit_provenance_fc45...fd9c_to_4086...54f4.json" \
+    -outfile artifacts/validation/prov_constraints/level2_fc45_4086.provn
+
+--- Step 3: Run PROV-CONSTRAINTS validation ---
+
+  # Validate each PROV-N file (provconvert checks PROV-CONSTRAINTS during conversion)
+  $PROVCONVERT \
+    -infile artifacts/validation/prov_constraints/single_assessment.provn \
+    -outfile /dev/null \
+    2>&1 | tee artifacts/validation/prov_constraints/single_assessment_validation.txt
+
+  $PROVCONVERT \
+    -infile artifacts/validation/prov_constraints/full_itwinai.provn \
+    -outfile /dev/null \
+    2>&1 | tee artifacts/validation/prov_constraints/full_itwinai_validation.txt
+
+  $PROVCONVERT \
+    -infile artifacts/validation/prov_constraints/level2_fc45_4086.provn \
+    -outfile /dev/null \
+    2>&1 | tee artifacts/validation/prov_constraints/level2_fc45_4086_validation.txt
+
+--- Alternative: validate directly from PROV-JSON input (Task D) ---
+
+Provconvert accepts PROV-JSON directly (infers format from .json extension).
+This was run on 2026-11-26 and produced the output in full_itwinai_json_validation.txt.
+
+  $PROVCONVERT \
+    -infile Provenance_documents/interTwin-eu_itwinai_prov_output.json \
+    -outfile /tmp/full_json_out.provn \
+    2>&1 | tee artifacts/validation/prov_constraints/full_itwinai_json_validation.txt
+
+Result: INCOMPLETE — provconvert crashed immediately with
+  "Cannot invoke Collection.iterator() because attributes is null"
+at Entity.setIndexedAttributes() while deserialising ex:repository1.ex:description.
+Root cause: ProvToolbox 2.2.1 JSON deserialiser cannot handle plain string attribute
+values (without $type/$value wrapper); it passes null to distribute() which crashes.
+No PROV-CONSTRAINTS check was performed.
+
+The same crash also occurred when this was first tried (see full_itwinai_json_validation.txt).
+
+--- Notes ---
+
+The Python prov library (validate_prov.py) performs structural validation
+(load, PROV-N round-trip, unification) and confirmed all three documents
+load without errors.  See prov_library_results.json for the full output.
+
+For full PROV-CONSTRAINTS formal rule checking, see provtoolbox_results.md for the
+complete analysis of what succeeded and what failed.

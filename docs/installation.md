@@ -10,9 +10,8 @@
 
 ## 1. Get the repository
 
-Download the repository using the **Download** button on the anonymous repository page (https://anonymous.4open.science/r/yProv4SQA-D046), then extract and navigate to the directory:
-
 ```bash
+git clone -b yProv4SQA_SAC2027 https://github.com/HPCI-Lab/yProv4SQA.git
 cd yProv4SQA
 ```
 

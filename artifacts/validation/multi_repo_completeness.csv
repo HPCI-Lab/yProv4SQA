@@ -1,0 +1,11 @@
+repo,status,raw_reports,retained_assessments,n_assessments,n_outputs,n_repository,n_agents,n_activities,n_wasGeneratedBy,n_wasDerivedFrom,n_wasAttributedTo,partial_runs,exactly_8_criteria,fewer_than_8,one_output_per_assessment,n_QC.Acc,n_QC.Doc,n_QC.Lic,n_QC.Met,n_QC.Sec,n_QC.Sty,n_QC.Uni,n_QC.Ver,anomaly
+interTwin-eu/itwinai,PASS,380,279,279,279,1,1,2111,2111,558,1,9,212,67,279,270,270,270,278,270,271,212,270,9 partial runs; 67 assessments with <8 QC checks (pre-QC.Uni or partial)
+indigo-dc/udocker,PASS,42,42,42,42,1,1,319,319,84,1,11,25,17,42,42,42,42,42,42,42,25,42,11 partial runs; 17 assessments with <8 QC checks (pre-QC.Uni or partial)
+grycap/im,PASS,36,36,36,36,1,1,288,288,72,1,0,36,0,36,36,36,36,36,36,36,36,36,
+EOSC-synergy/sqaaas-assessment-action,PASS,39,39,39,39,1,1,267,267,78,1,21,18,21,39,35,35,35,39,35,35,18,35,21 partial runs; 21 assessments with <8 QC checks (pre-QC.Uni or partial)
+SeisSol/SeisSol,PASS,8,8,8,8,1,1,63,63,16,1,0,7,1,8,8,8,8,8,8,8,7,8,1 assessments with <8 QC checks (pre-QC.Uni or partial)
+grycap/oscar,PASS,7,7,7,7,1,1,56,56,14,1,0,7,0,7,7,7,7,7,7,7,7,7,
+EOSC-synergy/FAIR_eva,PASS,3,3,3,3,1,1,24,24,6,1,0,3,0,3,3,3,3,3,3,3,3,3,
+galaxyproject/galaxy,PASS,1,1,1,1,1,1,8,8,2,1,0,1,0,1,1,1,1,1,1,1,1,1,
+EOSC-synergy/o3api,PASS,1,1,1,1,1,1,8,8,2,1,0,1,0,1,1,1,1,1,1,1,1,1,
+indigo-dc/orchestrator,PASS,1,1,1,1,1,1,8,8,2,1,0,1,0,1,1,1,1,1,1,1,1,1,

@@ -72,7 +72,9 @@ docker volume create neo4j_logs
 docker volume create yprov_data
 docker network create yprov_net
 
-# Start Neo4j
+# Start Neo4j (Enterprise edition required for APOC plugin)
+# Note: if Neo4j Community works with your yProv version, replace neo4j:enterprise
+# with neo4j:5 and remove NEO4J_ACCEPT_LICENSE_AGREEMENT
 docker run --name db --network=yprov_net \
   -p 7474:7474 -p 7687:7687 -d \
   -v neo4j_data:/data -v neo4j_logs:/logs \
@@ -86,7 +88,7 @@ docker run --name web --network=yprov_net \
   -p 3000:3000 -d \
   -v yprov_data:/app/conf \
   --env USER=neo4j --env PASSWORD=password \
-  anonymous/yprov:latest
+  hpci/yprov:latest
 ```
 
 Neo4j browser: [http://localhost:7474](http://localhost:7474)  

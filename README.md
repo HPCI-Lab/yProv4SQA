@@ -74,4 +74,4 @@ For detailed information, please refer to the [Documentation](docs/).
 
 # Contributors
 
-- Anonymous (to be revealed at camera-ready)
+- Hafiz Muhammad Yousaf, Ludovica Sacco, Pablo Orviz, Matteo Bunino, Maria Girone, Isabel Campos, Sandro Luigi Fiore
